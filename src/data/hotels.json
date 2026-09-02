@@ -1,0 +1,117 @@
+[
+  {
+    "id": 1,
+    "slug": "aurelia-grand-hotel",
+    "name": "Aurelia Grand Hotel",
+    "shortName": "Aurelia",
+    "tagline": "Where Gold Meets Grandeur",
+    "type": "Classic City Palace Hotel",
+    "description": "A five-star Nile-front palace hotel in the heart of Cairo, built on ornate classic architecture, gilded interiors, and personal service in the grand European tradition.",
+    "designLanguage": "Ornate classic luxury: deep burgundy and wine tones, aged gold detailing, arch motifs, serif typography, dense drapery and pattern.",
+    "starRating": 5,
+    "established": 2012,
+    "address": {
+      "street": "12 Nile Corniche Avenue",
+      "area": "Garden City",
+      "city": "Cairo",
+      "country": "Egypt",
+      "postalCode": "11511"
+    },
+    "contact": {
+      "phone": "+20 2 2735 8800",
+      "whatsapp": "+20 100 123 4567",
+      "email": "reservations@aureliagrandhotel.com"
+    },
+    "theme": {
+      "colors": {
+        "primary": "#5C1A2B",
+        "primaryDark": "#3E0E1C",
+        "accent": "#C9A24B",
+        "accentLight": "#E4C77E",
+        "surface": "#F6F0E4",
+        "surfaceDark": "#EAE0CB",
+        "onPrimary": "#FFFCF6",
+        "ink": "#2B2320"
+      },
+      "fonts": {
+        "heading": "Playfair Display, serif",
+        "body": "Jost, sans-serif"
+      }
+    },
+    "categories": [
+      "Rooms",
+      "Suites",
+      "Pools",
+      "Restaurants",
+      "Spa & Wellness",
+      "Services"
+    ],
+    "heroStyle": "immersive-fullbleed-centered",
+    "navStyle": "offcanvas-sidebar",
+    "productIdRange": [
+      1,
+      50
+    ],
+    "checkInTime": "15:00",
+    "checkOutTime": "12:00"
+  },
+  {
+    "id": 2,
+    "slug": "marisol-bay-resort",
+    "name": "Marisol Bay Resort",
+    "shortName": "Marisol Bay",
+    "tagline": "Slow Mornings, Open Water",
+    "type": "Modern Coastal Resort",
+    "description": "A modern coastal resort on Egypt's Red Sea shoreline, built around clean architecture, open water views, and an unhurried, design-forward way to stay by the sea.",
+    "designLanguage": "Modern minimalist coastal: emerald and deep charcoal, warm sand neutrals, sans-serif type, generous white space, flat geometric shapes over ornament.",
+    "starRating": 5,
+    "established": 2021,
+    "address": {
+      "street": "Marisol Bay Road, Km 14",
+      "area": "Sahl Hasheesh",
+      "city": "Hurghada",
+      "country": "Egypt",
+      "postalCode": "84523"
+    },
+    "contact": {
+      "phone": "+20 65 346 2200",
+      "whatsapp": "+20 100 987 6543",
+      "email": "stay@marisolbayresort.com"
+    },
+    "theme": {
+      "colors": {
+        "primary": "#0E3B36",
+        "primaryDark": "#082421",
+        "accent": "#2FA88B",
+        "accentLight": "#8FD8C4",
+        "surface": "#F3EFE6",
+        "surfaceDark": "#E4DCC9",
+        "onPrimary": "#FBF9F4",
+        "ink": "#1E2422"
+      },
+      "fonts": {
+        "heading": "Fraunces, serif",
+        "body": "Inter, sans-serif"
+      }
+    },
+    "categories": [
+      "Rooms",
+      "Suites",
+      "Pools",
+      "Restaurants",
+      "Spa & Wellness",
+      "Beach & Leisure",
+      "Events & Meetings",
+      "Fitness & Recreation",
+      "Services"
+    ],
+    "heroStyle": "split-screen-minimal",
+    "navStyle": "top-horizontal-transparent",
+    "productIdRange": [
+      101,
+      154
+    ],
+    "checkInTime": "14:00",
+    "checkOutTime": "11:00"
+  }
+]
