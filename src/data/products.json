@@ -1,0 +1,6120 @@
+[
+  {
+    "id": 1,
+    "title": "Classic Heritage Room",
+    "description": "A refined hotel room designed around comfort, elegant details, and a memorable stay.",
+    "price": 208.59,
+    "category": "Rooms",
+    "style": "Classic",
+    "capacity": 2,
+    "size": 54,
+    "stock": 13,
+    "amenities": [
+      "King Bed",
+      "Private Bathroom",
+      "High-Speed Wi-Fi",
+      "Smart TV",
+      "Daily Housekeeping"
+    ],
+    "images": [
+      "images/products/1-1.jpg",
+      "images/products/1-2.jpg"
+    ],
+    "hotelId": 1,
+    "slug": "classic-heritage-room",
+    "currency": "USD",
+    "rating": 4.5,
+    "reviewsCount": 42,
+    "reviews": [
+      {
+        "author": "John Farouk",
+        "rating": 5,
+        "date": "February 2025",
+        "comment": "The room exceeded our expectations, spotless and beautifully finished.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Fatima Cole",
+        "rating": 5,
+        "date": "July 2026",
+        "comment": "Comfortable bed, quiet at night, and the staff checked on us without being intrusive.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Laura Younis",
+        "rating": 5,
+        "date": "April 2025",
+        "comment": "Comfortable bed, quiet at night, and the staff checked on us without being intrusive.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Salma Hassan",
+        "rating": 3,
+        "date": "September 2025",
+        "comment": "Nice room overall, though the Wi-Fi was a little slow in the evenings.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": false,
+    "isNew": false,
+    "shortDescription": "A refined hotel room designed around comfort, elegant details, and a memorable stay."
+  },
+  {
+    "id": 2,
+    "title": "Classic Deluxe Room",
+    "description": "A refined hotel room designed around comfort, elegant details, and a memorable stay.",
+    "price": 297.67,
+    "category": "Rooms",
+    "style": "Classic",
+    "capacity": 4,
+    "size": 39,
+    "stock": 8,
+    "amenities": [
+      "King Bed",
+      "Private Bathroom",
+      "High-Speed Wi-Fi",
+      "Smart TV",
+      "Daily Housekeeping"
+    ],
+    "images": [
+      "images/products/2-1.jpg",
+      "images/products/2-2.jpg"
+    ],
+    "hotelId": 1,
+    "slug": "classic-deluxe-room",
+    "currency": "USD",
+    "rating": 4.8,
+    "reviewsCount": 117,
+    "reviews": [
+      {
+        "author": "Julia Kamal",
+        "rating": 5,
+        "date": "February 2025",
+        "comment": "Loved the little details, from the linens to the welcome amenities.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Farida Bennett",
+        "rating": 5,
+        "date": "August 2026",
+        "comment": "Perfect base for our trip, spacious and very well maintained.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Dina Sabry",
+        "rating": 4,
+        "date": "May 2025",
+        "comment": "Check-in was smooth and the room was exactly as pictured, maybe even nicer.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Oliver Rostom",
+        "rating": 5,
+        "date": "September 2026",
+        "comment": "The view and the layout made the stay feel truly special.",
+        "verifiedStay": false
+      }
+    ],
+    "featured": false,
+    "isNew": false,
+    "shortDescription": "A refined hotel room designed around comfort, elegant details, and a memorable stay."
+  },
+  {
+    "id": 3,
+    "title": "Classic Garden Room",
+    "description": "A refined hotel room designed around comfort, elegant details, and a memorable stay.",
+    "price": 290.66,
+    "category": "Rooms",
+    "style": "Classic",
+    "capacity": 4,
+    "size": 31,
+    "stock": 14,
+    "amenities": [
+      "King Bed",
+      "Private Bathroom",
+      "High-Speed Wi-Fi",
+      "Smart TV",
+      "Daily Housekeeping"
+    ],
+    "images": [
+      "images/products/3-1.jpg",
+      "images/products/3-2.jpg"
+    ],
+    "hotelId": 1,
+    "slug": "classic-garden-room",
+    "currency": "USD",
+    "rating": 5.0,
+    "reviewsCount": 73,
+    "reviews": [
+      {
+        "author": "Claire Bennett",
+        "rating": 5,
+        "date": "March 2026",
+        "comment": "Housekeeping was excellent every single day, always fresh towels.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Heba Palmer",
+        "rating": 5,
+        "date": "September 2026",
+        "comment": "Comfortable bed, quiet at night, and the staff checked on us without being intrusive.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Andrew Nassar",
+        "rating": 5,
+        "date": "February 2025",
+        "comment": "A quiet, elegant room that made it easy to relax after long days out.",
+        "verifiedStay": false
+      },
+      {
+        "author": "William Bennett",
+        "rating": 5,
+        "date": "November 2026",
+        "comment": "The view and the layout made the stay feel truly special.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": false,
+    "isNew": false,
+    "shortDescription": "A refined hotel room designed around comfort, elegant details, and a memorable stay."
+  },
+  {
+    "id": 4,
+    "title": "Modern City Room",
+    "description": "A refined hotel room designed around comfort, elegant details, and a memorable stay.",
+    "price": 329.35,
+    "category": "Rooms",
+    "style": "Modern",
+    "capacity": 4,
+    "size": 44,
+    "stock": 14,
+    "amenities": [
+      "King Bed",
+      "Private Bathroom",
+      "High-Speed Wi-Fi",
+      "Smart TV",
+      "Daily Housekeeping"
+    ],
+    "images": [
+      "images/products/4-1.jpg",
+      "images/products/4-2.jpg"
+    ],
+    "hotelId": 1,
+    "slug": "modern-city-room",
+    "currency": "USD",
+    "rating": 4.5,
+    "reviewsCount": 43,
+    "reviews": [
+      {
+        "author": "Andrew Al-Sayed",
+        "rating": 3,
+        "date": "March 2025",
+        "comment": "Comfortable stay, would have liked a slightly bigger desk area.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Nadine Hughes",
+        "rating": 5,
+        "date": "July 2026",
+        "comment": "Perfect base for our trip, spacious and very well maintained.",
+        "verifiedStay": false
+      },
+      {
+        "author": "Heba Mahmoud",
+        "rating": 5,
+        "date": "September 2026",
+        "comment": "Housekeeping was excellent every single day, always fresh towels.",
+        "verifiedStay": false
+      },
+      {
+        "author": "Nour Younis",
+        "rating": 5,
+        "date": "June 2026",
+        "comment": "Housekeeping was excellent every single day, always fresh towels.",
+        "verifiedStay": false
+      }
+    ],
+    "featured": true,
+    "isNew": false,
+    "shortDescription": "A refined hotel room designed around comfort, elegant details, and a memorable stay."
+  },
+  {
+    "id": 5,
+    "title": "Modern Executive Room",
+    "description": "A refined hotel room designed around comfort, elegant details, and a memorable stay.",
+    "price": 294.93,
+    "category": "Rooms",
+    "style": "Modern",
+    "capacity": 4,
+    "size": 43,
+    "stock": 10,
+    "amenities": [
+      "King Bed",
+      "Private Bathroom",
+      "High-Speed Wi-Fi",
+      "Smart TV",
+      "Daily Housekeeping"
+    ],
+    "images": [
+      "images/products/5-1.jpg",
+      "images/products/5-2.jpg"
+    ],
+    "hotelId": 1,
+    "slug": "modern-executive-room",
+    "currency": "USD",
+    "rating": 4.5,
+    "reviewsCount": 75,
+    "reviews": [
+      {
+        "author": "Mona Morgan",
+        "rating": 5,
+        "date": "August 2025",
+        "comment": "The room exceeded our expectations, spotless and beautifully finished.",
+        "verifiedStay": true
+      },
+      {
+        "author": "James Farouk",
+        "rating": 5,
+        "date": "October 2026",
+        "comment": "Check-in was smooth and the room was exactly as pictured, maybe even nicer.",
+        "verifiedStay": false
+      },
+      {
+        "author": "Oliver Cole",
+        "rating": 3,
+        "date": "November 2025",
+        "comment": "Good value for the location, minor wear on the furniture but still pleasant.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Noha Younis",
+        "rating": 5,
+        "date": "July 2025",
+        "comment": "Housekeeping was excellent every single day, always fresh towels.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": true,
+    "isNew": false,
+    "shortDescription": "A refined hotel room designed around comfort, elegant details, and a memorable stay."
+  },
+  {
+    "id": 6,
+    "title": "Modern Horizon Room",
+    "description": "A refined hotel room designed around comfort, elegant details, and a memorable stay.",
+    "price": 302.7,
+    "category": "Rooms",
+    "style": "Modern",
+    "capacity": 2,
+    "size": 48,
+    "stock": 7,
+    "amenities": [
+      "King Bed",
+      "Private Bathroom",
+      "High-Speed Wi-Fi",
+      "Smart TV",
+      "Daily Housekeeping"
+    ],
+    "images": [
+      "images/products/6-1.jpg",
+      "images/products/6-2.jpg"
+    ],
+    "hotelId": 1,
+    "slug": "modern-horizon-room",
+    "currency": "USD",
+    "rating": 4.5,
+    "reviewsCount": 42,
+    "reviews": [
+      {
+        "author": "Omar Adel",
+        "rating": 5,
+        "date": "June 2025",
+        "comment": "Comfortable bed, quiet at night, and the staff checked on us without being intrusive.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Julia Farouk",
+        "rating": 5,
+        "date": "October 2025",
+        "comment": "Check-in was smooth and the room was exactly as pictured, maybe even nicer.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Nadine Hayes",
+        "rating": 5,
+        "date": "June 2026",
+        "comment": "The view and the layout made the stay feel truly special.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Sophie Nassar",
+        "rating": 3,
+        "date": "August 2026",
+        "comment": "Comfortable stay, would have liked a slightly bigger desk area.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": true,
+    "isNew": false,
+    "shortDescription": "A refined hotel room designed around comfort, elegant details, and a memorable stay."
+  },
+  {
+    "id": 7,
+    "title": "French Elegance Room",
+    "description": "A refined hotel room designed around comfort, elegant details, and a memorable stay.",
+    "price": 396.78,
+    "category": "Rooms",
+    "style": "French",
+    "capacity": 2,
+    "size": 35,
+    "stock": 4,
+    "amenities": [
+      "King Bed",
+      "Private Bathroom",
+      "High-Speed Wi-Fi",
+      "Smart TV",
+      "Daily Housekeeping"
+    ],
+    "images": [
+      "images/products/7-1.jpg",
+      "images/products/7-2.jpg"
+    ],
+    "hotelId": 1,
+    "slug": "french-elegance-room",
+    "currency": "USD",
+    "rating": 5.0,
+    "reviewsCount": 128,
+    "reviews": [
+      {
+        "author": "Rania Bishop",
+        "rating": 5,
+        "date": "September 2025",
+        "comment": "Loved the little details, from the linens to the welcome amenities.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Reem Naguib",
+        "rating": 5,
+        "date": "September 2026",
+        "comment": "The room exceeded our expectations, spotless and beautifully finished.",
+        "verifiedStay": false
+      },
+      {
+        "author": "Laura Bishop",
+        "rating": 5,
+        "date": "June 2025",
+        "comment": "Loved the little details, from the linens to the welcome amenities.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Noha Cole",
+        "rating": 5,
+        "date": "October 2025",
+        "comment": "Perfect base for our trip, spacious and very well maintained.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": false,
+    "isNew": false,
+    "shortDescription": "A refined hotel room designed around comfort, elegant details, and a memorable stay."
+  },
+  {
+    "id": 8,
+    "title": "Parisian Deluxe Room",
+    "description": "A refined hotel room designed around comfort, elegant details, and a memorable stay.",
+    "price": 329.06,
+    "category": "Rooms",
+    "style": "French",
+    "capacity": 4,
+    "size": 33,
+    "stock": 5,
+    "amenities": [
+      "King Bed",
+      "Private Bathroom",
+      "High-Speed Wi-Fi",
+      "Smart TV",
+      "Daily Housekeeping"
+    ],
+    "images": [
+      "images/products/8-1.jpg",
+      "images/products/8-2.jpg"
+    ],
+    "hotelId": 1,
+    "slug": "parisian-deluxe-room",
+    "currency": "USD",
+    "rating": 5.0,
+    "reviewsCount": 39,
+    "reviews": [
+      {
+        "author": "Robert Turner",
+        "rating": 5,
+        "date": "December 2025",
+        "comment": "Check-in was smooth and the room was exactly as pictured, maybe even nicer.",
+        "verifiedStay": false
+      },
+      {
+        "author": "Layla Bergman",
+        "rating": 5,
+        "date": "August 2026",
+        "comment": "Check-in was smooth and the room was exactly as pictured, maybe even nicer.",
+        "verifiedStay": false
+      },
+      {
+        "author": "Yasmin Mahmoud",
+        "rating": 5,
+        "date": "August 2025",
+        "comment": "Perfect base for our trip, spacious and very well maintained.",
+        "verifiedStay": true
+      },
+      {
+        "author": "William Whitfield",
+        "rating": 5,
+        "date": "November 2025",
+        "comment": "Check-in was smooth and the room was exactly as pictured, maybe even nicer.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": false,
+    "isNew": false,
+    "shortDescription": "A refined hotel room designed around comfort, elegant details, and a memorable stay."
+  },
+  {
+    "id": 9,
+    "title": "French Garden Room",
+    "description": "A refined hotel room designed around comfort, elegant details, and a memorable stay.",
+    "price": 368.03,
+    "category": "Rooms",
+    "style": "French",
+    "capacity": 4,
+    "size": 43,
+    "stock": 8,
+    "amenities": [
+      "King Bed",
+      "Private Bathroom",
+      "High-Speed Wi-Fi",
+      "Smart TV",
+      "Daily Housekeeping"
+    ],
+    "images": [
+      "images/products/9-1.jpg",
+      "images/products/9-2.jpg"
+    ],
+    "hotelId": 1,
+    "slug": "french-garden-room",
+    "currency": "USD",
+    "rating": 5.0,
+    "reviewsCount": 126,
+    "reviews": [
+      {
+        "author": "Jana Turner",
+        "rating": 5,
+        "date": "July 2026",
+        "comment": "Loved the little details, from the linens to the welcome amenities.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Lucas Shawky",
+        "rating": 5,
+        "date": "December 2025",
+        "comment": "Comfortable bed, quiet at night, and the staff checked on us without being intrusive.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Youssef Al-Sayed",
+        "rating": 5,
+        "date": "November 2025",
+        "comment": "A quiet, elegant room that made it easy to relax after long days out.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Claire Bergman",
+        "rating": 5,
+        "date": "March 2025",
+        "comment": "Check-in was smooth and the room was exactly as pictured, maybe even nicer.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": false,
+    "isNew": false,
+    "shortDescription": "A refined hotel room designed around comfort, elegant details, and a memorable stay."
+  },
+  {
+    "id": 10,
+    "title": "Oakwood Retreat Room",
+    "description": "A refined hotel room designed around comfort, elegant details, and a memorable stay.",
+    "price": 343.87,
+    "category": "Rooms",
+    "style": "Wooden",
+    "capacity": 3,
+    "size": 47,
+    "stock": 6,
+    "amenities": [
+      "King Bed",
+      "Private Bathroom",
+      "High-Speed Wi-Fi",
+      "Smart TV",
+      "Daily Housekeeping"
+    ],
+    "images": [
+      "images/products/10-1.jpg",
+      "images/products/10-2.jpg"
+    ],
+    "hotelId": 1,
+    "slug": "oakwood-retreat-room",
+    "currency": "USD",
+    "rating": 4.8,
+    "reviewsCount": 91,
+    "reviews": [
+      {
+        "author": "Dalia Carter",
+        "rating": 5,
+        "date": "July 2025",
+        "comment": "Loved the little details, from the linens to the welcome amenities.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Nadine Al-Sayed",
+        "rating": 5,
+        "date": "September 2025",
+        "comment": "The view and the layout made the stay feel truly special.",
+        "verifiedStay": true
+      },
+      {
+        "author": "John Bishop",
+        "rating": 5,
+        "date": "January 2026",
+        "comment": "Loved the little details, from the linens to the welcome amenities.",
+        "verifiedStay": false
+      },
+      {
+        "author": "Henry Sabry",
+        "rating": 4,
+        "date": "September 2025",
+        "comment": "Housekeeping was excellent every single day, always fresh towels.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": false,
+    "isNew": false,
+    "shortDescription": "A refined hotel room designed around comfort, elegant details, and a memorable stay."
+  },
+  {
+    "id": 11,
+    "title": "Warm Wood Deluxe Room",
+    "description": "A refined hotel room designed around comfort, elegant details, and a memorable stay.",
+    "price": 342.84,
+    "category": "Rooms",
+    "style": "Wooden",
+    "capacity": 4,
+    "size": 34,
+    "stock": 15,
+    "amenities": [
+      "King Bed",
+      "Private Bathroom",
+      "High-Speed Wi-Fi",
+      "Smart TV",
+      "Daily Housekeeping"
+    ],
+    "images": [
+      "images/products/11-1.jpg",
+      "images/products/11-2.jpg"
+    ],
+    "hotelId": 1,
+    "slug": "warm-wood-deluxe-room",
+    "currency": "USD",
+    "rating": 5.0,
+    "reviewsCount": 88,
+    "reviews": [
+      {
+        "author": "Christopher El-Masry",
+        "rating": 5,
+        "date": "March 2025",
+        "comment": "Loved the little details, from the linens to the welcome amenities.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Lucas Ibrahim",
+        "rating": 5,
+        "date": "November 2026",
+        "comment": "Check-in was smooth and the room was exactly as pictured, maybe even nicer.",
+        "verifiedStay": true
+      },
+      {
+        "author": "David Younis",
+        "rating": 5,
+        "date": "May 2025",
+        "comment": "Perfect base for our trip, spacious and very well maintained.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Nathan Sinclair",
+        "rating": 5,
+        "date": "August 2026",
+        "comment": "Comfortable bed, quiet at night, and the staff checked on us without being intrusive.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": false,
+    "isNew": false,
+    "shortDescription": "A refined hotel room designed around comfort, elegant details, and a memorable stay."
+  },
+  {
+    "id": 12,
+    "title": "Timber Residence Room",
+    "description": "A refined hotel room designed around comfort, elegant details, and a memorable stay.",
+    "price": 391.84,
+    "category": "Rooms",
+    "style": "Wooden",
+    "capacity": 3,
+    "size": 42,
+    "stock": 10,
+    "amenities": [
+      "King Bed",
+      "Private Bathroom",
+      "High-Speed Wi-Fi",
+      "Smart TV",
+      "Daily Housekeeping"
+    ],
+    "images": [
+      "images/products/12-1.jpg",
+      "images/products/12-2.jpg"
+    ],
+    "hotelId": 1,
+    "slug": "timber-residence-room",
+    "currency": "USD",
+    "rating": 4.5,
+    "reviewsCount": 137,
+    "reviews": [
+      {
+        "author": "Karim Fathy",
+        "rating": 5,
+        "date": "September 2025",
+        "comment": "A quiet, elegant room that made it easy to relax after long days out.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Daniel Younis",
+        "rating": 4,
+        "date": "August 2025",
+        "comment": "Perfect base for our trip, spacious and very well maintained.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Salma Sinclair",
+        "rating": 5,
+        "date": "July 2025",
+        "comment": "Perfect base for our trip, spacious and very well maintained.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Hana Ibrahim",
+        "rating": 4,
+        "date": "December 2026",
+        "comment": "Loved the little details, from the linens to the welcome amenities.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": true,
+    "isNew": false,
+    "shortDescription": "A refined hotel room designed around comfort, elegant details, and a memorable stay."
+  },
+  {
+    "id": 13,
+    "title": "Minimal Serenity Room",
+    "description": "A refined hotel room designed around comfort, elegant details, and a memorable stay.",
+    "price": 419.82,
+    "category": "Rooms",
+    "style": "Minimal",
+    "capacity": 3,
+    "size": 48,
+    "stock": 8,
+    "amenities": [
+      "King Bed",
+      "Private Bathroom",
+      "High-Speed Wi-Fi",
+      "Smart TV",
+      "Daily Housekeeping"
+    ],
+    "images": [
+      "images/products/13-1.jpg",
+      "images/products/13-2.jpg"
+    ],
+    "hotelId": 1,
+    "slug": "minimal-serenity-room",
+    "currency": "USD",
+    "rating": 5.0,
+    "reviewsCount": 141,
+    "reviews": [
+      {
+        "author": "Dina Morgan",
+        "rating": 5,
+        "date": "July 2026",
+        "comment": "Comfortable bed, quiet at night, and the staff checked on us without being intrusive.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Henry Morgan",
+        "rating": 5,
+        "date": "September 2026",
+        "comment": "Housekeeping was excellent every single day, always fresh towels.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Karim Foster",
+        "rating": 5,
+        "date": "January 2026",
+        "comment": "Check-in was smooth and the room was exactly as pictured, maybe even nicer.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Christopher Al-Sayed",
+        "rating": 5,
+        "date": "September 2025",
+        "comment": "The view and the layout made the stay feel truly special.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": false,
+    "isNew": false,
+    "shortDescription": "A refined hotel room designed around comfort, elegant details, and a memorable stay."
+  },
+  {
+    "id": 14,
+    "title": "Minimalist Deluxe Room",
+    "description": "A refined hotel room designed around comfort, elegant details, and a memorable stay.",
+    "price": 277.92,
+    "category": "Rooms",
+    "style": "Minimal",
+    "capacity": 4,
+    "size": 36,
+    "stock": 13,
+    "amenities": [
+      "King Bed",
+      "Private Bathroom",
+      "High-Speed Wi-Fi",
+      "Smart TV",
+      "Daily Housekeeping"
+    ],
+    "images": [
+      "images/products/14-1.jpg",
+      "images/products/14-2.jpg"
+    ],
+    "hotelId": 1,
+    "slug": "minimalist-deluxe-room",
+    "currency": "USD",
+    "rating": 5.0,
+    "reviewsCount": 82,
+    "reviews": [
+      {
+        "author": "David Mahmoud",
+        "rating": 5,
+        "date": "March 2026",
+        "comment": "The room exceeded our expectations, spotless and beautifully finished.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Nour Bishop",
+        "rating": 5,
+        "date": "December 2026",
+        "comment": "A quiet, elegant room that made it easy to relax after long days out.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Fatima El-Masry",
+        "rating": 5,
+        "date": "May 2025",
+        "comment": "Comfortable bed, quiet at night, and the staff checked on us without being intrusive.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Daniel Mahmoud",
+        "rating": 5,
+        "date": "February 2026",
+        "comment": "Perfect base for our trip, spacious and very well maintained.",
+        "verifiedStay": false
+      }
+    ],
+    "featured": true,
+    "isNew": false,
+    "shortDescription": "A refined hotel room designed around comfort, elegant details, and a memorable stay."
+  },
+  {
+    "id": 15,
+    "title": "Pure Line Room",
+    "description": "A refined hotel room designed around comfort, elegant details, and a memorable stay.",
+    "price": 313.38,
+    "category": "Rooms",
+    "style": "Minimal",
+    "capacity": 3,
+    "size": 33,
+    "stock": 7,
+    "amenities": [
+      "King Bed",
+      "Private Bathroom",
+      "High-Speed Wi-Fi",
+      "Smart TV",
+      "Daily Housekeeping"
+    ],
+    "images": [
+      "images/products/15-1.jpg",
+      "images/products/15-2.jpg"
+    ],
+    "hotelId": 1,
+    "slug": "pure-line-room",
+    "currency": "USD",
+    "rating": 4.2,
+    "reviewsCount": 117,
+    "reviews": [
+      {
+        "author": "Farida Palmer",
+        "rating": 4,
+        "date": "October 2025",
+        "comment": "The view and the layout made the stay feel truly special.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Jana Rostom",
+        "rating": 3,
+        "date": "May 2025",
+        "comment": "Nice room overall, though the Wi-Fi was a little slow in the evenings.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Hana Kamal",
+        "rating": 5,
+        "date": "May 2026",
+        "comment": "Perfect base for our trip, spacious and very well maintained.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Elena Fathy",
+        "rating": 5,
+        "date": "May 2025",
+        "comment": "The room exceeded our expectations, spotless and beautifully finished.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": false,
+    "isNew": false,
+    "shortDescription": "A refined hotel room designed around comfort, elegant details, and a memorable stay."
+  },
+  {
+    "id": 16,
+    "title": "Royal Residence Suite",
+    "description": "A spacious luxury suite combining premium comfort, privacy, and sophisticated hotel living.",
+    "price": 944.54,
+    "category": "Suites",
+    "style": "Royal",
+    "capacity": 4,
+    "size": 135,
+    "stock": 12,
+    "amenities": [
+      "King Bed",
+      "Separate Living Area",
+      "Luxury Bathroom",
+      "Private Balcony",
+      "Butler Service"
+    ],
+    "images": [
+      "images/products/16-1.jpg",
+      "images/products/16-2.jpg"
+    ],
+    "hotelId": 1,
+    "slug": "royal-residence-suite",
+    "currency": "USD",
+    "rating": 4.0,
+    "reviewsCount": 31,
+    "reviews": [
+      {
+        "author": "Karim Cole",
+        "rating": 5,
+        "date": "February 2026",
+        "comment": "Space, privacy, and finishing all at the highest level we've experienced.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Marco Shawky",
+        "rating": 3,
+        "date": "December 2025",
+        "comment": "Comfortable stay, would have liked a slightly bigger desk area.",
+        "verifiedStay": false
+      },
+      {
+        "author": "Rania Turner",
+        "rating": 4,
+        "date": "December 2025",
+        "comment": "Every detail felt considered, from the bath amenities to the turndown service.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Andrew Hassan",
+        "rating": 4,
+        "date": "February 2026",
+        "comment": "Truly a five-star suite, the separate living area made a huge difference.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": true,
+    "isNew": false,
+    "shortDescription": "A spacious luxury suite combining premium comfort, privacy, and sophisticated hotel living."
+  },
+  {
+    "id": 17,
+    "title": "Royal Garden Suite",
+    "description": "A spacious luxury suite combining premium comfort, privacy, and sophisticated hotel living.",
+    "price": 1182.07,
+    "category": "Suites",
+    "style": "Royal",
+    "capacity": 3,
+    "size": 86,
+    "stock": 7,
+    "amenities": [
+      "King Bed",
+      "Separate Living Area",
+      "Luxury Bathroom",
+      "Private Balcony",
+      "Butler Service"
+    ],
+    "images": [
+      "images/products/17-1.jpg",
+      "images/products/17-2.jpg"
+    ],
+    "hotelId": 1,
+    "slug": "royal-garden-suite",
+    "currency": "USD",
+    "rating": 5.0,
+    "reviewsCount": 123,
+    "reviews": [
+      {
+        "author": "Peter Cole",
+        "rating": 5,
+        "date": "October 2025",
+        "comment": "We celebrated our anniversary here and it was unforgettable.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Ahmed Rashad",
+        "rating": 5,
+        "date": "August 2025",
+        "comment": "We celebrated our anniversary here and it was unforgettable.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Rania Younis",
+        "rating": 5,
+        "date": "May 2025",
+        "comment": "Truly a five-star suite, the separate living area made a huge difference.",
+        "verifiedStay": true
+      },
+      {
+        "author": "James Zaki",
+        "rating": 5,
+        "date": "May 2025",
+        "comment": "Space, privacy, and finishing all at the highest level we've experienced.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": true,
+    "isNew": false,
+    "shortDescription": "A spacious luxury suite combining premium comfort, privacy, and sophisticated hotel living."
+  },
+  {
+    "id": 18,
+    "title": "Presidential Grand Suite",
+    "description": "A spacious luxury suite combining premium comfort, privacy, and sophisticated hotel living.",
+    "price": 1449.6,
+    "category": "Suites",
+    "style": "Presidential",
+    "capacity": 2,
+    "size": 110,
+    "stock": 3,
+    "amenities": [
+      "King Bed",
+      "Separate Living Area",
+      "Luxury Bathroom",
+      "Private Balcony",
+      "Butler Service"
+    ],
+    "images": [
+      "images/products/18-1.jpg",
+      "images/products/18-2.jpg"
+    ],
+    "hotelId": 1,
+    "slug": "presidential-grand-suite",
+    "currency": "USD",
+    "rating": 5.0,
+    "reviewsCount": 120,
+    "reviews": [
+      {
+        "author": "Daniel Mahmoud",
+        "rating": 5,
+        "date": "January 2026",
+        "comment": "The balcony view alone was worth the upgrade.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Hana Morgan",
+        "rating": 5,
+        "date": "March 2026",
+        "comment": "The balcony view alone was worth the upgrade.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Lucas Nassar",
+        "rating": 5,
+        "date": "October 2025",
+        "comment": "Every detail felt considered, from the bath amenities to the turndown service.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Jana Cole",
+        "rating": 5,
+        "date": "December 2025",
+        "comment": "Every detail felt considered, from the bath amenities to the turndown service.",
+        "verifiedStay": false
+      }
+    ],
+    "featured": false,
+    "isNew": false,
+    "shortDescription": "A spacious luxury suite combining premium comfort, privacy, and sophisticated hotel living."
+  },
+  {
+    "id": 19,
+    "title": "Presidential Executive Suite",
+    "description": "A spacious luxury suite combining premium comfort, privacy, and sophisticated hotel living.",
+    "price": 794.53,
+    "category": "Suites",
+    "style": "Presidential",
+    "capacity": 4,
+    "size": 181,
+    "stock": 7,
+    "amenities": [
+      "King Bed",
+      "Separate Living Area",
+      "Luxury Bathroom",
+      "Private Balcony",
+      "Butler Service"
+    ],
+    "images": [
+      "images/products/19-1.jpg",
+      "images/products/19-2.jpg"
+    ],
+    "hotelId": 1,
+    "slug": "presidential-executive-suite",
+    "currency": "USD",
+    "rating": 4.8,
+    "reviewsCount": 32,
+    "reviews": [
+      {
+        "author": "Sarah Sabry",
+        "rating": 4,
+        "date": "November 2025",
+        "comment": "Every detail felt considered, from the bath amenities to the turndown service.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Ahmed Reed",
+        "rating": 5,
+        "date": "July 2026",
+        "comment": "Truly a five-star suite, the separate living area made a huge difference.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Nicolas Al-Sayed",
+        "rating": 5,
+        "date": "April 2026",
+        "comment": "Every detail felt considered, from the bath amenities to the turndown service.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Dina Bennett",
+        "rating": 5,
+        "date": "September 2025",
+        "comment": "The balcony view alone was worth the upgrade.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": false,
+    "isNew": false,
+    "shortDescription": "A spacious luxury suite combining premium comfort, privacy, and sophisticated hotel living."
+  },
+  {
+    "id": 20,
+    "title": "Modern Luxury Skyline Suite",
+    "description": "A spacious luxury suite combining premium comfort, privacy, and sophisticated hotel living.",
+    "price": 1554.6,
+    "category": "Suites",
+    "style": "Modern Luxury",
+    "capacity": 4,
+    "size": 211,
+    "stock": 7,
+    "amenities": [
+      "King Bed",
+      "Separate Living Area",
+      "Luxury Bathroom",
+      "Private Balcony",
+      "Butler Service"
+    ],
+    "images": [
+      "images/products/20-1.jpg",
+      "images/products/20-2.jpg"
+    ],
+    "hotelId": 1,
+    "slug": "modern-luxury-skyline-suite",
+    "currency": "USD",
+    "rating": 4.8,
+    "reviewsCount": 31,
+    "reviews": [
+      {
+        "author": "William Bishop",
+        "rating": 4,
+        "date": "April 2025",
+        "comment": "We celebrated our anniversary here and it was unforgettable.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Dalia Rashad",
+        "rating": 5,
+        "date": "February 2026",
+        "comment": "Space, privacy, and finishing all at the highest level we've experienced.",
+        "verifiedStay": false
+      },
+      {
+        "author": "Thomas Novak",
+        "rating": 5,
+        "date": "April 2025",
+        "comment": "Every detail felt considered, from the bath amenities to the turndown service.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Rania Bishop",
+        "rating": 5,
+        "date": "May 2025",
+        "comment": "Every detail felt considered, from the bath amenities to the turndown service.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": false,
+    "isNew": false,
+    "shortDescription": "A spacious luxury suite combining premium comfort, privacy, and sophisticated hotel living."
+  },
+  {
+    "id": 21,
+    "title": "Modern Luxury Signature Suite",
+    "description": "A spacious luxury suite combining premium comfort, privacy, and sophisticated hotel living.",
+    "price": 1041.82,
+    "category": "Suites",
+    "style": "Modern Luxury",
+    "capacity": 3,
+    "size": 197,
+    "stock": 13,
+    "amenities": [
+      "King Bed",
+      "Separate Living Area",
+      "Luxury Bathroom",
+      "Private Balcony",
+      "Butler Service"
+    ],
+    "images": [
+      "images/products/21-1.jpg",
+      "images/products/21-2.jpg"
+    ],
+    "hotelId": 1,
+    "slug": "modern-luxury-signature-suite",
+    "currency": "USD",
+    "rating": 4.8,
+    "reviewsCount": 91,
+    "reviews": [
+      {
+        "author": "Mariam Carter",
+        "rating": 5,
+        "date": "August 2026",
+        "comment": "Every detail felt considered, from the bath amenities to the turndown service.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Thomas Rashad",
+        "rating": 5,
+        "date": "September 2025",
+        "comment": "Truly a five-star suite, the separate living area made a huge difference.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Laura Bergman",
+        "rating": 5,
+        "date": "February 2026",
+        "comment": "Space, privacy, and finishing all at the highest level we've experienced.",
+        "verifiedStay": false
+      },
+      {
+        "author": "Peter Adel",
+        "rating": 4,
+        "date": "February 2025",
+        "comment": "The butler service was attentive without ever feeling intrusive.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": false,
+    "isNew": false,
+    "shortDescription": "A spacious luxury suite combining premium comfort, privacy, and sophisticated hotel living."
+  },
+  {
+    "id": 22,
+    "title": "French Luxury Palace Suite",
+    "description": "A spacious luxury suite combining premium comfort, privacy, and sophisticated hotel living.",
+    "price": 1176.19,
+    "category": "Suites",
+    "style": "French Luxury",
+    "capacity": 4,
+    "size": 147,
+    "stock": 5,
+    "amenities": [
+      "King Bed",
+      "Separate Living Area",
+      "Luxury Bathroom",
+      "Private Balcony",
+      "Butler Service"
+    ],
+    "images": [
+      "images/products/22-1.jpg",
+      "images/products/22-2.jpg"
+    ],
+    "hotelId": 1,
+    "slug": "french-luxury-palace-suite",
+    "currency": "USD",
+    "rating": 4.8,
+    "reviewsCount": 39,
+    "reviews": [
+      {
+        "author": "Yasmin Reed",
+        "rating": 5,
+        "date": "September 2026",
+        "comment": "Every detail felt considered, from the bath amenities to the turndown service.",
+        "verifiedStay": false
+      },
+      {
+        "author": "Jana Naguib",
+        "rating": 5,
+        "date": "July 2025",
+        "comment": "Space, privacy, and finishing all at the highest level we've experienced.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Heba Sinclair",
+        "rating": 5,
+        "date": "March 2026",
+        "comment": "Every detail felt considered, from the bath amenities to the turndown service.",
+        "verifiedStay": true
+      },
+      {
+        "author": "John Ibrahim",
+        "rating": 4,
+        "date": "June 2026",
+        "comment": "Truly a five-star suite, the separate living area made a huge difference.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": false,
+    "isNew": false,
+    "shortDescription": "A spacious luxury suite combining premium comfort, privacy, and sophisticated hotel living."
+  },
+  {
+    "id": 23,
+    "title": "French Luxury Versailles Suite",
+    "description": "A spacious luxury suite combining premium comfort, privacy, and sophisticated hotel living.",
+    "price": 1471.92,
+    "category": "Suites",
+    "style": "French Luxury",
+    "capacity": 2,
+    "size": 116,
+    "stock": 14,
+    "amenities": [
+      "King Bed",
+      "Separate Living Area",
+      "Luxury Bathroom",
+      "Private Balcony",
+      "Butler Service"
+    ],
+    "images": [
+      "images/products/23-1.jpg",
+      "images/products/23-2.jpg"
+    ],
+    "hotelId": 1,
+    "slug": "french-luxury-versailles-suite",
+    "currency": "USD",
+    "rating": 4.5,
+    "reviewsCount": 144,
+    "reviews": [
+      {
+        "author": "Karim Whitfield",
+        "rating": 4,
+        "date": "May 2026",
+        "comment": "We celebrated our anniversary here and it was unforgettable.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Peter Sabry",
+        "rating": 5,
+        "date": "May 2025",
+        "comment": "Space, privacy, and finishing all at the highest level we've experienced.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Fatima Hughes",
+        "rating": 5,
+        "date": "April 2026",
+        "comment": "The butler service was attentive without ever feeling intrusive.",
+        "verifiedStay": true
+      },
+      {
+        "author": "John Turner",
+        "rating": 4,
+        "date": "January 2026",
+        "comment": "Space, privacy, and finishing all at the highest level we've experienced.",
+        "verifiedStay": false
+      }
+    ],
+    "featured": false,
+    "isNew": false,
+    "shortDescription": "A spacious luxury suite combining premium comfort, privacy, and sophisticated hotel living."
+  },
+  {
+    "id": 24,
+    "title": "Honeymoon Romance Suite",
+    "description": "A spacious luxury suite combining premium comfort, privacy, and sophisticated hotel living.",
+    "price": 1097.59,
+    "category": "Suites",
+    "style": "Honeymoon",
+    "capacity": 3,
+    "size": 188,
+    "stock": 8,
+    "amenities": [
+      "King Bed",
+      "Separate Living Area",
+      "Luxury Bathroom",
+      "Private Balcony",
+      "Butler Service"
+    ],
+    "images": [
+      "images/products/24-1.jpg",
+      "images/products/24-2.jpg"
+    ],
+    "hotelId": 1,
+    "slug": "honeymoon-romance-suite",
+    "currency": "USD",
+    "rating": 5.0,
+    "reviewsCount": 44,
+    "reviews": [
+      {
+        "author": "Nadine Mahmoud",
+        "rating": 5,
+        "date": "July 2026",
+        "comment": "Every detail felt considered, from the bath amenities to the turndown service.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Youssef Hughes",
+        "rating": 5,
+        "date": "March 2025",
+        "comment": "The balcony view alone was worth the upgrade.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Rania Hughes",
+        "rating": 5,
+        "date": "December 2026",
+        "comment": "Every detail felt considered, from the bath amenities to the turndown service.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Amira Kamal",
+        "rating": 5,
+        "date": "July 2025",
+        "comment": "Every detail felt considered, from the bath amenities to the turndown service.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": true,
+    "isNew": false,
+    "shortDescription": "A spacious luxury suite combining premium comfort, privacy, and sophisticated hotel living."
+  },
+  {
+    "id": 25,
+    "title": "Honeymoon Serenity Suite",
+    "description": "A spacious luxury suite combining premium comfort, privacy, and sophisticated hotel living.",
+    "price": 1583.95,
+    "category": "Suites",
+    "style": "Honeymoon",
+    "capacity": 3,
+    "size": 204,
+    "stock": 4,
+    "amenities": [
+      "King Bed",
+      "Separate Living Area",
+      "Luxury Bathroom",
+      "Private Balcony",
+      "Butler Service"
+    ],
+    "images": [
+      "images/products/25-1.jpg",
+      "images/products/25-2.jpg"
+    ],
+    "hotelId": 1,
+    "slug": "honeymoon-serenity-suite",
+    "currency": "USD",
+    "rating": 4.8,
+    "reviewsCount": 97,
+    "reviews": [
+      {
+        "author": "Nathan Nassar",
+        "rating": 5,
+        "date": "June 2026",
+        "comment": "Space, privacy, and finishing all at the highest level we've experienced.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Farida Turner",
+        "rating": 5,
+        "date": "June 2025",
+        "comment": "The butler service was attentive without ever feeling intrusive.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Yasmin Bishop",
+        "rating": 4,
+        "date": "January 2026",
+        "comment": "The butler service was attentive without ever feeling intrusive.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Yara Halim",
+        "rating": 5,
+        "date": "June 2025",
+        "comment": "We celebrated our anniversary here and it was unforgettable.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": false,
+    "isNew": false,
+    "shortDescription": "A spacious luxury suite combining premium comfort, privacy, and sophisticated hotel living."
+  },
+  {
+    "id": 26,
+    "title": "Grand Penthouse Suite",
+    "description": "A spacious luxury suite combining premium comfort, privacy, and sophisticated hotel living.",
+    "price": 1655.07,
+    "category": "Suites",
+    "style": "Penthouse",
+    "capacity": 2,
+    "size": 206,
+    "stock": 15,
+    "amenities": [
+      "King Bed",
+      "Separate Living Area",
+      "Luxury Bathroom",
+      "Private Balcony",
+      "Butler Service"
+    ],
+    "images": [
+      "images/products/26-1.jpg",
+      "images/products/26-2.jpg"
+    ],
+    "hotelId": 1,
+    "slug": "grand-penthouse-suite",
+    "currency": "USD",
+    "rating": 4.0,
+    "reviewsCount": 90,
+    "reviews": [
+      {
+        "author": "Youssef Cole",
+        "rating": 5,
+        "date": "February 2026",
+        "comment": "The butler service was attentive without ever feeling intrusive.",
+        "verifiedStay": false
+      },
+      {
+        "author": "Peter Shawky",
+        "rating": 5,
+        "date": "May 2025",
+        "comment": "Space, privacy, and finishing all at the highest level we've experienced.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Nour Bergman",
+        "rating": 3,
+        "date": "January 2025",
+        "comment": "Comfortable stay, would have liked a slightly bigger desk area.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Reem Rashad",
+        "rating": 3,
+        "date": "February 2025",
+        "comment": "Nice room overall, though the Wi-Fi was a little slow in the evenings.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": false,
+    "isNew": false,
+    "shortDescription": "A spacious luxury suite combining premium comfort, privacy, and sophisticated hotel living."
+  },
+  {
+    "id": 27,
+    "title": "Skyline Penthouse Suite",
+    "description": "A spacious luxury suite combining premium comfort, privacy, and sophisticated hotel living.",
+    "price": 1008.83,
+    "category": "Suites",
+    "style": "Penthouse",
+    "capacity": 2,
+    "size": 130,
+    "stock": 15,
+    "amenities": [
+      "King Bed",
+      "Separate Living Area",
+      "Luxury Bathroom",
+      "Private Balcony",
+      "Butler Service"
+    ],
+    "images": [
+      "images/products/27-1.jpg",
+      "images/products/27-2.jpg"
+    ],
+    "hotelId": 1,
+    "slug": "skyline-penthouse-suite",
+    "currency": "USD",
+    "rating": 4.5,
+    "reviewsCount": 106,
+    "reviews": [
+      {
+        "author": "David Rashad",
+        "rating": 5,
+        "date": "January 2025",
+        "comment": "Truly a five-star suite, the separate living area made a huge difference.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Ahmed Kamal",
+        "rating": 3,
+        "date": "May 2026",
+        "comment": "Good value for the location, minor wear on the furniture but still pleasant.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Sophie Carter",
+        "rating": 5,
+        "date": "October 2025",
+        "comment": "The balcony view alone was worth the upgrade.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Robert Whitfield",
+        "rating": 5,
+        "date": "August 2026",
+        "comment": "We celebrated our anniversary here and it was unforgettable.",
+        "verifiedStay": false
+      }
+    ],
+    "featured": false,
+    "isNew": false,
+    "shortDescription": "A spacious luxury suite combining premium comfort, privacy, and sophisticated hotel living."
+  },
+  {
+    "id": 28,
+    "title": "Sky Infinity Pool",
+    "description": "A premium pool experience designed for relaxation, privacy, and an unforgettable stay.",
+    "price": 205.01,
+    "category": "Pools",
+    "style": "Infinity",
+    "stock": 10,
+    "amenities": [
+      "Poolside Service",
+      "Luxury Loungers",
+      "Towels",
+      "Changing Rooms",
+      "Refreshment Service"
+    ],
+    "images": [
+      "images/products/28-1.jpg",
+      "images/products/28-2.jpg"
+    ],
+    "hotelId": 1,
+    "slug": "sky-infinity-pool",
+    "currency": "USD",
+    "rating": 4.8,
+    "reviewsCount": 118,
+    "reviews": [
+      {
+        "author": "Amira Bergman",
+        "rating": 5,
+        "date": "April 2025",
+        "comment": "Clean, well maintained, and never felt overcrowded during our stay.",
+        "verifiedStay": false
+      },
+      {
+        "author": "Jana Kamal",
+        "rating": 5,
+        "date": "August 2026",
+        "comment": "Loved the poolside service, drinks arrived quickly and staff were friendly.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Robert Aziz",
+        "rating": 4,
+        "date": "August 2025",
+        "comment": "Loved the poolside service, drinks arrived quickly and staff were friendly.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Jana Palmer",
+        "rating": 5,
+        "date": "April 2025",
+        "comment": "Gorgeous setting, especially around sunset.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": false,
+    "isNew": false,
+    "shortDescription": "A premium pool experience designed for relaxation, privacy, and an unforgettable stay."
+  },
+  {
+    "id": 29,
+    "title": "Sunset Infinity Pool",
+    "description": "A premium pool experience designed for relaxation, privacy, and an unforgettable stay.",
+    "price": 151.18,
+    "category": "Pools",
+    "style": "Infinity",
+    "stock": 8,
+    "amenities": [
+      "Poolside Service",
+      "Luxury Loungers",
+      "Towels",
+      "Changing Rooms",
+      "Refreshment Service"
+    ],
+    "images": [
+      "images/products/29-1.jpg",
+      "images/products/29-2.jpg"
+    ],
+    "hotelId": 1,
+    "slug": "sunset-infinity-pool",
+    "currency": "USD",
+    "rating": 4.8,
+    "reviewsCount": 31,
+    "reviews": [
+      {
+        "author": "Omar Adel",
+        "rating": 5,
+        "date": "May 2025",
+        "comment": "Loved the poolside service, drinks arrived quickly and staff were friendly.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Robert Bishop",
+        "rating": 4,
+        "date": "February 2026",
+        "comment": "Peaceful spot to relax, towels were fresh and plentiful.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Robert Nassar",
+        "rating": 5,
+        "date": "October 2025",
+        "comment": "Beautiful pool area, loungers were comfortable and always available early.",
+        "verifiedStay": false
+      },
+      {
+        "author": "Fatima Adel",
+        "rating": 5,
+        "date": "March 2026",
+        "comment": "Clean, well maintained, and never felt overcrowded during our stay.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": true,
+    "isNew": false,
+    "shortDescription": "A premium pool experience designed for relaxation, privacy, and an unforgettable stay."
+  },
+  {
+    "id": 30,
+    "title": "Rooftop Sky Pool",
+    "description": "A premium pool experience designed for relaxation, privacy, and an unforgettable stay.",
+    "price": 105.65,
+    "category": "Pools",
+    "style": "Rooftop",
+    "stock": 12,
+    "amenities": [
+      "Poolside Service",
+      "Luxury Loungers",
+      "Towels",
+      "Changing Rooms",
+      "Refreshment Service"
+    ],
+    "images": [
+      "images/products/30-1.jpg",
+      "images/products/30-2.jpg"
+    ],
+    "hotelId": 1,
+    "slug": "rooftop-sky-pool",
+    "currency": "USD",
+    "rating": 5.0,
+    "reviewsCount": 63,
+    "reviews": [
+      {
+        "author": "Christopher Ellis",
+        "rating": 5,
+        "date": "March 2026",
+        "comment": "Beautiful pool area, loungers were comfortable and always available early.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Dalia Halim",
+        "rating": 5,
+        "date": "May 2026",
+        "comment": "Beautiful pool area, loungers were comfortable and always available early.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Rania Sinclair",
+        "rating": 5,
+        "date": "February 2026",
+        "comment": "Beautiful pool area, loungers were comfortable and always available early.",
+        "verifiedStay": true
+      },
+      {
+        "author": "George Ibrahim",
+        "rating": 5,
+        "date": "July 2026",
+        "comment": "Loved the poolside service, drinks arrived quickly and staff were friendly.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": false,
+    "isNew": false,
+    "shortDescription": "A premium pool experience designed for relaxation, privacy, and an unforgettable stay."
+  },
+  {
+    "id": 31,
+    "title": "Rooftop Lounge Pool",
+    "description": "A premium pool experience designed for relaxation, privacy, and an unforgettable stay.",
+    "price": 253.98,
+    "category": "Pools",
+    "style": "Rooftop",
+    "stock": 12,
+    "amenities": [
+      "Poolside Service",
+      "Luxury Loungers",
+      "Towels",
+      "Changing Rooms",
+      "Refreshment Service"
+    ],
+    "images": [
+      "images/products/31-1.jpg",
+      "images/products/31-2.jpg"
+    ],
+    "hotelId": 1,
+    "slug": "rooftop-lounge-pool",
+    "currency": "USD",
+    "rating": 5.0,
+    "reviewsCount": 66,
+    "reviews": [
+      {
+        "author": "Nour Mahmoud",
+        "rating": 5,
+        "date": "April 2026",
+        "comment": "Gorgeous setting, especially around sunset.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Christopher Turner",
+        "rating": 5,
+        "date": "January 2026",
+        "comment": "Gorgeous setting, especially around sunset.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Nicolas Shawky",
+        "rating": 5,
+        "date": "August 2025",
+        "comment": "Beautiful pool area, loungers were comfortable and always available early.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Fatima Bishop",
+        "rating": 5,
+        "date": "October 2026",
+        "comment": "Beautiful pool area, loungers were comfortable and always available early.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": false,
+    "isNew": false,
+    "shortDescription": "A premium pool experience designed for relaxation, privacy, and an unforgettable stay."
+  },
+  {
+    "id": 32,
+    "title": "Indoor Thermal Pool",
+    "description": "A premium pool experience designed for relaxation, privacy, and an unforgettable stay.",
+    "price": 250.15,
+    "category": "Pools",
+    "style": "Indoor",
+    "stock": 7,
+    "amenities": [
+      "Poolside Service",
+      "Luxury Loungers",
+      "Towels",
+      "Changing Rooms",
+      "Refreshment Service"
+    ],
+    "images": [
+      "images/products/32-1.jpg",
+      "images/products/32-2.jpg"
+    ],
+    "hotelId": 1,
+    "slug": "indoor-thermal-pool",
+    "currency": "USD",
+    "rating": 4.5,
+    "reviewsCount": 65,
+    "reviews": [
+      {
+        "author": "Sami Novak",
+        "rating": 5,
+        "date": "May 2026",
+        "comment": "Peaceful spot to relax, towels were fresh and plentiful.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Adam Bennett",
+        "rating": 5,
+        "date": "February 2026",
+        "comment": "Loved the poolside service, drinks arrived quickly and staff were friendly.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Dina Hayes",
+        "rating": 4,
+        "date": "August 2025",
+        "comment": "Gorgeous setting, especially around sunset.",
+        "verifiedStay": false
+      },
+      {
+        "author": "Elena Whitfield",
+        "rating": 4,
+        "date": "December 2025",
+        "comment": "Peaceful spot to relax, towels were fresh and plentiful.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": false,
+    "isNew": false,
+    "shortDescription": "A premium pool experience designed for relaxation, privacy, and an unforgettable stay."
+  },
+  {
+    "id": 33,
+    "title": "Indoor Serenity Pool",
+    "description": "A premium pool experience designed for relaxation, privacy, and an unforgettable stay.",
+    "price": 333.54,
+    "category": "Pools",
+    "style": "Indoor",
+    "stock": 15,
+    "amenities": [
+      "Poolside Service",
+      "Luxury Loungers",
+      "Towels",
+      "Changing Rooms",
+      "Refreshment Service"
+    ],
+    "images": [
+      "images/products/33-1.jpg",
+      "images/products/33-2.jpg"
+    ],
+    "hotelId": 1,
+    "slug": "indoor-serenity-pool",
+    "currency": "USD",
+    "rating": 3.8,
+    "reviewsCount": 82,
+    "reviews": [
+      {
+        "author": "Dina Naguib",
+        "rating": 4,
+        "date": "February 2025",
+        "comment": "Clean, well maintained, and never felt overcrowded during our stay.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Michael Rostom",
+        "rating": 5,
+        "date": "August 2026",
+        "comment": "Beautiful pool area, loungers were comfortable and always available early.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Nour Carter",
+        "rating": 3,
+        "date": "October 2025",
+        "comment": "Comfortable stay, would have liked a slightly bigger desk area.",
+        "verifiedStay": true
+      },
+      {
+        "author": "George Nassar",
+        "rating": 3,
+        "date": "March 2025",
+        "comment": "Comfortable stay, would have liked a slightly bigger desk area.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": false,
+    "isNew": false,
+    "shortDescription": "A premium pool experience designed for relaxation, privacy, and an unforgettable stay."
+  },
+  {
+    "id": 34,
+    "title": "Private Garden Pool",
+    "description": "A premium pool experience designed for relaxation, privacy, and an unforgettable stay.",
+    "price": 178.87,
+    "category": "Pools",
+    "style": "Private",
+    "stock": 4,
+    "amenities": [
+      "Poolside Service",
+      "Luxury Loungers",
+      "Towels",
+      "Changing Rooms",
+      "Refreshment Service"
+    ],
+    "images": [
+      "images/products/34-1.jpg",
+      "images/products/34-2.jpg"
+    ],
+    "hotelId": 1,
+    "slug": "private-garden-pool",
+    "currency": "USD",
+    "rating": 5.0,
+    "reviewsCount": 28,
+    "reviews": [
+      {
+        "author": "Mariam Rostom",
+        "rating": 5,
+        "date": "May 2026",
+        "comment": "Beautiful pool area, loungers were comfortable and always available early.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Layla Naguib",
+        "rating": 5,
+        "date": "April 2026",
+        "comment": "Peaceful spot to relax, towels were fresh and plentiful.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Amira Rostom",
+        "rating": 5,
+        "date": "April 2026",
+        "comment": "Clean, well maintained, and never felt overcrowded during our stay.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Daniel Rostom",
+        "rating": 5,
+        "date": "November 2025",
+        "comment": "Loved the poolside service, drinks arrived quickly and staff were friendly.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": true,
+    "isNew": false,
+    "shortDescription": "A premium pool experience designed for relaxation, privacy, and an unforgettable stay."
+  },
+  {
+    "id": 35,
+    "title": "Private Villa Pool",
+    "description": "A premium pool experience designed for relaxation, privacy, and an unforgettable stay.",
+    "price": 310.32,
+    "category": "Pools",
+    "style": "Private",
+    "stock": 6,
+    "amenities": [
+      "Poolside Service",
+      "Luxury Loungers",
+      "Towels",
+      "Changing Rooms",
+      "Refreshment Service"
+    ],
+    "images": [
+      "images/products/35-1.jpg",
+      "images/products/35-2.jpg"
+    ],
+    "hotelId": 1,
+    "slug": "private-villa-pool",
+    "currency": "USD",
+    "rating": 4.8,
+    "reviewsCount": 107,
+    "reviews": [
+      {
+        "author": "William Morgan",
+        "rating": 4,
+        "date": "January 2026",
+        "comment": "Peaceful spot to relax, towels were fresh and plentiful.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Fatima Turner",
+        "rating": 5,
+        "date": "April 2025",
+        "comment": "Clean, well maintained, and never felt overcrowded during our stay.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Elena Sinclair",
+        "rating": 5,
+        "date": "February 2026",
+        "comment": "Beautiful pool area, loungers were comfortable and always available early.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Yasmin Zaki",
+        "rating": 5,
+        "date": "May 2025",
+        "comment": "Loved the poolside service, drinks arrived quickly and staff were friendly.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": false,
+    "isNew": false,
+    "shortDescription": "A premium pool experience designed for relaxation, privacy, and an unforgettable stay."
+  },
+  {
+    "id": 36,
+    "title": "La Tavola Italiana",
+    "description": "An upscale dining experience with carefully selected cuisine, elegant surroundings, and attentive service.",
+    "price": 93.55,
+    "category": "Restaurants",
+    "style": "Italian",
+    "stock": 5,
+    "amenities": [
+      "À la carte Menu",
+      "Premium Service",
+      "Elegant Dining",
+      "Reservation Service",
+      "Chef Specials"
+    ],
+    "images": [
+      "images/products/36-1.jpg",
+      "images/products/36-2.jpg"
+    ],
+    "hotelId": 1,
+    "slug": "la-tavola-italiana",
+    "currency": "USD",
+    "rating": 4.5,
+    "reviewsCount": 63,
+    "reviews": [
+      {
+        "author": "James Ellis",
+        "rating": 5,
+        "date": "March 2026",
+        "comment": "One of the best dinners we've had in a while, will book again.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Ahmed Nassar",
+        "rating": 5,
+        "date": "July 2025",
+        "comment": "Exceptional meal from start to finish, the chef specials stole the show.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Henry Younis",
+        "rating": 5,
+        "date": "February 2025",
+        "comment": "Reservation process was easy and the table was ready right on time.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Layla Palmer",
+        "rating": 3,
+        "date": "May 2026",
+        "comment": "Good value for the location, minor wear on the furniture but still pleasant.",
+        "verifiedStay": false
+      }
+    ],
+    "featured": false,
+    "isNew": false,
+    "shortDescription": "An upscale dining experience with carefully selected cuisine, elegant surroundings, and attentive service."
+  },
+  {
+    "id": 37,
+    "title": "Bella Vista Italian",
+    "description": "An upscale dining experience with carefully selected cuisine, elegant surroundings, and attentive service.",
+    "price": 187.57,
+    "category": "Restaurants",
+    "style": "Italian",
+    "stock": 12,
+    "amenities": [
+      "À la carte Menu",
+      "Premium Service",
+      "Elegant Dining",
+      "Reservation Service",
+      "Chef Specials"
+    ],
+    "images": [
+      "images/products/37-1.jpg",
+      "images/products/37-2.jpg"
+    ],
+    "hotelId": 1,
+    "slug": "bella-vista-italian",
+    "currency": "USD",
+    "rating": 4.5,
+    "reviewsCount": 45,
+    "reviews": [
+      {
+        "author": "Andrew Palmer",
+        "rating": 5,
+        "date": "November 2025",
+        "comment": "One of the best dinners we've had in a while, will book again.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Salma Adel",
+        "rating": 3,
+        "date": "March 2026",
+        "comment": "Comfortable stay, would have liked a slightly bigger desk area.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Laura Shawky",
+        "rating": 5,
+        "date": "August 2025",
+        "comment": "One of the best dinners we've had in a while, will book again.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Fatima Younis",
+        "rating": 5,
+        "date": "February 2026",
+        "comment": "The tasting menu was thoughtfully paired and beautifully presented.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": true,
+    "isNew": false,
+    "shortDescription": "An upscale dining experience with carefully selected cuisine, elegant surroundings, and attentive service."
+  },
+  {
+    "id": 38,
+    "title": "Maison Française",
+    "description": "An upscale dining experience with carefully selected cuisine, elegant surroundings, and attentive service.",
+    "price": 138.36,
+    "category": "Restaurants",
+    "style": "French",
+    "stock": 8,
+    "amenities": [
+      "À la carte Menu",
+      "Premium Service",
+      "Elegant Dining",
+      "Reservation Service",
+      "Chef Specials"
+    ],
+    "images": [
+      "images/products/38-1.jpg",
+      "images/products/38-2.jpg"
+    ],
+    "hotelId": 1,
+    "slug": "maison-fran-aise",
+    "currency": "USD",
+    "rating": 5.0,
+    "reviewsCount": 29,
+    "reviews": [
+      {
+        "author": "Thomas Collins",
+        "rating": 5,
+        "date": "February 2026",
+        "comment": "Exceptional meal from start to finish, the chef specials stole the show.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Karim Kamal",
+        "rating": 5,
+        "date": "August 2026",
+        "comment": "Exceptional meal from start to finish, the chef specials stole the show.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Nicolas Hayes",
+        "rating": 5,
+        "date": "December 2025",
+        "comment": "Reservation process was easy and the table was ready right on time.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Robert Shawky",
+        "rating": 5,
+        "date": "August 2025",
+        "comment": "Elegant atmosphere and attentive but unobtrusive service.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": false,
+    "isNew": false,
+    "shortDescription": "An upscale dining experience with carefully selected cuisine, elegant surroundings, and attentive service."
+  },
+  {
+    "id": 39,
+    "title": "Le Jardin Français",
+    "description": "An upscale dining experience with carefully selected cuisine, elegant surroundings, and attentive service.",
+    "price": 83.3,
+    "category": "Restaurants",
+    "style": "French",
+    "stock": 6,
+    "amenities": [
+      "À la carte Menu",
+      "Premium Service",
+      "Elegant Dining",
+      "Reservation Service",
+      "Chef Specials"
+    ],
+    "images": [
+      "images/products/39-1.jpg",
+      "images/products/39-2.jpg"
+    ],
+    "hotelId": 1,
+    "slug": "le-jardin-fran-ais",
+    "currency": "USD",
+    "rating": 4.8,
+    "reviewsCount": 24,
+    "reviews": [
+      {
+        "author": "Reem Collins",
+        "rating": 5,
+        "date": "March 2025",
+        "comment": "Exceptional meal from start to finish, the chef specials stole the show.",
+        "verifiedStay": false
+      },
+      {
+        "author": "Karim Novak",
+        "rating": 4,
+        "date": "November 2026",
+        "comment": "Exceptional meal from start to finish, the chef specials stole the show.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Claire Rashad",
+        "rating": 5,
+        "date": "November 2026",
+        "comment": "One of the best dinners we've had in a while, will book again.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Amira Aziz",
+        "rating": 5,
+        "date": "August 2026",
+        "comment": "One of the best dinners we've had in a while, will book again.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": false,
+    "isNew": false,
+    "shortDescription": "An upscale dining experience with carefully selected cuisine, elegant surroundings, and attentive service."
+  },
+  {
+    "id": 40,
+    "title": "Azure Seafood",
+    "description": "An upscale dining experience with carefully selected cuisine, elegant surroundings, and attentive service.",
+    "price": 193.3,
+    "category": "Restaurants",
+    "style": "Seafood",
+    "stock": 7,
+    "amenities": [
+      "À la carte Menu",
+      "Premium Service",
+      "Elegant Dining",
+      "Reservation Service",
+      "Chef Specials"
+    ],
+    "images": [
+      "images/products/40-1.jpg",
+      "images/products/40-2.jpg"
+    ],
+    "hotelId": 1,
+    "slug": "azure-seafood",
+    "currency": "USD",
+    "rating": 4.8,
+    "reviewsCount": 138,
+    "reviews": [
+      {
+        "author": "Heba Rashad",
+        "rating": 5,
+        "date": "August 2025",
+        "comment": "Reservation process was easy and the table was ready right on time.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Salma Carter",
+        "rating": 5,
+        "date": "July 2026",
+        "comment": "One of the best dinners we've had in a while, will book again.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Christopher Cole",
+        "rating": 5,
+        "date": "January 2025",
+        "comment": "Exceptional meal from start to finish, the chef specials stole the show.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Lucas Ellis",
+        "rating": 4,
+        "date": "February 2025",
+        "comment": "Reservation process was easy and the table was ready right on time.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": false,
+    "isNew": false,
+    "shortDescription": "An upscale dining experience with carefully selected cuisine, elegant surroundings, and attentive service."
+  },
+  {
+    "id": 41,
+    "title": "Ocean Pearl",
+    "description": "An upscale dining experience with carefully selected cuisine, elegant surroundings, and attentive service.",
+    "price": 160.7,
+    "category": "Restaurants",
+    "style": "Seafood",
+    "stock": 9,
+    "amenities": [
+      "À la carte Menu",
+      "Premium Service",
+      "Elegant Dining",
+      "Reservation Service",
+      "Chef Specials"
+    ],
+    "images": [
+      "images/products/41-1.jpg",
+      "images/products/41-2.jpg"
+    ],
+    "hotelId": 1,
+    "slug": "ocean-pearl",
+    "currency": "USD",
+    "rating": 4.2,
+    "reviewsCount": 28,
+    "reviews": [
+      {
+        "author": "Youssef Al-Sayed",
+        "rating": 4,
+        "date": "December 2025",
+        "comment": "Reservation process was easy and the table was ready right on time.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Heba Hughes",
+        "rating": 3,
+        "date": "November 2025",
+        "comment": "Nice room overall, though the Wi-Fi was a little slow in the evenings.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Andrew Bishop",
+        "rating": 5,
+        "date": "May 2026",
+        "comment": "Reservation process was easy and the table was ready right on time.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Nathan Bergman",
+        "rating": 5,
+        "date": "October 2025",
+        "comment": "One of the best dinners we've had in a while, will book again.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": true,
+    "isNew": false,
+    "shortDescription": "An upscale dining experience with carefully selected cuisine, elegant surroundings, and attentive service."
+  },
+  {
+    "id": 42,
+    "title": "The Grand Table",
+    "description": "An upscale dining experience with carefully selected cuisine, elegant surroundings, and attentive service.",
+    "price": 64.88,
+    "category": "Restaurants",
+    "style": "Fine Dining",
+    "stock": 9,
+    "amenities": [
+      "À la carte Menu",
+      "Premium Service",
+      "Elegant Dining",
+      "Reservation Service",
+      "Chef Specials"
+    ],
+    "images": [
+      "images/products/42-1.jpg",
+      "images/products/42-2.jpg"
+    ],
+    "hotelId": 1,
+    "slug": "the-grand-table",
+    "currency": "USD",
+    "rating": 5.0,
+    "reviewsCount": 121,
+    "reviews": [
+      {
+        "author": "Salma Collins",
+        "rating": 5,
+        "date": "November 2026",
+        "comment": "One of the best dinners we've had in a while, will book again.",
+        "verifiedStay": false
+      },
+      {
+        "author": "Michael Bishop",
+        "rating": 5,
+        "date": "January 2026",
+        "comment": "Reservation process was easy and the table was ready right on time.",
+        "verifiedStay": false
+      },
+      {
+        "author": "Christopher Younis",
+        "rating": 5,
+        "date": "May 2026",
+        "comment": "Exceptional meal from start to finish, the chef specials stole the show.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Yasmin Bishop",
+        "rating": 5,
+        "date": "October 2025",
+        "comment": "One of the best dinners we've had in a while, will book again.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": true,
+    "isNew": false,
+    "shortDescription": "An upscale dining experience with carefully selected cuisine, elegant surroundings, and attentive service."
+  },
+  {
+    "id": 43,
+    "title": "Crown Fine Dining",
+    "description": "An upscale dining experience with carefully selected cuisine, elegant surroundings, and attentive service.",
+    "price": 157.37,
+    "category": "Restaurants",
+    "style": "Fine Dining",
+    "stock": 9,
+    "amenities": [
+      "À la carte Menu",
+      "Premium Service",
+      "Elegant Dining",
+      "Reservation Service",
+      "Chef Specials"
+    ],
+    "images": [
+      "images/products/43-1.jpg",
+      "images/products/43-2.jpg"
+    ],
+    "hotelId": 1,
+    "slug": "crown-fine-dining",
+    "currency": "USD",
+    "rating": 5.0,
+    "reviewsCount": 90,
+    "reviews": [
+      {
+        "author": "Robert El-Masry",
+        "rating": 5,
+        "date": "May 2026",
+        "comment": "Exceptional meal from start to finish, the chef specials stole the show.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Tarek Ellis",
+        "rating": 5,
+        "date": "April 2025",
+        "comment": "Exceptional meal from start to finish, the chef specials stole the show.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Nicolas Aziz",
+        "rating": 5,
+        "date": "January 2025",
+        "comment": "One of the best dinners we've had in a while, will book again.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Sami Novak",
+        "rating": 5,
+        "date": "October 2026",
+        "comment": "Exceptional meal from start to finish, the chef specials stole the show.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": false,
+    "isNew": false,
+    "shortDescription": "An upscale dining experience with carefully selected cuisine, elegant surroundings, and attentive service."
+  },
+  {
+    "id": 44,
+    "title": "Royal Luxury Spa",
+    "description": "A premium wellness experience created for relaxation, recovery, and complete comfort.",
+    "price": 379.7,
+    "category": "Spa & Wellness",
+    "style": "Luxury Spa",
+    "stock": 14,
+    "amenities": [
+      "Private Treatment Area",
+      "Premium Towels",
+      "Relaxation Lounge",
+      "Professional Staff"
+    ],
+    "images": [
+      "images/products/44-1.jpg",
+      "images/products/44-2.jpg"
+    ],
+    "hotelId": 1,
+    "slug": "royal-luxury-spa",
+    "currency": "USD",
+    "rating": 4.5,
+    "reviewsCount": 139,
+    "reviews": [
+      {
+        "author": "Robert Palmer",
+        "rating": 5,
+        "date": "April 2026",
+        "comment": "Private, calm, and beautifully designed treatment rooms.",
+        "verifiedStay": true
+      },
+      {
+        "author": "William Collins",
+        "rating": 5,
+        "date": "December 2025",
+        "comment": "Private, calm, and beautifully designed treatment rooms.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Omar Farouk",
+        "rating": 4,
+        "date": "July 2026",
+        "comment": "Best spa experience we've had at a hotel, hands down.",
+        "verifiedStay": false
+      },
+      {
+        "author": "Fatima Younis",
+        "rating": 4,
+        "date": "October 2026",
+        "comment": "The staff tailored the treatment perfectly to what we needed.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": true,
+    "isNew": false,
+    "shortDescription": "A premium wellness experience created for relaxation, recovery, and complete comfort."
+  },
+  {
+    "id": 45,
+    "title": "Traditional Turkish Bath",
+    "description": "A premium wellness experience created for relaxation, recovery, and complete comfort.",
+    "price": 439.77,
+    "category": "Spa & Wellness",
+    "style": "Turkish Bath",
+    "stock": 6,
+    "amenities": [
+      "Private Treatment Area",
+      "Premium Towels",
+      "Relaxation Lounge",
+      "Professional Staff"
+    ],
+    "images": [
+      "images/products/45-1.jpg",
+      "images/products/45-2.jpg"
+    ],
+    "hotelId": 1,
+    "slug": "traditional-turkish-bath",
+    "currency": "USD",
+    "rating": 5.0,
+    "reviewsCount": 79,
+    "reviews": [
+      {
+        "author": "Fatima Marsh",
+        "rating": 5,
+        "date": "April 2025",
+        "comment": "Private, calm, and beautifully designed treatment rooms.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Noha Carter",
+        "rating": 5,
+        "date": "March 2026",
+        "comment": "Private, calm, and beautifully designed treatment rooms.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Claire Cole",
+        "rating": 5,
+        "date": "October 2025",
+        "comment": "The staff tailored the treatment perfectly to what we needed.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Omar Kamal",
+        "rating": 5,
+        "date": "December 2025",
+        "comment": "The staff tailored the treatment perfectly to what we needed.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": false,
+    "isNew": false,
+    "shortDescription": "A premium wellness experience created for relaxation, recovery, and complete comfort."
+  },
+  {
+    "id": 46,
+    "title": "Nordic Sauna Retreat",
+    "description": "A premium wellness experience created for relaxation, recovery, and complete comfort.",
+    "price": 308.49,
+    "category": "Spa & Wellness",
+    "style": "Sauna",
+    "stock": 15,
+    "amenities": [
+      "Private Treatment Area",
+      "Premium Towels",
+      "Relaxation Lounge",
+      "Professional Staff"
+    ],
+    "images": [
+      "images/products/46-1.jpg",
+      "images/products/46-2.jpg"
+    ],
+    "hotelId": 1,
+    "slug": "nordic-sauna-retreat",
+    "currency": "USD",
+    "rating": 5.0,
+    "reviewsCount": 119,
+    "reviews": [
+      {
+        "author": "Dina Mahmoud",
+        "rating": 5,
+        "date": "March 2025",
+        "comment": "The staff tailored the treatment perfectly to what we needed.",
+        "verifiedStay": false
+      },
+      {
+        "author": "Daniel Morgan",
+        "rating": 5,
+        "date": "June 2026",
+        "comment": "Left feeling completely renewed, the therapists were extremely skilled.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Layla Younis",
+        "rating": 5,
+        "date": "May 2025",
+        "comment": "Best spa experience we've had at a hotel, hands down.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Nathan Whitfield",
+        "rating": 5,
+        "date": "December 2025",
+        "comment": "Private, calm, and beautifully designed treatment rooms.",
+        "verifiedStay": false
+      }
+    ],
+    "featured": false,
+    "isNew": false,
+    "shortDescription": "A premium wellness experience created for relaxation, recovery, and complete comfort."
+  },
+  {
+    "id": 47,
+    "title": "Private Jacuzzi Experience",
+    "description": "A premium wellness experience created for relaxation, recovery, and complete comfort.",
+    "price": 149.1,
+    "category": "Spa & Wellness",
+    "style": "Jacuzzi",
+    "stock": 15,
+    "amenities": [
+      "Private Treatment Area",
+      "Premium Towels",
+      "Relaxation Lounge",
+      "Professional Staff"
+    ],
+    "images": [
+      "images/products/47-1.jpg",
+      "images/products/47-2.jpg"
+    ],
+    "hotelId": 1,
+    "slug": "private-jacuzzi-experience",
+    "currency": "USD",
+    "rating": 4.8,
+    "reviewsCount": 27,
+    "reviews": [
+      {
+        "author": "Karim Hayes",
+        "rating": 5,
+        "date": "July 2026",
+        "comment": "Private, calm, and beautifully designed treatment rooms.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Reem Whitfield",
+        "rating": 4,
+        "date": "December 2025",
+        "comment": "The staff tailored the treatment perfectly to what we needed.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Hana Adel",
+        "rating": 5,
+        "date": "October 2025",
+        "comment": "Left feeling completely renewed, the therapists were extremely skilled.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Sarah Ibrahim",
+        "rating": 5,
+        "date": "June 2025",
+        "comment": "Private, calm, and beautifully designed treatment rooms.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": true,
+    "isNew": false,
+    "shortDescription": "A premium wellness experience created for relaxation, recovery, and complete comfort."
+  },
+  {
+    "id": 48,
+    "title": "Private Butler Service",
+    "description": "A personalized five-star service designed to make every part of the guest experience effortless.",
+    "price": 184.41,
+    "category": "Services",
+    "style": "Private Butler",
+    "stock": 13,
+    "amenities": [
+      "24/7 Availability",
+      "Personalized Assistance",
+      "Priority Service",
+      "Luxury Transportation"
+    ],
+    "images": [
+      "images/products/48-1.jpg",
+      "images/products/48-2.jpg"
+    ],
+    "hotelId": 1,
+    "slug": "private-butler-service",
+    "currency": "USD",
+    "rating": 4.5,
+    "reviewsCount": 57,
+    "reviews": [
+      {
+        "author": "Oliver Novak",
+        "rating": 5,
+        "date": "February 2026",
+        "comment": "Made our whole trip effortless, extremely professional and responsive.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Marco Bennett",
+        "rating": 4,
+        "date": "February 2025",
+        "comment": "Quick to respond any time we reached out, day or night.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Sophie Novak",
+        "rating": 5,
+        "date": "November 2026",
+        "comment": "Made our whole trip effortless, extremely professional and responsive.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Youssef Carter",
+        "rating": 4,
+        "date": "May 2026",
+        "comment": "Punctual, polite, and handled every request with ease.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": true,
+    "isNew": false,
+    "shortDescription": "A personalized five-star service designed to make every part of the guest experience effortless."
+  },
+  {
+    "id": 49,
+    "title": "VIP Airport Transfer",
+    "description": "A personalized five-star service designed to make every part of the guest experience effortless.",
+    "price": 585.78,
+    "category": "Services",
+    "style": "Airport Transfer",
+    "stock": 5,
+    "amenities": [
+      "24/7 Availability",
+      "Personalized Assistance",
+      "Priority Service",
+      "Luxury Transportation"
+    ],
+    "images": [
+      "images/products/49-1.jpg",
+      "images/products/49-2.jpg"
+    ],
+    "hotelId": 1,
+    "slug": "vip-airport-transfer",
+    "currency": "USD",
+    "rating": 4.8,
+    "reviewsCount": 86,
+    "reviews": [
+      {
+        "author": "Daniel Hughes",
+        "rating": 5,
+        "date": "June 2026",
+        "comment": "Exactly the kind of service that makes a stay feel five-star.",
+        "verifiedStay": false
+      },
+      {
+        "author": "Sami Al-Sayed",
+        "rating": 4,
+        "date": "July 2025",
+        "comment": "Made our whole trip effortless, extremely professional and responsive.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Jana Hassan",
+        "rating": 5,
+        "date": "December 2025",
+        "comment": "Punctual, polite, and handled every request with ease.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Thomas Collins",
+        "rating": 5,
+        "date": "May 2025",
+        "comment": "Punctual, polite, and handled every request with ease.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": true,
+    "isNew": false,
+    "shortDescription": "A personalized five-star service designed to make every part of the guest experience effortless."
+  },
+  {
+    "id": 50,
+    "title": "Premium Concierge Service",
+    "description": "A personalized five-star service designed to make every part of the guest experience effortless.",
+    "price": 498.08,
+    "category": "Services",
+    "style": "Concierge",
+    "stock": 11,
+    "amenities": [
+      "24/7 Availability",
+      "Personalized Assistance",
+      "Priority Service",
+      "Luxury Transportation"
+    ],
+    "images": [
+      "images/products/50-1.jpg",
+      "images/products/50-2.jpg"
+    ],
+    "hotelId": 1,
+    "slug": "premium-concierge-service",
+    "currency": "USD",
+    "rating": 4.0,
+    "reviewsCount": 62,
+    "reviews": [
+      {
+        "author": "Oliver El-Masry",
+        "rating": 3,
+        "date": "June 2026",
+        "comment": "Good value for the location, minor wear on the furniture but still pleasant.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Michael Hughes",
+        "rating": 4,
+        "date": "August 2025",
+        "comment": "Punctual, polite, and handled every request with ease.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Nicolas Mahmoud",
+        "rating": 5,
+        "date": "November 2026",
+        "comment": "Made our whole trip effortless, extremely professional and responsive.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Salma Shawky",
+        "rating": 4,
+        "date": "July 2025",
+        "comment": "Made our whole trip effortless, extremely professional and responsive.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": false,
+    "isNew": false,
+    "shortDescription": "A personalized five-star service designed to make every part of the guest experience effortless."
+  },
+  {
+    "id": 101,
+    "title": "Bayfront King Room",
+    "description": "A sleek, sunlit room framed by clean lines and an uninterrupted view of the bay.",
+    "price": 178.4,
+    "category": "Rooms",
+    "style": "Bayfront",
+    "stock": 14,
+    "amenities": [
+      "King Bed",
+      "Rain Shower",
+      "High-Speed Wi-Fi",
+      "Smart TV",
+      "Daily Housekeeping"
+    ],
+    "images": [
+      "images/products/101-1.jpg",
+      "images/products/101-2.jpg"
+    ],
+    "capacity": 2,
+    "size": 36,
+    "hotelId": 2,
+    "slug": "bayfront-king-room",
+    "currency": "USD",
+    "rating": 5.0,
+    "reviewsCount": 58,
+    "reviews": [
+      {
+        "author": "Marco Cole",
+        "rating": 5,
+        "date": "August 2025",
+        "comment": "Perfect base for our trip, spacious and very well maintained.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Adam Novak",
+        "rating": 5,
+        "date": "September 2025",
+        "comment": "Check-in was smooth and the room was exactly as pictured, maybe even nicer.",
+        "verifiedStay": false
+      },
+      {
+        "author": "Christopher Younis",
+        "rating": 5,
+        "date": "August 2026",
+        "comment": "Loved the little details, from the linens to the welcome amenities.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Daniel Sabry",
+        "rating": 5,
+        "date": "August 2025",
+        "comment": "Check-in was smooth and the room was exactly as pictured, maybe even nicer.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": false,
+    "isNew": true,
+    "shortDescription": "A sleek, sunlit room framed by clean lines and an uninterrupted view of the bay."
+  },
+  {
+    "id": 102,
+    "title": "Bayfront Twin Room",
+    "description": "A sleek, sunlit room framed by clean lines and an uninterrupted view of the bay.",
+    "price": 169.9,
+    "category": "Rooms",
+    "style": "Bayfront",
+    "stock": 12,
+    "amenities": [
+      "Twin Beds",
+      "Rain Shower",
+      "High-Speed Wi-Fi",
+      "Smart TV",
+      "Daily Housekeeping"
+    ],
+    "images": [
+      "images/products/102-1.jpg",
+      "images/products/102-2.jpg"
+    ],
+    "capacity": 2,
+    "size": 34,
+    "hotelId": 2,
+    "slug": "bayfront-twin-room",
+    "currency": "USD",
+    "rating": 5.0,
+    "reviewsCount": 83,
+    "reviews": [
+      {
+        "author": "Jana Farouk",
+        "rating": 5,
+        "date": "December 2026",
+        "comment": "Perfect base for our trip, spacious and very well maintained.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Andrew Collins",
+        "rating": 5,
+        "date": "May 2025",
+        "comment": "Perfect base for our trip, spacious and very well maintained.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Henry Carter",
+        "rating": 5,
+        "date": "March 2026",
+        "comment": "Loved the little details, from the linens to the welcome amenities.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Nour Fathy",
+        "rating": 5,
+        "date": "May 2025",
+        "comment": "Comfortable bed, quiet at night, and the staff checked on us without being intrusive.",
+        "verifiedStay": false
+      }
+    ],
+    "featured": true,
+    "isNew": true,
+    "shortDescription": "A sleek, sunlit room framed by clean lines and an uninterrupted view of the bay."
+  },
+  {
+    "id": 103,
+    "title": "Garden Terrace Room",
+    "description": "A sleek, sunlit room framed by clean lines and an uninterrupted view of the bay.",
+    "price": 185.6,
+    "category": "Rooms",
+    "style": "Garden Terrace",
+    "stock": 10,
+    "amenities": [
+      "King Bed",
+      "Private Terrace",
+      "High-Speed Wi-Fi",
+      "Smart TV",
+      "Daily Housekeeping"
+    ],
+    "images": [
+      "images/products/103-1.jpg",
+      "images/products/103-2.jpg"
+    ],
+    "capacity": 3,
+    "size": 38,
+    "hotelId": 2,
+    "slug": "garden-terrace-room",
+    "currency": "USD",
+    "rating": 4.8,
+    "reviewsCount": 115,
+    "reviews": [
+      {
+        "author": "Salma Aziz",
+        "rating": 5,
+        "date": "August 2025",
+        "comment": "The view and the layout made the stay feel truly special.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Claire Shawky",
+        "rating": 5,
+        "date": "July 2026",
+        "comment": "Perfect base for our trip, spacious and very well maintained.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Henry Sabry",
+        "rating": 4,
+        "date": "November 2025",
+        "comment": "Loved the little details, from the linens to the welcome amenities.",
+        "verifiedStay": true
+      },
+      {
+        "author": "John Bishop",
+        "rating": 5,
+        "date": "July 2025",
+        "comment": "Comfortable bed, quiet at night, and the staff checked on us without being intrusive.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": false,
+    "isNew": true,
+    "shortDescription": "A sleek, sunlit room framed by clean lines and an uninterrupted view of the bay."
+  },
+  {
+    "id": 104,
+    "title": "Garden Loft Room",
+    "description": "A sleek, sunlit room framed by clean lines and an uninterrupted view of the bay.",
+    "price": 172.3,
+    "category": "Rooms",
+    "style": "Garden Terrace",
+    "stock": 9,
+    "amenities": [
+      "Queen Bed",
+      "Private Terrace",
+      "High-Speed Wi-Fi",
+      "Smart TV",
+      "Daily Housekeeping"
+    ],
+    "images": [
+      "images/products/104-1.jpg",
+      "images/products/104-2.jpg"
+    ],
+    "capacity": 2,
+    "size": 33,
+    "hotelId": 2,
+    "slug": "garden-loft-room",
+    "currency": "USD",
+    "rating": 4.5,
+    "reviewsCount": 115,
+    "reviews": [
+      {
+        "author": "Michael Bishop",
+        "rating": 4,
+        "date": "August 2025",
+        "comment": "A quiet, elegant room that made it easy to relax after long days out.",
+        "verifiedStay": true
+      },
+      {
+        "author": "George Halim",
+        "rating": 5,
+        "date": "November 2026",
+        "comment": "Loved the little details, from the linens to the welcome amenities.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Peter Nassar",
+        "rating": 4,
+        "date": "January 2026",
+        "comment": "Comfortable bed, quiet at night, and the staff checked on us without being intrusive.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Michael Turner",
+        "rating": 5,
+        "date": "October 2026",
+        "comment": "Comfortable bed, quiet at night, and the staff checked on us without being intrusive.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": false,
+    "isNew": true,
+    "shortDescription": "A sleek, sunlit room framed by clean lines and an uninterrupted view of the bay."
+  },
+  {
+    "id": 105,
+    "title": "Horizon View Room",
+    "description": "A sleek, sunlit room framed by clean lines and an uninterrupted view of the bay.",
+    "price": 204.75,
+    "category": "Rooms",
+    "style": "Horizon",
+    "stock": 11,
+    "amenities": [
+      "King Bed",
+      "Floor-to-Ceiling Windows",
+      "High-Speed Wi-Fi",
+      "Smart TV",
+      "Daily Housekeeping"
+    ],
+    "images": [
+      "images/products/105-1.jpg",
+      "images/products/105-2.jpg"
+    ],
+    "capacity": 2,
+    "size": 40,
+    "hotelId": 2,
+    "slug": "horizon-view-room",
+    "currency": "USD",
+    "rating": 5.0,
+    "reviewsCount": 144,
+    "reviews": [
+      {
+        "author": "Sarah Naguib",
+        "rating": 5,
+        "date": "December 2026",
+        "comment": "Housekeeping was excellent every single day, always fresh towels.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Mariam El-Masry",
+        "rating": 5,
+        "date": "December 2026",
+        "comment": "Comfortable bed, quiet at night, and the staff checked on us without being intrusive.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Daniel Fathy",
+        "rating": 5,
+        "date": "January 2025",
+        "comment": "The room exceeded our expectations, spotless and beautifully finished.",
+        "verifiedStay": true
+      },
+      {
+        "author": "George Foster",
+        "rating": 5,
+        "date": "April 2026",
+        "comment": "Comfortable bed, quiet at night, and the staff checked on us without being intrusive.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": false,
+    "isNew": true,
+    "shortDescription": "A sleek, sunlit room framed by clean lines and an uninterrupted view of the bay."
+  },
+  {
+    "id": 106,
+    "title": "Horizon Panorama Room",
+    "description": "A sleek, sunlit room framed by clean lines and an uninterrupted view of the bay.",
+    "price": 221.9,
+    "category": "Rooms",
+    "style": "Horizon",
+    "stock": 8,
+    "amenities": [
+      "King Bed",
+      "Floor-to-Ceiling Windows",
+      "High-Speed Wi-Fi",
+      "Smart TV",
+      "Daily Housekeeping"
+    ],
+    "images": [
+      "images/products/106-1.jpg",
+      "images/products/106-2.jpg"
+    ],
+    "capacity": 3,
+    "size": 44,
+    "hotelId": 2,
+    "slug": "horizon-panorama-room",
+    "currency": "USD",
+    "rating": 4.2,
+    "reviewsCount": 78,
+    "reviews": [
+      {
+        "author": "Robert Shawky",
+        "rating": 5,
+        "date": "March 2025",
+        "comment": "Loved the little details, from the linens to the welcome amenities.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Nicolas Turner",
+        "rating": 5,
+        "date": "March 2026",
+        "comment": "Perfect base for our trip, spacious and very well maintained.",
+        "verifiedStay": true
+      },
+      {
+        "author": "George Rashad",
+        "rating": 3,
+        "date": "November 2025",
+        "comment": "Good value for the location, minor wear on the furniture but still pleasant.",
+        "verifiedStay": true
+      },
+      {
+        "author": "William Foster",
+        "rating": 4,
+        "date": "May 2026",
+        "comment": "Perfect base for our trip, spacious and very well maintained.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": false,
+    "isNew": true,
+    "shortDescription": "A sleek, sunlit room framed by clean lines and an uninterrupted view of the bay."
+  },
+  {
+    "id": 107,
+    "title": "Studio Loft Room",
+    "description": "A sleek, sunlit room framed by clean lines and an uninterrupted view of the bay.",
+    "price": 196.2,
+    "category": "Rooms",
+    "style": "Studio Loft",
+    "stock": 9,
+    "amenities": [
+      "King Bed",
+      "Kitchenette",
+      "High-Speed Wi-Fi",
+      "Smart TV",
+      "Daily Housekeeping"
+    ],
+    "images": [
+      "images/products/107-1.jpg",
+      "images/products/107-2.jpg"
+    ],
+    "capacity": 2,
+    "size": 42,
+    "hotelId": 2,
+    "slug": "studio-loft-room",
+    "currency": "USD",
+    "rating": 4.8,
+    "reviewsCount": 36,
+    "reviews": [
+      {
+        "author": "William Whitfield",
+        "rating": 4,
+        "date": "June 2025",
+        "comment": "The view and the layout made the stay feel truly special.",
+        "verifiedStay": true
+      },
+      {
+        "author": "John Bergman",
+        "rating": 5,
+        "date": "November 2026",
+        "comment": "Comfortable bed, quiet at night, and the staff checked on us without being intrusive.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Hana Hayes",
+        "rating": 5,
+        "date": "March 2026",
+        "comment": "Check-in was smooth and the room was exactly as pictured, maybe even nicer.",
+        "verifiedStay": true
+      },
+      {
+        "author": "James Whitfield",
+        "rating": 5,
+        "date": "November 2026",
+        "comment": "Comfortable bed, quiet at night, and the staff checked on us without being intrusive.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": false,
+    "isNew": true,
+    "shortDescription": "A sleek, sunlit room framed by clean lines and an uninterrupted view of the bay."
+  },
+  {
+    "id": 108,
+    "title": "Studio Deck Room",
+    "description": "A sleek, sunlit room framed by clean lines and an uninterrupted view of the bay.",
+    "price": 213.5,
+    "category": "Rooms",
+    "style": "Studio Loft",
+    "stock": 7,
+    "amenities": [
+      "King Bed",
+      "Private Deck",
+      "High-Speed Wi-Fi",
+      "Smart TV",
+      "Daily Housekeeping"
+    ],
+    "images": [
+      "images/products/108-1.jpg",
+      "images/products/108-2.jpg"
+    ],
+    "capacity": 3,
+    "size": 45,
+    "hotelId": 2,
+    "slug": "studio-deck-room",
+    "currency": "USD",
+    "rating": 4.8,
+    "reviewsCount": 85,
+    "reviews": [
+      {
+        "author": "Robert El-Masry",
+        "rating": 4,
+        "date": "March 2025",
+        "comment": "Check-in was smooth and the room was exactly as pictured, maybe even nicer.",
+        "verifiedStay": false
+      },
+      {
+        "author": "Marco Collins",
+        "rating": 5,
+        "date": "November 2026",
+        "comment": "Comfortable bed, quiet at night, and the staff checked on us without being intrusive.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Oliver Adel",
+        "rating": 5,
+        "date": "November 2025",
+        "comment": "A quiet, elegant room that made it easy to relax after long days out.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Daniel Palmer",
+        "rating": 5,
+        "date": "August 2026",
+        "comment": "Loved the little details, from the linens to the welcome amenities.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": false,
+    "isNew": true,
+    "shortDescription": "A sleek, sunlit room framed by clean lines and an uninterrupted view of the bay."
+  },
+  {
+    "id": 109,
+    "title": "Reef Edge Room",
+    "description": "A sleek, sunlit room framed by clean lines and an uninterrupted view of the bay.",
+    "price": 189.0,
+    "category": "Rooms",
+    "style": "Reef Edge",
+    "stock": 10,
+    "amenities": [
+      "King Bed",
+      "Snorkel Gear on Request",
+      "High-Speed Wi-Fi",
+      "Smart TV",
+      "Daily Housekeeping"
+    ],
+    "images": [
+      "images/products/109-1.jpg",
+      "images/products/109-2.jpg"
+    ],
+    "capacity": 2,
+    "size": 37,
+    "hotelId": 2,
+    "slug": "reef-edge-room",
+    "currency": "USD",
+    "rating": 5.0,
+    "reviewsCount": 138,
+    "reviews": [
+      {
+        "author": "Mona Nassar",
+        "rating": 5,
+        "date": "September 2025",
+        "comment": "Loved the little details, from the linens to the welcome amenities.",
+        "verifiedStay": true
+      },
+      {
+        "author": "John Rashad",
+        "rating": 5,
+        "date": "November 2026",
+        "comment": "A quiet, elegant room that made it easy to relax after long days out.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Yasmin Aziz",
+        "rating": 5,
+        "date": "March 2026",
+        "comment": "Comfortable bed, quiet at night, and the staff checked on us without being intrusive.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Sarah Al-Sayed",
+        "rating": 5,
+        "date": "February 2026",
+        "comment": "Check-in was smooth and the room was exactly as pictured, maybe even nicer.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": true,
+    "isNew": true,
+    "shortDescription": "A sleek, sunlit room framed by clean lines and an uninterrupted view of the bay."
+  },
+  {
+    "id": 110,
+    "title": "Reef Edge Family Room",
+    "description": "A sleek, sunlit room framed by clean lines and an uninterrupted view of the bay.",
+    "price": 248.7,
+    "category": "Rooms",
+    "style": "Reef Edge",
+    "stock": 6,
+    "amenities": [
+      "Two Queen Beds",
+      "Snorkel Gear on Request",
+      "High-Speed Wi-Fi",
+      "Smart TV",
+      "Daily Housekeeping"
+    ],
+    "images": [
+      "images/products/110-1.jpg",
+      "images/products/110-2.jpg"
+    ],
+    "capacity": 4,
+    "size": 52,
+    "hotelId": 2,
+    "slug": "reef-edge-family-room",
+    "currency": "USD",
+    "rating": 5.0,
+    "reviewsCount": 107,
+    "reviews": [
+      {
+        "author": "Nadine Palmer",
+        "rating": 5,
+        "date": "February 2026",
+        "comment": "Check-in was smooth and the room was exactly as pictured, maybe even nicer.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Noha Halim",
+        "rating": 5,
+        "date": "May 2026",
+        "comment": "Perfect base for our trip, spacious and very well maintained.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Daniel Younis",
+        "rating": 5,
+        "date": "May 2026",
+        "comment": "The view and the layout made the stay feel truly special.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Salma Zaki",
+        "rating": 5,
+        "date": "September 2026",
+        "comment": "The view and the layout made the stay feel truly special.",
+        "verifiedStay": false
+      }
+    ],
+    "featured": false,
+    "isNew": true,
+    "shortDescription": "A sleek, sunlit room framed by clean lines and an uninterrupted view of the bay."
+  },
+  {
+    "id": 111,
+    "title": "Dune Retreat Room",
+    "description": "A sleek, sunlit room framed by clean lines and an uninterrupted view of the bay.",
+    "price": 192.4,
+    "category": "Rooms",
+    "style": "Dune Retreat",
+    "stock": 8,
+    "amenities": [
+      "King Bed",
+      "Private Bathroom",
+      "High-Speed Wi-Fi",
+      "Smart TV",
+      "Daily Housekeeping"
+    ],
+    "images": [
+      "images/products/111-1.jpg",
+      "images/products/111-2.jpg"
+    ],
+    "capacity": 2,
+    "size": 39,
+    "hotelId": 2,
+    "slug": "dune-retreat-room",
+    "currency": "USD",
+    "rating": 5.0,
+    "reviewsCount": 82,
+    "reviews": [
+      {
+        "author": "Sophie Zaki",
+        "rating": 5,
+        "date": "March 2025",
+        "comment": "The view and the layout made the stay feel truly special.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Ahmed Shawky",
+        "rating": 5,
+        "date": "September 2025",
+        "comment": "Housekeeping was excellent every single day, always fresh towels.",
+        "verifiedStay": true
+      },
+      {
+        "author": "David Whitfield",
+        "rating": 5,
+        "date": "October 2025",
+        "comment": "A quiet, elegant room that made it easy to relax after long days out.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Marco Hayes",
+        "rating": 5,
+        "date": "April 2025",
+        "comment": "Comfortable bed, quiet at night, and the staff checked on us without being intrusive.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": false,
+    "isNew": true,
+    "shortDescription": "A sleek, sunlit room framed by clean lines and an uninterrupted view of the bay."
+  },
+  {
+    "id": 112,
+    "title": "Dune Retreat Deluxe Room",
+    "description": "A sleek, sunlit room framed by clean lines and an uninterrupted view of the bay.",
+    "price": 226.8,
+    "category": "Rooms",
+    "style": "Dune Retreat",
+    "stock": 7,
+    "amenities": [
+      "King Bed",
+      "Private Bathroom",
+      "High-Speed Wi-Fi",
+      "Smart TV",
+      "Daily Housekeeping"
+    ],
+    "images": [
+      "images/products/112-1.jpg",
+      "images/products/112-2.jpg"
+    ],
+    "capacity": 3,
+    "size": 46,
+    "hotelId": 2,
+    "slug": "dune-retreat-deluxe-room",
+    "currency": "USD",
+    "rating": 4.8,
+    "reviewsCount": 25,
+    "reviews": [
+      {
+        "author": "Elena Carter",
+        "rating": 5,
+        "date": "July 2025",
+        "comment": "The room exceeded our expectations, spotless and beautifully finished.",
+        "verifiedStay": false
+      },
+      {
+        "author": "Dalia Whitfield",
+        "rating": 5,
+        "date": "May 2026",
+        "comment": "Loved the little details, from the linens to the welcome amenities.",
+        "verifiedStay": false
+      },
+      {
+        "author": "Elena Palmer",
+        "rating": 5,
+        "date": "July 2025",
+        "comment": "The room exceeded our expectations, spotless and beautifully finished.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Reem Novak",
+        "rating": 4,
+        "date": "October 2026",
+        "comment": "Housekeeping was excellent every single day, always fresh towels.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": false,
+    "isNew": true,
+    "shortDescription": "A sleek, sunlit room framed by clean lines and an uninterrupted view of the bay."
+  },
+  {
+    "id": 113,
+    "title": "Panorama Bay Suite",
+    "description": "An expansive modern suite built for privacy, natural light, and effortless indoor-outdoor living.",
+    "price": 612.5,
+    "category": "Suites",
+    "style": "Panorama Bay",
+    "stock": 8,
+    "amenities": [
+      "King Bed",
+      "Open-Plan Living Area",
+      "Freestanding Tub",
+      "Private Terrace",
+      "24/7 In-Suite Dining"
+    ],
+    "images": [
+      "images/products/113-1.jpg",
+      "images/products/113-2.jpg"
+    ],
+    "capacity": 3,
+    "size": 98,
+    "hotelId": 2,
+    "slug": "panorama-bay-suite",
+    "currency": "USD",
+    "rating": 4.5,
+    "reviewsCount": 119,
+    "reviews": [
+      {
+        "author": "Claire Sabry",
+        "rating": 3,
+        "date": "March 2026",
+        "comment": "Good value for the location, minor wear on the furniture but still pleasant.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Farida Carter",
+        "rating": 5,
+        "date": "April 2025",
+        "comment": "Space, privacy, and finishing all at the highest level we've experienced.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Nour Whitfield",
+        "rating": 5,
+        "date": "February 2025",
+        "comment": "Every detail felt considered, from the bath amenities to the turndown service.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Sophie Reed",
+        "rating": 5,
+        "date": "December 2025",
+        "comment": "We celebrated our anniversary here and it was unforgettable.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": true,
+    "isNew": true,
+    "shortDescription": "An expansive modern suite built for privacy, natural light, and effortless indoor-outdoor living."
+  },
+  {
+    "id": 114,
+    "title": "Panorama Bay Grand Suite",
+    "description": "An expansive modern suite built for privacy, natural light, and effortless indoor-outdoor living.",
+    "price": 798.9,
+    "category": "Suites",
+    "style": "Panorama Bay",
+    "stock": 5,
+    "amenities": [
+      "King Bed",
+      "Open-Plan Living Area",
+      "Freestanding Tub",
+      "Private Terrace",
+      "24/7 In-Suite Dining"
+    ],
+    "images": [
+      "images/products/114-1.jpg",
+      "images/products/114-2.jpg"
+    ],
+    "capacity": 4,
+    "size": 126,
+    "hotelId": 2,
+    "slug": "panorama-bay-grand-suite",
+    "currency": "USD",
+    "rating": 4.8,
+    "reviewsCount": 130,
+    "reviews": [
+      {
+        "author": "Fatima Naguib",
+        "rating": 4,
+        "date": "December 2025",
+        "comment": "Every detail felt considered, from the bath amenities to the turndown service.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Laura Hughes",
+        "rating": 5,
+        "date": "August 2026",
+        "comment": "Every detail felt considered, from the bath amenities to the turndown service.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Daniel Hassan",
+        "rating": 5,
+        "date": "January 2025",
+        "comment": "Truly a five-star suite, the separate living area made a huge difference.",
+        "verifiedStay": false
+      },
+      {
+        "author": "Mariam Mahmoud",
+        "rating": 5,
+        "date": "December 2025",
+        "comment": "We celebrated our anniversary here and it was unforgettable.",
+        "verifiedStay": false
+      }
+    ],
+    "featured": false,
+    "isNew": true,
+    "shortDescription": "An expansive modern suite built for privacy, natural light, and effortless indoor-outdoor living."
+  },
+  {
+    "id": 115,
+    "title": "Skyline Loft Suite",
+    "description": "An expansive modern suite built for privacy, natural light, and effortless indoor-outdoor living.",
+    "price": 724.3,
+    "category": "Suites",
+    "style": "Skyline Loft",
+    "stock": 6,
+    "amenities": [
+      "King Bed",
+      "Double-Height Living Area",
+      "Freestanding Tub",
+      "Private Terrace",
+      "24/7 In-Suite Dining"
+    ],
+    "images": [
+      "images/products/115-1.jpg",
+      "images/products/115-2.jpg"
+    ],
+    "capacity": 3,
+    "size": 110,
+    "hotelId": 2,
+    "slug": "skyline-loft-suite",
+    "currency": "USD",
+    "rating": 4.2,
+    "reviewsCount": 63,
+    "reviews": [
+      {
+        "author": "Fatima Ellis",
+        "rating": 5,
+        "date": "December 2026",
+        "comment": "The balcony view alone was worth the upgrade.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Michael Farouk",
+        "rating": 3,
+        "date": "June 2025",
+        "comment": "Nice room overall, though the Wi-Fi was a little slow in the evenings.",
+        "verifiedStay": true
+      },
+      {
+        "author": "George Bergman",
+        "rating": 5,
+        "date": "May 2026",
+        "comment": "Space, privacy, and finishing all at the highest level we've experienced.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Fatima Zaki",
+        "rating": 4,
+        "date": "January 2025",
+        "comment": "Every detail felt considered, from the bath amenities to the turndown service.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": false,
+    "isNew": true,
+    "shortDescription": "An expansive modern suite built for privacy, natural light, and effortless indoor-outdoor living."
+  },
+  {
+    "id": 116,
+    "title": "Skyline Duplex Suite",
+    "description": "An expansive modern suite built for privacy, natural light, and effortless indoor-outdoor living.",
+    "price": 942.6,
+    "category": "Suites",
+    "style": "Skyline Loft",
+    "stock": 4,
+    "amenities": [
+      "King Bed",
+      "Double-Height Living Area",
+      "Freestanding Tub",
+      "Private Terrace",
+      "24/7 In-Suite Dining"
+    ],
+    "images": [
+      "images/products/116-1.jpg",
+      "images/products/116-2.jpg"
+    ],
+    "capacity": 4,
+    "size": 158,
+    "hotelId": 2,
+    "slug": "skyline-duplex-suite",
+    "currency": "USD",
+    "rating": 5.0,
+    "reviewsCount": 49,
+    "reviews": [
+      {
+        "author": "Amira Hayes",
+        "rating": 5,
+        "date": "October 2025",
+        "comment": "Space, privacy, and finishing all at the highest level we've experienced.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Thomas Whitfield",
+        "rating": 5,
+        "date": "July 2025",
+        "comment": "We celebrated our anniversary here and it was unforgettable.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Adam Novak",
+        "rating": 5,
+        "date": "October 2025",
+        "comment": "The butler service was attentive without ever feeling intrusive.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Farida Nassar",
+        "rating": 5,
+        "date": "September 2026",
+        "comment": "Truly a five-star suite, the separate living area made a huge difference.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": false,
+    "isNew": true,
+    "shortDescription": "An expansive modern suite built for privacy, natural light, and effortless indoor-outdoor living."
+  },
+  {
+    "id": 117,
+    "title": "Oceanfront Villa Suite",
+    "description": "An expansive modern suite built for privacy, natural light, and effortless indoor-outdoor living.",
+    "price": 1120.4,
+    "category": "Suites",
+    "style": "Oceanfront Villa",
+    "stock": 5,
+    "amenities": [
+      "King Bed",
+      "Private Plunge Pool",
+      "Freestanding Tub",
+      "Private Terrace",
+      "24/7 In-Suite Dining"
+    ],
+    "images": [
+      "images/products/117-1.jpg",
+      "images/products/117-2.jpg"
+    ],
+    "capacity": 4,
+    "size": 175,
+    "hotelId": 2,
+    "slug": "oceanfront-villa-suite",
+    "currency": "USD",
+    "rating": 4.8,
+    "reviewsCount": 35,
+    "reviews": [
+      {
+        "author": "Lucas Morgan",
+        "rating": 5,
+        "date": "November 2026",
+        "comment": "Truly a five-star suite, the separate living area made a huge difference.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Nadine Bishop",
+        "rating": 5,
+        "date": "July 2026",
+        "comment": "Truly a five-star suite, the separate living area made a huge difference.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Marco Foster",
+        "rating": 4,
+        "date": "July 2026",
+        "comment": "The butler service was attentive without ever feeling intrusive.",
+        "verifiedStay": false
+      },
+      {
+        "author": "Reem Ellis",
+        "rating": 5,
+        "date": "April 2025",
+        "comment": "The balcony view alone was worth the upgrade.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": true,
+    "isNew": true,
+    "shortDescription": "An expansive modern suite built for privacy, natural light, and effortless indoor-outdoor living."
+  },
+  {
+    "id": 118,
+    "title": "Oceanfront Villa Grand Suite",
+    "description": "An expansive modern suite built for privacy, natural light, and effortless indoor-outdoor living.",
+    "price": 1385.75,
+    "category": "Suites",
+    "style": "Oceanfront Villa",
+    "stock": 3,
+    "amenities": [
+      "Two King Beds",
+      "Private Plunge Pool",
+      "Freestanding Tub",
+      "Private Terrace",
+      "24/7 In-Suite Dining"
+    ],
+    "images": [
+      "images/products/118-1.jpg",
+      "images/products/118-2.jpg"
+    ],
+    "capacity": 6,
+    "size": 210,
+    "hotelId": 2,
+    "slug": "oceanfront-villa-grand-suite",
+    "currency": "USD",
+    "rating": 5.0,
+    "reviewsCount": 51,
+    "reviews": [
+      {
+        "author": "Oliver Hughes",
+        "rating": 5,
+        "date": "June 2026",
+        "comment": "The balcony view alone was worth the upgrade.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Mona Rostom",
+        "rating": 5,
+        "date": "June 2025",
+        "comment": "Space, privacy, and finishing all at the highest level we've experienced.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Dina Mahmoud",
+        "rating": 5,
+        "date": "January 2026",
+        "comment": "The balcony view alone was worth the upgrade.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Claire Al-Sayed",
+        "rating": 5,
+        "date": "October 2026",
+        "comment": "The butler service was attentive without ever feeling intrusive.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": false,
+    "isNew": true,
+    "shortDescription": "An expansive modern suite built for privacy, natural light, and effortless indoor-outdoor living."
+  },
+  {
+    "id": 119,
+    "title": "Minimal Sky Suite",
+    "description": "An expansive modern suite built for privacy, natural light, and effortless indoor-outdoor living.",
+    "price": 548.2,
+    "category": "Suites",
+    "style": "Minimal Sky",
+    "stock": 9,
+    "amenities": [
+      "King Bed",
+      "Open-Plan Living Area",
+      "Freestanding Tub",
+      "Private Terrace",
+      "24/7 In-Suite Dining"
+    ],
+    "images": [
+      "images/products/119-1.jpg",
+      "images/products/119-2.jpg"
+    ],
+    "capacity": 2,
+    "size": 90,
+    "hotelId": 2,
+    "slug": "minimal-sky-suite",
+    "currency": "USD",
+    "rating": 4.8,
+    "reviewsCount": 53,
+    "reviews": [
+      {
+        "author": "Noha Fathy",
+        "rating": 5,
+        "date": "October 2025",
+        "comment": "Space, privacy, and finishing all at the highest level we've experienced.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Ahmed Zaki",
+        "rating": 5,
+        "date": "July 2025",
+        "comment": "The butler service was attentive without ever feeling intrusive.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Ahmed Younis",
+        "rating": 5,
+        "date": "August 2026",
+        "comment": "Every detail felt considered, from the bath amenities to the turndown service.",
+        "verifiedStay": false
+      },
+      {
+        "author": "Omar Shawky",
+        "rating": 4,
+        "date": "February 2026",
+        "comment": "Every detail felt considered, from the bath amenities to the turndown service.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": false,
+    "isNew": true,
+    "shortDescription": "An expansive modern suite built for privacy, natural light, and effortless indoor-outdoor living."
+  },
+  {
+    "id": 120,
+    "title": "Minimal Sky Grand Suite",
+    "description": "An expansive modern suite built for privacy, natural light, and effortless indoor-outdoor living.",
+    "price": 689.4,
+    "category": "Suites",
+    "style": "Minimal Sky",
+    "stock": 6,
+    "amenities": [
+      "King Bed",
+      "Open-Plan Living Area",
+      "Freestanding Tub",
+      "Private Terrace",
+      "24/7 In-Suite Dining"
+    ],
+    "images": [
+      "images/products/120-1.jpg",
+      "images/products/120-2.jpg"
+    ],
+    "capacity": 3,
+    "size": 118,
+    "hotelId": 2,
+    "slug": "minimal-sky-grand-suite",
+    "currency": "USD",
+    "rating": 4.8,
+    "reviewsCount": 80,
+    "reviews": [
+      {
+        "author": "Henry Cole",
+        "rating": 5,
+        "date": "March 2026",
+        "comment": "Space, privacy, and finishing all at the highest level we've experienced.",
+        "verifiedStay": false
+      },
+      {
+        "author": "Lucas Morgan",
+        "rating": 5,
+        "date": "June 2025",
+        "comment": "We celebrated our anniversary here and it was unforgettable.",
+        "verifiedStay": false
+      },
+      {
+        "author": "Sarah Hassan",
+        "rating": 5,
+        "date": "December 2026",
+        "comment": "The balcony view alone was worth the upgrade.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Mona Ellis",
+        "rating": 4,
+        "date": "November 2026",
+        "comment": "The butler service was attentive without ever feeling intrusive.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": false,
+    "isNew": true,
+    "shortDescription": "An expansive modern suite built for privacy, natural light, and effortless indoor-outdoor living."
+  },
+  {
+    "id": 121,
+    "title": "Founder's Penthouse Suite",
+    "description": "An expansive modern suite built for privacy, natural light, and effortless indoor-outdoor living.",
+    "price": 1640.0,
+    "category": "Suites",
+    "style": "Founder's Penthouse",
+    "stock": 2,
+    "amenities": [
+      "King Bed",
+      "Private Rooftop",
+      "Freestanding Tub",
+      "Private Terrace",
+      "Dedicated Host"
+    ],
+    "images": [
+      "images/products/121-1.jpg",
+      "images/products/121-2.jpg"
+    ],
+    "capacity": 4,
+    "size": 230,
+    "hotelId": 2,
+    "slug": "founder-s-penthouse-suite",
+    "currency": "USD",
+    "rating": 4.5,
+    "reviewsCount": 67,
+    "reviews": [
+      {
+        "author": "David Bergman",
+        "rating": 5,
+        "date": "July 2025",
+        "comment": "We celebrated our anniversary here and it was unforgettable.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Peter Collins",
+        "rating": 5,
+        "date": "November 2025",
+        "comment": "The butler service was attentive without ever feeling intrusive.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Karim Novak",
+        "rating": 5,
+        "date": "February 2026",
+        "comment": "The butler service was attentive without ever feeling intrusive.",
+        "verifiedStay": false
+      },
+      {
+        "author": "Youssef Sinclair",
+        "rating": 3,
+        "date": "January 2025",
+        "comment": "Comfortable stay, would have liked a slightly bigger desk area.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": false,
+    "isNew": true,
+    "shortDescription": "An expansive modern suite built for privacy, natural light, and effortless indoor-outdoor living."
+  },
+  {
+    "id": 122,
+    "title": "Signature Water Suite",
+    "description": "An expansive modern suite built for privacy, natural light, and effortless indoor-outdoor living.",
+    "price": 1024.9,
+    "category": "Suites",
+    "style": "Signature Water",
+    "stock": 4,
+    "amenities": [
+      "King Bed",
+      "Overwater Deck",
+      "Freestanding Tub",
+      "Private Terrace",
+      "24/7 In-Suite Dining"
+    ],
+    "images": [
+      "images/products/122-1.jpg",
+      "images/products/122-2.jpg"
+    ],
+    "capacity": 3,
+    "size": 140,
+    "hotelId": 2,
+    "slug": "signature-water-suite",
+    "currency": "USD",
+    "rating": 4.8,
+    "reviewsCount": 139,
+    "reviews": [
+      {
+        "author": "Robert Bergman",
+        "rating": 5,
+        "date": "March 2026",
+        "comment": "We celebrated our anniversary here and it was unforgettable.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Fatima El-Masry",
+        "rating": 5,
+        "date": "March 2026",
+        "comment": "The balcony view alone was worth the upgrade.",
+        "verifiedStay": false
+      },
+      {
+        "author": "Layla Palmer",
+        "rating": 5,
+        "date": "January 2026",
+        "comment": "The butler service was attentive without ever feeling intrusive.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Thomas Zaki",
+        "rating": 4,
+        "date": "August 2025",
+        "comment": "We celebrated our anniversary here and it was unforgettable.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": false,
+    "isNew": true,
+    "shortDescription": "An expansive modern suite built for privacy, natural light, and effortless indoor-outdoor living."
+  },
+  {
+    "id": 123,
+    "title": "Horizon Edge Pool",
+    "description": "A resort-style pool designed around open water views and quiet, contemporary comfort.",
+    "price": 134.0,
+    "category": "Pools",
+    "style": "Horizon Edge",
+    "stock": 10,
+    "amenities": [
+      "Poolside Service",
+      "Modern Daybeds",
+      "Towels",
+      "Changing Rooms",
+      "Refreshment Service"
+    ],
+    "images": [
+      "images/products/123-1.jpg",
+      "images/products/123-2.jpg"
+    ],
+    "hotelId": 2,
+    "slug": "horizon-edge-pool",
+    "currency": "USD",
+    "rating": 4.2,
+    "reviewsCount": 80,
+    "reviews": [
+      {
+        "author": "Mona Cole",
+        "rating": 5,
+        "date": "September 2026",
+        "comment": "Loved the poolside service, drinks arrived quickly and staff were friendly.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Sophie Bishop",
+        "rating": 4,
+        "date": "July 2026",
+        "comment": "Peaceful spot to relax, towels were fresh and plentiful.",
+        "verifiedStay": false
+      },
+      {
+        "author": "Amira Carter",
+        "rating": 5,
+        "date": "March 2025",
+        "comment": "Gorgeous setting, especially around sunset.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Thomas Farouk",
+        "rating": 3,
+        "date": "August 2026",
+        "comment": "Nice room overall, though the Wi-Fi was a little slow in the evenings.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": true,
+    "isNew": true,
+    "shortDescription": "A resort-style pool designed around open water views and quiet, contemporary comfort."
+  },
+  {
+    "id": 124,
+    "title": "Quiet Cove Pool",
+    "description": "A resort-style pool designed around open water views and quiet, contemporary comfort.",
+    "price": 118.5,
+    "category": "Pools",
+    "style": "Quiet Cove",
+    "stock": 9,
+    "amenities": [
+      "Poolside Service",
+      "Modern Daybeds",
+      "Towels",
+      "Changing Rooms",
+      "Refreshment Service"
+    ],
+    "images": [
+      "images/products/124-1.jpg",
+      "images/products/124-2.jpg"
+    ],
+    "hotelId": 2,
+    "slug": "quiet-cove-pool",
+    "currency": "USD",
+    "rating": 4.8,
+    "reviewsCount": 32,
+    "reviews": [
+      {
+        "author": "Reem Hughes",
+        "rating": 5,
+        "date": "January 2026",
+        "comment": "Gorgeous setting, especially around sunset.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Julia El-Masry",
+        "rating": 5,
+        "date": "September 2025",
+        "comment": "Loved the poolside service, drinks arrived quickly and staff were friendly.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Karim Mahmoud",
+        "rating": 4,
+        "date": "December 2026",
+        "comment": "Clean, well maintained, and never felt overcrowded during our stay.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Elena Adel",
+        "rating": 5,
+        "date": "October 2026",
+        "comment": "Loved the poolside service, drinks arrived quickly and staff were friendly.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": false,
+    "isNew": true,
+    "shortDescription": "A resort-style pool designed around open water views and quiet, contemporary comfort."
+  },
+  {
+    "id": 125,
+    "title": "Rooftop Deck Pool",
+    "description": "A resort-style pool designed around open water views and quiet, contemporary comfort.",
+    "price": 142.9,
+    "category": "Pools",
+    "style": "Rooftop Deck",
+    "stock": 8,
+    "amenities": [
+      "Poolside Service",
+      "Modern Daybeds",
+      "Towels",
+      "Changing Rooms",
+      "Refreshment Service"
+    ],
+    "images": [
+      "images/products/125-1.jpg",
+      "images/products/125-2.jpg"
+    ],
+    "hotelId": 2,
+    "slug": "rooftop-deck-pool",
+    "currency": "USD",
+    "rating": 4.8,
+    "reviewsCount": 115,
+    "reviews": [
+      {
+        "author": "Reem Palmer",
+        "rating": 4,
+        "date": "September 2026",
+        "comment": "Beautiful pool area, loungers were comfortable and always available early.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Nicolas Nassar",
+        "rating": 5,
+        "date": "August 2025",
+        "comment": "Gorgeous setting, especially around sunset.",
+        "verifiedStay": false
+      },
+      {
+        "author": "Layla Rostom",
+        "rating": 5,
+        "date": "January 2025",
+        "comment": "Peaceful spot to relax, towels were fresh and plentiful.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Julia Whitfield",
+        "rating": 5,
+        "date": "September 2025",
+        "comment": "Gorgeous setting, especially around sunset.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": false,
+    "isNew": true,
+    "shortDescription": "A resort-style pool designed around open water views and quiet, contemporary comfort."
+  },
+  {
+    "id": 126,
+    "title": "Family Cove Pool",
+    "description": "A resort-style pool designed around open water views and quiet, contemporary comfort.",
+    "price": 96.75,
+    "category": "Pools",
+    "style": "Quiet Cove",
+    "stock": 12,
+    "amenities": [
+      "Poolside Service",
+      "Modern Daybeds",
+      "Towels",
+      "Changing Rooms",
+      "Refreshment Service"
+    ],
+    "images": [
+      "images/products/126-1.jpg",
+      "images/products/126-2.jpg"
+    ],
+    "hotelId": 2,
+    "slug": "family-cove-pool",
+    "currency": "USD",
+    "rating": 5.0,
+    "reviewsCount": 105,
+    "reviews": [
+      {
+        "author": "John Hayes",
+        "rating": 5,
+        "date": "May 2025",
+        "comment": "Beautiful pool area, loungers were comfortable and always available early.",
+        "verifiedStay": false
+      },
+      {
+        "author": "Heba Sinclair",
+        "rating": 5,
+        "date": "September 2025",
+        "comment": "Clean, well maintained, and never felt overcrowded during our stay.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Laura Morgan",
+        "rating": 5,
+        "date": "February 2026",
+        "comment": "Loved the poolside service, drinks arrived quickly and staff were friendly.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Sarah Al-Sayed",
+        "rating": 5,
+        "date": "May 2025",
+        "comment": "Loved the poolside service, drinks arrived quickly and staff were friendly.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": false,
+    "isNew": true,
+    "shortDescription": "A resort-style pool designed around open water views and quiet, contemporary comfort."
+  },
+  {
+    "id": 127,
+    "title": "Adults Horizon Pool",
+    "description": "A resort-style pool designed around open water views and quiet, contemporary comfort.",
+    "price": 156.3,
+    "category": "Pools",
+    "style": "Horizon Edge",
+    "stock": 9,
+    "amenities": [
+      "Poolside Service",
+      "Modern Daybeds",
+      "Towels",
+      "Changing Rooms",
+      "Refreshment Service"
+    ],
+    "images": [
+      "images/products/127-1.jpg",
+      "images/products/127-2.jpg"
+    ],
+    "hotelId": 2,
+    "slug": "adults-horizon-pool",
+    "currency": "USD",
+    "rating": 4.8,
+    "reviewsCount": 73,
+    "reviews": [
+      {
+        "author": "Reem Rostom",
+        "rating": 5,
+        "date": "June 2025",
+        "comment": "Beautiful pool area, loungers were comfortable and always available early.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Ahmed Fathy",
+        "rating": 5,
+        "date": "October 2026",
+        "comment": "Gorgeous setting, especially around sunset.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Sophie Shawky",
+        "rating": 4,
+        "date": "October 2025",
+        "comment": "Clean, well maintained, and never felt overcrowded during our stay.",
+        "verifiedStay": false
+      },
+      {
+        "author": "Mona Grant",
+        "rating": 5,
+        "date": "March 2025",
+        "comment": "Gorgeous setting, especially around sunset.",
+        "verifiedStay": false
+      }
+    ],
+    "featured": false,
+    "isNew": true,
+    "shortDescription": "A resort-style pool designed around open water views and quiet, contemporary comfort."
+  },
+  {
+    "id": 128,
+    "title": "Sunset Deck Pool",
+    "description": "A resort-style pool designed around open water views and quiet, contemporary comfort.",
+    "price": 149.6,
+    "category": "Pools",
+    "style": "Rooftop Deck",
+    "stock": 7,
+    "amenities": [
+      "Poolside Service",
+      "Modern Daybeds",
+      "Towels",
+      "Changing Rooms",
+      "Refreshment Service"
+    ],
+    "images": [
+      "images/products/128-1.jpg",
+      "images/products/128-2.jpg"
+    ],
+    "hotelId": 2,
+    "slug": "sunset-deck-pool",
+    "currency": "USD",
+    "rating": 4.8,
+    "reviewsCount": 88,
+    "reviews": [
+      {
+        "author": "Claire Halim",
+        "rating": 5,
+        "date": "June 2026",
+        "comment": "Beautiful pool area, loungers were comfortable and always available early.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Rania Aziz",
+        "rating": 4,
+        "date": "June 2026",
+        "comment": "Clean, well maintained, and never felt overcrowded during our stay.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Fatima Ellis",
+        "rating": 5,
+        "date": "April 2026",
+        "comment": "Peaceful spot to relax, towels were fresh and plentiful.",
+        "verifiedStay": true
+      },
+      {
+        "author": "James Naguib",
+        "rating": 5,
+        "date": "February 2026",
+        "comment": "Loved the poolside service, drinks arrived quickly and staff were friendly.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": false,
+    "isNew": true,
+    "shortDescription": "A resort-style pool designed around open water views and quiet, contemporary comfort."
+  },
+  {
+    "id": 129,
+    "title": "Salt & Char Grill House",
+    "description": "A relaxed, design-forward dining space serving coastal cuisine with a modern edge.",
+    "price": 112.4,
+    "category": "Restaurants",
+    "style": "Modern Grill",
+    "stock": 8,
+    "amenities": [
+      "Open Kitchen",
+      "Premium Service",
+      "Coastal Setting",
+      "Reservation Service",
+      "Chef Specials"
+    ],
+    "images": [
+      "images/products/129-1.jpg",
+      "images/products/129-2.jpg"
+    ],
+    "hotelId": 2,
+    "slug": "salt-char-grill-house",
+    "currency": "USD",
+    "rating": 4.8,
+    "reviewsCount": 100,
+    "reviews": [
+      {
+        "author": "Robert Reed",
+        "rating": 5,
+        "date": "August 2025",
+        "comment": "The tasting menu was thoughtfully paired and beautifully presented.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Ahmed Novak",
+        "rating": 4,
+        "date": "May 2026",
+        "comment": "Reservation process was easy and the table was ready right on time.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Ahmed Carter",
+        "rating": 5,
+        "date": "January 2026",
+        "comment": "Reservation process was easy and the table was ready right on time.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Ahmed Hughes",
+        "rating": 5,
+        "date": "November 2025",
+        "comment": "One of the best dinners we've had in a while, will book again.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": false,
+    "isNew": true,
+    "shortDescription": "A relaxed, design-forward dining space serving coastal cuisine with a modern edge."
+  },
+  {
+    "id": 130,
+    "title": "Driftwood Kitchen",
+    "description": "A relaxed, design-forward dining space serving coastal cuisine with a modern edge.",
+    "price": 98.7,
+    "category": "Restaurants",
+    "style": "Modern Grill",
+    "stock": 10,
+    "amenities": [
+      "Open Kitchen",
+      "Premium Service",
+      "Coastal Setting",
+      "Reservation Service",
+      "Chef Specials"
+    ],
+    "images": [
+      "images/products/130-1.jpg",
+      "images/products/130-2.jpg"
+    ],
+    "hotelId": 2,
+    "slug": "driftwood-kitchen",
+    "currency": "USD",
+    "rating": 4.8,
+    "reviewsCount": 84,
+    "reviews": [
+      {
+        "author": "Nathan Fathy",
+        "rating": 5,
+        "date": "September 2025",
+        "comment": "Reservation process was easy and the table was ready right on time.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Nathan Reed",
+        "rating": 4,
+        "date": "October 2026",
+        "comment": "The tasting menu was thoughtfully paired and beautifully presented.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Yara Mahmoud",
+        "rating": 5,
+        "date": "August 2025",
+        "comment": "One of the best dinners we've had in a while, will book again.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Karim Younis",
+        "rating": 5,
+        "date": "September 2026",
+        "comment": "The tasting menu was thoughtfully paired and beautifully presented.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": false,
+    "isNew": true,
+    "shortDescription": "A relaxed, design-forward dining space serving coastal cuisine with a modern edge."
+  },
+  {
+    "id": 131,
+    "title": "Kelp & Citrus",
+    "description": "A relaxed, design-forward dining space serving coastal cuisine with a modern edge.",
+    "price": 104.9,
+    "category": "Restaurants",
+    "style": "Coastal Mediterranean",
+    "stock": 9,
+    "amenities": [
+      "Open Kitchen",
+      "Premium Service",
+      "Coastal Setting",
+      "Reservation Service",
+      "Chef Specials"
+    ],
+    "images": [
+      "images/products/131-1.jpg",
+      "images/products/131-2.jpg"
+    ],
+    "hotelId": 2,
+    "slug": "kelp-citrus",
+    "currency": "USD",
+    "rating": 4.8,
+    "reviewsCount": 130,
+    "reviews": [
+      {
+        "author": "Sarah Rostom",
+        "rating": 5,
+        "date": "September 2026",
+        "comment": "Elegant atmosphere and attentive but unobtrusive service.",
+        "verifiedStay": false
+      },
+      {
+        "author": "Salma Whitfield",
+        "rating": 4,
+        "date": "April 2026",
+        "comment": "Elegant atmosphere and attentive but unobtrusive service.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Heba Fathy",
+        "rating": 5,
+        "date": "May 2025",
+        "comment": "Elegant atmosphere and attentive but unobtrusive service.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Michael Younis",
+        "rating": 5,
+        "date": "August 2025",
+        "comment": "One of the best dinners we've had in a while, will book again.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": false,
+    "isNew": true,
+    "shortDescription": "A relaxed, design-forward dining space serving coastal cuisine with a modern edge."
+  },
+  {
+    "id": 132,
+    "title": "Olive Grove Terrace",
+    "description": "A relaxed, design-forward dining space serving coastal cuisine with a modern edge.",
+    "price": 116.2,
+    "category": "Restaurants",
+    "style": "Coastal Mediterranean",
+    "stock": 7,
+    "amenities": [
+      "Open Kitchen",
+      "Premium Service",
+      "Coastal Setting",
+      "Reservation Service",
+      "Chef Specials"
+    ],
+    "images": [
+      "images/products/132-1.jpg",
+      "images/products/132-2.jpg"
+    ],
+    "hotelId": 2,
+    "slug": "olive-grove-terrace",
+    "currency": "USD",
+    "rating": 5.0,
+    "reviewsCount": 124,
+    "reviews": [
+      {
+        "author": "Yara Carter",
+        "rating": 5,
+        "date": "July 2026",
+        "comment": "Elegant atmosphere and attentive but unobtrusive service.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Youssef Turner",
+        "rating": 5,
+        "date": "September 2025",
+        "comment": "One of the best dinners we've had in a while, will book again.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Yara Bergman",
+        "rating": 5,
+        "date": "July 2025",
+        "comment": "Elegant atmosphere and attentive but unobtrusive service.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Noha Younis",
+        "rating": 5,
+        "date": "July 2025",
+        "comment": "The tasting menu was thoughtfully paired and beautifully presented.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": false,
+    "isNew": true,
+    "shortDescription": "A relaxed, design-forward dining space serving coastal cuisine with a modern edge."
+  },
+  {
+    "id": 133,
+    "title": "Nori & Stone",
+    "description": "A relaxed, design-forward dining space serving coastal cuisine with a modern edge.",
+    "price": 139.8,
+    "category": "Restaurants",
+    "style": "Modern Japanese",
+    "stock": 6,
+    "amenities": [
+      "Open Kitchen",
+      "Premium Service",
+      "Coastal Setting",
+      "Reservation Service",
+      "Chef Specials"
+    ],
+    "images": [
+      "images/products/133-1.jpg",
+      "images/products/133-2.jpg"
+    ],
+    "hotelId": 2,
+    "slug": "nori-stone",
+    "currency": "USD",
+    "rating": 5.0,
+    "reviewsCount": 131,
+    "reviews": [
+      {
+        "author": "Sami Ibrahim",
+        "rating": 5,
+        "date": "December 2026",
+        "comment": "The tasting menu was thoughtfully paired and beautifully presented.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Andrew Hughes",
+        "rating": 5,
+        "date": "September 2026",
+        "comment": "Reservation process was easy and the table was ready right on time.",
+        "verifiedStay": true
+      },
+      {
+        "author": "James Nassar",
+        "rating": 5,
+        "date": "March 2026",
+        "comment": "One of the best dinners we've had in a while, will book again.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Nour Grant",
+        "rating": 5,
+        "date": "February 2026",
+        "comment": "Elegant atmosphere and attentive but unobtrusive service.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": false,
+    "isNew": true,
+    "shortDescription": "A relaxed, design-forward dining space serving coastal cuisine with a modern edge."
+  },
+  {
+    "id": 134,
+    "title": "Umi Rooftop",
+    "description": "A relaxed, design-forward dining space serving coastal cuisine with a modern edge.",
+    "price": 152.3,
+    "category": "Restaurants",
+    "style": "Modern Japanese",
+    "stock": 6,
+    "amenities": [
+      "Open Kitchen",
+      "Premium Service",
+      "Coastal Setting",
+      "Reservation Service",
+      "Chef Specials"
+    ],
+    "images": [
+      "images/products/134-1.jpg",
+      "images/products/134-2.jpg"
+    ],
+    "hotelId": 2,
+    "slug": "umi-rooftop",
+    "currency": "USD",
+    "rating": 5.0,
+    "reviewsCount": 107,
+    "reviews": [
+      {
+        "author": "Amira Ellis",
+        "rating": 5,
+        "date": "January 2025",
+        "comment": "The tasting menu was thoughtfully paired and beautifully presented.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Julia Nassar",
+        "rating": 5,
+        "date": "May 2026",
+        "comment": "Reservation process was easy and the table was ready right on time.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Reem Aziz",
+        "rating": 5,
+        "date": "January 2026",
+        "comment": "One of the best dinners we've had in a while, will book again.",
+        "verifiedStay": true
+      },
+      {
+        "author": "James Bennett",
+        "rating": 5,
+        "date": "July 2026",
+        "comment": "Exceptional meal from start to finish, the chef specials stole the show.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": false,
+    "isNew": true,
+    "shortDescription": "A relaxed, design-forward dining space serving coastal cuisine with a modern edge."
+  },
+  {
+    "id": 135,
+    "title": "The Morning Deck",
+    "description": "A relaxed, design-forward dining space serving coastal cuisine with a modern edge.",
+    "price": 48.6,
+    "category": "Restaurants",
+    "style": "Café & Brunch",
+    "stock": 14,
+    "amenities": [
+      "Open Kitchen",
+      "Premium Service",
+      "Coastal Setting",
+      "Reservation Service",
+      "Chef Specials"
+    ],
+    "images": [
+      "images/products/135-1.jpg",
+      "images/products/135-2.jpg"
+    ],
+    "hotelId": 2,
+    "slug": "the-morning-deck",
+    "currency": "USD",
+    "rating": 4.0,
+    "reviewsCount": 128,
+    "reviews": [
+      {
+        "author": "Julia Farouk",
+        "rating": 4,
+        "date": "August 2026",
+        "comment": "The tasting menu was thoughtfully paired and beautifully presented.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Sami Sabry",
+        "rating": 5,
+        "date": "December 2025",
+        "comment": "Reservation process was easy and the table was ready right on time.",
+        "verifiedStay": true
+      },
+      {
+        "author": "John Naguib",
+        "rating": 3,
+        "date": "September 2025",
+        "comment": "Comfortable stay, would have liked a slightly bigger desk area.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Thomas Zaki",
+        "rating": 4,
+        "date": "July 2025",
+        "comment": "Reservation process was easy and the table was ready right on time.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": false,
+    "isNew": true,
+    "shortDescription": "A relaxed, design-forward dining space serving coastal cuisine with a modern edge."
+  },
+  {
+    "id": 136,
+    "title": "Barrel & Bay Lounge",
+    "description": "A relaxed, design-forward dining space serving coastal cuisine with a modern edge.",
+    "price": 56.9,
+    "category": "Restaurants",
+    "style": "Café & Brunch",
+    "stock": 12,
+    "amenities": [
+      "Open Kitchen",
+      "Premium Service",
+      "Coastal Setting",
+      "Reservation Service",
+      "Chef Specials"
+    ],
+    "images": [
+      "images/products/136-1.jpg",
+      "images/products/136-2.jpg"
+    ],
+    "hotelId": 2,
+    "slug": "barrel-bay-lounge",
+    "currency": "USD",
+    "rating": 4.8,
+    "reviewsCount": 138,
+    "reviews": [
+      {
+        "author": "Nathan Turner",
+        "rating": 5,
+        "date": "November 2025",
+        "comment": "Exceptional meal from start to finish, the chef specials stole the show.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Nicolas Novak",
+        "rating": 5,
+        "date": "January 2026",
+        "comment": "Exceptional meal from start to finish, the chef specials stole the show.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Farida Whitfield",
+        "rating": 4,
+        "date": "February 2025",
+        "comment": "The tasting menu was thoughtfully paired and beautifully presented.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Karim El-Masry",
+        "rating": 5,
+        "date": "October 2026",
+        "comment": "Reservation process was easy and the table was ready right on time.",
+        "verifiedStay": false
+      }
+    ],
+    "featured": false,
+    "isNew": true,
+    "shortDescription": "A relaxed, design-forward dining space serving coastal cuisine with a modern edge."
+  },
+  {
+    "id": 137,
+    "title": "Tidal Wellness Studio",
+    "description": "A minimalist wellness space built for real recovery, light, air, and open water views.",
+    "price": 214.5,
+    "category": "Spa & Wellness",
+    "style": "Tidal Wellness",
+    "stock": 9,
+    "amenities": [
+      "Private Treatment Room",
+      "Organic Products",
+      "Relaxation Deck",
+      "Professional Staff"
+    ],
+    "images": [
+      "images/products/137-1.jpg",
+      "images/products/137-2.jpg"
+    ],
+    "hotelId": 2,
+    "slug": "tidal-wellness-studio",
+    "currency": "USD",
+    "rating": 4.8,
+    "reviewsCount": 58,
+    "reviews": [
+      {
+        "author": "Mona Grant",
+        "rating": 5,
+        "date": "March 2025",
+        "comment": "Left feeling completely renewed, the therapists were extremely skilled.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Nathan Carter",
+        "rating": 5,
+        "date": "March 2026",
+        "comment": "Left feeling completely renewed, the therapists were extremely skilled.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Sami Aziz",
+        "rating": 4,
+        "date": "November 2025",
+        "comment": "Left feeling completely renewed, the therapists were extremely skilled.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Tarek Ellis",
+        "rating": 5,
+        "date": "June 2026",
+        "comment": "Private, calm, and beautifully designed treatment rooms.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": false,
+    "isNew": true,
+    "shortDescription": "A minimalist wellness space built for real recovery, light, air, and open water views."
+  },
+  {
+    "id": 138,
+    "title": "Stone & Salt Spa",
+    "description": "A minimalist wellness space built for real recovery, light, air, and open water views.",
+    "price": 248.9,
+    "category": "Spa & Wellness",
+    "style": "Stone & Salt",
+    "stock": 7,
+    "amenities": [
+      "Private Treatment Room",
+      "Organic Products",
+      "Relaxation Deck",
+      "Professional Staff"
+    ],
+    "images": [
+      "images/products/138-1.jpg",
+      "images/products/138-2.jpg"
+    ],
+    "hotelId": 2,
+    "slug": "stone-salt-spa",
+    "currency": "USD",
+    "rating": 5.0,
+    "reviewsCount": 73,
+    "reviews": [
+      {
+        "author": "Tarek Bennett",
+        "rating": 5,
+        "date": "October 2026",
+        "comment": "The staff tailored the treatment perfectly to what we needed.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Robert Shawky",
+        "rating": 5,
+        "date": "August 2025",
+        "comment": "Left feeling completely renewed, the therapists were extremely skilled.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Amira Morgan",
+        "rating": 5,
+        "date": "June 2025",
+        "comment": "Private, calm, and beautifully designed treatment rooms.",
+        "verifiedStay": false
+      },
+      {
+        "author": "Dina Kamal",
+        "rating": 5,
+        "date": "August 2025",
+        "comment": "Best spa experience we've had at a hotel, hands down.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": false,
+    "isNew": true,
+    "shortDescription": "A minimalist wellness space built for real recovery, light, air, and open water views."
+  },
+  {
+    "id": 139,
+    "title": "Open-Air Yoga Deck",
+    "description": "A minimalist wellness space built for real recovery, light, air, and open water views.",
+    "price": 68.2,
+    "category": "Spa & Wellness",
+    "style": "Open-Air Yoga",
+    "stock": 15,
+    "amenities": [
+      "Guided Sessions",
+      "Organic Products",
+      "Relaxation Deck",
+      "Professional Staff"
+    ],
+    "images": [
+      "images/products/139-1.jpg",
+      "images/products/139-2.jpg"
+    ],
+    "hotelId": 2,
+    "slug": "open-air-yoga-deck",
+    "currency": "USD",
+    "rating": 4.5,
+    "reviewsCount": 83,
+    "reviews": [
+      {
+        "author": "Tarek Morgan",
+        "rating": 5,
+        "date": "December 2026",
+        "comment": "The staff tailored the treatment perfectly to what we needed.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Amira Mahmoud",
+        "rating": 5,
+        "date": "July 2025",
+        "comment": "Best spa experience we've had at a hotel, hands down.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Thomas Shawky",
+        "rating": 5,
+        "date": "June 2026",
+        "comment": "Left feeling completely renewed, the therapists were extremely skilled.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Dalia Bennett",
+        "rating": 3,
+        "date": "June 2025",
+        "comment": "Comfortable stay, would have liked a slightly bigger desk area.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": false,
+    "isNew": true,
+    "shortDescription": "A minimalist wellness space built for real recovery, light, air, and open water views."
+  },
+  {
+    "id": 140,
+    "title": "Cold Plunge Ritual",
+    "description": "A minimalist wellness space built for real recovery, light, air, and open water views.",
+    "price": 95.4,
+    "category": "Spa & Wellness",
+    "style": "Recovery Ritual",
+    "stock": 10,
+    "amenities": [
+      "Private Treatment Room",
+      "Organic Products",
+      "Relaxation Deck",
+      "Professional Staff"
+    ],
+    "images": [
+      "images/products/140-1.jpg",
+      "images/products/140-2.jpg"
+    ],
+    "hotelId": 2,
+    "slug": "cold-plunge-ritual",
+    "currency": "USD",
+    "rating": 5.0,
+    "reviewsCount": 81,
+    "reviews": [
+      {
+        "author": "Amira Aziz",
+        "rating": 5,
+        "date": "June 2025",
+        "comment": "Left feeling completely renewed, the therapists were extremely skilled.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Youssef Mahmoud",
+        "rating": 5,
+        "date": "September 2026",
+        "comment": "Private, calm, and beautifully designed treatment rooms.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Amira Collins",
+        "rating": 5,
+        "date": "December 2026",
+        "comment": "Private, calm, and beautifully designed treatment rooms.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Tarek Adel",
+        "rating": 5,
+        "date": "September 2025",
+        "comment": "The staff tailored the treatment perfectly to what we needed.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": false,
+    "isNew": true,
+    "shortDescription": "A minimalist wellness space built for real recovery, light, air, and open water views."
+  },
+  {
+    "id": 141,
+    "title": "Couples Tidal Ritual",
+    "description": "A minimalist wellness space built for real recovery, light, air, and open water views.",
+    "price": 356.7,
+    "category": "Spa & Wellness",
+    "style": "Tidal Wellness",
+    "stock": 6,
+    "amenities": [
+      "Private Treatment Room",
+      "Organic Products",
+      "Relaxation Deck",
+      "Professional Staff"
+    ],
+    "images": [
+      "images/products/141-1.jpg",
+      "images/products/141-2.jpg"
+    ],
+    "capacity": 2,
+    "hotelId": 2,
+    "slug": "couples-tidal-ritual",
+    "currency": "USD",
+    "rating": 4.8,
+    "reviewsCount": 37,
+    "reviews": [
+      {
+        "author": "Jana Bishop",
+        "rating": 5,
+        "date": "October 2026",
+        "comment": "The staff tailored the treatment perfectly to what we needed.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Salma Cole",
+        "rating": 5,
+        "date": "November 2025",
+        "comment": "Left feeling completely renewed, the therapists were extremely skilled.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Layla Hayes",
+        "rating": 5,
+        "date": "May 2025",
+        "comment": "Private, calm, and beautifully designed treatment rooms.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Laura El-Masry",
+        "rating": 4,
+        "date": "June 2025",
+        "comment": "Private, calm, and beautifully designed treatment rooms.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": true,
+    "isNew": true,
+    "shortDescription": "A minimalist wellness space built for real recovery, light, air, and open water views."
+  },
+  {
+    "id": 142,
+    "title": "Private Beach Cabana",
+    "description": "A private stretch of shoreline with modern cabanas, calm water, and effortless service.",
+    "price": 168.0,
+    "category": "Beach & Leisure",
+    "style": "Private Cabana",
+    "stock": 10,
+    "amenities": [
+      "Private Beach Access",
+      "Modern Daybeds",
+      "Beachside Service",
+      "Towels",
+      "Refreshment Service"
+    ],
+    "images": [
+      "images/products/142-1.jpg",
+      "images/products/142-2.jpg"
+    ],
+    "capacity": 4,
+    "hotelId": 2,
+    "slug": "private-beach-cabana",
+    "currency": "USD",
+    "rating": 3.8,
+    "reviewsCount": 132,
+    "reviews": [
+      {
+        "author": "Yasmin Cole",
+        "rating": 4,
+        "date": "February 2026",
+        "comment": "Turquoise water right in front of us, could not ask for a better spot.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Thomas Reed",
+        "rating": 4,
+        "date": "May 2026",
+        "comment": "One of the calmest, cleanest private beaches we've been to.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Dina Reed",
+        "rating": 3,
+        "date": "January 2026",
+        "comment": "Nice room overall, though the Wi-Fi was a little slow in the evenings.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Henry Foster",
+        "rating": 4,
+        "date": "November 2026",
+        "comment": "The beach setup was immaculate, loungers reserved and shaded exactly as promised.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": false,
+    "isNew": true,
+    "shortDescription": "A private stretch of shoreline with modern cabanas, calm water, and effortless service."
+  },
+  {
+    "id": 143,
+    "title": "Family Beach Cabana",
+    "description": "A private stretch of shoreline with modern cabanas, calm water, and effortless service.",
+    "price": 198.5,
+    "category": "Beach & Leisure",
+    "style": "Private Cabana",
+    "stock": 8,
+    "amenities": [
+      "Private Beach Access",
+      "Modern Daybeds",
+      "Beachside Service",
+      "Towels",
+      "Refreshment Service"
+    ],
+    "images": [
+      "images/products/143-1.jpg",
+      "images/products/143-2.jpg"
+    ],
+    "capacity": 6,
+    "hotelId": 2,
+    "slug": "family-beach-cabana",
+    "currency": "USD",
+    "rating": 5.0,
+    "reviewsCount": 38,
+    "reviews": [
+      {
+        "author": "Nicolas Carter",
+        "rating": 5,
+        "date": "May 2025",
+        "comment": "The beach setup was immaculate, loungers reserved and shaded exactly as promised.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Ahmed Shawky",
+        "rating": 5,
+        "date": "July 2025",
+        "comment": "Turquoise water right in front of us, could not ask for a better spot.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Mona Hayes",
+        "rating": 5,
+        "date": "November 2025",
+        "comment": "Staff kept the cabana stocked all day without ever hovering.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Robert Grant",
+        "rating": 5,
+        "date": "July 2026",
+        "comment": "Staff kept the cabana stocked all day without ever hovering.",
+        "verifiedStay": false
+      }
+    ],
+    "featured": false,
+    "isNew": true,
+    "shortDescription": "A private stretch of shoreline with modern cabanas, calm water, and effortless service."
+  },
+  {
+    "id": 144,
+    "title": "Sunset Deck Loungers",
+    "description": "A private stretch of shoreline with modern cabanas, calm water, and effortless service.",
+    "price": 64.9,
+    "category": "Beach & Leisure",
+    "style": "Beachfront Deck",
+    "stock": 16,
+    "amenities": [
+      "Private Beach Access",
+      "Modern Daybeds",
+      "Beachside Service",
+      "Towels",
+      "Refreshment Service"
+    ],
+    "images": [
+      "images/products/144-1.jpg",
+      "images/products/144-2.jpg"
+    ],
+    "capacity": 2,
+    "hotelId": 2,
+    "slug": "sunset-deck-loungers",
+    "currency": "USD",
+    "rating": 4.0,
+    "reviewsCount": 110,
+    "reviews": [
+      {
+        "author": "Noha Hughes",
+        "rating": 4,
+        "date": "April 2025",
+        "comment": "The beach setup was immaculate, loungers reserved and shaded exactly as promised.",
+        "verifiedStay": true
+      },
+      {
+        "author": "John Adel",
+        "rating": 4,
+        "date": "December 2025",
+        "comment": "Staff kept the cabana stocked all day without ever hovering.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Yara Shawky",
+        "rating": 3,
+        "date": "April 2026",
+        "comment": "Good value for the location, minor wear on the furniture but still pleasant.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Andrew Aziz",
+        "rating": 5,
+        "date": "December 2026",
+        "comment": "Staff kept the cabana stocked all day without ever hovering.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": false,
+    "isNew": true,
+    "shortDescription": "A private stretch of shoreline with modern cabanas, calm water, and effortless service."
+  },
+  {
+    "id": 145,
+    "title": "Watersports Beach Pass",
+    "description": "A private stretch of shoreline with modern cabanas, calm water, and effortless service.",
+    "price": 88.3,
+    "category": "Beach & Leisure",
+    "style": "Active Beach",
+    "stock": 20,
+    "amenities": [
+      "Equipment Rental",
+      "Professional Instruction",
+      "Beachside Service",
+      "Towels"
+    ],
+    "images": [
+      "images/products/145-1.jpg",
+      "images/products/145-2.jpg"
+    ],
+    "hotelId": 2,
+    "slug": "watersports-beach-pass",
+    "currency": "USD",
+    "rating": 4.8,
+    "reviewsCount": 54,
+    "reviews": [
+      {
+        "author": "Nour Cole",
+        "rating": 4,
+        "date": "August 2025",
+        "comment": "Turquoise water right in front of us, could not ask for a better spot.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Oliver Younis",
+        "rating": 5,
+        "date": "November 2025",
+        "comment": "Turquoise water right in front of us, could not ask for a better spot.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Amira Hassan",
+        "rating": 5,
+        "date": "July 2025",
+        "comment": "Staff kept the cabana stocked all day without ever hovering.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Hana Reed",
+        "rating": 5,
+        "date": "November 2026",
+        "comment": "One of the calmest, cleanest private beaches we've been to.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": true,
+    "isNew": true,
+    "shortDescription": "A private stretch of shoreline with modern cabanas, calm water, and effortless service."
+  },
+  {
+    "id": 146,
+    "title": "Kids Cove Beach Club",
+    "description": "A private stretch of shoreline with modern cabanas, calm water, and effortless service.",
+    "price": 52.4,
+    "category": "Beach & Leisure",
+    "style": "Kids Cove",
+    "stock": 12,
+    "amenities": [
+      "Supervised Activities",
+      "Modern Daybeds",
+      "Beachside Service",
+      "Towels",
+      "Refreshment Service"
+    ],
+    "images": [
+      "images/products/146-1.jpg",
+      "images/products/146-2.jpg"
+    ],
+    "hotelId": 2,
+    "slug": "kids-cove-beach-club",
+    "currency": "USD",
+    "rating": 5.0,
+    "reviewsCount": 29,
+    "reviews": [
+      {
+        "author": "Oliver Sinclair",
+        "rating": 5,
+        "date": "December 2026",
+        "comment": "Staff kept the cabana stocked all day without ever hovering.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Jana Farouk",
+        "rating": 5,
+        "date": "June 2025",
+        "comment": "Turquoise water right in front of us, could not ask for a better spot.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Adam Collins",
+        "rating": 5,
+        "date": "October 2026",
+        "comment": "Turquoise water right in front of us, could not ask for a better spot.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Salma Adel",
+        "rating": 5,
+        "date": "January 2026",
+        "comment": "Staff kept the cabana stocked all day without ever hovering.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": true,
+    "isNew": true,
+    "shortDescription": "A private stretch of shoreline with modern cabanas, calm water, and effortless service."
+  },
+  {
+    "id": 147,
+    "title": "The Glasshouse Venue",
+    "description": "A light-filled, fully equipped venue for meetings, celebrations, and everything between.",
+    "price": 3200.0,
+    "category": "Events & Meetings",
+    "style": "Glasshouse",
+    "stock": 1,
+    "amenities": [
+      "AV Equipment",
+      "Event Planning Service",
+      "Custom Catering",
+      "Valet Parking"
+    ],
+    "images": [
+      "images/products/147-1.jpg",
+      "images/products/147-2.jpg"
+    ],
+    "capacity": 250,
+    "size": 340,
+    "hotelId": 2,
+    "slug": "the-glasshouse-venue",
+    "currency": "USD",
+    "rating": 5.0,
+    "reviewsCount": 93,
+    "reviews": [
+      {
+        "author": "Layla Kamal",
+        "rating": 5,
+        "date": "May 2026",
+        "comment": "Coordination was seamless and every request was handled same day.",
+        "verifiedStay": false
+      },
+      {
+        "author": "Michael Ellis",
+        "rating": 5,
+        "date": "June 2026",
+        "comment": "Coordination was seamless and every request was handled same day.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Omar Novak",
+        "rating": 5,
+        "date": "February 2026",
+        "comment": "Our guests are still talking about the venue, the lighting was stunning.",
+        "verifiedStay": false
+      },
+      {
+        "author": "Julia Bishop",
+        "rating": 5,
+        "date": "July 2026",
+        "comment": "Our guests are still talking about the venue, the lighting was stunning.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": false,
+    "isNew": true,
+    "shortDescription": "A light-filled, fully equipped venue for meetings, celebrations, and everything between."
+  },
+  {
+    "id": 148,
+    "title": "Bayview Meeting Studio",
+    "description": "A light-filled, fully equipped venue for meetings, celebrations, and everything between.",
+    "price": 620.0,
+    "category": "Events & Meetings",
+    "style": "Meeting Studio",
+    "stock": 3,
+    "amenities": [
+      "AV Equipment",
+      "Event Planning Service",
+      "Custom Catering",
+      "Valet Parking"
+    ],
+    "images": [
+      "images/products/148-1.jpg",
+      "images/products/148-2.jpg"
+    ],
+    "capacity": 30,
+    "size": 70,
+    "hotelId": 2,
+    "slug": "bayview-meeting-studio",
+    "currency": "USD",
+    "rating": 4.8,
+    "reviewsCount": 41,
+    "reviews": [
+      {
+        "author": "Andrew Mahmoud",
+        "rating": 5,
+        "date": "October 2026",
+        "comment": "Coordination was seamless and every request was handled same day.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Laura Reed",
+        "rating": 5,
+        "date": "July 2025",
+        "comment": "Flawless execution from setup to breakdown, the events team thinks of everything.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Elena Halim",
+        "rating": 4,
+        "date": "March 2025",
+        "comment": "Coordination was seamless and every request was handled same day.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Hana Ellis",
+        "rating": 5,
+        "date": "June 2026",
+        "comment": "Coordination was seamless and every request was handled same day.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": false,
+    "isNew": true,
+    "shortDescription": "A light-filled, fully equipped venue for meetings, celebrations, and everything between."
+  },
+  {
+    "id": 149,
+    "title": "Open Sky Fitness Studio",
+    "description": "An open, naturally lit space for staying active with a view of the water.",
+    "price": 28.0,
+    "category": "Fitness & Recreation",
+    "style": "Open Sky Fitness",
+    "stock": 25,
+    "amenities": [
+      "Personal Trainer",
+      "Modern Equipment",
+      "Locker Rooms",
+      "Towels"
+    ],
+    "images": [
+      "images/products/149-1.jpg",
+      "images/products/149-2.jpg"
+    ],
+    "hotelId": 2,
+    "slug": "open-sky-fitness-studio",
+    "currency": "USD",
+    "rating": 4.5,
+    "reviewsCount": 71,
+    "reviews": [
+      {
+        "author": "Yasmin Bishop",
+        "rating": 5,
+        "date": "February 2026",
+        "comment": "Modern equipment and never crowded, exactly what I needed while traveling.",
+        "verifiedStay": false
+      },
+      {
+        "author": "Nadine Nassar",
+        "rating": 5,
+        "date": "March 2026",
+        "comment": "Bright, clean space with everything you'd expect from a proper gym.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Nicolas Mahmoud",
+        "rating": 5,
+        "date": "March 2025",
+        "comment": "Modern equipment and never crowded, exactly what I needed while traveling.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Salma Mahmoud",
+        "rating": 3,
+        "date": "August 2025",
+        "comment": "Comfortable stay, would have liked a slightly bigger desk area.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": true,
+    "isNew": true,
+    "shortDescription": "An open, naturally lit space for staying active with a view of the water."
+  },
+  {
+    "id": 150,
+    "title": "Paddleboard & Kayak Club",
+    "description": "An open, naturally lit space for staying active with a view of the water.",
+    "price": 42.0,
+    "category": "Fitness & Recreation",
+    "style": "Water Sports",
+    "stock": 14,
+    "amenities": [
+      "Equipment Rental",
+      "Professional Coaching",
+      "Guided Routes",
+      "Towels"
+    ],
+    "images": [
+      "images/products/150-1.jpg",
+      "images/products/150-2.jpg"
+    ],
+    "capacity": 2,
+    "hotelId": 2,
+    "slug": "paddleboard-kayak-club",
+    "currency": "USD",
+    "rating": 5.0,
+    "reviewsCount": 140,
+    "reviews": [
+      {
+        "author": "Sami Cole",
+        "rating": 5,
+        "date": "February 2025",
+        "comment": "The trainer pushed me in the best way, would book again.",
+        "verifiedStay": true
+      },
+      {
+        "author": "George Zaki",
+        "rating": 5,
+        "date": "November 2025",
+        "comment": "Modern equipment and never crowded, exactly what I needed while traveling.",
+        "verifiedStay": false
+      },
+      {
+        "author": "Michael Hayes",
+        "rating": 5,
+        "date": "October 2026",
+        "comment": "The trainer pushed me in the best way, would book again.",
+        "verifiedStay": true
+      },
+      {
+        "author": "William Mahmoud",
+        "rating": 5,
+        "date": "August 2026",
+        "comment": "Bright, clean space with everything you'd expect from a proper gym.",
+        "verifiedStay": false
+      }
+    ],
+    "featured": false,
+    "isNew": true,
+    "shortDescription": "An open, naturally lit space for staying active with a view of the water."
+  },
+  {
+    "id": 151,
+    "title": "Private Yacht Charter",
+    "description": "A responsive, tech-forward service designed to make every part of your stay effortless.",
+    "price": 980.0,
+    "category": "Services",
+    "style": "Yacht Charter",
+    "stock": 3,
+    "amenities": [
+      "24/7 Availability",
+      "Personalized Assistance",
+      "Priority Service",
+      "Luxury Transportation"
+    ],
+    "images": [
+      "images/products/151-1.jpg",
+      "images/products/151-2.jpg"
+    ],
+    "hotelId": 2,
+    "slug": "private-yacht-charter",
+    "currency": "USD",
+    "rating": 4.2,
+    "reviewsCount": 54,
+    "reviews": [
+      {
+        "author": "Mona Shawky",
+        "rating": 3,
+        "date": "February 2025",
+        "comment": "Good value for the location, minor wear on the furniture but still pleasant.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Rania Kamal",
+        "rating": 5,
+        "date": "June 2026",
+        "comment": "Quick to respond any time we reached out, day or night.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Youssef Kamal",
+        "rating": 4,
+        "date": "April 2025",
+        "comment": "Made our whole trip effortless, extremely professional and responsive.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Christopher Mahmoud",
+        "rating": 5,
+        "date": "September 2026",
+        "comment": "Exactly the kind of service that makes a stay feel five-star.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": false,
+    "isNew": true,
+    "shortDescription": "A responsive, tech-forward service designed to make every part of your stay effortless."
+  },
+  {
+    "id": 152,
+    "title": "In-Villa Chef Service",
+    "description": "A responsive, tech-forward service designed to make every part of your stay effortless.",
+    "price": 520.0,
+    "category": "Services",
+    "style": "In-Villa Chef",
+    "stock": 6,
+    "amenities": [
+      "24/7 Availability",
+      "Personalized Assistance",
+      "Priority Service",
+      "Luxury Transportation"
+    ],
+    "images": [
+      "images/products/152-1.jpg",
+      "images/products/152-2.jpg"
+    ],
+    "hotelId": 2,
+    "slug": "in-villa-chef-service",
+    "currency": "USD",
+    "rating": 4.8,
+    "reviewsCount": 116,
+    "reviews": [
+      {
+        "author": "Salma Bishop",
+        "rating": 5,
+        "date": "April 2025",
+        "comment": "Punctual, polite, and handled every request with ease.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Daniel Carter",
+        "rating": 5,
+        "date": "December 2026",
+        "comment": "Exactly the kind of service that makes a stay feel five-star.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Dina Morgan",
+        "rating": 5,
+        "date": "December 2025",
+        "comment": "Made our whole trip effortless, extremely professional and responsive.",
+        "verifiedStay": false
+      },
+      {
+        "author": "Mariam Bennett",
+        "rating": 4,
+        "date": "September 2025",
+        "comment": "Punctual, polite, and handled every request with ease.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": false,
+    "isNew": true,
+    "shortDescription": "A responsive, tech-forward service designed to make every part of your stay effortless."
+  },
+  {
+    "id": 153,
+    "title": "Digital Concierge Service",
+    "description": "A responsive, tech-forward service designed to make every part of your stay effortless.",
+    "price": 0.0,
+    "category": "Services",
+    "style": "Digital Concierge",
+    "stock": 30,
+    "amenities": [
+      "24/7 Availability",
+      "Personalized Assistance",
+      "Priority Service",
+      "In-App Requests"
+    ],
+    "images": [
+      "images/products/153-1.jpg",
+      "images/products/153-2.jpg"
+    ],
+    "hotelId": 2,
+    "slug": "digital-concierge-service",
+    "currency": "USD",
+    "rating": 4.5,
+    "reviewsCount": 141,
+    "reviews": [
+      {
+        "author": "Dina Shawky",
+        "rating": 5,
+        "date": "October 2026",
+        "comment": "Punctual, polite, and handled every request with ease.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Youssef Naguib",
+        "rating": 4,
+        "date": "July 2025",
+        "comment": "Made our whole trip effortless, extremely professional and responsive.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Ahmed Whitfield",
+        "rating": 5,
+        "date": "August 2026",
+        "comment": "Punctual, polite, and handled every request with ease.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Youssef Aziz",
+        "rating": 4,
+        "date": "October 2025",
+        "comment": "Made our whole trip effortless, extremely professional and responsive.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": false,
+    "isNew": true,
+    "shortDescription": "A responsive, tech-forward service designed to make every part of your stay effortless."
+  },
+  {
+    "id": 154,
+    "title": "Resort Valet & Transfer",
+    "description": "A responsive, tech-forward service designed to make every part of your stay effortless.",
+    "price": 38.0,
+    "category": "Services",
+    "style": "Valet & Transfer",
+    "stock": 18,
+    "amenities": [
+      "24/7 Availability",
+      "Personalized Assistance",
+      "Priority Service",
+      "Luxury Transportation"
+    ],
+    "images": [
+      "images/products/154-1.jpg",
+      "images/products/154-2.jpg"
+    ],
+    "hotelId": 2,
+    "slug": "resort-valet-transfer",
+    "currency": "USD",
+    "rating": 5.0,
+    "reviewsCount": 98,
+    "reviews": [
+      {
+        "author": "Andrew Collins",
+        "rating": 5,
+        "date": "December 2025",
+        "comment": "Exactly the kind of service that makes a stay feel five-star.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Sophie Rostom",
+        "rating": 5,
+        "date": "December 2026",
+        "comment": "Exactly the kind of service that makes a stay feel five-star.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Claire Foster",
+        "rating": 5,
+        "date": "October 2025",
+        "comment": "Exactly the kind of service that makes a stay feel five-star.",
+        "verifiedStay": true
+      },
+      {
+        "author": "Mariam Rostom",
+        "rating": 5,
+        "date": "December 2026",
+        "comment": "Punctual, polite, and handled every request with ease.",
+        "verifiedStay": true
+      }
+    ],
+    "featured": false,
+    "isNew": true,
+    "shortDescription": "A responsive, tech-forward service designed to make every part of your stay effortless."
+  }
+]

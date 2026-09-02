@@ -1,0 +1,175 @@
+{
+  "group": {
+    "name": "AL Hospitality Group",
+    "shortName": "AL",
+    "logo": "images/brand/al-logo.png",
+    "tagline": "Two addresses. One standard of hospitality.",
+    "description": "AL Hospitality Group curates a small portfolio of five-star properties across Egypt, each with its own identity, from Cairo's Nile-front classic palaces to the Red Sea's modern coastline.",
+    "foundedYear": 2011,
+    "headquarters": "Cairo, Egypt",
+    "contact": {
+      "email": "info@al-hospitality.com",
+      "phone": "+20 2 2735 8000"
+    },
+    "socialLinks": {
+      "instagram": "https://instagram.com/alhospitalitygroup",
+      "facebook": "https://facebook.com/alhospitalitygroup",
+      "linkedin": "https://linkedin.com/company/al-hospitality-group",
+      "youtube": "https://youtube.com/@alhospitalitygroup"
+    }
+  },
+  "homepage": {
+    "heroTitle": "Two hotels. Every kind of stay.",
+    "heroSubtitle": "A classic Nile-front palace in Cairo, and a modern coastal resort on the Red Sea, curated under one standard of service.",
+    "sharedCategories": [
+      {
+        "label": "Rooms",
+        "icon": "bed"
+      },
+      {
+        "label": "Suites",
+        "icon": "sofa"
+      },
+      {
+        "label": "Pools",
+        "icon": "waves"
+      },
+      {
+        "label": "Restaurants",
+        "icon": "utensils"
+      },
+      {
+        "label": "Spa & Wellness",
+        "icon": "sparkles"
+      },
+      {
+        "label": "Beach & Leisure",
+        "icon": "sun"
+      },
+      {
+        "label": "Events & Meetings",
+        "icon": "calendar"
+      },
+      {
+        "label": "Fitness & Recreation",
+        "icon": "dumbbell"
+      },
+      {
+        "label": "Services",
+        "icon": "concierge-bell"
+      }
+    ],
+    "hotelCards": [
+      {
+        "hotelId": 1,
+        "name": "Aurelia Grand Hotel",
+        "location": "Cairo, Egypt",
+        "blurb": "A gilded, Nile-front palace hotel for guests who want tradition, ceremony, and grandeur.",
+        "startingPrice": 208.59,
+        "path": "/hotels/aurelia-grand-hotel"
+      },
+      {
+        "hotelId": 2,
+        "name": "Marisol Bay Resort",
+        "location": "Hurghada, Egypt",
+        "blurb": "A modern coastal resort for guests who want open water, clean design, and quiet mornings.",
+        "startingPrice": 96.75,
+        "path": "/hotels/marisol-bay-resort"
+      }
+    ]
+  },
+  "sharedFooter": {
+    "logo": "images/brand/al-logo.png",
+    "about": "AL Hospitality Group brings together a small, curated collection of five-star properties across Egypt, from classic Nile-front grandeur to modern coastal calm.",
+    "columns": [
+      {
+        "title": "Our Hotels",
+        "links": [
+          {
+            "label": "Aurelia Grand Hotel",
+            "path": "/hotels/aurelia-grand-hotel"
+          },
+          {
+            "label": "Marisol Bay Resort",
+            "path": "/hotels/marisol-bay-resort"
+          }
+        ]
+      },
+      {
+        "title": "Explore",
+        "links": [
+          {
+            "label": "Rooms & Suites",
+            "path": "/rooms"
+          },
+          {
+            "label": "Dining",
+            "path": "/restaurants"
+          },
+          {
+            "label": "Spa & Wellness",
+            "path": "/spa"
+          },
+          {
+            "label": "Offers",
+            "path": "/offers"
+          }
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          {
+            "label": "About AL Hospitality",
+            "path": "/about"
+          },
+          {
+            "label": "Careers",
+            "path": "/careers"
+          },
+          {
+            "label": "Press",
+            "path": "/press"
+          },
+          {
+            "label": "Contact",
+            "path": "/contact"
+          }
+        ]
+      }
+    ],
+    "legalLinks": [
+      {
+        "label": "Privacy Policy",
+        "path": "/privacy"
+      },
+      {
+        "label": "Terms & Conditions",
+        "path": "/terms"
+      },
+      {
+        "label": "Cancellation Policy",
+        "path": "/cancellation-policy"
+      }
+    ],
+    "newsletter": {
+      "title": "Join the AL Circle",
+      "subtitle": "Private offers and new-property news, twice a month at most."
+    },
+    "copyright": "© 2026 AL Hospitality Group. All rights reserved."
+  },
+  "faq": [
+    {
+      "question": "Are Aurelia Grand Hotel and Marisol Bay Resort owned by the same company?",
+      "answer": "Yes, both properties are part of AL Hospitality Group, though each is run as its own distinct hotel with its own design, team, and booking system."
+    },
+    {
+      "question": "Can I earn or use the same loyalty benefits at both hotels?",
+      "answer": "Yes, AL Circle membership is shared across both properties."
+    },
+    {
+      "question": "How do I choose between the two hotels?",
+      "answer": "Aurelia Grand Hotel suits guests who want a classic, ceremonial city-palace experience in Cairo. Marisol Bay Resort suits guests who want a modern coastal escape on the Red Sea."
+    }
+  ]
+}
