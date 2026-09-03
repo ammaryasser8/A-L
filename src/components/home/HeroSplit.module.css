@@ -1,0 +1,46 @@
+.hero {
+  background: linear-gradient(180deg, var(--al-surface), var(--al-bg));
+  padding: 88px 0 0;
+}
+
+.heroInner {
+  text-align: center;
+}
+
+.eyebrow {
+  font-size: 13px;
+  letter-spacing: 0.22em;
+  color: var(--al-gold);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.heroInner h1 {
+  font-size: clamp(34px, 5vw, 56px);
+  line-height: 1.12;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.heroInner p {
+  margin-top: 20px;
+  color: var(--al-muted);
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 15.5px;
+}
+
+.hotelSplit {
+  margin: 56px auto 0;
+  padding-bottom: 90px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+
+@media (max-width: 900px) {
+  .hotelSplit {
+    grid-template-columns: 1fr;
+  }
+}
