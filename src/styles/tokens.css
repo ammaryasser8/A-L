@@ -1,0 +1,34 @@
+:root {
+  /* AL Hospitality Group (portal / shared footer / home page) */
+  --al-ink: #1C1512;
+  --al-ink-deep: #0F0B09;
+  --al-gold: #C9A24B;
+  --al-gold-light: #E7CD8D;
+  --al-bg: #FBF8F2;
+  --al-bg-alt: #F2ECE0;
+  --al-surface: #FFFFFF;
+  --al-muted: #83766A;
+  --font-heading-portal: 'Playfair Display', serif;
+  --font-body-portal: 'Jost', sans-serif;
+
+  /* Aurelia Grand Hotel */
+  --aurelia-primary: #5C1A2B;
+  --aurelia-primary-dark: #3E0E1C;
+  --aurelia-accent: #C9A24B;
+  --aurelia-accent-light: #E4C77E;
+  --aurelia-surface: #F6F0E4;
+  --aurelia-surface-dark: #EAE0CB;
+  --aurelia-on-primary: #FFFCF6;
+  --aurelia-ink: #2B2320;
+
+  /* Marisol Bay Resort (Partner will fine-tune later, added now so the
+     home page's two hotel cards already have real colors) */
+  --marisol-primary: #0E3B36;
+  --marisol-primary-dark: #082421;
+  --marisol-accent: #2FA88B;
+  --marisol-accent-light: #8FD8C4;
+  --marisol-surface: #F3EFE6;
+  --marisol-surface-dark: #E4DCC9;
+  --marisol-on-primary: #FBF9F4;
+  --marisol-ink: #1E2422;
+}
