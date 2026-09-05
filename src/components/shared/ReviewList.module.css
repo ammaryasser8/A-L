@@ -1,0 +1,37 @@
+.list {
+  margin-top: 12px;
+}
+
+.item {
+  border-top: 1px solid var(--theme-surface-dark, #e4dcc9);
+  padding: 16px 0;
+}
+
+.top {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.author {
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--theme-ink, #1e2422);
+}
+
+.date {
+  font-size: 11.5px;
+  color: var(--theme-muted, #6b7570);
+}
+
+.stars {
+  color: var(--theme-accent, #c9a24b);
+  margin: 4px 0;
+  font-size: 13px;
+}
+
+.comment {
+  font-size: 13.5px;
+  color: var(--theme-ink, #1e2422);
+  margin-top: 4px;
+}

@@ -1,0 +1,12 @@
+.wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12.5px;
+  color: var(--theme-muted, #6b7570);
+}
+
+.stars {
+  color: var(--theme-accent, #C9A24B);
+  letter-spacing: 1px;
+}

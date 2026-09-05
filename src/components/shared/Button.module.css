@@ -1,0 +1,26 @@
+.primary {
+  background: var(--theme-accent, #C9A24B);
+  color: var(--theme-on-primary, #fff);
+  border: none;
+  padding: 13px 28px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+.primary:hover {
+  opacity: 0.88;
+}
+
+.outline {
+  background: transparent;
+  color: var(--theme-on-primary, #fff);
+  border: 1px solid currentColor;
+  padding: 13px 28px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+}

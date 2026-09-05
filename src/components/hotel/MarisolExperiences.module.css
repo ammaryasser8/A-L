@@ -1,0 +1,60 @@
+.section {
+  padding: 80px 40px;
+  background: var(--theme-primary, #0b1220);
+  color: #fff;
+}
+
+.head {
+  margin-bottom: 32px;
+  display: flex;
+  align-items: baseline;
+  gap: 18px;
+}
+
+.eyebrow {
+  font-size: 11.5px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--theme-accent, #c9a24b);
+}
+
+.head h2 {
+  font-family: var(--font-heading, 'Fraunces', serif);
+  font-size: 26px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.image {
+  aspect-ratio: 4 / 3;
+  background: linear-gradient(160deg, var(--theme-accent-light, #e7cd8d), var(--theme-accent, #c9a24b));
+  opacity: 0.5;
+}
+
+.card h3 {
+  font-size: 12.5px;
+  letter-spacing: 0.02em;
+  padding: 14px 14px 4px;
+}
+
+.card p {
+  font-size: 11.5px;
+  color: rgba(255, 255, 255, 0.55);
+  padding: 0 14px 16px;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
