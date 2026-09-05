@@ -1,0 +1,24 @@
+
+.tabs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 36px;
+}
+
+.tab {
+  background: var(--theme-surface, #fff);
+  border: 1px solid var(--theme-surface-dark, #e4dcc9);
+  color: var(--theme-ink, #1e2422);
+  padding: 9px 18px;
+  border-radius: 999px;
+  font-size: 13px;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.active {
+  background: var(--theme-primary, #0b1220);
+  border-color: var(--theme-primary, #0b1220);
+  color: var(--theme-on-primary, #fff);
+}

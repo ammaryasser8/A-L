@@ -1,0 +1,34 @@
+.roomsSection {
+  padding: 80px 40px;
+  background: var(--theme-surface, #f4f1ea);
+}
+
+.roomsHead {
+  margin-bottom: 28px;
+}
+
+.eyebrow {
+  font-size: 11.5px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--theme-accent, #c9a24b);
+}
+
+.roomsHead h2 {
+  font-family: var(--font-heading, 'Fraunces', serif);
+  font-size: 28px;
+  color: var(--theme-ink, #1e2422);
+  margin-top: 6px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}

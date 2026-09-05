@@ -1,0 +1,99 @@
+.hero {
+  position: relative;
+  min-height: 92vh;
+  background: linear-gradient(155deg, var(--theme-primary, #0b1220) 0%, var(--theme-primary-dark, #060a12) 100%);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 140px 64px 0;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 75% 30%, rgba(201, 162, 75, 0.12), transparent 55%),
+    radial-gradient(ellipse at 10% 80%, rgba(201, 162, 75, 0.08), transparent 50%);
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  max-width: 560px;
+}
+
+.eyebrow {
+  font-size: 12.5px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.55);
+  margin-bottom: 22px;
+}
+
+.heading {
+  font-family: var(--font-heading, 'Fraunces', serif);
+  font-size: clamp(38px, 5.5vw, 64px);
+  line-height: 1.05;
+  font-weight: 600;
+}
+
+.heading span {
+  color: var(--theme-accent, #c9a24b);
+}
+
+.subtitle {
+  margin-top: 22px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 15.5px;
+  max-width: 460px;
+}
+
+.actions {
+  margin-top: 34px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.primaryBtn {
+  background: var(--theme-accent, #c9a24b);
+  color: var(--theme-primary, #0b1220);
+  border: none;
+  padding: 14px 28px;
+  font-size: 13.5px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+
+.primaryBtn:hover {
+  background: var(--theme-accent-light, #e7cd8d);
+}
+
+.ghostBtn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 13.5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.bookingWrap {
+  position: relative;
+  z-index: 3;
+  max-width: 620px;
+  margin-top: 64px;
+  padding-bottom: 48px;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    padding: 130px 24px 0;
+  }
+  .bookingWrap {
+    margin-top: 40px;
+  }
+}
