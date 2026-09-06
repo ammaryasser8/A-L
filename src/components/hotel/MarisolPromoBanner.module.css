@@ -3,15 +3,30 @@
   min-height: 380px;
   display: flex;
   align-items: center;
-  background: linear-gradient(160deg, var(--theme-primary-dark, #060a12), var(--theme-primary, #0b1220));
   color: #fff;
   overflow: hidden;
+}
+
+.marbleBg {
+  position: absolute;
+  inset: 0;
+  background-image:
+    repeating-linear-gradient(115deg, rgba(255, 255, 255, 0.035) 0px, rgba(255, 255, 255, 0.035) 2px, transparent 2px, transparent 60px),
+    radial-gradient(ellipse at 70% 40%, rgba(255, 255, 255, 0.05), transparent 50%),
+    linear-gradient(160deg, var(--theme-primary-dark, #060a12), var(--theme-primary, #0b1220));
+}
+
+.photoLayer {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
 }
 
 .overlay {
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at 70% 50%, rgba(201, 162, 75, 0.1), transparent 60%);
+  background: linear-gradient(90deg, rgba(4, 8, 14, 0.75) 0%, rgba(4, 8, 14, 0.35) 55%, rgba(4, 8, 14, 0.15) 100%);
 }
 
 .content {

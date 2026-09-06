@@ -1,6 +1,6 @@
 .roomsSection {
   padding: 80px 40px;
-  background: var(--theme-surface, #f4f1ea);
+  background: var(--theme-primary, #0b1220);
 }
 
 .roomsHead {
@@ -17,7 +17,7 @@
 .roomsHead h2 {
   font-family: var(--font-heading, 'Fraunces', serif);
   font-size: 28px;
-  color: var(--theme-ink, #1e2422);
+  color: #fff;
   margin-top: 6px;
 }
 

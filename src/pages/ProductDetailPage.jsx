@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import products from '../data/products.json';
 import { useHotelBySlug } from '../hooks/useHotelBySlug';
@@ -14,6 +15,7 @@ export default function ProductDetailPage() {
   const product = products.find(
     (p) => p.slug === productSlug && p.hotelId === hotel?.id
   );
+  const [reserved, setReserved] = useState(false);
 
   if (!hotel || !product) {
     return <NotFoundPage />;
@@ -73,7 +75,15 @@ export default function ProductDetailPage() {
             {formatPrice(product.price, product.currency)}
             <span> / night</span>
           </div>
-          <Button variant="primary">Reserve now</Button>
+          {reserved ? (
+            <span className={styles.reservedNote}>
+              ✓ Request received — our team will confirm by email shortly.
+            </span>
+          ) : (
+            <Button variant="primary" onClick={() => setReserved(true)}>
+              Reserve now
+            </Button>
+          )}
         </div>
 
         <h2 className={styles.reviewsHeading}>Guest reviews</h2>

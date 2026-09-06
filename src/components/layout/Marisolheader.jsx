@@ -42,7 +42,14 @@ export default function MarisolHeader() {
             </a>
           ))}
         </nav>
-        <button className={styles.bookBtn}>Book now</button>
+        <button
+          className={styles.bookBtn}
+          onClick={() =>
+            document.getElementById('booking')?.scrollIntoView({ behavior: 'smooth', block: 'center' })
+          }
+        >
+          Book now
+        </button>
       </div>
     </header>
   );

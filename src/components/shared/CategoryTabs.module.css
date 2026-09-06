@@ -1,4 +1,3 @@
-
 .tabs {
   display: flex;
   gap: 8px;
@@ -21,4 +20,16 @@
   background: var(--theme-primary, #0b1220);
   border-color: var(--theme-primary, #0b1220);
   color: var(--theme-on-primary, #fff);
+}
+
+.dark .tab {
+  background: transparent;
+  border-color: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.dark .active {
+  background: var(--theme-accent, #c9a24b);
+  border-color: var(--theme-accent, #c9a24b);
+  color: var(--theme-primary, #0b1220);
 }

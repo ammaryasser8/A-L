@@ -36,9 +36,39 @@
 }
 
 .image {
+  position: relative;
   aspect-ratio: 4 / 3;
-  background: linear-gradient(160deg, var(--theme-accent-light, #e7cd8d), var(--theme-accent, #c9a24b));
-  opacity: 0.5;
+  overflow: hidden;
+}
+
+.marbleBg {
+  position: absolute;
+  inset: 0;
+  background-image:
+    repeating-linear-gradient(115deg, rgba(255, 255, 255, 0.035) 0px, rgba(255, 255, 255, 0.035) 2px, transparent 2px, transparent 60px),
+    radial-gradient(ellipse at 20% 20%, rgba(255, 255, 255, 0.06), transparent 45%),
+    linear-gradient(135deg, var(--theme-primary, #0b1220) 0%, var(--theme-primary-dark, #060a12) 100%);
+}
+
+.photoLayer {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.icon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 26px;
+  height: 26px;
+  color: #fff;
+}
+
+.icon svg {
+  width: 18px;
+  height: 18px;
 }
 
 .card h3 {

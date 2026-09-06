@@ -1,10 +1,11 @@
 import styles from './CategoryTabs.module.css';
 
-export default function CategoryTabs({ categories, active, onChange }) {
+export default function CategoryTabs({ categories, active, onChange, variant = 'light' }) {
   const allTabs = ['All', ...categories];
+  const wrapClass = variant === 'dark' ? `${styles.tabs} ${styles.dark}` : styles.tabs;
 
   return (
-    <div className={styles.tabs}>
+    <div className={wrapClass}>
       {allTabs.map((cat) => (
         <button
           key={cat}

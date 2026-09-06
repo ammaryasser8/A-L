@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useHotelBySlug } from '../hooks/useHotelBySlug';
 import { useHotelProducts } from '../hooks/useHotelProducts';
 
-import MarisolHeader from '../components/layout/MarisolHeader';
+import MarisolHeader from '../components/layout/Marisolheader';
 import MarisolHero from '../components/hotel/MarisolHero';
 import MarisolHighlights from '../components/hotel/MarisolHighlights';
 import MarisolExperiences from '../components/hotel/MarisolExperiences';
@@ -54,6 +54,7 @@ export default function MarisolHotelPage() {
           categories={hotel.categories}
           active={activeCategory}
           onChange={setActiveCategory}
+          variant="dark"
         />
 
         <div className={styles.grid}>
