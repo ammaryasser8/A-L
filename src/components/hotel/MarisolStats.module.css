@@ -1,0 +1,96 @@
+.section {
+  background: var(--theme-primary, #0b1220);
+  padding: 70px 0;
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--theme-accent, #c9a24b);
+}
+
+.comment {
+  font-family: var(--font-heading, 'Fraunces', serif);
+  font-size: 17px;
+  color: #fff;
+  line-height: 1.5;
+  margin: 12px 0 16px;
+  max-width: 440px;
+}
+
+.authorRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--theme-accent, #c9a24b);
+  display: inline-block;
+}
+
+.author {
+  font-size: 12.5px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.statsBox {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 4px;
+  padding: 28px 20px;
+}
+
+.stat {
+  text-align: center;
+}
+
+.icon {
+  display: inline-flex;
+  color: var(--theme-accent, #c9a24b);
+  width: 22px;
+  height: 22px;
+  margin-bottom: 8px;
+}
+
+.icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.stat b {
+  display: block;
+  font-family: var(--font-heading, 'Fraunces', serif);
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 4px;
+}
+
+.stat span {
+  font-size: 10.5px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 900px) {
+  .inner {
+    grid-template-columns: 1fr;
+  }
+  .statsBox {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
