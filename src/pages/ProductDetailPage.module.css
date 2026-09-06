@@ -1,0 +1,107 @@
+.wrap {
+  padding: 140px 40px 80px;
+  max-width: 780px;
+}
+
+.back {
+  display: inline-block;
+  font-size: 13px;
+  color: var(--theme-accent, #c9a24b);
+  margin-bottom: 24px;
+}
+
+.image {
+  aspect-ratio: 16 / 8;
+  border-radius: 14px;
+  background-size: cover;
+  background-position: center;
+  background-image:
+    repeating-linear-gradient(115deg, rgba(255, 255, 255, 0.035) 0px, rgba(255, 255, 255, 0.035) 2px, transparent 2px, transparent 60px),
+    radial-gradient(ellipse at 15% 20%, rgba(255, 255, 255, 0.06), transparent 45%),
+    radial-gradient(ellipse at 85% 75%, rgba(255, 255, 255, 0.045), transparent 40%),
+    linear-gradient(135deg, var(--theme-primary, #0b1220) 0%, var(--theme-primary-dark, #060a12) 100%);
+  margin-bottom: 28px;
+}
+
+.reservedNote {
+  font-size: 12.5px;
+  color: var(--theme-accent, #c9a24b);
+  font-weight: 600;
+  max-width: 220px;
+  text-align: right;
+}
+
+.category {
+  font-size: 12px;
+  color: var(--theme-accent, #c9a24b);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.title {
+  font-family: var(--font-heading, 'Fraunces', serif);
+  font-size: 30px;
+  color: var(--theme-ink, #1e2422);
+  margin-bottom: 12px;
+}
+
+.meta {
+  display: flex;
+  gap: 18px;
+  font-size: 13.5px;
+  color: var(--theme-muted, #6b7570);
+  margin: 16px 0;
+}
+
+.description {
+  font-size: 14.5px;
+  color: var(--theme-ink, #1e2422);
+  max-width: 600px;
+  margin-bottom: 24px;
+}
+
+.amenities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.pill {
+  background: var(--theme-surface-dark, #e4dcc9);
+  padding: 7px 14px;
+  border-radius: 999px;
+  font-size: 12.5px;
+  color: var(--theme-ink, #1e2422);
+}
+
+.priceRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--theme-surface-dark, #e4dcc9);
+  padding-top: 24px;
+  margin-bottom: 28px;
+}
+
+.price {
+  font-family: var(--font-heading, 'Fraunces', serif);
+  font-size: 24px;
+  color: var(--theme-ink, #1e2422);
+  font-weight: 600;
+}
+
+.price span {
+  font-family: var(--font-body, 'Inter', sans-serif);
+  font-size: 13px;
+  color: var(--theme-muted, #6b7570);
+  font-weight: 400;
+}
+
+.reviewsHeading {
+  font-family: var(--font-heading, 'Fraunces', serif);
+  font-size: 18px;
+  color: var(--theme-ink, #1e2422);
+  margin-bottom: 4px;
+}

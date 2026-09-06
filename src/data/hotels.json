@@ -78,21 +78,22 @@
       "whatsapp": "+20 100 987 6543",
       "email": "stay@marisolbayresort.com"
     },
-    "theme": {
-      "colors": {
-        "primary": "#0E3B36",
-        "primaryDark": "#082421",
-        "accent": "#2FA88B",
-        "accentLight": "#8FD8C4",
-        "surface": "#F3EFE6",
-        "surfaceDark": "#E4DCC9",
-        "onPrimary": "#FBF9F4",
-        "ink": "#1E2422"
-      },
-      "fonts": {
-        "heading": "Fraunces, serif",
-        "body": "Inter, sans-serif"
-      }
+   "theme": {
+  "colors": {
+   "primary": "#17293F",
+"primaryDark": "#0F1E30",
+    "accent": "#C9A24B",
+    "accentLight": "#E7CD8D",
+    "surface": "#F4F1EA",
+    "surfaceDark": "#E7E1D3",
+    "onPrimary": "#FFFFFF",
+    "ink": "#12181C"
+  },
+  "fonts": {
+    "heading": "Fraunces, serif",
+    "body": "Inter, sans-serif"
+  }
+
     },
     "categories": [
       "Rooms",

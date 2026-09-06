@@ -1,0 +1,21 @@
+body {
+  font-family: var(--font-body-portal);
+  background: var(--al-bg);
+  color: var(--al-ink);
+}
+
+h1, h2, h3, .serif {
+  font-family: var(--font-heading-portal);
+}
+
+.wrap {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+@media (max-width: 900px) {
+  .wrap {
+    padding: 0 20px;
+  }
+}
