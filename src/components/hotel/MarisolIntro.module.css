@@ -1,0 +1,96 @@
+.section {
+  background: var(--theme-primary-dark, #071A1E);
+  padding: 130px 64px;
+}
+
+.grid {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 0.65fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+/* ---- text (reveals with opacity + translateY) ---- */
+.text {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.textVisible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.location {
+  display: block;
+  font-family: var(--font-body, 'Manrope', sans-serif);
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--theme-accent, #C5A46D);
+  margin-bottom: 22px;
+}
+
+.text h2 {
+  font-family: var(--font-heading, 'Cormorant Garamond', serif);
+  font-weight: 500;
+  font-size: clamp(32px, 3.6vw, 48px);
+  line-height: 1.15;
+  color: #fff;
+}
+
+.rule {
+  display: block;
+  width: 48px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.25);
+  margin: 28px 0;
+}
+
+.text p {
+  font-family: var(--font-body, 'Manrope', sans-serif);
+  font-size: 14.5px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.65);
+  max-width: 400px;
+}
+
+/* ---- image (reveals with clip-path wipe) ---- */
+.imageWrap {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  clip-path: inset(0 100% 0 0);
+  transition: clip-path 1.1s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.imageVisible {
+  clip-path: inset(0 0% 0 0);
+}
+
+.marbleBg {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 20% 20%, rgba(197, 164, 109, 0.12), transparent 45%),
+    linear-gradient(140deg, var(--theme-primary, #0B2B30), var(--theme-primary-dark, #071A1E));
+}
+
+.photoLayer {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 1000px) {
+  .section {
+    padding: 90px 24px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
