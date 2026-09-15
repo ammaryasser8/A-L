@@ -18,7 +18,7 @@ export default function MarisolHeader() {
   return (
     <header className={solid ? `${styles.header} ${styles.solid}` : styles.header}>
       <div className={styles.utilityBar}>
-        <span>Marisol Bay Resort · Sahl Hasheesh / Red Sea</span>
+        <span>Marisol Bay Resort · The Red Sea Frequency</span>
         <span className={styles.utilityRight}>
           <Link to="/">EN ⌄</Link>
           <Link to="/hotels/marisol-bay-resort#contact">Contact us</Link>

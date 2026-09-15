@@ -9,40 +9,40 @@ export default function MarisolLocation({ hotel }) {
   if (!hotel?.address) return null;
 
   return (
-    <section className={styles.section}>
+    <section id="location" className={styles.section}>
       <div className={styles.imageWrap}>
         <div className={styles.marbleBg} />
         <div className={styles.photoLayer} style={{ backgroundImage: `url(${LOCATION_IMAGE})` }} />
       </div>
 
       <div className={styles.content}>
-        <span className={styles.eyebrow}>Location</span>
+        <span className={styles.eyebrow}>The final coordinate</span>
         <h2>
-          {hotel.shortName}
+          Found at the edge
           <br />
-          {hotel.address.area}, {hotel.address.country}
+          of the <em>Red Sea.</em>
         </h2>
-        <p>{hotel.description}</p>
+        <p>Not somewhere to rush through. A shoreline to arrive at, breathe into, and carry with you long after check-out.</p>
 
         <ul className={styles.facts}>
           <li>
-            <strong>Address</strong>
+            <strong>Resort address</strong>
             <span>
               {hotel.address.street}, {hotel.address.area}, {hotel.address.city}
             </span>
           </li>
           <li>
-            <strong>Nearest Airport</strong>
+            <strong>Nearest airport</strong>
             <span>Hurghada International Airport</span>
           </li>
           <li>
-            <strong>Getting Here</strong>
+            <strong>Arrival route</strong>
             <span>A short drive along the Red Sea coast from Hurghada</span>
           </li>
         </ul>
 
         <button type="button" className={styles.cta} onClick={() => goTo('rooms')}>
-          Discover {hotel.address.city} →
+          Begin your Marisol stay <span>↗</span>
         </button>
       </div>
     </section>

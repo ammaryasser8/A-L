@@ -18,6 +18,7 @@ import MarisolStory from '../components/hotel/MarisolStory';
 import MarisolGallery from '../components/hotel/MarisolGallery';
 import MarisolTestimonials from '../components/hotel/MarisolTestimonials';
 import MarisolFinalCTA from '../components/hotel/MarisolFinalCTA';
+import MarisolLocation from '../components/hotel/MarisolLocation';
 import MarisolCursor from '../components/ui/MarisolCursor';
 
 export default function MarisolHotelPage() {
@@ -67,6 +68,7 @@ export default function MarisolHotelPage() {
       <MarisolStory hotel={hotel} />
       <MarisolGallery hotel={hotel} />
       <MarisolTestimonials products={products} />
+      <MarisolLocation hotel={hotel} />
       <MarisolFinalCTA />
       <SiteFooter hotel={hotel} />
     </div>

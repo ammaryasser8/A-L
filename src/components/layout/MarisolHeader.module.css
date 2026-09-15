@@ -1,4 +1,4 @@
-.header { position:fixed; z-index:70;top:0;left:62px;right:0;background:linear-gradient(180deg,rgba(2,20,22,.58),transparent);transition:background .4s,backdrop-filter .4s; }.header.solid{background:rgba(4,36,39,.86);backdrop-filter:blur(15px);box-shadow:0 1px 0 rgba(236,214,159,.15)}
+.header { position:fixed; z-index:70;top:0;left:0;right:0;background:linear-gradient(180deg,rgba(2,20,22,.58),transparent);transition:background .4s,backdrop-filter .4s; }.header.solid{background:rgba(4,36,39,.86);backdrop-filter:blur(15px);box-shadow:0 1px 0 rgba(236,214,159,.15)}
 
 .utilityBar{display:flex;align-items:center;justify-content:center;gap:24px;padding:7px 30px;border-bottom:1px solid rgba(255,255,255,.11);color:rgba(239,225,190,.84);font-size:8px;letter-spacing:.17em;text-transform:uppercase;position:relative}
 

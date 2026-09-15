@@ -80,14 +80,14 @@
     },
    "theme": {
   "colors": {
-   "primary": "#17293F",
-"primaryDark": "#0F1E30",
-    "accent": "#C9A24B",
-    "accentLight": "#E7CD8D",
-    "surface": "#F4F1EA",
-    "surfaceDark": "#E7E1D3",
+   "primary": "#063E41",
+"primaryDark": "#02282B",
+    "accent": "#D5B56D",
+    "accentLight": "#ECD89D",
+    "surface": "#EFE8D9",
+    "surfaceDark": "#E2D8C6",
     "onPrimary": "#FFFFFF",
-    "ink": "#12181C"
+    "ink": "#113638"
   },
   "fonts": {
     "heading": "Fraunces, serif",

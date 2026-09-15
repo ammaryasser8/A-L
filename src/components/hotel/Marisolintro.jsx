@@ -4,34 +4,22 @@ import styles from './MarisolIntro.module.css';
 const INTRO_IMAGE = '/images/hero/marisol-intro-architecture.jpg';
 
 export default function MarisolIntro({ hotel }) {
-  const [textRef, textVisible] = useReveal();
-  const [imageRef, imageVisible] = useReveal();
+  const [sectionRef, visible] = useReveal();
 
   return (
-    <section className={styles.section}>
+    <section ref={sectionRef} className={`${styles.section} ${visible ? styles.visible : ''}`}>
+      <div className={styles.topline}><span>01 / Arrival</span><i /><span>The Red Sea, Egypt</span></div>
       <div className={styles.grid}>
-        <div
-          ref={textRef}
-          className={textVisible ? `${styles.text} ${styles.textVisible}` : styles.text}
-        >
-          <span className={styles.location}>
-            {hotel?.address?.area}, {hotel?.address?.city}
-          </span>
-          <h2>
-            A Quiet Place
-            <br />
-            Between Sea and Sky
-          </h2>
-          <span className={styles.rule} />
+        <div className={styles.statement}>
+          <span className={styles.eyebrow}>A different kind of coastline</span>
+          <h2>Made for the <em>long way</em> around.</h2>
           <p>{hotel?.description}</p>
+          <div className={styles.moments}><span>Quiet mornings</span><span>Salt air</span><span>Open water</span></div>
         </div>
-
-        <div
-          ref={imageRef}
-          className={imageVisible ? `${styles.imageWrap} ${styles.imageVisible}` : styles.imageWrap}
-        >
-          <div className={styles.marbleBg} />
-          <div className={styles.photoLayer} style={{ backgroundImage: `url(${INTRO_IMAGE})` }} />
+        <div className={styles.art}>
+          <div className={styles.photo} style={{ backgroundImage: `url(${INTRO_IMAGE})` }} />
+          <div className={styles.stamp}><span>MARISOL</span><b>∞</b><span>EST. 2021</span></div>
+          <div className={styles.note}>No itinerary<br />required.</div>
         </div>
       </div>
     </section>

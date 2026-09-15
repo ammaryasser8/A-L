@@ -1,5 +1,6 @@
 import styles from './MarisolExperiences.module.css';
 import { Link } from 'react-router-dom';
+import { useReveal } from '../../hooks/useReveal';
 
 const COLLECTIONS = {
   'Water Activities': '/hotels/marisol-bay-resort/collection/movement',
@@ -68,11 +69,13 @@ const EXPERIENCES = [
 ];
 
 export default function MarisolExperiences() {
+  const [sectionRef, visible] = useReveal();
   return (
-    <section id="experiences" className={`wrap ${styles.section}`}>
+    <section ref={sectionRef} id="experiences" className={`${styles.section} ${visible ? styles.visible : ''}`}>
       <div className={styles.head}>
-        <span className={styles.eyebrow}>Experiences</span>
-        <h2>Crafted for you</h2>
+        <span className={styles.eyebrow}>Beyond the room</span>
+        <h2>Follow the <em>feeling.</em></h2>
+        <p>Each day begins with a direction, never a demand.</p>
       </div>
       <div className={styles.grid}>
         {EXPERIENCES.map((e) => (
@@ -82,8 +85,7 @@ export default function MarisolExperiences() {
               <div className={styles.photoLayer} style={{ backgroundImage: `url(${e.media})` }} />
               <span className={styles.icon}>{e.icon}</span>
             </div>
-            <h3>{e.title}</h3>
-            <p>{e.text}</p>
+            <div className={styles.cardCopy}><span>Discover</span><h3>{e.title}</h3><p>{e.text}</p></div>
           </Link>
         ))}
       </div>
