@@ -1,4 +1,7 @@
 .hero {
+  --orbit-x: 0px;
+  --orbit-y: 0px;
+  --film-x: 0px;
   position: relative;
   min-height: 100vh;
   color: #fff;
@@ -15,7 +18,7 @@
   inset: 0;
   z-index: 0;
   opacity: 0;
-  transition: opacity 1s ease;
+  transition: opacity 1.8s cubic-bezier(0.2, 0.7, 0.2, 1);
 }
 
 .slideActive {
@@ -45,6 +48,8 @@
   inset: 0;
   background-size: cover;
   background-position: center;
+  transform: translateX(var(--film-x)) scale(1.04);
+  transition: transform 1.4s cubic-bezier(0.2, 0.7, 0.2, 1);
 }
 
 .video {
@@ -53,6 +58,8 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transform: translateX(var(--film-x)) scale(1.035);
+  transition: transform 1.4s cubic-bezier(0.2, 0.7, 0.2, 1);
 }
 
 .scrim {
@@ -60,16 +67,19 @@
   inset: 0;
   z-index: 2;
   background:
-    linear-gradient(90deg, rgba(4, 8, 14, 0.72) 0%, rgba(4, 8, 14, 0.35) 45%, rgba(4, 8, 14, 0.15) 70%),
-    linear-gradient(0deg, rgba(4, 8, 14, 0.55) 0%, transparent 35%);
+    radial-gradient(circle at 75% 22%, rgba(99, 212, 198, 0.19), transparent 21%),
+    linear-gradient(90deg, rgba(2, 25, 28, 0.86) 0%, rgba(2, 25, 28, 0.4) 48%, rgba(2, 25, 28, 0.1) 80%),
+    linear-gradient(0deg, rgba(2, 20, 23, 0.76) 0%, transparent 45%);
 }
+
+.stars{position:absolute;z-index:2;inset:0;pointer-events:none;opacity:.52;background-image:radial-gradient(circle at 11% 22%,#ead49a 0 1px,transparent 1.5px),radial-gradient(circle at 68% 17%,rgba(235,255,246,.84) 0 1px,transparent 1.5px),radial-gradient(circle at 87% 43%,rgba(236,208,147,.7) 0 1px,transparent 1.5px),radial-gradient(circle at 39% 34%,rgba(213,248,240,.7) 0 1px,transparent 1.5px);background-size:270px 260px,340px 320px,410px 360px,220px 200px}.orbit{position:absolute;z-index:2;right:clamp(8%,15vw,250px);top:13%;width:min(48vw,700px);aspect-ratio:1;border:1px solid rgba(232,210,151,.38);border-radius:50%;transform:translate(var(--orbit-x),var(--orbit-y)) rotate(-23deg);transition:transform .6s ease;pointer-events:none}.orbit:before{content:'';position:absolute;inset:11%;border:1px solid rgba(150,224,211,.25);border-radius:50%}.orbit i{position:absolute;top:8%;left:10%;width:8px;height:8px;border-radius:50%;background:#e7cc8d;box-shadow:0 0 21px 5px rgba(231,204,141,.46)}.orbit b{position:absolute;right:-5px;bottom:27%;width:13px;height:13px;border:1px solid #b2d9d0;border-radius:50%;box-shadow:0 0 19px rgba(178,217,208,.4)}.coordinates{position:absolute;z-index:3;right:clamp(24px,5vw,88px);top:53%;display:flex;align-items:center;gap:12px;writing-mode:vertical-rl;color:rgba(225,240,232,.7);font-size:8px;letter-spacing:.18em}.coordinates i{height:47px;width:1px;background:#e8cf91}.transmission{margin:32px 0 0;color:rgba(223,239,232,.58);font-size:8px;letter-spacing:.17em;line-height:1.5}.slideIndex{position:absolute;z-index:3;left:64px;bottom:58px;display:flex;align-items:center;gap:9px;color:#d9e7e0;font-size:8px;letter-spacing:.16em}.slideIndex strong{color:#e9cf90;font:400 30px/.7 var(--font-heading,'Fraunces',serif)}.slideIndex i{width:40px;height:1px;background:rgba(233,207,144,.7)}
 
 /* ---- text content ---- */
 .content {
   position: relative;
   z-index: 3;
-  max-width: 540px;
-  animation: fadeUp 0.6s ease;
+  max-width: 650px;
+  animation: fadeUp 1s cubic-bezier(0.2, 0.7, 0.2, 1);
 }
 
 @keyframes fadeUp {
@@ -102,11 +112,11 @@
 
 .heading {
   font-family: var(--font-heading, 'Fraunces', serif);
-  font-size: clamp(40px, 6vw, 68px);
+  font-size: clamp(54px, 7.2vw, 108px);
   line-height: 1.02;
   font-weight: 500;
   letter-spacing: 0.01em;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .heading span {
@@ -173,8 +183,10 @@
 .dots {
   position: absolute;
   z-index: 3;
-  left: 64px;
-  bottom: 100px;
+  right: 64px;
+  left: auto;
+  bottom: 62px;
+  flex-direction: column;
   display: flex;
   gap: 8px;
 }
@@ -192,7 +204,8 @@
 
 .dotActive {
   background: var(--theme-accent, #c9a24b);
-  width: 18px;
+  width: 6px;
+  height: 22px;
   border-radius: 3px;
 }
 
@@ -203,10 +216,10 @@
   right: 64px;
   bottom: 60px;
   width: 320px;
-  background: rgba(6, 10, 18, 0.7);
-  backdrop-filter: blur(14px);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 4px;
+  background: rgba(5, 41, 44, 0.68);
+  backdrop-filter: blur(19px);
+  border: 1px solid rgba(232, 207, 145, 0.34);
+  border-radius: 0;
   padding: 20px;
 }
 
@@ -290,7 +303,9 @@
     bottom: 30px;
   }
   .dots {
-    left: 24px;
+    right: 24px;
+    left: auto;
     bottom: 260px;
   }
+  .slideIndex{left:24px;bottom:240px}.coordinates,.orbit{display:none}
 }

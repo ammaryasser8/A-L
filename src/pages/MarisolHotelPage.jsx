@@ -4,6 +4,7 @@ import { useHotelBySlug } from '../hooks/useHotelBySlug';
 import { useHotelProducts } from '../hooks/useHotelProducts';
 
 import MarisolHeader from '../components/layout/Marisolheader';
+import MarisolSidebar from '../components/layout/MarisolSidebar';
 import SiteFooter from '../components/layout/Sitefooter';
 import MarisolHero from '../components/hotel/MarisolHero';
 import MarisolIntro from '../components/hotel/MarisolIntro';
@@ -53,6 +54,7 @@ export default function MarisolHotelPage() {
   return (
     <div style={themeVars}>
       <MarisolCursor />
+      <MarisolSidebar />
       <MarisolHeader />
       <MarisolHero hotel={hotel} />
       <MarisolIntro hotel={hotel} />

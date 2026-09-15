@@ -4,6 +4,7 @@ import { motion } from 'motion/react';
 import products from '../data/products.json';
 import { useHotelBySlug } from '../hooks/useHotelBySlug';
 import MarisolHeader from '../components/layout/Marisolheader';
+import MarisolSidebar from '../components/layout/MarisolSidebar';
 import SiteFooter from '../components/layout/Sitefooter';
 import MarisolCursor from '../components/ui/MarisolCursor';
 import NotFoundPage from './NotFoundPage';
@@ -33,6 +34,7 @@ export default function MarisolCollectionPage() {
   return (
     <div className={styles.page}>
       <MarisolCursor />
+      <MarisolSidebar />
       <MarisolHeader />
       <main>
         <section className={styles.hero}>
