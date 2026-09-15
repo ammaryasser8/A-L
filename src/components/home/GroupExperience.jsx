@@ -56,7 +56,12 @@ export default function GroupExperience() {
     const totalReviews = products.reduce((sum, product) => sum + product.reviewsCount, 0);
     const sharedCategories = homeConfig.homepage.sharedCategories.filter(({ label }) => products.some((product) => product.category === label));
     const experiences = sharedCategories.map((category, index) => {
-      const product = products.find((item) => item.category === category.label && item.featured) || products.find((item) => item.category === category.label);
+      const categoryProducts = products.filter((item) => item.category === category.label);
+      const preferredHotelId = index % 2 === 0 ? 1 : 2;
+      const product = categoryProducts.find((item) => item.hotelId === preferredHotelId && item.featured)
+        || categoryProducts.find((item) => item.hotelId === preferredHotelId)
+        || categoryProducts.find((item) => item.featured)
+        || categoryProducts[0];
       return product && { ...category, product, number: String(index + 1).padStart(2, '0') };
     }).filter(Boolean).slice(0, 6);
     const stays = hotels.map((hotel) => (byHotel[hotel.id].find((item) => item.featured && ['Rooms', 'Suites'].includes(item.category)) || byHotel[hotel.id][0])).filter(Boolean);
@@ -181,7 +186,7 @@ export default function GroupExperience() {
 
         <section id="experiences" className={styles.experienceSection}>
           <div className={styles.experienceIntro}><div className={styles.sectionLabel}><span>03</span><i />Curated experiences</div><p className={styles.eyebrow}>Across the collection</p><h2>There is more<br />than one way to <em>feel.</em></h2><p>Spaces, rituals and moments selected from the actual experiences at both addresses.</p></div>
-          <div className={styles.experiencePin}><div ref={experienceTrack} className={styles.experienceTrack}>{model.experiences.map((experience) => <Link key={experience.label} to={`/hotels/${experience.product.hotelId === 1 ? hotels[0].slug : hotels[1].slug}/product/${experience.product.slug}`} className={styles.experienceCard} data-cursor="VIEW"><div className={styles.cardImage} style={{ backgroundImage: `url(${imagePath(experience.product.images[0])})` }} /><div className={styles.cardMeta}><span>{experience.number} / {experience.label}</span><strong>{experience.product.title}</strong><p>{experience.product.shortDescription}</p><Arrow /></div></Link>)}</div></div>
+          <div className={styles.experiencePin}><div ref={experienceTrack} className={styles.experienceTrack}>{model.experiences.map((experience) => { const hotel = hotels.find((item) => item.id === experience.product.hotelId); return hotel ? <Link key={experience.label} to={`/hotels/${hotel.slug}/product/${experience.product.slug}`} className={styles.experienceCard} data-cursor="VIEW"><div className={styles.cardImage} style={{ backgroundImage: `url(${imagePath(experience.product.images[0])})` }} /><div className={styles.cardMeta}><span>{experience.number} / {experience.label}</span><strong>{experience.product.title}</strong><p>{experience.product.shortDescription}</p><Arrow /></div></Link> : null; })}</div></div>
         </section>
 
         <section className={styles.gallery} aria-label="A closer look at the AL collection">

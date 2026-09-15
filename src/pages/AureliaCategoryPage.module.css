@@ -133,7 +133,7 @@
   z-index: -5;
 
   background:
-    url('/images/aurelia/hero.jpg')
+    url('/images/aurelia/section.jpg')
     center / cover no-repeat;
 
   filter:
@@ -1049,7 +1049,7 @@
   inset: -3%;
 
   background:
-    url('/images/aurelia/hero.jpg')
+    url('/images/aurelia/section.jpg')
     center / cover no-repeat;
 
   filter:

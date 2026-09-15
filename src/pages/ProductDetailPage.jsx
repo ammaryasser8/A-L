@@ -52,6 +52,10 @@ export default function ProductDetailPage() {
     return <NotFoundPage />;
   }
 
+  const collectionPath = hotel.id === 1
+    ? `/hotels/${hotel.slug}/explore`
+    : `/hotels/${hotel.slug}#rooms`;
+
   const themeVars = {
     '--theme-primary': hotel.theme.colors.primary,
     '--theme-primary-dark':
@@ -83,11 +87,13 @@ export default function ProductDetailPage() {
         product={product}
         hotel={hotel}
         imageSrc={imageSrc}
+        collectionPath={collectionPath}
       />
 
       <main>
         <ExperienceSection
           product={product}
+          hotel={hotel}
         />
 
         <AmenitiesSection
@@ -96,6 +102,7 @@ export default function ProductDetailPage() {
 
         <ReservationSection
           product={product}
+          hotel={hotel}
           reserved={reserved}
           setReserved={setReserved}
         />
@@ -108,6 +115,7 @@ export default function ProductDetailPage() {
 
         <ClosingSection
           hotel={hotel}
+          collectionPath={collectionPath}
         />
       </main>
     </div>
@@ -123,6 +131,7 @@ function LuxuryHero({
   product,
   hotel,
   imageSrc,
+  collectionPath,
 }) {
   const heroRef = useRef(null);
 
@@ -190,7 +199,7 @@ function LuxuryHero({
 
       <header className={styles.heroNav}>
         <Link
-          to={`/hotels/${hotel.slug}/explore`}
+          to={collectionPath}
           className={styles.backLink}
         >
           <ArrowLeft
@@ -202,14 +211,14 @@ function LuxuryHero({
         </Link>
 
         <div className={styles.brand}>
-          AURELIA
+          {hotel.shortName.toUpperCase()}
         </div>
 
         <Link
           to={`/hotels/${hotel.slug}`}
           className={styles.hotelLink}
         >
-          Grand Hotel
+          {hotel.name}
 
           <ArrowUpRight
             size={14}
@@ -249,9 +258,9 @@ function LuxuryHero({
         </h1>
 
         <p>
-          An intimate expression of
+          A considered expression of
           <br />
-          the Aurelia way of staying.
+          the {hotel.shortName} way of staying.
         </p>
       </motion.div>
 
@@ -277,7 +286,7 @@ function LuxuryHero({
 
       <div className={styles.heroBottom}>
         <span>
-          AURELIA GRAND HOTEL
+          {hotel.name.toUpperCase()}
         </span>
 
         <div
@@ -285,7 +294,7 @@ function LuxuryHero({
         />
 
         <span>
-          PRIVATE STAY
+          {product.category.toUpperCase()}
         </span>
       </div>
     </section>
@@ -299,6 +308,7 @@ function LuxuryHero({
 
 function ExperienceSection({
   product,
+  hotel,
 }) {
   const experienceImage =
     product.images?.[1] ||
@@ -388,7 +398,7 @@ function ExperienceSection({
             />
 
             <span>
-              AURELIA INTERIORS
+              {hotel.shortName.toUpperCase()} INTERIORS
             </span>
           </div>
         </motion.div>
@@ -446,7 +456,7 @@ function ExperienceSection({
             considered to create an
             atmosphere that feels
             effortless, intimate and
-            distinctly Aurelia.
+            distinctly {hotel.shortName}.
           </p>
 
           <div
@@ -633,6 +643,7 @@ function AmenitiesSection({
 
 function ReservationSection({
   product,
+  hotel,
   reserved,
   setReserved,
 }) {
@@ -672,7 +683,7 @@ function ReservationSection({
           }}
         >
           <p className={styles.eyebrow}>
-            YOUR AURELIA STAY
+            YOUR {hotel.shortName.toUpperCase()} STAY
           </p>
 
           <h2>
@@ -684,8 +695,8 @@ function ReservationSection({
           </h2>
 
           <p>
-            Begin your stay at Aurelia
-            Grand Hotel. Our team will
+            Begin your stay at {hotel.name}.
+            Our team will
             take care of every detail.
           </p>
         </motion.div>
@@ -729,7 +740,7 @@ function ReservationSection({
               {product.category}
             </span>
 
-            <span>AURELIA</span>
+            <span>{hotel.shortName.toUpperCase()}</span>
           </div>
 
           <div
@@ -883,6 +894,7 @@ function ReviewsSection({
 
 function ClosingSection({
   hotel,
+  collectionPath,
 }) {
   return (
     <section className={styles.closing}>
@@ -893,7 +905,7 @@ function ClosingSection({
       />
 
       <p>
-        THE AURELIA GRAND HOTEL
+        THE {hotel.name.toUpperCase()}
       </p>
 
       <h2>
@@ -905,7 +917,7 @@ function ClosingSection({
       </h2>
 
       <Link
-        to={`/hotels/${hotel.slug}/explore`}
+        to={collectionPath}
         className={
           styles.closingLink
         }
