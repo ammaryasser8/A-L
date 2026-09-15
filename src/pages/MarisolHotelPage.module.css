@@ -1,6 +1,28 @@
+/* =========================================
+   MARISOL HOTEL PAGE
+   LUXURY NAVY + DEEP MARBLE
+   ========================================= */
+
+.marisolPage {
+  position: relative;
+  min-height: 100vh;
+  color: var(--theme-on-primary, #F7F3EA);
+  background: var(--theme-primary-dark, #071A1E);
+}
+
+.marisolPage > * {
+  position: relative;
+  z-index: 1;
+}
+
+
+/* =========================================
+   ROOMS
+   ========================================= */
+
 .roomsSection {
-  padding: 80px 40px;
-  background: var(--theme-primary, #0b1220);
+  padding: 100px 40px;
+  background: var(--theme-surface, #F7F3EA);
 }
 
 .roomsHead {
@@ -8,27 +30,88 @@
 }
 
 .eyebrow {
+  display: inline-block;
+
   font-size: 11.5px;
+  font-weight: 500;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--theme-accent, #c9a24b);
+
+  color: var(--theme-accent, #C5A46D);
 }
 
 .roomsHead h2 {
-  font-family: var(--font-heading, 'Fraunces', serif);
-  font-size: 28px;
-  color: #fff;
   margin-top: 6px;
+
+  font-family: var(
+    --font-heading,
+    "Cormorant Garamond",
+    serif
+  );
+
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 1.2;
+
+  color: var(--theme-ink, #071A1E);
 }
+
+
+/* =========================================
+   ROOMS GRID
+   ========================================= */
 
 .grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 22px;
+
+  background: transparent;
 }
 
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 1100px) {
+  .roomsSection {
+    padding: 70px 30px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
 @media (max-width: 900px) {
+  .roomsSection {
+    padding: 60px 22px;
+  }
+
+  .roomsHead h2 {
+    font-size: 25px;
+  }
+
   .grid {
     grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .roomsSection {
+    padding: 55px 18px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
   }
 }

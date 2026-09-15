@@ -1,0 +1,117 @@
+.section {
+  background: var(--theme-surface-dark, #DDE8E4);
+  padding: 130px 0;
+}
+
+.featured {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+  aspect-ratio: 21 / 9;
+  overflow: hidden;
+  opacity: 0;
+  transform: scale(1.03);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.marbleBg {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 20% 20%, rgba(197, 164, 109, 0.1), transparent 45%),
+    linear-gradient(140deg, var(--theme-primary, #0B2B30), var(--theme-primary-dark, #071A1E));
+}
+
+.photoLayer {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.scrim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, rgba(4, 12, 14, 0.7) 0%, rgba(4, 12, 14, 0.1) 55%);
+}
+
+.featuredContent {
+  position: absolute;
+  left: 64px;
+  bottom: 48px;
+  right: 64px;
+  color: #fff;
+}
+
+.eyebrow {
+  display: block;
+  font-family: var(--font-body, 'Manrope', sans-serif);
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--theme-accent-light, #DCC7A4);
+  margin-bottom: 14px;
+}
+
+.featuredContent h2 {
+  font-family: var(--font-heading, 'Cormorant Garamond', serif);
+  font-weight: 500;
+  font-size: clamp(28px, 4vw, 44px);
+  margin-bottom: 12px;
+}
+
+.featuredContent p {
+  font-family: var(--font-body, 'Manrope', sans-serif);
+  font-size: 13.5px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.75);
+  max-width: 480px;
+}
+
+/* ---- secondary row ---- */
+.row {
+  max-width: 1440px;
+  margin: 40px auto 0;
+  padding: 0 64px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.item {
+  text-align: center;
+}
+
+.itemImage {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 14px;
+}
+
+.item span {
+  font-family: var(--font-heading, 'Cormorant Garamond', serif);
+  font-size: 15px;
+  color: var(--theme-ink, #071A1E);
+}
+
+@media (max-width: 900px) {
+  .featured {
+    aspect-ratio: 4 / 5;
+  }
+  .featuredContent {
+    left: 24px;
+    right: 24px;
+    bottom: 32px;
+  }
+  .row {
+    grid-template-columns: 1fr 1fr;
+    padding: 0 24px;
+  }
+}

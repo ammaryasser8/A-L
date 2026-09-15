@@ -5,7 +5,7 @@ const BANNER_MEDIA = '/images/sections/marisol-promo-banner.jpg';
 
 export default function MarisolPromoBanner() {
   return (
-    <section className={styles.banner}>
+    <section id="offers" className={styles.banner}>
       <div className={styles.marbleBg} />
       <div className={styles.photoLayer} style={{ backgroundImage: `url(${BANNER_MEDIA})` }} />
       <div className={styles.overlay} />
@@ -17,7 +17,14 @@ export default function MarisolPromoBanner() {
           save more.
         </h2>
         <p>Enjoy up to 20% off when you stay 3 nights or more.</p>
-        <Button variant="primary">View offers</Button>
+        <Button
+          variant="primary"
+          onClick={() =>
+            document.getElementById('rooms')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+          }
+        >
+          View offers
+        </Button>
       </div>
     </section>
   );
