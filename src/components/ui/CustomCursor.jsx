@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import gsap from 'gsap';
 import styles from './CustomCursor.module.css';
 
-export default function CustomCursor() {
+export default function CustomCursor({ variant = 'group' }) {
   const dotRef = useRef(null);
   const ringRef = useRef(null);
   const [active] = useState(() => (
@@ -26,7 +26,7 @@ export default function CustomCursor() {
 
       const labelTarget = e.target.closest?.('[data-cursor]');
       setLabel(labelTarget ? labelTarget.getAttribute('data-cursor') : '');
-      setHoveringInteractive(Boolean(e.target.closest?.('button, a')));
+      setHoveringInteractive(Boolean(e.target.closest?.('button, a, input, select, [data-cursor]')));
     }
 
     function ringTick() {
@@ -55,8 +55,8 @@ export default function CustomCursor() {
 
   return (
     <>
-      <div ref={dotRef} className={styles.dot} />
-      <div ref={ringRef} className={ringClass}>
+      <div ref={dotRef} className={`${styles.dot} ${styles[variant] || ''}`} />
+      <div ref={ringRef} className={`${ringClass} ${styles[variant] || ''}`}>
         {label && <span>{label}</span>}
       </div>
     </>

@@ -1,4 +1,13 @@
 import styles from './MarisolExperiences.module.css';
+import { Link } from 'react-router-dom';
+
+const COLLECTIONS = {
+  'Water Activities': '/hotels/marisol-bay-resort/collection/movement',
+  'Sunset Yoga': '/hotels/marisol-bay-resort/collection/wellness',
+  'Private Dining': '/hotels/marisol-bay-resort/collection/dining',
+  'Wellness Journey': '/hotels/marisol-bay-resort/collection/wellness',
+  'Local Discovery': '/hotels/marisol-bay-resort/collection/shoreline',
+};
 
 const EXPERIENCES = [
   {
@@ -67,7 +76,7 @@ export default function MarisolExperiences() {
       </div>
       <div className={styles.grid}>
         {EXPERIENCES.map((e) => (
-          <div key={e.title} className={styles.card}>
+          <Link key={e.title} className={styles.card} to={COLLECTIONS[e.title]}>
             <div className={styles.image}>
               <div className={styles.marbleBg} />
               <div className={styles.photoLayer} style={{ backgroundImage: `url(${e.media})` }} />
@@ -75,7 +84,7 @@ export default function MarisolExperiences() {
             </div>
             <h3>{e.title}</h3>
             <p>{e.text}</p>
-          </div>
+          </Link>
         ))}
       </div>
     </section>

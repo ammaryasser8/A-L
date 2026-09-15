@@ -42,6 +42,7 @@ export default function MarisolDining({ hotel }) {
       <div className={styles.head}>
         <span className={styles.headEyebrow}>Dining</span>
         <h2>A Table by the Sea</h2>
+        <Link className={styles.link} to={`/hotels/${hotel.slug}/collection/dining`}>View every table →</Link>
       </div>
 
       <div className={styles.rows}>

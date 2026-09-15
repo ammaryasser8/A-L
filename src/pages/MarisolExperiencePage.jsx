@@ -6,6 +6,7 @@ import { useHotelBySlug } from '../hooks/useHotelBySlug';
 import { formatPrice } from '../utils/formatPrice';
 import NotFoundPage from './NotFoundPage';
 import SiteFooter from '../components/layout/Sitefooter';
+import MarisolCursor from '../components/ui/MarisolCursor';
 import styles from './MarisolExperiencePage.module.css';
 
 const LABELS = {
@@ -21,8 +22,8 @@ const LABELS = {
 };
 
 export default function MarisolExperiencePage() {
-  const { hotelSlug, productSlug } = useParams();
-  const hotel = useHotelBySlug(hotelSlug);
+  const { productSlug } = useParams();
+  const hotel = useHotelBySlug('marisol-bay-resort');
   const product = products.find((item) => item.hotelId === 2 && item.slug === productSlug);
   const [requested, setRequested] = useState(false);
 
@@ -34,6 +35,7 @@ export default function MarisolExperiencePage() {
 
   return (
     <div className={`${styles.page} ${styles[`category${product.category.replace(/[^a-z]/gi, '')}`]}`}>
+      <MarisolCursor />
       <header className={styles.header}>
         <Link to="/hotels/marisol-bay-resort" className={styles.back}><ArrowLeft size={16} /> Marisol Bay</Link>
         <span className={styles.mark}>M</span>

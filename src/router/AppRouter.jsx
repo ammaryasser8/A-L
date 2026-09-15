@@ -7,8 +7,10 @@ import AureliaCategoryPage from '../pages/AureliaCategoryPage';
 import MarisolHotelPage from '../pages/MarisolHotelPage';
 import ProductDetailPage from '../pages/ProductDetailPage';
 import MarisolExperiencePage from '../pages/MarisolExperiencePage';
+import MarisolCollectionPage from '../pages/MarisolCollectionPage';
 import LegalPage from '../pages/LegalPage';
 import NotFoundPage from '../pages/NotFoundPage';
+import CustomCursor from '../components/ui/CustomCursor';
 
 function ScrollToTop() {
   const { pathname, search } = useLocation();
@@ -25,9 +27,14 @@ function ScrollToTop() {
 }
 
 export default function AppRouter() {
+  const { pathname } = useLocation();
+  const cursorVariant = pathname.startsWith('/hotels/aurelia') ? 'aurelia' : 'group';
+  const usesMarisolCursor = pathname.startsWith('/hotels/marisol');
+
   return (
     <>
       <ScrollToTop />
+      {!usesMarisolCursor && <CustomCursor variant={cursorVariant} />}
 
       <Routes>
         <Route
@@ -53,6 +60,11 @@ export default function AppRouter() {
         <Route
           path="/hotels/marisol-bay-resort/product/:productSlug"
           element={<MarisolExperiencePage />}
+        />
+
+        <Route
+          path="/hotels/marisol-bay-resort/collection/:categorySlug"
+          element={<MarisolCollectionPage />}
         />
 
         <Route

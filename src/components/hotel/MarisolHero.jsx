@@ -9,12 +9,12 @@ const SLIDES = [
   {
     type: 'video',
     media: '/videos/marisol-hero.mp4',
-    eyebrow: 'Luxury Coastal Retreat',
-    headingLine1: 'Elevate',
-    headingLine2: 'your',
-    headingHighlight: 'escape',
+    eyebrow: 'Sahl Hasheesh · Red Sea',
+    headingLine1: 'Where the sea',
+    headingLine2: 'feels like',
+    headingHighlight: 'home',
     subtitle:
-      'Experience unparalleled luxury and minimalist elegance at Marisol Bay Resort.',
+      'A coastal sanctuary of light, sea air and considered moments.',
   },
   {
     type: 'image',

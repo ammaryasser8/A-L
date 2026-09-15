@@ -1,18 +1,19 @@
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import styles from './MarisolHeader.module.css';
 
 const NAV_LINKS = [
-  { label: 'The Resort', to: '#story' },
-  { label: 'Accommodation', to: '#rooms' },
-  { label: 'Dining', to: '#dining' },
-  { label: 'Spa', to: '#spa' },
-  { label: 'Experiences', to: '#experiences' },
-  { label: 'Gallery', to: '#gallery' },
+  { label: 'The Resort', to: '/hotels/marisol-bay-resort#story' },
+  { label: 'Accommodation', to: '/hotels/marisol-bay-resort#rooms' },
+  { label: 'Dining', to: '/hotels/marisol-bay-resort#dining' },
+  { label: 'Spa', to: '/hotels/marisol-bay-resort#spa' },
+  { label: 'Experiences', to: '/hotels/marisol-bay-resort#experiences' },
+  { label: 'Gallery', to: '/hotels/marisol-bay-resort#gallery' },
 ];
 
 export default function MarisolHeader() {
   const [solid, setSolid] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     function onScroll() {
@@ -28,7 +29,7 @@ export default function MarisolHeader() {
         <span>Exclusive offer — up to 20% off your summer escape</span>
         <span className={styles.utilityRight}>
           <Link to="/">EN ⌄</Link>
-          <a href="#contact">Contact us</a>
+          <Link to="/hotels/marisol-bay-resort#contact">Contact us</Link>
         </span>
       </div>
       <div className={styles.navRow}>
@@ -37,16 +38,18 @@ export default function MarisolHeader() {
         </Link>
         <nav className={styles.links}>
           {NAV_LINKS.map((link) => (
-            <a key={link.label} href={link.to}>
+            <Link key={link.label} to={link.to}>
               {link.label}
-            </a>
+            </Link>
           ))}
         </nav>
         <button
           className={styles.bookBtn}
-          onClick={() =>
-            document.getElementById('booking')?.scrollIntoView({ behavior: 'smooth', block: 'center' })
-          }
+          onClick={() => {
+            const booking = document.getElementById('booking');
+            if (booking) booking.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            else navigate('/hotels/marisol-bay-resort#booking');
+          }}
         >
           Book now
         </button>

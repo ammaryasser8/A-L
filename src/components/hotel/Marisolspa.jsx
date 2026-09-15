@@ -30,6 +30,7 @@ export default function MarisolSpa({ hotel }) {
           <span className={styles.eyebrow}>Wellness Journey</span>
           <h2>{featured.title}</h2>
           <p>{featured.description}</p>
+          <Link className={styles.eyebrow} to={`/hotels/${hotel.slug}/collection/wellness`}>Explore wellness rituals →</Link>
         </div>
         <Link className={styles.featuredLink} to={`/hotels/${hotel.slug}/product/${featured.slug}`} aria-label={`Discover ${featured.title}`} />
       </div>

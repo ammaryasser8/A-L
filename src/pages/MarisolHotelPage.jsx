@@ -17,6 +17,7 @@ import MarisolStory from '../components/hotel/MarisolStory';
 import MarisolGallery from '../components/hotel/MarisolGallery';
 import MarisolTestimonials from '../components/hotel/MarisolTestimonials';
 import MarisolFinalCTA from '../components/hotel/MarisolFinalCTA';
+import MarisolCursor from '../components/ui/MarisolCursor';
 
 export default function MarisolHotelPage() {
   const hotel = useHotelBySlug('marisol-bay-resort');
@@ -51,6 +52,7 @@ export default function MarisolHotelPage() {
 
   return (
     <div style={themeVars}>
+      <MarisolCursor />
       <MarisolHeader />
       <MarisolHero hotel={hotel} />
       <MarisolIntro hotel={hotel} />

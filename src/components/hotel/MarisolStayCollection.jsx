@@ -16,6 +16,7 @@ export default function MarisolStayCollection({ hotel }) {
         <span>Accommodation / 01</span>
         <h2>Stay at the<br /><em>water&apos;s edge.</em></h2>
         <p>Six distinct ways to wake up to the Red Sea—each with its own mood, view and rhythm.</p>
+        <Link to={`/hotels/${hotel.slug}/collection/stays`} className={styles.next}>Explore all rooms & suites <ArrowUpRight size={15} /></Link>
         <a href="#dining" className={styles.next}>Continue to dining <ArrowUpRight size={15} /></a>
       </div>
 
