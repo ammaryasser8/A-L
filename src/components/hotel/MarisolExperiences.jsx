@@ -60,7 +60,7 @@ const EXPERIENCES = [
 
 export default function MarisolExperiences() {
   return (
-    <section id="experiences" className={styles.section}>
+    <section className={`wrap ${styles.section}`}>
       <div className={styles.head}>
         <span className={styles.eyebrow}>Experiences</span>
         <h2>Crafted for you</h2>
@@ -71,11 +71,10 @@ export default function MarisolExperiences() {
             <div className={styles.image}>
               <div className={styles.marbleBg} />
               <div className={styles.photoLayer} style={{ backgroundImage: `url(${e.media})` }} />
+              <span className={styles.icon}>{e.icon}</span>
             </div>
-            <div className={styles.cardContent}>
-              <h3>{e.title}</h3>
-              <p>{e.text}</p>
-            </div>
+            <h3>{e.title}</h3>
+            <p>{e.text}</p>
           </div>
         ))}
       </div>

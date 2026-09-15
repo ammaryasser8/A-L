@@ -1,27 +1,15 @@
-import { useState, useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useState } from 'react';
 import { useHotelBySlug } from '../hooks/useHotelBySlug';
 import { useHotelProducts } from '../hooks/useHotelProducts';
 
-import MarisolHeader from '../components/layout/MarisolHeader';
+import MarisolHeader from '../components/layout/Marisolheader';
 import MarisolHero from '../components/hotel/MarisolHero';
-import MarisolIntro from '../components/hotel/MarisolIntro';
 import MarisolHighlights from '../components/hotel/MarisolHighlights';
 import MarisolExperiences from '../components/hotel/MarisolExperiences';
-import MarisolDining from '../components/hotel/MarisolDining';
-import MarisolSpa from '../components/hotel/MarisolSpa';
 import MarisolPromoBanner from '../components/hotel/MarisolPromoBanner';
-import MarisolStory from '../components/hotel/MarisolStory';
 import MarisolStats from '../components/hotel/MarisolStats';
-import MarisolTestimonials from '../components/hotel/MarisolTestimonials';
-import MarisolGallery from '../components/hotel/MarisolGallery';
-import MarisolResortMap from '../components/hotel/MarisolResortMap';
-import MarisolLocation from '../components/hotel/MarisolLocation';
-import MarisolFinalCTA from '../components/hotel/MarisolFinalCTA';
-import RoomsCarousel from '../components/hotel/RoomsCarousel';
-import SiteFooter from '../components/layout/SiteFooter';
-import Preloader from '../components/ui/Preloader';
 import CategoryTabs from '../components/shared/CategoryTabs';
+import ProductCard from '../components/shared/ProductCard';
 
 import styles from './MarisolHotelPage.module.css';
 
@@ -30,24 +18,6 @@ export default function MarisolHotelPage() {
   const [activeCategory, setActiveCategory] = useState('All');
   const products = useHotelProducts(hotel?.id, activeCategory);
   const allProducts = useHotelProducts(hotel?.id); // unfiltered, for the stats section
-  const location = useLocation();
-
-  // Preloader shows once per browser session, not on every visit/refresh.
-  const [heroReady, setHeroReady] = useState(
-    () => sessionStorage.getItem('marisol-preloaded') === '1'
-  );
-
-  // Lets header/footer links like "#rooms" or "#experiences" work even when
-  // they navigate here FROM another page (product detail, legal pages, etc).
-  useEffect(() => {
-    if (location.hash) {
-      const el = document.getElementById(location.hash.slice(1));
-      if (el) {
-        // small delay so the page has finished laying out first
-        setTimeout(() => el.scrollIntoView({ behavior: 'smooth', block: 'start' }), 50);
-      }
-    }
-  }, [location.hash]);
 
   if (!hotel) return null;
 
@@ -60,26 +30,16 @@ export default function MarisolHotelPage() {
     '--theme-surface-dark': hotel.theme.colors.surfaceDark,
     '--theme-on-primary': hotel.theme.colors.onPrimary,
     '--theme-ink': hotel.theme.colors.ink,
-    '--theme-muted': hotel.theme.colors.muted || '#6f9690',
+    '--theme-muted': '#6b7570',
     '--font-heading': hotel.theme.fonts.heading,
     '--font-body': hotel.theme.fonts.body,
     fontFamily: hotel.theme.fonts.body,
   };
 
   return (
-    <div className={styles.marisolPage} style={themeVars}>
-      {!heroReady && (
-        <Preloader
-          label={hotel.name}
-          onComplete={() => {
-            sessionStorage.setItem('marisol-preloaded', '1');
-            setHeroReady(true);
-          }}
-        />
-      )}
-      <MarisolHeader hotel={hotel} />
-      <MarisolHero hotel={hotel} ready={heroReady} />
-      <MarisolIntro hotel={hotel} />
+    <div style={themeVars}>
+      <MarisolHeader />
+      <MarisolHero hotel={hotel} />
       <MarisolHighlights />
 
       <section id="rooms" className={`wrap ${styles.roomsSection}`}>
@@ -94,25 +54,21 @@ export default function MarisolHotelPage() {
           categories={hotel.categories}
           active={activeCategory}
           onChange={setActiveCategory}
-          variant="light"
+          variant="dark"
         />
 
-        <RoomsCarousel products={products} hotelSlug={hotel.slug} />
+        <div className={styles.grid}>
+          {products.map((product) => (
+            <ProductCard key={product.id} product={product} hotelSlug={hotel.slug} />
+          ))}
+        </div>
       </section>
 
       <MarisolExperiences />
-      <MarisolDining hotel={hotel} />
-      <MarisolSpa hotel={hotel} />
       <MarisolPromoBanner />
-      <MarisolStory hotel={hotel} />
       <MarisolStats products={allProducts} />
-      <MarisolTestimonials products={allProducts} />
-      <MarisolGallery hotel={hotel} />
-      <MarisolResortMap />
-      <MarisolLocation hotel={hotel} />
-      <MarisolFinalCTA />
 
-      <SiteFooter hotel={hotel} />
+      {/* TODO: <SiteFooter /> — هتضاف هنا لما فرع feature/shared-footer يتدمج في main */}
     </div>
   );
 }

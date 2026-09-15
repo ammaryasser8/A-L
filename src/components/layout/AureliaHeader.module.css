@@ -1,0 +1,576 @@
+/* =========================================================
+   AURELIA
+   LUXURY HOTEL HEADER
+========================================================= */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+
+  z-index: 1000;
+
+  padding: 24px 42px;
+
+  color: #f5f0e8;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(20, 10, 14, 0.5),
+      rgba(20, 10, 14, 0.04)
+    );
+
+  transition:
+    padding 0.55s cubic-bezier(0.22, 1, 0.36, 1),
+    background 0.55s ease,
+    box-shadow 0.55s ease,
+    backdrop-filter 0.55s ease;
+}
+
+
+/* =========================================================
+   SCROLLED
+========================================================= */
+
+.header.solid {
+  padding: 15px 42px;
+
+  background:
+    rgba(31, 15, 20, 0.94);
+
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+
+  border-bottom:
+    1px solid rgba(216, 180, 90, 0.14);
+
+  box-shadow:
+    0 15px 45px rgba(0, 0, 0, 0.25);
+}
+
+
+/* =========================================================
+   MAIN ROW
+========================================================= */
+
+.navRow {
+  width: 100%;
+  max-width: 1560px;
+
+  min-height: 54px;
+
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+/* =========================================================
+   LEFT SIDE
+========================================================= */
+
+.leftSide {
+  display: flex;
+  align-items: center;
+
+  flex-shrink: 0;
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 108px;
+  height: 54px;
+
+  flex-shrink: 0;
+
+  text-decoration: none;
+}
+
+
+.logoImage {
+  display: block;
+
+  width: auto;
+  height: 48px;
+
+  max-width: 105px;
+
+  object-fit: contain;
+
+  filter:
+    drop-shadow(
+      0 3px 10px rgba(0, 0, 0, 0.3)
+    );
+
+  transition:
+    opacity 0.35s ease,
+    filter 0.35s ease;
+}
+
+
+.logo:hover .logoImage {
+  opacity: 0.96;
+
+  filter:
+    drop-shadow(
+      0 4px 15px rgba(216, 180, 90, 0.24)
+    );
+}
+
+
+/* =========================================================
+   GOLD DIVIDER
+========================================================= */
+
+.divider {
+  width: 1px;
+  height: 27px;
+
+  margin-left: 24px;
+  margin-right: 22px;
+
+  background:
+    linear-gradient(
+      to bottom,
+      transparent,
+      rgba(216, 180, 90, 0.7),
+      transparent
+    );
+}
+
+
+/* =========================================================
+   MENU ICON
+========================================================= */
+
+.menuBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+
+  padding: 0;
+
+  border: 0;
+  outline: none;
+
+  background: transparent;
+
+  color:
+    rgba(245, 240, 232, 0.95);
+
+  cursor: pointer;
+
+  transition:
+    color 0.35s ease;
+}
+
+
+.menuBtn:hover {
+  color: #d8b45a;
+}
+
+
+.menuBtn:focus-visible {
+  outline:
+    1px solid rgba(216, 180, 90, 0.8);
+
+  outline-offset: 5px;
+}
+
+
+/* =========================================================
+   RIGHT SIDE
+========================================================= */
+
+.rightSide {
+  display: flex;
+  align-items: center;
+
+  gap: 40px;
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.mainNav {
+  display: flex;
+  align-items: center;
+
+  gap: 32px;
+}
+
+
+.navItem {
+  position: relative;
+
+  display: inline-flex;
+  align-items: center;
+
+  padding: 8px 0;
+
+  border: 0;
+  outline: none;
+
+  background: transparent;
+
+  color:
+    rgba(245, 240, 232, 0.9);
+
+  font-family: inherit;
+
+  font-size: 9px;
+  font-weight: 500;
+
+  letter-spacing: 0.19em;
+
+  text-transform: uppercase;
+  text-decoration: none;
+
+  cursor: pointer;
+
+  transition:
+    color 0.35s ease;
+}
+
+
+.navItem::after {
+  content: '';
+
+  position: absolute;
+
+  left: 0;
+  bottom: 1px;
+
+  width: 0;
+  height: 1px;
+
+  background: #d8b45a;
+
+  transition:
+    width 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+.navItem:hover {
+  color: #d8b45a;
+}
+
+
+.navItem:hover::after {
+  width: 100%;
+}
+
+
+/* =========================================================
+   BOOK NOW
+========================================================= */
+
+.bookBtn {
+  position: relative;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 13px;
+
+  min-width: 137px;
+
+  padding: 13px 18px;
+
+  overflow: hidden;
+
+  border:
+    1px solid rgba(216, 180, 90, 0.65);
+
+  background:
+    rgba(25, 14, 17, 0.2);
+
+  color: #f7f1e7;
+
+  font-family: inherit;
+
+  font-size: 9px;
+  font-weight: 500;
+
+  letter-spacing: 0.2em;
+
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  transition:
+    color 0.4s ease,
+    border-color 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+
+/* Gold fill */
+
+.bookBtn::before {
+  content: '';
+
+  position: absolute;
+
+  inset: 0;
+
+  background: #d8b45a;
+
+  transform: translateY(105%);
+
+  transition:
+    transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+.bookBtn:hover::before {
+  transform: translateY(0);
+}
+
+
+.bookText,
+.bookIcon {
+  position: relative;
+
+  z-index: 2;
+}
+
+
+.bookIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.bookBtn:hover {
+  color: #241519;
+
+  border-color: #d8b45a;
+
+  box-shadow:
+    0 12px 32px
+    rgba(216, 180, 90, 0.2);
+}
+
+
+/* =========================================================
+   LARGE DESKTOP
+========================================================= */
+
+@media (min-width: 1500px) {
+
+  .header {
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+
+  .header.solid {
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+
+  .mainNav {
+    gap: 38px;
+  }
+
+  .rightSide {
+    gap: 46px;
+  }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1050px) {
+
+  .header {
+    padding: 21px 28px;
+  }
+
+  .header.solid {
+    padding: 14px 28px;
+  }
+
+  .rightSide {
+    gap: 25px;
+  }
+
+  .mainNav {
+    gap: 21px;
+  }
+
+  .navItem {
+    font-size: 8px;
+
+    letter-spacing: 0.16em;
+  }
+
+  .bookBtn {
+    min-width: 116px;
+
+    padding:
+      11px 14px;
+
+    gap: 9px;
+  }
+
+  .divider {
+    margin-left: 18px;
+    margin-right: 17px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 760px) {
+
+  .header {
+    padding: 17px 20px;
+  }
+
+  .header.solid {
+    padding: 13px 20px;
+  }
+
+
+  .navRow {
+    min-height: 46px;
+  }
+
+
+  /* Logo */
+
+  .logo {
+    width: 82px;
+    height: 46px;
+  }
+
+  .logoImage {
+    height: 39px;
+    max-width: 78px;
+  }
+
+
+  /* Divider */
+
+  .divider {
+    height: 21px;
+
+    margin-left: 13px;
+    margin-right: 12px;
+  }
+
+
+  /* Menu */
+
+  .menuBtn {
+    width: 36px;
+    height: 40px;
+  }
+
+
+  /* Navigation */
+
+  .mainNav {
+    display: none;
+  }
+
+
+  /* Right */
+
+  .rightSide {
+    gap: 0;
+  }
+
+
+  /* Book */
+
+  .bookBtn {
+    min-width: 94px;
+
+    padding:
+      10px 12px;
+
+    font-size: 8px;
+
+    letter-spacing: 0.14em;
+  }
+
+  .bookIcon {
+    display: none;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 420px) {
+
+  .header {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .header.solid {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+
+  .logo {
+    width: 73px;
+  }
+
+  .logoImage {
+    height: 35px;
+    max-width: 70px;
+  }
+
+
+  .divider {
+    margin-left: 10px;
+    margin-right: 9px;
+  }
+
+
+  .menuBtn {
+    width: 34px;
+  }
+
+
+  .bookBtn {
+    min-width: 82px;
+
+    padding:
+      9px 9px;
+
+    font-size: 7.5px;
+  }
+}

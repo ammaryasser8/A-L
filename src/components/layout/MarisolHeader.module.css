@@ -3,187 +3,94 @@
   top: 0;
   left: 0;
   right: 0;
-  z-index: 100;
+  z-index: 40;
   background: transparent;
-  transition: background 0.5s ease, backdrop-filter 0.5s ease, border-color 0.5s ease, padding 0.4s ease;
-  padding: 8px 0;
+  transition: background 0.25s ease;
 }
 
 .header.solid {
-  background: rgba(247, 243, 234, 0.86);
-  backdrop-filter: blur(16px) saturate(140%);
-  -webkit-backdrop-filter: blur(16px) saturate(140%);
-  border-bottom: 1px solid rgba(7, 26, 30, 0.08);
-  padding: 0;
+  background: var(--theme-primary, #0b1220);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+.utilityBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  font-size: 11px;
+  letter-spacing: 0.03em;
+  color: var(--theme-accent-light, #e7cd8d);
+  padding: 6px 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  position: relative;
+}
+
+.utilityRight {
+  position: absolute;
+  right: 24px;
+  display: flex;
+  gap: 16px;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .navRow {
-  max-width: 1600px;
+  max-width: 1240px;
   margin: 0 auto;
-  padding: 22px 64px;
+  padding: 18px 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.header.solid .navRow {
-  padding: 16px 64px;
-}
-
-.brandCluster { display: flex; align-items: center; gap: 14px; }
-.alLink { display: flex; align-items: center; gap: 6px; color: rgba(255,255,255,.72); font-family: var(--font-body,'Manrope',sans-serif); font-size: 7px; font-weight: 600; letter-spacing: .14em; line-height: 1.25; text-transform: uppercase; transition: color .4s ease; }
-.alLink:hover { color: #fff; }
-.alLink img { width: 22px; height: 22px; object-fit: contain; filter: drop-shadow(0 2px 5px rgba(0,0,0,.3)); }
-.brandRule { width: 1px; height: 29px; background: rgba(255,255,255,.32); transition: background .4s ease; }
-.header.solid .alLink { color: var(--theme-primary,#0b2b30); }
-.header.solid .brandRule { background: rgba(7,26,30,.18); }
-
-/* ---- logo ---- */
 .logo {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  line-height: 1.1;
-  animation: fadeDown 0.7s ease both;
-  animation-delay: 0.2s;
-}
-
-.logoMain {
-  font-family: var(--font-heading, 'Cormorant Garamond', serif);
-  font-size: 22px;
+  font-family: var(--font-heading, 'Fraunces', serif);
   font-weight: 600;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+  font-size: 20px;
   color: #fff;
-  transition: color 0.5s ease;
+  letter-spacing: 0.01em;
 }
 
-.header.solid .logoMain {
-  color: var(--theme-primary, #0b2b30);
+.logo span {
+  color: var(--theme-accent, #c9a24b);
 }
 
-.logoSub {
-  font-family: var(--font-body, 'Manrope', sans-serif);
-  font-size: 9px;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.75);
-  transition: color 0.5s ease;
-}
-
-.header.solid .logoSub {
-  color: var(--theme-muted, #6f9690);
-}
-
-/* ---- nav links ---- */
 .links {
   display: flex;
-  align-items: center;
-  gap: 38px;
+  gap: 30px;
+  font-size: 13px;
 }
 
-.links button {
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-family: var(--font-body, 'Manrope', sans-serif);
-  font-size: 12.5px;
-  font-weight: 500;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.92);
-  padding: 6px 0;
-  position: relative;
-  transition: color 0.5s ease;
-  animation: fadeDown 0.7s ease both;
-  animation-delay: calc(0.25s + (var(--i) * 0.05s));
+.links a {
+  color: rgba(255, 255, 255, 0.85);
+  letter-spacing: 0.02em;
 }
 
-.header.solid .links button {
-  color: var(--theme-ink, #071a1e);
+.links a:hover {
+  color: var(--theme-accent-light, #e7cd8d);
 }
 
-.links button::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 1px;
-  background: var(--theme-accent, #c5a46d);
-  transition: width 0.35s ease;
-}
-
-.links button:hover::after {
-  width: 100%;
-}
-
-/* ---- book now ---- */
 .bookBtn {
-  background: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.55);
-  color: #fff;
-  font-family: var(--font-body, 'Manrope', sans-serif);
-  font-size: 12px;
-  font-weight: 500;
-  letter-spacing: 0.06em;
+  background: var(--theme-accent, #c9a24b);
+  color: var(--theme-primary, #0b1220);
+  border: none;
   padding: 11px 24px;
+  border-radius: 2px;
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
   cursor: pointer;
-  transition: all 0.35s ease;
-  animation: fadeScale 0.6s ease both;
-  animation-delay: 0.55s;
-}
-
-.header.solid .bookBtn {
-  border-color: var(--theme-primary, #0b2b30);
-  color: var(--theme-primary, #0b2b30);
 }
 
 .bookBtn:hover {
-  background: var(--theme-accent, #c5a46d);
-  border-color: var(--theme-accent, #c5a46d);
-  color: #fff;
+  background: var(--theme-accent-light, #e7cd8d);
 }
 
-@keyframes fadeDown {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeScale {
-  from {
-    opacity: 0;
-    transform: scale(0.94);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-@media (max-width: 1100px) {
+@media (max-width: 900px) {
   .links {
     display: none;
   }
-  .navRow {
-    padding: 18px 24px;
+  .utilityRight {
+    display: none;
   }
 }
-
-@media (max-width: 600px) {
-  .navRow { padding: 15px 18px; }
-  .header.solid .navRow { padding: 12px 18px; }
-  .alLink span, .brandRule { display: none; }
-  .brandCluster { gap: 10px; }
-  .alLink img { width: 24px; height: 24px; }
-  .logoMain { font-size: 19px; }
-  .bookBtn { padding: 10px 13px; font-size: 10px; }
-}
-
-.logoText { display: flex; flex-direction: column; }
-.marisolMark { display:block; width:30px; height:30px; object-fit:contain; filter:drop-shadow(0 2px 5px rgba(0,0,0,.3)); }

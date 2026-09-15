@@ -1,431 +1,90 @@
-/* =========================================
-   MARISOL EXPERIENCES
-   LUXURY NAVY / MARBLE / GLASS
-========================================= */
-
 .section {
-  position: relative;
-
-  padding: 100px 40px 95px;
-
-  background: transparent;
-
+  padding: 80px 40px;
+  background: var(--theme-primary, #0b1220);
   color: #fff;
 }
 
-
-/* =========================================
-   HEADING
-========================================= */
-
 .head {
-  width: min(100%, 1240px);
+  margin-bottom: 32px;
+  display: flex;
+  align-items: baseline;
+  gap: 18px;
+}
 
-  margin: 0 auto 38px;
+.eyebrow {
+  font-size: 11.5px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--theme-accent, #c9a24b);
 }
 
 .head h2 {
-  margin: 6px 0 0;
-
-  font-family: var(
-    --font-heading,
-    "Fraunces",
-    serif
-  );
-
-  font-size: clamp(30px, 3vw, 42px);
-
-  font-weight: 500;
-
-  line-height: 1.15;
-
-  letter-spacing: -0.02em;
-
-  color: #fff;
+  font-family: var(--font-heading, 'Fraunces', serif);
+  font-size: 26px;
 }
-
-
-/* =========================================
-   GRID
-========================================= */
 
 .grid {
-  width: min(100%, 1240px);
-
-  margin: 0 auto;
-
   display: grid;
-
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-
-  gap: 18px;
-
-  background: transparent;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
 }
-
-
-/* =========================================
-   GLASS CARD
-========================================= */
 
 .card {
-  position: relative;
-
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 4px;
   overflow: hidden;
-
-  min-height: 350px;
-
-  border-radius: 7px;
-
-  background:
-    linear-gradient(
-      145deg,
-      rgba(255, 255, 255, 0.075),
-      rgba(255, 255, 255, 0.018)
-    );
-
-  border: 1px solid rgba(255, 255, 255, 0.11);
-
-  box-shadow:
-    0 14px 38px rgba(0, 0, 0, 0.18),
-    inset 0 1px 0 rgba(255, 255, 255, 0.07);
-
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-
-  transition:
-    transform 0.5s cubic-bezier(0.22, 1, 0.36, 1),
-    border-color 0.45s ease,
-    box-shadow 0.45s ease;
 }
-
-
-/* Luxury highlight inside card */
-
-.card::before {
-  content: "";
-
-  position: absolute;
-
-  inset: 0;
-
-  z-index: 3;
-
-  pointer-events: none;
-
-  background:
-    linear-gradient(
-      125deg,
-      rgba(255, 255, 255, 0.085),
-      transparent 27%,
-      transparent 72%,
-      rgba(201, 162, 75, 0.035)
-    );
-}
-
-.card:hover {
-  transform: translateY(-9px);
-
-  border-color:
-    rgba(201, 162, 75, 0.44);
-
-  box-shadow:
-    0 28px 65px rgba(0, 0, 0, 0.34),
-    0 0 0 1px rgba(201, 162, 75, 0.07),
-    inset 0 1px 0 rgba(255, 255, 255, 0.11);
-}
-
-
-/* =========================================
-   IMAGE
-========================================= */
 
 .image {
   position: relative;
-
-  min-height: 350px;
-
+  aspect-ratio: 4 / 3;
   overflow: hidden;
-
-  background:
-    linear-gradient(
-      135deg,
-      var(--theme-primary-dark, #04131f),
-      var(--theme-primary, #061b2b)
-    );
 }
-
-
-/* =========================================
-   MARBLE FALLBACK
-========================================= */
 
 .marbleBg {
   position: absolute;
-
   inset: 0;
-
-  background:
-    radial-gradient(
-      ellipse at 14% 15%,
-      rgba(255, 255, 255, 0.07),
-      transparent 38%
-    ),
-
-    radial-gradient(
-      ellipse at 85% 80%,
-      rgba(201, 162, 75, 0.045),
-      transparent 40%
-    ),
-
-    linear-gradient(
-      135deg,
-      var(--theme-primary-dark, #04131f),
-      var(--theme-primary, #061b2b)
-    );
-
-  opacity: 0.96;
+  background-image:
+    repeating-linear-gradient(115deg, rgba(255, 255, 255, 0.035) 0px, rgba(255, 255, 255, 0.035) 2px, transparent 2px, transparent 60px),
+    radial-gradient(ellipse at 20% 20%, rgba(255, 255, 255, 0.06), transparent 45%),
+    linear-gradient(135deg, var(--theme-primary, #0b1220) 0%, var(--theme-primary-dark, #060a12) 100%);
 }
-
-
-/* =========================================
-   PHOTO
-========================================= */
 
 .photoLayer {
   position: absolute;
-
   inset: 0;
-
-  background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
-
-  transform: scale(1.001);
-
-  transition:
-    transform 0.9s cubic-bezier(0.22, 1, 0.36, 1),
-    filter 0.7s ease;
+  background-position: center;
 }
 
-.card:hover .photoLayer {
-  transform: scale(1.075);
-
-  filter:
-    saturate(1.08)
-    contrast(1.03);
-}
-
-
-/* =========================================
-   IMAGE OVERLAY
-========================================= */
-
-.image::after {
-  content: "";
-
+.icon {
   position: absolute;
-
-  inset: 0;
-
-  pointer-events: none;
-
-  background:
-    linear-gradient(
-      180deg,
-      rgba(3, 13, 22, 0.01) 18%,
-      rgba(3, 13, 22, 0.18) 48%,
-      rgba(3, 13, 22, 0.84) 100%
-    );
-}
-
-
-/* =========================================
-   CARD CONTENT
-========================================= */
-
-.cardContent {
-  position: absolute;
-
-  left: 0;
-  right: 0;
-  bottom: 0;
-
-  z-index: 4;
-
-  padding: 27px 21px 23px;
-}
-
-
-/* =========================================
-   GOLD ACCENT
-========================================= */
-
-.cardContent::before {
-  content: "";
-
-  display: block;
-
-  width: 32px;
-
-  height: 1px;
-
-  margin-bottom: 13px;
-
-  background:
-    linear-gradient(
-      90deg,
-      var(--theme-accent, #c9a24b),
-      transparent
-    );
-
-  opacity: 0.85;
-
-  transition:
-    width 0.4s ease,
-    opacity 0.4s ease;
-}
-
-.card:hover .cardContent::before {
-  width: 58px;
-
-  opacity: 1;
-}
-
-
-/* =========================================
-   TITLE
-========================================= */
-
-.cardContent h3 {
-  margin: 0 0 8px;
-
-  font-family: var(
-    --font-heading,
-    "Fraunces",
-    serif
-  );
-
-  font-size: 20px;
-
-  font-weight: 500;
-
-  line-height: 1.25;
-
-  letter-spacing: -0.01em;
-
+  top: 10px;
+  left: 10px;
+  width: 26px;
+  height: 26px;
   color: #fff;
 }
 
+.icon svg {
+  width: 18px;
+  height: 18px;
+}
 
-/* =========================================
-   DESCRIPTION
-========================================= */
-
-.cardContent p {
-  margin: 0;
-
-  font-family:
-    var(--font-body, "Inter", sans-serif);
-
+.card h3 {
   font-size: 12.5px;
-
-  line-height: 1.7;
-
-  color:
-    rgba(251, 249, 244, 0.72);
+  letter-spacing: 0.02em;
+  padding: 14px 14px 4px;
 }
 
-
-/* =========================================
-   LARGE TABLET
-========================================= */
-
-@media (max-width: 1100px) {
-  .section {
-    padding: 85px 30px 80px;
-  }
-
-  .grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-
-    gap: 18px;
-  }
-
-  .card,
-  .image {
-    min-height: 330px;
-  }
+.card p {
+  font-size: 11.5px;
+  color: rgba(255, 255, 255, 0.55);
+  padding: 0 14px 16px;
 }
 
-
-/* =========================================
-   TABLET
-========================================= */
-
-@media (max-width: 800px) {
-  .section {
-    padding: 70px 22px;
-  }
-
-  .head {
-    margin-bottom: 28px;
-  }
-
-  .head h2 {
-    font-size: 32px;
-  }
-
+@media (max-width: 900px) {
   .grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-
-    gap: 15px;
-  }
-
-  .card,
-  .image {
-    min-height: 320px;
-  }
-
-  .cardContent {
-    padding: 23px 18px 20px;
-  }
-
-  .cardContent h3 {
-    font-size: 18px;
-  }
-}
-
-
-/* =========================================
-   MOBILE
-========================================= */
-
-@media (max-width: 560px) {
-  .section {
-    padding: 60px 18px;
-  }
-
-  .head h2 {
-    font-size: 29px;
-  }
-
-  .grid {
-    grid-template-columns: 1fr;
-
-    gap: 16px;
-  }
-
-  .card,
-  .image {
-    min-height: 300px;
-  }
-
-  .cardContent {
-    padding: 22px 18px 20px;
-  }
-
-  .cardContent p {
-    font-size: 13px;
+    grid-template-columns: 1fr 1fr;
   }
 }

@@ -1,10 +1,9 @@
 import styles from './Button.module.css';
 
-export default function Button({ variant = 'primary', className, children, ...rest }) {
-  const base = variant === 'outline' ? styles.outline : styles.primary;
-  const combined = className ? `${base} ${className}` : base;
+export default function Button({ variant = 'primary', children, ...rest }) {
+  const className = variant === 'outline' ? styles.outline : styles.primary;
   return (
-    <button className={combined} {...rest}>
+    <button className={className} {...rest}>
       {children}
     </button>
   );
