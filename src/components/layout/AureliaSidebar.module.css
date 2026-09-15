@@ -1,0 +1,982 @@
+/* =========================================================
+   AURELIA SIDEBAR
+   CINEMATIC LUXURY NAVIGATION
+========================================================= */
+
+.sidebar {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  width: min(500px, 92vw);
+  height: 100dvh;
+
+  z-index: 1100;
+
+  display: flex;
+  flex-direction: column;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  color: #f5f0e8;
+
+  background:
+    radial-gradient(
+      circle at 100% 0%,
+      rgba(216, 180, 90, 0.13),
+      transparent 31%
+    ),
+    radial-gradient(
+      circle at 0% 70%,
+      rgba(107, 30, 42, 0.18),
+      transparent 36%
+    ),
+    #211317;
+
+  border-right:
+    1px solid
+    rgba(216, 180, 90, 0.16);
+
+  box-shadow:
+    25px 0 90px
+    rgba(0, 0, 0, 0.42);
+
+  scrollbar-width: thin;
+
+  scrollbar-color:
+    rgba(216, 180, 90, 0.3)
+    transparent;
+}
+
+
+/* =========================================================
+   GOLD ATMOSPHERIC GLOW
+========================================================= */
+
+.goldGlow {
+  position: absolute;
+
+  top: -180px;
+  right: -180px;
+
+  width: 420px;
+  height: 420px;
+
+  pointer-events: none;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(216, 180, 90, 0.08),
+      transparent 68%
+    );
+
+  filter: blur(10px);
+}
+
+
+/* =========================================================
+   OVERLAY
+========================================================= */
+
+.overlay {
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 1050;
+
+  background:
+    rgba(8, 5, 6, 0.72);
+
+  backdrop-filter: blur(8px);
+
+  -webkit-backdrop-filter: blur(8px);
+}
+
+
+/* =========================================================
+   TOP SECTION
+========================================================= */
+
+.topSection {
+  position: relative;
+
+  padding:
+    0 44px;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.sidebarHeader {
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding:
+    28px 0
+    27px;
+
+  border-bottom:
+    1px solid
+    rgba(245, 240, 232, 0.1);
+}
+
+
+/* =========================================================
+   BRAND
+========================================================= */
+
+.brand {
+  display: flex;
+
+  align-items: center;
+
+  gap: 13px;
+
+  color: inherit;
+
+  text-decoration: none;
+}
+
+
+.logo {
+  width: 41px;
+  height: 41px;
+
+  object-fit: contain;
+
+  filter:
+    drop-shadow(
+      0 3px 10px
+      rgba(216, 180, 90, 0.18)
+    );
+}
+
+
+.brandText {
+  display: flex;
+
+  flex-direction: column;
+
+  line-height: 1;
+}
+
+
+.brandName {
+  font-family:
+    var(--font-heading);
+
+  font-size: 27px;
+
+  font-weight: 500;
+
+  letter-spacing: 0.005em;
+
+  color: #f5f0e8;
+}
+
+
+.brandSub {
+  margin-top: 7px;
+
+  font-family:
+    var(--font-body);
+
+  font-size: 7px;
+
+  font-weight: 600;
+
+  letter-spacing: 0.3em;
+
+  color: #d8b45a;
+}
+
+
+/* =========================================================
+   CLOSE
+========================================================= */
+
+.closeBtn {
+  display: grid;
+
+  place-items: center;
+
+  width: 45px;
+  height: 45px;
+
+  padding: 0;
+
+  border:
+    1px solid
+    rgba(216, 180, 90, 0.4);
+
+  border-radius: 50%;
+
+  background:
+    rgba(216, 180, 90, 0.035);
+
+  color: #f5f0e8;
+
+  cursor: pointer;
+
+  transition:
+    background 0.35s ease,
+    color 0.35s ease,
+    border-color 0.35s ease;
+}
+
+
+.closeBtn:hover {
+  background: #d8b45a;
+
+  border-color: #d8b45a;
+
+  color: #211317;
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.intro {
+  padding:
+    39px 0
+    34px;
+}
+
+
+.eyebrow {
+  display: block;
+
+  margin-bottom: 17px;
+
+  font-family:
+    var(--font-body);
+
+  font-size: 8px;
+
+  font-weight: 600;
+
+  letter-spacing: 0.3em;
+
+  text-transform: uppercase;
+
+  color: #d8b45a;
+}
+
+
+.intro h2 {
+  margin: 0;
+
+  font-family:
+    var(--font-heading);
+
+  font-size: clamp(
+    34px,
+    4vw,
+    43px
+  );
+
+  font-weight: 400;
+
+  line-height: 1.03;
+
+  letter-spacing: -0.025em;
+
+  color: #f7f1e8;
+}
+
+
+.intro p {
+  max-width: 340px;
+
+  margin:
+    20px 0 0;
+
+  font-family:
+    var(--font-body);
+
+  font-size: 12px;
+
+  font-weight: 400;
+
+  line-height: 1.7;
+
+  letter-spacing: 0.015em;
+
+  color:
+    rgba(245, 240, 232, 0.52);
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.navigation {
+  position: relative;
+
+  padding:
+    0 44px;
+}
+
+
+/* =========================================================
+   NAV HEADER
+========================================================= */
+
+.navHeader {
+  display: flex;
+
+  align-items: center;
+
+  gap: 17px;
+
+  padding-bottom: 14px;
+
+  font-family:
+    var(--font-body);
+
+  font-size: 8px;
+
+  font-weight: 600;
+
+  letter-spacing: 0.26em;
+
+  text-transform: uppercase;
+
+  color:
+    rgba(245, 240, 232, 0.38);
+}
+
+
+.navLine {
+  flex: 1;
+
+  height: 1px;
+
+  background:
+    linear-gradient(
+      to right,
+      rgba(216, 180, 90, 0.3),
+      transparent
+    );
+}
+
+
+/* =========================================================
+   NAV LIST
+========================================================= */
+
+.navList {
+  display: flex;
+
+  flex-direction: column;
+}
+
+
+/* =========================================================
+   NAV LINK
+========================================================= */
+
+.navLink {
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  min-height: 61px;
+
+  padding:
+    0 3px;
+
+  border-top:
+    1px solid
+    rgba(245, 240, 232, 0.075);
+
+  color: #f5f0e8;
+
+  text-decoration: none;
+
+  transition:
+    padding-left 0.45s
+      cubic-bezier(0.22, 1, 0.36, 1),
+
+    color 0.35s ease,
+
+    border-color 0.35s ease;
+}
+
+
+/* Bottom border */
+
+.navList > div:last-child .navLink {
+  border-bottom:
+    1px solid
+    rgba(245, 240, 232, 0.075);
+}
+
+
+/* =========================================================
+   GOLD HOVER BAR
+========================================================= */
+
+.navLink::before {
+  content: '';
+
+  position: absolute;
+
+  left: -44px;
+
+  top: 0;
+  bottom: 0;
+
+  width: 2px;
+
+  background: #d8b45a;
+
+  transform:
+    scaleY(0);
+
+  transform-origin: center;
+
+  transition:
+    transform 0.45s
+    cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+.navLink:hover::before {
+  transform:
+    scaleY(1);
+}
+
+
+/* =========================================================
+   SUBTLE GOLD GLOW
+========================================================= */
+
+.navLink::after {
+  content: '';
+
+  position: absolute;
+
+  inset: 0;
+
+  pointer-events: none;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(216, 180, 90, 0.06),
+      transparent 65%
+    );
+
+  opacity: 0;
+
+  transition:
+    opacity 0.4s ease;
+}
+
+
+.navLink:hover::after {
+  opacity: 1;
+}
+
+
+/* =========================================================
+   LABEL
+========================================================= */
+
+.navLabel {
+  position: relative;
+
+  z-index: 2;
+
+  font-family:
+    var(--font-heading);
+
+  font-size: 23px;
+
+  font-weight: 400;
+
+  line-height: 1;
+
+  letter-spacing: -0.01em;
+
+  transition:
+    transform 0.45s
+    cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+.navLink:hover {
+  padding-left: 12px;
+
+  color: #d8b45a;
+
+  border-color:
+    rgba(216, 180, 90, 0.2);
+}
+
+
+.navLink:hover .navLabel {
+  transform:
+    translateX(2px);
+}
+
+
+/* =========================================================
+   ARROW
+========================================================= */
+
+.navArrow {
+  position: relative;
+
+  z-index: 2;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color:
+    rgba(245, 240, 232, 0.25);
+
+  transform:
+    translate(0, 0);
+
+  transition:
+    color 0.35s ease,
+
+    transform 0.45s
+    cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+.navLink:hover .navArrow {
+  color: #d8b45a;
+
+  transform:
+    translate(5px, -5px);
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.sidebarFooter {
+  position: relative;
+
+  margin-top: auto;
+
+  padding:
+    27px 44px
+    30px;
+
+  background:
+    rgba(8, 5, 6, 0.2);
+
+  border-top:
+    1px solid
+    rgba(216, 180, 90, 0.13);
+}
+
+
+/* =========================================================
+   FOOTER TOP
+========================================================= */
+
+.footerTop {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-bottom: 21px;
+}
+
+
+/* =========================================================
+   LOCATION
+========================================================= */
+
+.location {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  color:
+    rgba(245, 240, 232, 0.7);
+}
+
+
+.location svg {
+  flex-shrink: 0;
+
+  color: #d8b45a;
+}
+
+
+.location > div {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 4px;
+}
+
+
+.locationLabel {
+  font-family:
+    var(--font-body);
+
+  font-size: 7px;
+
+  font-weight: 600;
+
+  letter-spacing: 0.22em;
+
+  text-transform: uppercase;
+
+  color:
+    rgba(245, 240, 232, 0.35);
+}
+
+
+.locationValue {
+  font-family:
+    var(--font-body);
+
+  font-size: 11px;
+
+  letter-spacing: 0.04em;
+
+  color:
+    rgba(245, 240, 232, 0.72);
+}
+
+
+/* =========================================================
+   SOCIAL
+========================================================= */
+
+.social {
+  display: grid;
+
+  place-items: center;
+
+  width: 36px;
+  height: 36px;
+
+  border:
+    1px solid
+    rgba(216, 180, 90, 0.24);
+
+  border-radius: 50%;
+
+  color:
+    rgba(245, 240, 232, 0.65);
+
+  text-decoration: none;
+
+  transition:
+    color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+
+.social:hover {
+  color: #d8b45a;
+
+  border-color:
+    rgba(216, 180, 90, 0.65);
+}
+
+
+/* =========================================================
+   BOOKING BUTTON
+========================================================= */
+
+.bookingBtn {
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  width: 100%;
+
+  padding:
+    16px 18px;
+
+  overflow: hidden;
+
+  border:
+    1px solid
+    #d8b45a;
+
+  background: #d8b45a;
+
+  color: #211317;
+
+  font-family:
+    var(--font-body);
+
+  font-size: 9px;
+
+  font-weight: 600;
+
+  letter-spacing: 0.18em;
+
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  transition:
+    color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+
+/* =========================================================
+   BUTTON HOVER FILL
+========================================================= */
+
+.bookingBtn::before {
+  content: '';
+
+  position: absolute;
+
+  inset: 0;
+
+  background: #211317;
+
+  transform:
+    translateY(100%);
+
+  transition:
+    transform 0.45s
+    cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+.bookingBtn:hover::before {
+  transform:
+    translateY(0);
+}
+
+
+.bookingBtn span,
+.bookingBtn svg {
+  position: relative;
+
+  z-index: 2;
+}
+
+
+.bookingBtn:hover {
+  color: #d8b45a;
+
+  box-shadow:
+    0 12px 35px
+    rgba(216, 180, 90, 0.12);
+}
+
+
+/* =========================================================
+   SCROLLBAR
+========================================================= */
+
+.sidebar::-webkit-scrollbar {
+  width: 4px;
+}
+
+
+.sidebar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+
+.sidebar::-webkit-scrollbar-thumb {
+  background:
+    rgba(216, 180, 90, 0.25);
+
+  border-radius: 10px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .sidebar {
+    width: min(460px, 90vw);
+  }
+
+  .topSection,
+  .navigation {
+    padding-left: 38px;
+    padding-right: 38px;
+  }
+
+  .sidebarFooter {
+    padding-left: 38px;
+    padding-right: 38px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .sidebar {
+    width: 100vw;
+
+    max-width: none;
+
+    border-right: 0;
+  }
+
+
+  .topSection,
+  .navigation {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+
+  .sidebarFooter {
+    padding:
+      24px 25px
+      27px;
+  }
+
+
+  .sidebarHeader {
+    padding-top: 21px;
+    padding-bottom: 22px;
+  }
+
+
+  .logo {
+    width: 37px;
+    height: 37px;
+  }
+
+
+  .brandName {
+    font-size: 24px;
+  }
+
+
+  .closeBtn {
+    width: 42px;
+    height: 42px;
+  }
+
+
+  .intro {
+    padding:
+      30px 0
+      28px;
+  }
+
+
+  .intro h2 {
+    font-size: 35px;
+  }
+
+
+  .intro p {
+    max-width: 310px;
+
+    font-size: 11px;
+  }
+
+
+  .navLink {
+    min-height: 57px;
+  }
+
+
+  .navLink::before {
+    left: -25px;
+  }
+
+
+  .navLabel {
+    font-size: 21px;
+  }
+
+
+  .sidebarFooter {
+    margin-top: 30px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+
+  .topSection,
+  .navigation {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+
+  .sidebarFooter {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+
+  .navLink::before {
+    left: -20px;
+  }
+
+
+  .intro h2 {
+    font-size: 32px;
+  }
+
+
+  .navLabel {
+    font-size: 20px;
+  }
+
+}

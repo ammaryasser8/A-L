@@ -1,75 +1,67 @@
-import { useReveal } from '../../hooks/useReveal';
 import styles from './MarisolHighlights.module.css';
 
-const FEATURES = [
+const HIGHLIGHTS = [
   {
-    number: '01',
-    title: 'Infinity Views',
-    text: 'Where the pool line dissolves into the horizon, and the horizon dissolves into the sky.',
-    media: '/images/sections/marisol-highlight-views.jpg',
-    size: 'large',
-  },
-  {
-    number: '02',
     title: 'Minimalist Design',
-    text: 'Natural stone, warm oak, and nothing that competes with the view.',
+    text: 'Timeless spaces with elegant simplicity.',
     media: '/images/sections/marisol-highlight-design.jpg',
-    size: 'small',
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4">
+        <rect x="3" y="7" width="18" height="11" rx="1.5" />
+        <path d="M3 7l3-3h12l3 3" />
+      </svg>
+    ),
   },
   {
-    number: '03',
+    title: 'Infinity Views',
+    text: 'Breathtaking ocean and skyline views.',
+    media: '/images/sections/marisol-highlight-views.jpg',
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4">
+        <circle cx="12" cy="12" r="3.2" />
+        <path d="M2 12s3.6-6 10-6 10 6 10 6-3.6 6-10 6-10-6-10-6Z" />
+      </svg>
+    ),
+  },
+  {
     title: 'Exquisite Dining',
-    text: 'Coastal plates, quietly composed, served as the light changes.',
+    text: 'A culinary journey like no other.',
     media: '/images/sections/marisol-highlight-dining.jpg',
-    size: 'small',
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4">
+        <path d="M7 3v8M5 3v5a2 2 0 0 0 4 0V3M17 3c-2 0-2 4-2 6s0 3 2 3 2-1 2-3-0-6-2-6Zm0 9v9" />
+      </svg>
+    ),
   },
   {
-    number: '04',
     title: 'Holistic Spa',
-    text: 'Water, stone, and silence — treatments built around slowness.',
+    text: 'Rejuvenate your body, mind, and soul.',
     media: '/images/sections/marisol-highlight-spa.jpg',
-    size: 'small',
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4">
+        <path d="M12 3c2 3 2 5 0 7-2-2-2-4 0-7Z" />
+        <path d="M6 12c2 2 2 5 0 7M18 12c-2 2-2 5 0 7M12 10v11" />
+      </svg>
+    ),
   },
 ];
 
-function FeatureCard({ feature }) {
-  const [ref, visible] = useReveal();
-  const cardClass = [
-    styles.card,
-    feature.size === 'large' ? styles.large : styles.small,
-    visible ? styles.visible : '',
-  ].join(' ');
-
-  return (
-    <div ref={ref} className={cardClass}>
-      <div className={styles.image}>
-        <div className={styles.marbleBg} />
-        <div className={styles.photoLayer} style={{ backgroundImage: `url(${feature.media})` }} />
-      </div>
-      <div className={styles.cardContent}>
-        <span className={styles.number}>{feature.number}</span>
-        <h3>{feature.title}</h3>
-        <p>{feature.text}</p>
-        <span className={styles.arrow}>→</span>
-      </div>
-    </div>
-  );
-}
-
 export default function MarisolHighlights() {
-  const large = FEATURES.find((f) => f.size === 'large');
-  const small = FEATURES.filter((f) => f.size === 'small');
-
   return (
-    <section className={styles.section}>
-      <div className={styles.grid}>
-        <FeatureCard feature={large} />
-        <div className={styles.smallStack}>
-          {small.map((f) => (
-            <FeatureCard key={f.title} feature={f} />
-          ))}
+    <section className={styles.grid}>
+      {HIGHLIGHTS.map((h) => (
+        <div key={h.title} className={styles.card}>
+          <div className={styles.image}>
+            <div className={styles.marbleBg} />
+            <div className={styles.photoLayer} style={{ backgroundImage: `url(${h.media})` }} />
+            <span className={styles.icon}>{h.icon}</span>
+          </div>
+          <div className={styles.text}>
+            <h3>{h.title}</h3>
+            <p>{h.text}</p>
+          </div>
         </div>
-      </div>
+      ))}
     </section>
   );
 }

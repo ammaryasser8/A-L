@@ -19,10 +19,3 @@ h1, h2, h3, .serif {
     padding: 0 20px;
   }
 }
-
-/* Hides the native cursor when CustomCursor.jsx is active (desktop,
-   non-reduced-motion only — see components/ui/CustomCursor.jsx). */
-html.customCursorActive,
-html.customCursorActive * {
-  cursor: none !important;
-}

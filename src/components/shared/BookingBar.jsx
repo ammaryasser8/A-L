@@ -9,6 +9,7 @@ export default function BookingBar({ variant = 'light' }) {
   function handleSubmit(e) {
     e.preventDefault();
     // No backend yet — this is a UI-only placeholder.
+    // eslint-disable-next-line no-alert
     alert(`Checking availability: ${checkIn || '—'} to ${checkOut || '—'}, ${guests}`);
   }
 

@@ -1,0 +1,765 @@
+.hero {
+  position: relative;
+  width: 100%;
+  background: #211317;
+}
+
+
+/* =========================================
+   STAGE
+========================================= */
+
+.stickyStage {
+  position: relative;
+
+  width: 100%;
+  height: 100vh;
+  min-height: 680px;
+
+  overflow: hidden;
+
+  color: #f5f0e8;
+}
+
+
+/* =========================================
+   VIDEO
+========================================= */
+
+.heroVideo {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+
+  z-index: 0;
+
+  transform: scale(1.01);
+}
+
+
+/* =========================================
+   CINEMATIC OVERLAY
+========================================= */
+
+.videoOverlay {
+  position: absolute;
+  inset: 0;
+
+  z-index: 1;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(22, 7, 12, 0.82) 0%,
+      rgba(22, 7, 12, 0.48) 42%,
+      rgba(22, 7, 12, 0.16) 100%
+    );
+}
+
+
+/* =========================================
+   VIGNETTE
+========================================= */
+
+.vignette {
+  position: absolute;
+  inset: 0;
+
+  z-index: 2;
+
+  pointer-events: none;
+
+  background:
+    radial-gradient(
+      circle at center,
+      transparent 35%,
+      rgba(10, 5, 7, 0.38) 100%
+    );
+}
+
+
+/* =========================================
+   INTRO
+========================================= */
+
+.heroContent {
+  position: absolute;
+  inset: 0;
+
+  z-index: 5;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  padding:
+    100px
+    24px
+    130px;
+
+  text-align: center;
+}
+
+
+/* =========================================
+   META
+========================================= */
+
+.heroMeta {
+  margin-bottom: 22px;
+
+  font-family: var(--font-body);
+
+  font-size: 8px;
+  font-weight: 600;
+
+  letter-spacing: 0.32em;
+
+  color:
+    rgba(245, 240, 232, 0.58);
+}
+
+
+/* =========================================
+   EYEBROW
+========================================= */
+
+.heroEyebrow {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 23px;
+
+  font-family: var(--font-body);
+
+  font-size: 10px;
+  font-weight: 600;
+
+  letter-spacing: 0.28em;
+
+  text-transform: uppercase;
+
+  color: #d8b45a;
+}
+
+
+.heroEyebrow::before,
+.heroEyebrow::after {
+  content: '';
+
+  width: 24px;
+  height: 1px;
+
+  background:
+    rgba(216, 180, 90, 0.55);
+}
+
+
+/* =========================================
+   TITLE
+========================================= */
+
+.hero h1 {
+  margin: 0;
+
+  max-width: 1000px;
+
+  font-family: var(--font-heading);
+
+  font-size:
+    clamp(58px, 8vw, 118px);
+
+  line-height: 0.92;
+
+  font-weight: 500;
+
+  letter-spacing: -0.045em;
+
+  text-wrap: balance;
+}
+
+
+.hero h1 span {
+  color: #d8b45a;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.hero p {
+  max-width: 475px;
+
+  margin: 28px 0 0;
+
+  color:
+    rgba(245, 240, 232, 0.76);
+
+  font-family: var(--font-body);
+
+  font-size: 14px;
+
+  line-height: 1.85;
+}
+
+
+/* =========================================
+   ACTIONS
+========================================= */
+
+.heroActions {
+  display: flex;
+  align-items: center;
+
+  gap: 13px;
+
+  margin-top: 34px;
+
+  pointer-events: auto;
+}
+
+
+.btnGold,
+.btnOutline {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+
+  min-height: 48px;
+
+  padding:
+    0
+    22px;
+
+  border-radius: 0;
+
+  font-family: var(--font-body);
+
+  font-size: 10px;
+  font-weight: 600;
+
+  letter-spacing: 0.16em;
+
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  transition:
+    background 0.35s ease,
+    color 0.35s ease,
+    border-color 0.35s ease,
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+
+/* GOLD BUTTON */
+
+.btnGold {
+  border:
+    1px solid #d8b45a;
+
+  background: #d8b45a;
+
+  color: #211317;
+}
+
+
+.btnGold:hover {
+  background: #f0d58a;
+
+  border-color: #f0d58a;
+
+  transform:
+    translateY(-2px);
+
+  box-shadow:
+    0 12px 30px
+    rgba(216, 180, 90, 0.2);
+}
+
+
+/* OUTLINE */
+
+.btnOutline {
+  border:
+    1px solid
+    rgba(245, 240, 232, 0.42);
+
+  background:
+    rgba(20, 10, 13, 0.16);
+
+  color: #f5f0e8;
+
+  backdrop-filter: blur(5px);
+}
+
+
+.btnOutline:hover {
+  border-color: #d8b45a;
+
+  color: #d8b45a;
+
+  transform:
+    translateY(-2px);
+}
+
+
+/* =========================================
+   PLAY
+========================================= */
+
+.playCircle {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 27px;
+  height: 27px;
+
+  border:
+    1px solid
+    rgba(245, 240, 232, 0.55);
+
+  border-radius: 50%;
+}
+
+
+.btnOutline:hover .playCircle {
+  border-color: #d8b45a;
+}
+
+
+/* =========================================
+   STORY
+========================================= */
+
+.storyStage {
+  position: absolute;
+  inset: 0;
+
+  z-index: 3;
+
+  overflow: hidden;
+
+  pointer-events: none;
+}
+
+
+.storySlide {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  opacity: 0;
+  visibility: hidden;
+
+  overflow: hidden;
+
+  will-change:
+    opacity,
+    transform;
+}
+
+
+.storyImage {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transform:
+    scale(1.08);
+
+  will-change:
+    transform;
+}
+
+
+/* =========================================
+   STORY OVERLAY
+========================================= */
+
+.storyOverlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(20, 7, 11, 0.82) 0%,
+      rgba(20, 7, 11, 0.54) 38%,
+      rgba(20, 7, 11, 0.08) 100%
+    );
+}
+
+
+/* =========================================
+   STORY TEXT
+========================================= */
+
+.storyText {
+  position: absolute;
+
+  left:
+    clamp(30px, 9vw, 145px);
+
+  bottom:
+    clamp(105px, 15vh, 160px);
+
+  max-width: 650px;
+
+  color: #f5f0e8;
+
+  will-change:
+    transform,
+    opacity;
+}
+
+
+.storyNumber {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin-bottom: 19px;
+
+  font-family: var(--font-body);
+
+  font-size: 9px;
+  font-weight: 600;
+
+  letter-spacing: 0.25em;
+
+  color: #d8b45a;
+}
+
+
+.storyNumber i {
+  width: 28px;
+  height: 1px;
+
+  background:
+    rgba(216, 180, 90, 0.6);
+}
+
+
+.storyTitle {
+  margin: 0;
+
+  max-width: 680px;
+
+  font-family: var(--font-heading);
+
+  font-size:
+    clamp(52px, 6.4vw, 88px);
+
+  line-height: 0.94;
+
+  font-weight: 500;
+
+  letter-spacing: -0.04em;
+}
+
+
+.storyDescription {
+  max-width: 440px;
+
+  margin: 25px 0 0;
+
+  color:
+    rgba(245, 240, 232, 0.74);
+
+  font-family: var(--font-body);
+
+  font-size: 14px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================
+   SCROLL CUE
+========================================= */
+
+.scrollCue {
+  position: absolute;
+
+  z-index: 8;
+
+  left: 50%;
+  bottom: 27px;
+
+  transform:
+    translateX(-50%);
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  text-align: center;
+}
+
+
+.scrollLine {
+  position: relative;
+
+  width: 1px;
+  height: 38px;
+
+  margin-bottom: 11px;
+
+  overflow: hidden;
+
+  background:
+    rgba(245, 240, 232, 0.3);
+}
+
+
+.scrollLine::after {
+  content: '';
+
+  position: absolute;
+
+  left: 0;
+  top: -100%;
+
+  width: 100%;
+  height: 100%;
+
+  background: #d8b45a;
+
+  animation:
+    scrollMove 1.8s
+    ease-in-out infinite;
+}
+
+
+@keyframes scrollMove {
+  0% {
+    top: -100%;
+  }
+
+  50% {
+    top: 0;
+  }
+
+  100% {
+    top: 100%;
+  }
+}
+
+
+.scrollCue span {
+  font-family: var(--font-body);
+
+  font-size: 8px;
+  font-weight: 500;
+
+  letter-spacing: 0.24em;
+
+  color:
+    rgba(245, 240, 232, 0.55);
+}
+
+
+/* =========================================
+   BOOKING
+========================================= */
+
+.bookingWrap {
+  position: relative;
+
+  z-index: 20;
+
+  width:
+    min(1180px, calc(100% - 48px));
+
+  margin:
+    -55px auto 90px;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .hero h1 {
+    font-size:
+      clamp(54px, 10vw, 88px);
+  }
+
+  .storyText {
+    left: 50px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+  .stickyStage {
+    height: 100svh;
+    min-height: 650px;
+  }
+
+
+  .heroContent {
+    padding:
+      90px
+      20px
+      110px;
+  }
+
+
+  .heroMeta {
+    font-size: 7px;
+  }
+
+
+  .heroEyebrow {
+    font-size: 8px;
+    letter-spacing: 0.2em;
+  }
+
+
+  .heroEyebrow::before,
+  .heroEyebrow::after {
+    width: 14px;
+  }
+
+
+  .hero h1 {
+    font-size:
+      clamp(45px, 13vw, 70px);
+
+    line-height: 0.94;
+  }
+
+
+  .hero p {
+    max-width: 340px;
+
+    margin-top: 22px;
+
+    font-size: 13px;
+  }
+
+
+  .heroActions {
+    flex-direction: column;
+
+    width: 100%;
+    max-width: 270px;
+
+    margin-top: 27px;
+  }
+
+
+  .btnGold,
+  .btnOutline {
+    width: 100%;
+  }
+
+
+  .storyText {
+    left: 24px;
+    right: 24px;
+
+    bottom: 95px;
+  }
+
+
+  .storyTitle {
+    font-size:
+      clamp(40px, 11vw, 58px);
+  }
+
+
+  .storyDescription {
+    max-width: 340px;
+
+    margin-top: 19px;
+
+    font-size: 13px;
+  }
+
+
+  .bookingWrap {
+    width:
+      calc(100% - 32px);
+
+    margin-top: -30px;
+  }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 420px) {
+
+  .hero h1 {
+    font-size: 43px;
+  }
+
+
+  .hero p {
+    font-size: 12px;
+  }
+
+
+  .storyText {
+    left: 20px;
+    right: 20px;
+  }
+
+
+  .storyTitle {
+    font-size: 39px;
+  }
+
+
+  .storyDescription {
+    font-size: 12px;
+  }
+
+
+  .scrollCue {
+    bottom: 19px;
+  }
+
+}
