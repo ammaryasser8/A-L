@@ -6,6 +6,8 @@ import AureliaHotelPage from '../pages/AureliaHotelPage';
 import AureliaCategoryPage from '../pages/AureliaCategoryPage';
 import MarisolHotelPage from '../pages/MarisolHotelPage';
 import ProductDetailPage from '../pages/ProductDetailPage';
+import MarisolExperiencePage from '../pages/MarisolExperiencePage';
+import LegalPage from '../pages/LegalPage';
 import NotFoundPage from '../pages/NotFoundPage';
 
 function ScrollToTop() {
@@ -49,9 +51,18 @@ export default function AppRouter() {
         />
 
         <Route
+          path="/hotels/marisol-bay-resort/product/:productSlug"
+          element={<MarisolExperiencePage />}
+        />
+
+        <Route
           path="/hotels/:hotelSlug/product/:productSlug"
           element={<ProductDetailPage />}
         />
+
+        <Route path="/hotels/:hotelSlug/privacy-policy" element={<LegalPage type="privacy" />} />
+        <Route path="/hotels/:hotelSlug/terms-of-use" element={<LegalPage type="terms" />} />
+        <Route path="/hotels/:hotelSlug/cookie-policy" element={<LegalPage type="cookies" />} />
 
         <Route
           path="*"

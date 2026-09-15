@@ -60,7 +60,7 @@ const EXPERIENCES = [
 
 export default function MarisolExperiences() {
   return (
-    <section className={`wrap ${styles.section}`}>
+    <section id="experiences" className={`wrap ${styles.section}`}>
       <div className={styles.head}>
         <span className={styles.eyebrow}>Experiences</span>
         <h2>Crafted for you</h2>

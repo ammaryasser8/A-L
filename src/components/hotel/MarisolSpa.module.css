@@ -115,3 +115,8 @@
     padding: 0 24px;
   }
 }
+
+.featured { isolation: isolate; }
+.featuredLink { position: absolute; inset: 0; z-index: 2; }
+.featuredContent { z-index: 3; }
+.item { color: inherit; }

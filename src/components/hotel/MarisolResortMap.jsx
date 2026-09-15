@@ -7,7 +7,7 @@ const HOTSPOTS = [
   { id: 'pool', label: 'Pools', x: 52, y: 22, blurb: 'Infinity pools facing open water.', sectionId: 'rooms' },
   { id: 'beach', label: 'Beach', x: 70, y: 55, blurb: 'Private beachfront, steps from the water.', sectionId: 'rooms' },
   { id: 'restaurant', label: 'Restaurants', x: 40, y: 62, blurb: 'Coastal dining, indoors and by the sea.', sectionId: 'dining' },
-  { id: 'spa', label: 'Spa', x: 62, y: 74, blurb: 'A quiet wing built for water, stone, and rest.', sectionId: 'rooms' },
+  { id: 'spa', label: 'Spa', x: 62, y: 74, blurb: 'A quiet wing built for water, stone, and rest.', sectionId: 'spa' },
   { id: 'activities', label: 'Activities', x: 20, y: 68, blurb: 'Water sports, yoga, and guided experiences.', sectionId: 'experiences' },
 ];
 

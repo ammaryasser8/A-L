@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 import styles from './MarisolHeader.module.css';
 
 const NAV_LINKS = [
-  { label: 'The Resort', to: '#' },
+  { label: 'The Resort', to: '#story' },
   { label: 'Accommodation', to: '#rooms' },
-  { label: 'Dining', to: '#' },
-  { label: 'Spa', to: '#' },
-  { label: 'Experiences', to: '#' },
-  { label: 'Offers', to: '#' },
+  { label: 'Dining', to: '#dining' },
+  { label: 'Spa', to: '#spa' },
+  { label: 'Experiences', to: '#experiences' },
+  { label: 'Gallery', to: '#gallery' },
 ];
 
 export default function MarisolHeader() {
@@ -28,7 +28,7 @@ export default function MarisolHeader() {
         <span>Exclusive offer — up to 20% off your summer escape</span>
         <span className={styles.utilityRight}>
           <Link to="/">EN ⌄</Link>
-          <span>Contact us</span>
+          <a href="#contact">Contact us</a>
         </span>
       </div>
       <div className={styles.navRow}>

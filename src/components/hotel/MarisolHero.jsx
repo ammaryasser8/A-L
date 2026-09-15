@@ -78,6 +78,17 @@ export default function MarisolHero({ hotel }) {
     );
   }
 
+  function exploreResort() {
+    document.getElementById('story')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  function toggleFilm() {
+    const film = document.querySelector(`.${styles.video}`);
+    if (!film) return;
+    if (film.paused) film.play().catch(() => {});
+    else film.pause();
+  }
+
   const slide = SLIDES[activeSlide];
 
   return (
@@ -119,8 +130,8 @@ export default function MarisolHero({ hotel }) {
         </h1>
         <p className={styles.subtitle}>{slide.subtitle}</p>
         <div className={styles.actions}>
-          <button className={styles.primaryBtn}>Explore the resort</button>
-          <button className={styles.ghostBtn}>
+          <button type="button" className={styles.primaryBtn} onClick={exploreResort}>Explore the resort</button>
+          <button type="button" className={styles.ghostBtn} onClick={toggleFilm}>
             <span className={styles.playCircle}>▷</span> Watch video
           </button>
         </div>

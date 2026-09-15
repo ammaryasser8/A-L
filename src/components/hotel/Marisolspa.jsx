@@ -1,5 +1,6 @@
 import { useHotelProducts } from '../../hooks/useHotelProducts';
 import { useReveal } from '../../hooks/useReveal';
+import { Link } from 'react-router-dom';
 import styles from './MarisolSpa.module.css';
 
 export default function MarisolSpa({ hotel }) {
@@ -12,7 +13,7 @@ export default function MarisolSpa({ hotel }) {
   const featuredCover = featured.images?.[0];
 
   return (
-    <section className={styles.section}>
+    <section id="spa" className={styles.section}>
       <div
         ref={ref}
         className={visible ? `${styles.featured} ${styles.visible}` : styles.featured}
@@ -30,6 +31,7 @@ export default function MarisolSpa({ hotel }) {
           <h2>{featured.title}</h2>
           <p>{featured.description}</p>
         </div>
+        <Link className={styles.featuredLink} to={`/hotels/${hotel.slug}/product/${featured.slug}`} aria-label={`Discover ${featured.title}`} />
       </div>
 
       {rest.length > 0 && (
@@ -37,7 +39,7 @@ export default function MarisolSpa({ hotel }) {
           {rest.slice(0, 4).map((p) => {
             const cover = p.images?.[0];
             return (
-              <div key={p.id} className={styles.item}>
+              <Link key={p.id} className={styles.item} to={`/hotels/${hotel.slug}/product/${p.slug}`}>
                 <div className={styles.itemImage}>
                   <div className={styles.marbleBg} />
                   {cover && (
@@ -48,7 +50,7 @@ export default function MarisolSpa({ hotel }) {
                   )}
                 </div>
                 <span>{p.title}</span>
-              </div>
+              </Link>
             );
           })}
         </div>

@@ -49,25 +49,18 @@ export default function AureliaHero({ hotel }) {
 
     if (!video) return;
 
-    video.playbackRate = 1.5;
+    // Keep the supplied film at an unhurried pace. The previous 1.5x rate
+    // and forced 20-second reset made the hero feel like it was flickering.
+    video.playbackRate = 0.92;
 
     const handleLoaded = () => {
-      video.playbackRate = 1.5;
-    };
-
-    const handleTimeUpdate = () => {
-      if (video.currentTime >= 20) {
-        video.currentTime = 0;
-        video.play().catch(() => {});
-      }
+      video.playbackRate = 0.92;
     };
 
     video.addEventListener('loadedmetadata', handleLoaded);
-    video.addEventListener('timeupdate', handleTimeUpdate);
 
     return () => {
       video.removeEventListener('loadedmetadata', handleLoaded);
-      video.removeEventListener('timeupdate', handleTimeUpdate);
     };
   }, []);
 
@@ -291,6 +284,7 @@ export default function AureliaHero({ hotel }) {
           src="/videos/aurelia-hero.mp4"
           autoPlay
           muted
+          loop
           playsInline
           preload="auto"
         />

@@ -100,13 +100,24 @@ export default function GroupExperience() {
       if (convergence) {
         const layers = convergence.querySelectorAll('[data-convergence-layer]');
         const statement = convergence.querySelector('[data-convergence-copy]');
-        const timeline = gsap.timeline({ scrollTrigger: { trigger: convergence, start: 'top bottom', end: 'bottom top', scrub: 0.7 } });
-        timeline.fromTo(layers[0], { xPercent: -31, scale: 1.12 }, { xPercent: 0, scale: 1, duration: 0.5, ease: 'none' })
-          .fromTo(layers[1], { xPercent: 31, scale: 1.12 }, { xPercent: 0, scale: 1, duration: 0.5, ease: 'none' }, '<')
-          .fromTo(statement, { scale: 0.86, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.5, ease: 'none' }, '<')
-          .to(layers[0], { xPercent: -31, scale: 1.12, duration: 0.5, ease: 'none' })
-          .to(layers[1], { xPercent: 31, scale: 1.12, duration: 0.5, ease: 'none' }, '<')
-          .to(statement, { scale: 0.86, opacity: 0, duration: 0.5, ease: 'none' }, '<');
+        const timeline = gsap.timeline({
+          scrollTrigger: {
+            trigger: convergence,
+            start: 'top 82%',
+            end: 'bottom 18%',
+            // A little inertia keeps this editorial reveal from snapping shut
+            // when the visitor scrolls through the statement quickly.
+            scrub: 1.35,
+          },
+        });
+        timeline
+          .fromTo(layers[0], { xPercent: -18, scale: 1.08 }, { xPercent: -2, scale: 1.015, duration: 1.25, ease: 'none' })
+          .fromTo(layers[1], { xPercent: 18, scale: 1.08 }, { xPercent: 2, scale: 1.015, duration: 1.25, ease: 'none' }, '<')
+          .fromTo(statement, { y: 30, scale: 0.94, opacity: 0 }, { y: 0, scale: 1, opacity: 1, duration: 1.05, ease: 'none' }, '<.15')
+          .to({}, { duration: 0.7 })
+          .to(layers[0], { xPercent: -8, scale: 1.05, duration: 1.1, ease: 'none' })
+          .to(layers[1], { xPercent: 8, scale: 1.05, duration: 1.1, ease: 'none' }, '<')
+          .to(statement, { y: -16, opacity: 0.7, duration: 1.1, ease: 'none' }, '<');
       }
 
       root.current.querySelectorAll('[data-orbit]').forEach((element, index) => {

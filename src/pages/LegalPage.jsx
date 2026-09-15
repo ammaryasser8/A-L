@@ -114,22 +114,29 @@ export default function LegalPage({ type }) {
   const { title, sections } = CONTENT[type];
 
   return (
-    <div style={themeVars}>
-      <div className={`wrap ${styles.wrap}`}>
+    <div className={`${styles.page} ${hotel.id === 2 ? styles.marisol : styles.aurelia}`} style={themeVars}>
+      <header className={styles.hero}>
         <Link to={`/hotels/${hotel.slug}`} className={styles.back}>
-          ← Back to {hotel.name}
+          ← Return to {hotel.shortName}
         </Link>
-
-        <span className={styles.eyebrow}>{hotel.name}</span>
+        <p className={styles.eyebrow}>{hotel.name} / Guest information</p>
         <h1 className={styles.title}>{title}</h1>
-        <p className={styles.updated}>Last updated: January 2026</p>
+        <p className={styles.updated}>Last reviewed · January 2026</p>
+      </header>
 
-        {sections(hotel).map((s) => (
-          <section key={s.heading} className={styles.section}>
-            <h2>{s.heading}</h2>
-            <p>{s.body}</p>
-          </section>
-        ))}
+      <div className={styles.layout}>
+        <nav className={styles.toc} aria-label="On this page">
+          <span>In this note</span>
+          {sections(hotel).map((section, index) => <a href={`#legal-${index}`} key={section.heading}>{String(index + 1).padStart(2, '0')} · {section.heading}</a>)}
+        </nav>
+        <article className={styles.content}>
+          {sections(hotel).map((s, index) => (
+            <section id={`legal-${index}`} key={s.heading} className={styles.section}>
+              <span>{String(index + 1).padStart(2, '0')}</span>
+              <div><h2>{s.heading}</h2><p>{s.body}</p></div>
+            </section>
+          ))}
+        </article>
       </div>
 
       <SiteFooter hotel={hotel} />

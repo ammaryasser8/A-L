@@ -1,8 +1,9 @@
 import { useHotelProducts } from '../../hooks/useHotelProducts';
 import { useReveal } from '../../hooks/useReveal';
+import { Link } from 'react-router-dom';
 import styles from './MarisolDining.module.css';
 
-function DiningRow({ product, reverse }) {
+function DiningRow({ product, reverse, hotelSlug }) {
   const [ref, visible] = useReveal();
   const cover = product.images?.[0];
 
@@ -25,7 +26,7 @@ function DiningRow({ product, reverse }) {
         <span className={styles.eyebrow}>{product.style}</span>
         <h3>{product.title}</h3>
         <p>{product.description}</p>
-        <span className={styles.link}>Explore Dining →</span>
+        <Link className={styles.link} to={`/hotels/${hotelSlug}/product/${product.slug}`}>Explore dining →</Link>
       </div>
     </div>
   );
@@ -45,7 +46,7 @@ export default function MarisolDining({ hotel }) {
 
       <div className={styles.rows}>
         {restaurants.map((r, i) => (
-          <DiningRow key={r.id} product={r} reverse={i % 2 === 1} />
+          <DiningRow key={r.id} product={r} reverse={i % 2 === 1} hotelSlug={hotel.slug} />
         ))}
       </div>
     </section>

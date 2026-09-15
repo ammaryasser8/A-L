@@ -1,23 +1,36 @@
-import { useState } from 'react';
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import { useHotelBySlug } from '../hooks/useHotelBySlug';
 import { useHotelProducts } from '../hooks/useHotelProducts';
 
 import MarisolHeader from '../components/layout/Marisolheader';
+import SiteFooter from '../components/layout/Sitefooter';
 import MarisolHero from '../components/hotel/MarisolHero';
+import MarisolIntro from '../components/hotel/MarisolIntro';
 import MarisolHighlights from '../components/hotel/MarisolHighlights';
+import MarisolStayCollection from '../components/hotel/MarisolStayCollection';
+import MarisolDining from '../components/hotel/MarisolDining';
+import MarisolSpa from '../components/hotel/Marisolspa';
 import MarisolExperiences from '../components/hotel/MarisolExperiences';
-import MarisolPromoBanner from '../components/hotel/MarisolPromoBanner';
-import MarisolStats from '../components/hotel/MarisolStats';
-import CategoryTabs from '../components/shared/CategoryTabs';
-import ProductCard from '../components/shared/ProductCard';
-
-import styles from './MarisolHotelPage.module.css';
+import MarisolResortMap from '../components/hotel/MarisolResortMap';
+import MarisolStory from '../components/hotel/MarisolStory';
+import MarisolGallery from '../components/hotel/MarisolGallery';
+import MarisolTestimonials from '../components/hotel/MarisolTestimonials';
+import MarisolFinalCTA from '../components/hotel/MarisolFinalCTA';
 
 export default function MarisolHotelPage() {
   const hotel = useHotelBySlug('marisol-bay-resort');
-  const [activeCategory, setActiveCategory] = useState('All');
-  const products = useHotelProducts(hotel?.id, activeCategory);
-  const allProducts = useHotelProducts(hotel?.id); // unfiltered, for the stats section
+  const products = useHotelProducts(hotel?.id);
+  const location = useLocation();
+
+  useEffect(() => {
+    if (!location.hash) return undefined;
+    const id = location.hash.slice(1);
+    const frame = requestAnimationFrame(() => {
+      document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+    return () => cancelAnimationFrame(frame);
+  }, [location.hash]);
 
   if (!hotel) return null;
 
@@ -40,35 +53,18 @@ export default function MarisolHotelPage() {
     <div style={themeVars}>
       <MarisolHeader />
       <MarisolHero hotel={hotel} />
+      <MarisolIntro hotel={hotel} />
       <MarisolHighlights />
-
-      <section id="rooms" className={`wrap ${styles.roomsSection}`}>
-        <div className={styles.roomsHead}>
-          <div>
-            <span className={styles.eyebrow}>Accommodation</span>
-            <h2>Rooms & Suites</h2>
-          </div>
-        </div>
-
-        <CategoryTabs
-          categories={hotel.categories}
-          active={activeCategory}
-          onChange={setActiveCategory}
-          variant="dark"
-        />
-
-        <div className={styles.grid}>
-          {products.map((product) => (
-            <ProductCard key={product.id} product={product} hotelSlug={hotel.slug} />
-          ))}
-        </div>
-      </section>
-
+      <MarisolStayCollection hotel={hotel} />
+      <MarisolDining hotel={hotel} />
+      <MarisolSpa hotel={hotel} />
       <MarisolExperiences />
-      <MarisolPromoBanner />
-      <MarisolStats products={allProducts} />
-
-      {/* TODO: <SiteFooter /> — هتضاف هنا لما فرع feature/shared-footer يتدمج في main */}
+      <MarisolResortMap />
+      <MarisolStory hotel={hotel} />
+      <MarisolGallery hotel={hotel} />
+      <MarisolTestimonials products={products} />
+      <MarisolFinalCTA />
+      <SiteFooter hotel={hotel} />
     </div>
   );
 }
