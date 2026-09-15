@@ -1,62 +1,202 @@
+/* =========================================
+   MARISOL PROMO BANNER
+   ========================================= */
+
 .banner {
   position: relative;
-  min-height: 380px;
+  min-height: 420px;
   display: flex;
   align-items: center;
-  color: #fff;
   overflow: hidden;
+
+  color: #f5f0e6;
+
+  border-top: 1px solid rgba(201, 162, 75, 0.16);
+  border-bottom: 1px solid rgba(201, 162, 75, 0.16);
+
+  background: #04131f;
 }
+
+
+/* =========================================
+   MARBLE BACKGROUND
+   ========================================= */
 
 .marbleBg {
   position: absolute;
   inset: 0;
-  background-image:
-    repeating-linear-gradient(115deg, rgba(255, 255, 255, 0.035) 0px, rgba(255, 255, 255, 0.035) 2px, transparent 2px, transparent 60px),
-    radial-gradient(ellipse at 70% 40%, rgba(255, 255, 255, 0.05), transparent 50%),
-    linear-gradient(160deg, var(--theme-primary-dark, #060a12), var(--theme-primary, #0b1220));
+
+  background:
+    radial-gradient(
+      ellipse at 20% 30%,
+      rgba(255, 255, 255, 0.045),
+      transparent 40%
+    ),
+    radial-gradient(
+      ellipse at 80% 70%,
+      rgba(201, 162, 75, 0.055),
+      transparent 45%
+    ),
+    linear-gradient(
+      135deg,
+      var(--theme-primary-dark, #04131f),
+      var(--theme-primary, #061b2b)
+    );
 }
+
+
+/* =========================================
+   PHOTO
+   ========================================= */
 
 .photoLayer {
   position: absolute;
   inset: 0;
-  background-size: cover;
+
   background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  transform: scale(1.01);
+
+  transition: transform 1.2s ease;
 }
+
+.banner:hover .photoLayer {
+  transform: scale(1.025);
+}
+
+
+/* =========================================
+   OVERLAY
+   ========================================= */
 
 .overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(4, 8, 14, 0.75) 0%, rgba(4, 8, 14, 0.35) 55%, rgba(4, 8, 14, 0.15) 100%);
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(3, 14, 24, 0.93) 0%,
+      rgba(3, 14, 24, 0.74) 38%,
+      rgba(3, 14, 24, 0.42) 70%,
+      rgba(3, 14, 24, 0.24) 100%
+    );
 }
+
+
+/* =========================================
+   CONTENT
+   ========================================= */
 
 .content {
   position: relative;
   z-index: 2;
-  padding: 0 64px;
-  max-width: 480px;
+
+  width: min(620px, 100%);
+
+  padding: 75px 40px;
 }
+
+
+/* =========================================
+   EYEBROW
+   ========================================= */
 
 .eyebrow {
-  font-size: 11.5px;
-  letter-spacing: 0.1em;
+  display: inline-block;
+
+  margin-bottom: 14px;
+
+  font-family: var(--font-body, sans-serif);
+  font-size: 10px;
+  font-weight: 500;
+
+  letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--theme-accent, #c9a24b);
+
+  color: #c9a24b;
 }
+
+
+/* =========================================
+   TITLE
+   ========================================= */
 
 .content h2 {
-  font-family: var(--font-heading, 'Fraunces', serif);
-  font-size: 32px;
-  margin: 14px 0 12px;
+  margin: 0;
+
+  font-family: var(
+    --font-heading,
+    "Fraunces",
+    serif
+  );
+
+  font-size: clamp(34px, 4.4vw, 54px);
+  line-height: 1.06;
+
+  font-weight: 400;
+
+  letter-spacing: -0.018em;
+
+  color: #eee6d8;
+
+  text-shadow:
+    0 3px 18px rgba(0, 0, 0, 0.28);
 }
+
+
+/* =========================================
+   DESCRIPTION
+   ========================================= */
 
 .content p {
-  color: rgba(255, 255, 255, 0.65);
-  font-size: 14px;
-  margin-bottom: 26px;
+  max-width: 455px;
+
+  margin: 20px 0 28px;
+
+  font-family: var(--font-body, sans-serif);
+
+  font-size: 13px;
+  line-height: 1.75;
+
+  font-weight: 400;
+
+  letter-spacing: 0.005em;
+
+  color: rgba(239, 233, 222, 0.72);
 }
 
-@media (max-width: 900px) {
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 700px) {
+
+  .banner {
+    min-height: 440px;
+  }
+
   .content {
-    padding: 0 24px;
+    padding: 60px 25px;
+  }
+
+  .content h2 {
+    font-size: 36px;
+  }
+
+  .content p {
+    font-size: 12px;
+  }
+
+  .overlay {
+    background:
+      linear-gradient(
+        90deg,
+        rgba(3, 14, 24, 0.92),
+        rgba(3, 14, 24, 0.64)
+      );
   }
 }

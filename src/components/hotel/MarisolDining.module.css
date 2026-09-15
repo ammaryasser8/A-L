@@ -1,0 +1,125 @@
+.section {
+  background: var(--theme-surface, #F7F3EA);
+  padding: 130px 64px;
+}
+
+.head {
+  max-width: 1440px;
+  margin: 0 auto 70px;
+}
+
+.headEyebrow {
+  display: block;
+  font-family: var(--font-body, 'Manrope', sans-serif);
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--theme-accent, #C5A46D);
+  margin-bottom: 14px;
+}
+
+.head h2 {
+  font-family: var(--font-heading, 'Cormorant Garamond', serif);
+  font-weight: 500;
+  font-size: clamp(32px, 3.6vw, 48px);
+  color: var(--theme-ink, #071A1E);
+}
+
+.rows {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 70px;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.row.reverse {
+  direction: rtl;
+}
+
+.row.reverse > * {
+  direction: ltr;
+}
+
+.imageWrap {
+  position: relative;
+  aspect-ratio: 5 / 4;
+}
+
+.marbleBg {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 20% 20%, rgba(197, 164, 109, 0.12), transparent 45%),
+    linear-gradient(140deg, var(--theme-primary, #0B2B30), var(--theme-primary-dark, #071A1E));
+}
+
+.photoLayer {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.eyebrow {
+  display: block;
+  font-family: var(--font-body, 'Manrope', sans-serif);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--theme-muted, #6F9690);
+  margin-bottom: 14px;
+}
+
+.text h3 {
+  font-family: var(--font-heading, 'Cormorant Garamond', serif);
+  font-weight: 500;
+  font-size: 30px;
+  color: var(--theme-ink, #071A1E);
+  margin-bottom: 16px;
+}
+
+.text p {
+  font-family: var(--font-body, 'Manrope', sans-serif);
+  font-size: 14px;
+  line-height: 1.75;
+  color: var(--theme-ink, #071A1E);
+  opacity: 0.7;
+  max-width: 420px;
+  margin-bottom: 22px;
+}
+
+.link {
+  font-family: var(--font-body, 'Manrope', sans-serif);
+  font-size: 12.5px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  color: var(--theme-accent, #C5A46D);
+}
+
+@media (max-width: 900px) {
+  .section {
+    padding: 90px 24px;
+  }
+  .row,
+  .row.reverse {
+    grid-template-columns: 1fr;
+    direction: ltr;
+    gap: 28px;
+  }
+}

@@ -3,9 +3,15 @@ import { formatPrice } from '../../utils/formatPrice';
 import styles from './ProductCard.module.css';
 
 export default function ProductCard({ product, hotelSlug }) {
+  const cover = product.images?.[0];
+
   return (
     <Link to={`/hotels/${hotelSlug}/product/${product.slug}`} className={styles.card}>
       <div className={styles.image}>
+        <div className={styles.marbleBg} />
+        {cover && (
+          <div className={styles.photoLayer} style={{ backgroundImage: `url(/${cover})` }} />
+        )}
         <span className={styles.styleTag}>{product.style}</span>
       </div>
 
@@ -21,7 +27,7 @@ export default function ProductCard({ product, hotelSlug }) {
             From {formatPrice(product.price, product.currency)}
             <span> / night</span>
           </div>
-          <span className={styles.plus} aria-hidden="true">+</span>
+          <span className={styles.arrow} aria-hidden="true">→</span>
         </div>
       </div>
     </Link>
