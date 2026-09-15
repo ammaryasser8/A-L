@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Compass, Menu, Sparkles, X } from 'lucide-react';
+import { Compass, Sparkles } from 'lucide-react';
 import { useSectionLink } from '../../hooks/useSectionLink';
 import styles from './MarisolSidebar.module.css';
 
@@ -48,8 +48,8 @@ export default function MarisolSidebar() {
         aria-expanded={isOpen}
         data-cursor={isOpen ? 'CLOSE' : 'MENU'}
       >
-        {isOpen ? <X size={18} /> : <Menu size={18} />}
-        <span className={styles.togglePulse} />
+        <span className={styles.toggleWord}>{isOpen ? 'Close' : 'Atlas'}</span>
+        <span className={styles.toggleWaves} aria-hidden="true"><i /><i /><i /></span>
       </button>
       {isOpen && <button className={styles.backdrop} type="button" aria-label="Close menu" onClick={() => setIsOpen(false)} />}
       <div className={styles.panel}>

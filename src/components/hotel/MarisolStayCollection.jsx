@@ -1,42 +1,48 @@
-import { Link } from 'react-router-dom';
+import { useState } from 'react';
 import { ArrowUpRight, Users } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { useHotelProducts } from '../../hooks/useHotelProducts';
+import { useReveal } from '../../hooks/useReveal';
 import styles from './MarisolStayCollection.module.css';
 
 export default function MarisolStayCollection({ hotel }) {
   const rooms = useHotelProducts(hotel?.id, 'Rooms').slice(0, 3);
   const suites = useHotelProducts(hotel?.id, 'Suites').slice(0, 3);
   const stays = [...rooms, ...suites];
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [sectionRef, visible] = useReveal();
 
   if (!stays.length) return null;
+  const activeStay = stays[activeIndex];
 
   return (
-    <section id="rooms" className={styles.section}>
-      <div className={styles.intro}>
-        <span>Accommodation / 01</span>
-        <h2>Stay at the<br /><em>water&apos;s edge.</em></h2>
-        <p>Six distinct ways to wake up to the Red Sea—each with its own mood, view and rhythm.</p>
-        <Link to={`/hotels/${hotel.slug}/collection/stays`} className={styles.next}>Explore all rooms & suites <ArrowUpRight size={15} /></Link>
-        <a href="#dining" className={styles.next}>Continue to dining <ArrowUpRight size={15} /></a>
-      </div>
-
-      <div className={styles.collection}>
-        {stays.map((stay, index) => (
-          <Link
-            key={stay.id}
-            to={`/hotels/${hotel.slug}/product/${stay.slug}`}
-            className={`${styles.card} ${index === 0 ? styles.featured : ''}`}
-          >
-            <img src={`/${stay.images[0]}`} alt={stay.title} loading={index > 1 ? 'lazy' : 'eager'} />
-            <div className={styles.shade} />
-            <div className={styles.cardTop}><span>{String(index + 1).padStart(2, '0')}</span><span>{stay.category}</span></div>
-            <div className={styles.cardBottom}>
-              <h3>{stay.title}</h3>
-              <p><Users size={14} /> Up to {stay.capacity} guests <i /> {stay.size} m²</p>
-              <span className={styles.discover}>Discover <ArrowUpRight size={16} /></span>
-            </div>
-          </Link>
-        ))}
+    <section ref={sectionRef} id="rooms" className={`${styles.section} ${visible ? styles.visible : ''}`}>
+      <div className={styles.topline}><span>Stays / 01</span><i /><span>Choose your horizon</span></div>
+      <div className={styles.heading}><h2>Every room holds<br /><em>a different morning.</em></h2><p>Not a catalogue. A small collection of atmospheres, waiting for the one that feels like yours.</p></div>
+      <div className={styles.stayStudio}>
+        <div className={styles.canvas}>
+          <div className={styles.photo} key={activeStay.id} style={{ backgroundImage: `url(/${activeStay.images[0]})` }} />
+          <div className={styles.photoWash} />
+          <span className={styles.canvasTag}>Marisol selected stay / {String(activeIndex + 1).padStart(2, '0')}</span>
+          <div className={styles.activeDetails}>
+            <span>{activeStay.category}</span>
+            <h3>{activeStay.title}</h3>
+            <p><Users size={14} /> Up to {activeStay.capacity} guests <i /> {activeStay.size} m²</p>
+            <Link to={`/hotels/${hotel.slug}/product/${activeStay.slug}`}>Enter this stay <ArrowUpRight size={16} /></Link>
+          </div>
+        </div>
+        <div className={styles.chooser}>
+          <div className={styles.chooserHead}><span>Room index</span><b>{String(activeIndex + 1).padStart(2, '0')} / {String(stays.length).padStart(2, '0')}</b></div>
+          <div className={styles.options}>
+            {stays.map((stay, index) => (
+              <button type="button" key={stay.id} className={activeIndex === index ? styles.selected : ''} onClick={() => setActiveIndex(index)} data-cursor="VIEW">
+                <small>{String(index + 1).padStart(2, '0')}</small><span>{stay.title}</span><i />
+              </button>
+            ))}
+          </div>
+          <p className={styles.chooserNote}>Move through the collection. The light changes with every choice.</p>
+          <Link to={`/hotels/${hotel.slug}/collection/stays`} className={styles.allStays}>View all rooms & suites <ArrowUpRight size={15} /></Link>
+        </div>
       </div>
     </section>
   );
