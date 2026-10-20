@@ -12,7 +12,7 @@ import MarisolIntro from '../components/hotel/MarisolIntro';
 import MarisolHighlights from '../components/hotel/MarisolHighlights';
 import MarisolStayCollection from '../components/hotel/MarisolStayCollection';
 import MarisolDining from '../components/hotel/MarisolDining';
-import MarisolSpa from '../components/hotel/Marisolspa';
+import MarisolSpa from '../components/hotel/MarisolSpa';
 import MarisolExperiences from '../components/hotel/MarisolExperiences';
 import MarisolResortMap from '../components/hotel/MarisolResortMap';
 import MarisolStory from '../components/hotel/MarisolStory';

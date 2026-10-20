@@ -5,7 +5,7 @@ import products from '../data/products.json';
 import { useHotelBySlug } from '../hooks/useHotelBySlug';
 import MarisolHeader from '../components/layout/Marisolheader';
 import MarisolSidebar from '../components/layout/MarisolSidebar';
-import SiteFooter from '../components/layout/Sitefooter';
+import SiteFooter from '../components/layout/SiteFooter';
 import NotFoundPage from './NotFoundPage';
 import styles from './MarisolCollectionPage.module.css';
 

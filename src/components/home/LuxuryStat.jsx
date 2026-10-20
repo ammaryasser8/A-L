@@ -1,5 +1,5 @@
-import { useReveal } from '../../hooks/Usereveal';
-import { useCountUp } from '../../hooks/Usecountup';
+import { useReveal } from '../../hooks/useReveal';
+import { useCountUp } from '../../hooks/useCountUp';
 
 // Scene 10 — Luxury Data: each figure counts up from zero once it enters
 // view (real data only — target is always a number already computed from
