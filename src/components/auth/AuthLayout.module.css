@@ -1,0 +1,24 @@
+.layout{min-height:100svh;display:grid;grid-template-columns:1.1fr 1fr;background:var(--al-bg)}
+
+.visual{position:relative;isolation:isolate;overflow:hidden;background:#0c0d0e;display:flex;align-items:flex-end;padding:clamp(28px,4vw,64px)}
+.visualImage{position:absolute;inset:-3%;background:linear-gradient(0deg,rgba(8,6,5,.86),rgba(8,6,5,.25) 55%),url('/images/products/7-1.jpg');background-size:cover;background-position:center}
+.visualShade{position:absolute;inset:0;background:radial-gradient(circle at 30% 20%,rgba(201,162,75,.16),transparent 45%)}
+.visualQuote{position:relative;z-index:1;margin:0;max-width:360px;font:italic 400 26px/1.35 'Playfair Display',serif;color:#f4ecdc}
+
+.panel{display:flex;flex-direction:column;padding:clamp(28px,4vw,56px) clamp(24px,6vw,72px)}
+.brand{display:inline-flex;align-items:baseline;gap:8px;font:500 12px 'Jost',sans-serif;letter-spacing:.12em;color:var(--al-ink)}
+.brand span{font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--al-muted)}
+
+.panelInner{flex:1;display:flex;flex-direction:column;justify-content:center;max-width:380px;margin:0 auto;width:100%;padding:48px 0}
+.eyebrow{margin:0 0 10px;font:10px 'Jost',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--al-gold-text)}
+.panelInner h1{margin:0 0 8px;font:500 clamp(34px,4vw,44px)/1.05 'Playfair Display',serif;color:var(--al-ink);letter-spacing:-.02em}
+.subtitle{margin:0 0 34px;color:var(--al-muted);font:14px/1.6 'Jost',sans-serif}
+
+.footer{margin-top:26px;font:13px 'Jost',sans-serif;color:var(--al-muted)}
+.footer a{color:var(--al-ink);border-bottom:1px solid var(--al-gold);padding-bottom:1px}
+
+@media(max-width:860px){
+  .layout{grid-template-columns:1fr}
+  .visual{display:none}
+  .panel{padding-top:32px}
+}

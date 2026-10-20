@@ -1,13 +1,23 @@
 :root {
+  --ease-luxury: cubic-bezier(.16, 1, .3, 1);
+  --ease-cinematic: cubic-bezier(.77, 0, .18, 1);
+  --ease-soft: cubic-bezier(.2, .8, .2, 1);
+  --ease-sharp: cubic-bezier(.65, 0, .35, 1);
+  --ease-expressive: cubic-bezier(.3, 0, 0, 1);
+  --z-content: 1;
+  --z-navigation: 70;
+  --z-overlay: 120;
+  --z-cursor: 150;
   /* AL Hospitality Group (portal / shared footer / home page) */
   --al-ink: #1C1512;
   --al-ink-deep: #0F0B09;
   --al-gold: #C9A24B;
+  --al-gold-text: #8F6D1F; /* AA-safe gold for text on light backgrounds (4.5:1); keep --al-gold for borders, dots and dark backgrounds */
   --al-gold-light: #E7CD8D;
   --al-bg: #FBF8F2;
   --al-bg-alt: #F2ECE0;
   --al-surface: #FFFFFF;
-  --al-muted: #83766A;
+  --al-muted: #7A6E62;
   --font-heading-portal: 'Playfair Display', serif;
   --font-body-portal: 'Jost', sans-serif;
 

@@ -6,7 +6,6 @@ import { useHotelBySlug } from '../hooks/useHotelBySlug';
 import MarisolHeader from '../components/layout/Marisolheader';
 import MarisolSidebar from '../components/layout/MarisolSidebar';
 import SiteFooter from '../components/layout/Sitefooter';
-import MarisolCursor from '../components/ui/MarisolCursor';
 import NotFoundPage from './NotFoundPage';
 import styles from './MarisolCollectionPage.module.css';
 
@@ -33,7 +32,6 @@ export default function MarisolCollectionPage() {
 
   return (
     <div className={styles.page}>
-      <MarisolCursor />
       <MarisolSidebar />
       <MarisolHeader />
       <main>

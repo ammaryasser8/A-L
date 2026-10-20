@@ -13,6 +13,7 @@ import { useHotelProducts } from '../hooks/useHotelProducts';
 
 import AureliaHeader from '../components/layout/AureliaHeader';
 import AureliaSidebar from '../components/layout/AureliaSidebar';
+import AureliaFooter from '../components/layout/AureliaFooter';
 import ProductCard from '../components/shared/ProductCard';
 
 import styles from './AureliaCategoryPage.module.css';
@@ -825,6 +826,7 @@ export default function AureliaCategoryPage() {
         </section>
 
       </main>
+      <AureliaFooter hotel={hotel} />
     </div>
   );
 }

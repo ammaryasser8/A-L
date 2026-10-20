@@ -1,0 +1,6 @@
+.page{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:14px;padding:40px;background:var(--al-bg,#FBF8F2);color:var(--al-ink,#1c1512)}
+.eyebrow{margin:0;font:10px 'Jost',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--al-gold,#c9a24b)}
+.page h1{margin:0;font:500 clamp(28px,4vw,40px) 'Playfair Display',serif}
+.page p{margin:0;max-width:420px;font:14px 'Jost',sans-serif;color:var(--al-muted,#6b5d52)}
+.actions{margin-top:14px;display:flex;gap:18px}
+.actions button,.actions a{font:11px 'Jost',sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--al-ink,#1c1512);border:0;background:none;border-bottom:1px solid var(--al-gold,#c9a24b);padding-bottom:2px;cursor:pointer}

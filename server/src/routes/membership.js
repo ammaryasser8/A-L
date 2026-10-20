@@ -1,0 +1,11 @@
+import { Router } from 'express';
+import { z } from 'zod';
+import { prisma } from '../db.js';
+import { requireAuth, requireCsrf } from '../middleware/auth.js';
+import { sendEmail } from '../services/email.js';
+const router = Router();
+const application = z.object({ tier: z.enum(['member', 'privilege']), message: z.string().trim().max(1200).optional() });
+router.get('/', requireAuth, async (req, res, next) => { try { const [membership, applications] = await Promise.all([prisma.membership.findUnique({ where: { userId: req.user.id } }), prisma.membershipRequest.findMany({ where: { userId: req.user.id }, orderBy: { createdAt: 'desc' }, select: { id: true, tier: true, message: true, status: true, response: true, createdAt: true, reviewedAt: true } })]); res.json({ membership, applications }); } catch (error) { next(error); } });
+router.post('/applications', requireCsrf, requireAuth, async (req, res, next) => { try { const input = application.parse(req.body); const duplicate = await prisma.membershipRequest.findFirst({ where: { userId: req.user.id, status: 'pending' } }); if (duplicate) return res.status(409).json({ error: 'You already have an application awaiting review.' }); const request = await prisma.membershipRequest.create({ data: { userId: req.user.id, ...input } }); void sendEmail({ to: req.user.email, subject: 'Your AL membership application', text: `Your ${input.tier} application is awaiting review.` }); return res.status(201).json({ application: request }); } catch (error) { return next(error); } });
+router.post('/applications/:id/cancel', requireCsrf, requireAuth, async (req, res, next) => { try { const result = await prisma.membershipRequest.updateMany({ where: { id: req.params.id, userId: req.user.id, status: 'pending' }, data: { status: 'cancelled' } }); if (!result.count) return res.status(409).json({ error: 'Only a pending application can be cancelled.' }); return res.status(204).end(); } catch (error) { return next(error); } });
+export default router;

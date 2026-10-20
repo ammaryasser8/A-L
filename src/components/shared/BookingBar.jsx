@@ -1,16 +1,19 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { useBooking } from '../../hooks/useBooking';
 import styles from './BookingBar.module.css';
 
-export default function BookingBar({ variant = 'light' }) {
+export default function BookingBar({ variant = 'light', hotelSlug }) {
   const [checkIn, setCheckIn] = useState('');
   const [checkOut, setCheckOut] = useState('');
   const [guests, setGuests] = useState('2 Adults');
+  const { updateDraft } = useBooking();
+  const navigate = useNavigate();
 
-  function handleSubmit(e) {
-    e.preventDefault();
-    // No backend yet — this is a UI-only placeholder.
-    // eslint-disable-next-line no-alert
-    alert(`Checking availability: ${checkIn || '—'} to ${checkOut || '—'}, ${guests}`);
+  function handleSubmit(event) {
+    event.preventDefault();
+    updateDraft({ hotelSlug: hotelSlug || null, checkIn, checkOut, guestCount: parseInt(guests, 10) || 2 });
+    navigate('/booking');
   }
 
   return (

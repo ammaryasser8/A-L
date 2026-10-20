@@ -1,0 +1,44 @@
+[
+  {
+    "id": "airport-transfer",
+    "title": "Private airport transfer",
+    "description": "A chauffeured car waiting for you on arrival, no queues.",
+    "price": 45,
+    "unit": "per way"
+  },
+  {
+    "id": "breakfast",
+    "title": "Daily breakfast",
+    "description": "A full breakfast spread, included with every morning of your stay.",
+    "price": 18,
+    "unit": "per guest / night"
+  },
+  {
+    "id": "private-dinner",
+    "title": "Private dinner",
+    "description": "A table set apart, a menu composed just for you.",
+    "price": 120,
+    "unit": "per stay"
+  },
+  {
+    "id": "spa-ritual",
+    "title": "Spa ritual for two",
+    "description": "A signature treatment, shared.",
+    "price": 95,
+    "unit": "per stay"
+  },
+  {
+    "id": "sunset-cruise",
+    "title": "Sunset cruise",
+    "description": "The coastline, the light, the water — from the deck.",
+    "price": 75,
+    "unit": "per stay"
+  },
+  {
+    "id": "celebration",
+    "title": "Special occasion setup",
+    "description": "A quiet way to mark the moment — flowers, cake, a note.",
+    "price": 60,
+    "unit": "per stay"
+  }
+]

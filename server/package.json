@@ -1,0 +1,35 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AL Hospitality API",
+  "scripts": {
+    "dev": "node --watch src/index.js",
+    "start": "node src/index.js",
+    "test": "node --test tests/authorization.test.js tests/http-boundaries.test.js",
+    "prisma:validate": "prisma validate",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:deploy": "prisma migrate deploy",
+    "provision:cofounders": "node src/scripts/provisionCofounders.js"
+  },
+  "type": "module",
+  "dependencies": {
+    "@prisma/client": "6.19.0",
+    "bcrypt": "^6.0.0",
+    "connect-pg-simple": "^10.0.0",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.7",
+    "express": "^5.3.0",
+    "express-rate-limit": "^8.7.1",
+    "express-session": "^1.19.0",
+    "helmet": "^8.3.0",
+    "multer": "^2.4.0",
+    "nodemailer": "^10.1.0",
+    "pg": "^8.23.1",
+    "zod": "^4.6.6"
+  },
+  "devDependencies": {
+    "prisma": "6.19.0"
+  }
+}

@@ -1,4 +1,6 @@
 import { useRef, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { useBooking } from '../../hooks/useBooking';
 import styles from './MarisolHero.module.css';
 
 export default function MarisolHero({ hotel }) {
@@ -7,11 +9,13 @@ export default function MarisolHero({ hotel }) {
   const [checkIn, setCheckIn] = useState('2026-05-24');
   const [checkOut, setCheckOut] = useState('2026-05-27');
   const [guests, setGuests] = useState('2 Adults');
-  const [bookingMessage, setBookingMessage] = useState('');
+  const { updateDraft } = useBooking();
+  const navigate = useNavigate();
 
   function handleCheckAvailability(event) {
     event.preventDefault();
-    setBookingMessage(`Checking ${hotel?.name || 'the resort'} for ${guests}, ${checkIn} → ${checkOut}...`);
+    updateDraft({ hotelSlug: hotel?.slug || 'marisol-bay-resort', checkIn, checkOut, guestCount: parseInt(guests, 10) || 2 });
+    navigate('/booking');
   }
 
   function exploreResort() {
@@ -81,7 +85,6 @@ export default function MarisolHero({ hotel }) {
           </select>
         </label>
         <button type="submit" className={styles.bookingSubmit}>Check availability <span>↗</span></button>
-        {bookingMessage && <p className={styles.bookingNote}>{bookingMessage}</p>}
       </form>
     </section>
   );

@@ -1,0 +1,17 @@
+import { useEffect, useMemo, useState } from 'react';
+import { Link } from 'react-router-dom';
+import hotels from '../data/hotels.json';
+import { useAuth } from '../hooks/useAuth';
+import { reservationService } from '../services/reservationService';
+import { reviewService } from '../services/reviewService';
+import styles from './GuestPortal.module.css';
+import './GuestPortalExtras.css';
+
+export default function AccountReviewsPage() {
+  const { session } = useAuth();
+  const [reservations, setReservations] = useState([]); const [reviews, setReviews] = useState(() => reviewService.getReviews(session.id)); const [rating, setRating] = useState(5); const [message, setMessage] = useState(''); const [selected, setSelected] = useState(''); const [error, setError] = useState('');
+  useEffect(() => { reservationService.getReservationsForGuest(session.id).then((items) => { setReservations(items.filter((item) => new Date(item.checkOut) < new Date() && item.status !== 'cancelled')); }); }, [session.id]);
+  const eligible = useMemo(() => reservations.filter((reservation) => !reviews.some((review) => review.reservationId === reservation.id)), [reservations, reviews]);
+  function submit(event) { event.preventDefault(); try { const reservation = eligible.find((item) => item.id === selected); if (!reservation) throw new Error('Choose a completed stay to review.'); const hotel = hotels.find((item) => item.id === reservation.hotelId); const review = reviewService.createReview({ guestId: session.id, reservationId: selected, subject: hotel?.name || 'AL stay', rating, message }); setReviews((items) => [review, ...items]); setMessage(''); setSelected(''); setError(''); } catch (issue) { setError(issue.message); } }
+  return <main className={styles.portal}><header className={styles.header}><Link to="/account" className={styles.brand}><img src="/images/brand/al-logo.png" alt="" /><span>AL Guest portal</span></Link><Link to="/account" className="utilityLink">Return to overview</Link></header><section className="pageIntro"><p className={styles.eyebrow}>Your voice</p><h1>Remembered for how it felt.</h1><p>Reviews are available only for completed stays in this mock guest experience.</p></section>{eligible.length > 0 && <form className="reviewForm" onSubmit={submit}><label>Completed stay<select value={selected} onChange={(event) => setSelected(event.target.value)} required><option value="">Choose a stay</option>{eligible.map((reservation) => <option value={reservation.id} key={reservation.id}>{reservation.id} · {hotels.find((hotel) => hotel.id === reservation.hotelId)?.name}</option>)}</select></label><fieldset><legend>Your rating</legend>{[1,2,3,4,5].map((value) => <button type="button" key={value} onClick={() => setRating(value)} className={value <= rating ? 'starActive' : 'star'}>★</button>)}</fieldset><label>What made your stay memorable?<textarea value={message} onChange={(event) => setMessage(event.target.value)} required /></label>{error && <p className="error" role="alert">{error}</p>}<button type="submit" className="primaryButton">Share your experience</button></form>}<section className="reviewList">{reviews.length ? reviews.map((review) => <article key={review.id}><p className={styles.eyebrow}>{review.subject}</p><b>{'★'.repeat(review.rating)}{'☆'.repeat(5 - review.rating)}</b><p>{review.message}</p></article>) : <p className="emptyText">Your voice has not been heard yet. After a completed stay, you can share what mattered most.</p>}</section></main>;
+}

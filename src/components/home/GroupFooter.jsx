@@ -31,7 +31,8 @@ export default function GroupFooter({ group, hotels, categories }) {
 
         <div className={styles.links}>
           <section><p className={styles.eyebrow}>The collection</p>{hotelLinks.map((link) => <Link key={link.to} to={link.to}>{link.label} <Arrow /></Link>)}</section>
-          <section><p className={styles.eyebrow}>Discover</p><a href="#experiences">Experiences <Arrow /></a><a href="#stays">Rooms & suites <Arrow /></a><a href="#journey">Plan your journey <Arrow /></a></section>
+          <section><p className={styles.eyebrow}>Discover</p><a href="#experiences">Experiences <Arrow /></a><a href="#stays">Rooms & suites <Arrow /></a><Link to="/events">Events <Arrow /></Link></section>
+          <section><p className={styles.eyebrow}>The Group</p><Link to="/about">About AL <Arrow /></Link><Link to="/careers">Careers <Arrow /></Link><Link to="/press">Press <Arrow /></Link></section>
           <section><p className={styles.eyebrow}>At your service</p><a href={`mailto:${group.contact.email}`}>{group.contact.email} <Arrow /></a><a href={`tel:${group.contact.phone.replace(/\s/g, '')}`}>{group.contact.phone} <Arrow /></a><span>{group.headquarters}</span></section>
         </div>
       </div>
@@ -42,7 +43,7 @@ export default function GroupFooter({ group, hotels, categories }) {
       <div className={styles.bottom}>
         <span>© {currentYear} {group.name}</span>
         <span>Crafted in Egypt</span>
-        <a href="#top">Privacy &amp; terms</a>
+        <Link to="/legal/privacy">Privacy &amp; terms</Link>
         <a href="#top" className={styles.topButton} aria-label="Back to top">↑</a>
       </div>
     </footer>

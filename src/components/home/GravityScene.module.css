@@ -1,0 +1,7 @@
+.gravity{position:relative;min-height:70vh;background:#0c0d0e;overflow:hidden}
+.centreMark{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font:italic 15px 'Playfair Display',serif;color:rgba(230,211,166,.4);letter-spacing:.04em}
+.floatWrap{position:absolute;animation:al-gravity-drift 9s ease-in-out infinite}
+.word{display:inline-block;font:11px 'Jost',sans-serif;letter-spacing:.16em;text-transform:uppercase;color:rgba(247,240,227,.78);will-change:transform}
+@keyframes al-gravity-drift{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+@media(prefers-reduced-motion:reduce){.floatWrap{animation:none}}
+@media(max-width:800px){.gravity{min-height:52vh}.word{font-size:9px!important}}

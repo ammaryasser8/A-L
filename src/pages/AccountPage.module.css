@@ -1,0 +1,86 @@
+.account{min-height:100vh;background:var(--al-bg);color:var(--al-ink)}
+.header{display:flex;align-items:center;justify-content:space-between;padding:22px clamp(20px,4vw,72px);border-bottom:1px solid rgba(28,21,18,.1)}
+.brand{display:inline-flex;align-items:baseline;gap:8px;font:500 12px 'Jost',sans-serif;letter-spacing:.12em;color:var(--al-ink)}
+.brand span{font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--al-muted)}
+.logout{background:none;border:1px solid rgba(28,21,18,.25);padding:9px 16px;font:10px 'Jost',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--al-ink);cursor:pointer;transition:border-color .25s ease,color .25s ease}
+.logout:hover{border-color:var(--al-gold);color:var(--al-gold-text)}
+
+.hero{padding:clamp(60px,10vw,110px) clamp(20px,4vw,72px) clamp(40px,6vw,64px)}
+.eyebrow{margin:0 0 10px;font:10px 'Jost',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--al-gold-text)}
+.hero h1{margin:0 0 10px;font:500 clamp(36px,5vw,56px)/1.1 'Playfair Display',serif}
+.sub{margin:0;color:var(--al-muted);font:14px 'Jost',sans-serif}
+.identity{display:flex;align-items:center;gap:20px}.avatarUpload{position:relative;display:grid;place-items:center;flex:0 0 auto;width:74px;height:74px;overflow:hidden;border:1px solid var(--al-gold);border-radius:50%;background:var(--al-ink);color:#fff;cursor:pointer}.avatarUpload:after{content:'Change';position:absolute;inset:0;display:grid;place-items:center;background:rgba(28,21,18,.68);color:#fff;font:8px 'Jost',sans-serif;letter-spacing:.12em;text-transform:uppercase;opacity:0;transition:opacity .2s ease}.avatarUpload:hover:after,.avatarUpload:focus-within:after{opacity:1}.avatarUpload img{width:100%;height:100%;object-fit:cover}.avatarUpload span{font:500 21px 'Playfair Display',serif;letter-spacing:.05em}.avatarUpload input{position:absolute;width:1px;height:1px;opacity:0}.avatarError{margin:14px 0 0;color:#7a2323;font:12px 'Jost',sans-serif}
+
+.panel{padding:32px clamp(20px,4vw,72px);border-top:1px solid rgba(28,21,18,.1);max-width:720px}
+.panel h2{margin:0 0 18px;font:500 20px 'Playfair Display',serif}
+
+.empty{padding:28px;border:1px dashed rgba(28,21,18,.25);text-align:center}
+.empty p{margin:0 0 6px;font:14px 'Jost',sans-serif;color:var(--al-ink)}
+.emptySub{color:var(--al-muted)!important;font-size:13px!important}
+.emptyActions{margin-top:18px;display:flex;gap:16px;justify-content:center}
+.emptyLink{font:11px 'Jost',sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--al-ink);border-bottom:1px solid var(--al-gold);padding-bottom:2px}
+
+.profile dl{margin:0;display:flex;flex-direction:column;gap:14px}
+.profile div{display:flex;justify-content:space-between;padding-bottom:12px;border-bottom:1px solid rgba(28,21,18,.08);font:14px 'Jost',sans-serif}
+.profile dt{color:var(--al-muted)}
+.profile dd{margin:0;color:var(--al-ink)}
+
+.reservationList{display:flex;flex-direction:column;gap:16px}
+.reservationCard{display:grid;grid-template-columns:110px 1fr auto;gap:18px;align-items:center;padding:14px;border:1px solid rgba(28,21,18,.12)}
+.reservationCard img{width:110px;height:80px;object-fit:cover;background:#eee}
+.reservationHotel{margin:0 0 4px;font:10px 'Jost',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--al-gold-text)}
+.reservationCard h3{margin:0 0 6px;font:500 18px 'Playfair Display',serif}
+.reservationMeta{margin:0 0 6px;font:12px 'Jost',sans-serif;color:var(--al-muted)}
+.reservationId{margin:0;font:11px 'Jost',sans-serif;color:var(--al-muted)}
+.status{text-transform:capitalize;color:#1c6e57}
+.reservationTotal{font:500 20px 'Playfair Display',serif}
+@media(max-width:700px){.identity{align-items:flex-start}.avatarUpload{width:58px;height:58px}.reservationCard{grid-template-columns:1fr}.reservationCard img{width:100%;height:140px}}
+
+.requestList,.notifList,.docList{display:flex;flex-direction:column;gap:14px}
+.requestCard{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;padding:16px;border:1px solid rgba(28,21,18,.12)}
+.requestMessage{margin:6px 0;font:13px 'Jost',sans-serif;color:var(--al-ink);max-width:480px}
+
+.notifItem{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;padding:16px;border:1px solid rgba(28,21,18,.12);background:transparent;text-align:left;cursor:pointer;font-family:inherit;width:100%}
+.notifUnread{border-color:var(--al-gold);background:rgba(201,162,75,.05)}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--al-gold);flex-shrink:0;margin-top:6px}
+
+.docItem{border:1px solid rgba(28,21,18,.12)}
+.docRow{display:flex;justify-content:space-between;align-items:center;width:100%;padding:16px;background:none;border:0;font:13px 'Jost',sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--al-ink);cursor:pointer}
+
+.summary{border-top:1px solid rgba(28,21,18,.12);padding:16px}
+.summaryRow{display:flex;justify-content:space-between;padding:8px 0;font:13px 'Jost',sans-serif}
+.summaryRow dt{color:var(--al-muted);margin:0}
+.summaryRow dd{margin:0;color:var(--al-ink)}
+.total{font-weight:600}
+
+.quickLinks{display:flex;gap:14px;flex-wrap:wrap;padding:0 clamp(20px,4vw,72px) 36px}
+.quickLinks a{position:relative;padding:10px 18px;border:1px solid rgba(28,21,18,.2);font:10px 'Jost',sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--al-ink);transition:border-color .25s ease,color .25s ease}
+.quickLinks a:hover{border-color:var(--al-gold);color:var(--al-gold-text)}
+.badge{display:inline-flex;align-items:center;justify-content:center;min-width:16px;height:16px;margin-left:6px;padding:0 4px;border-radius:8px;background:var(--al-gold);color:#fff;font-size:9px}
+
+.timeline{display:flex;list-style:none;margin:0;padding:0;gap:0}
+.timelineStep{flex:1;display:flex;flex-direction:column;align-items:center;gap:8px;position:relative;font:9px 'Jost',sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--al-muted)}
+.timelineStep:not(:last-child):after{content:'';position:absolute;top:5px;left:calc(50% + 12px);right:calc(-50% + 12px);height:1px;background:rgba(28,21,18,.15)}
+.timelineDot{width:10px;height:10px;border-radius:50%;border:1px solid rgba(28,21,18,.3);background:var(--al-bg);z-index:1}
+.timelineDone .timelineDot{background:var(--al-gold);border-color:var(--al-gold)}
+.timelineDone:not(:last-child):after{background:var(--al-gold)}
+.timelineActive{color:var(--al-ink)}
+.timelineActive .timelineDot{background:#fff;border-color:var(--al-gold);box-shadow:0 0 0 3px rgba(201,162,75,.25)}
+
+.progressTrack{height:4px;background:rgba(28,21,18,.1);margin:20px 0}
+.progressFill{height:100%;background:var(--al-gold);transition:width .4s ease}
+
+.reservationForm{display:flex;flex-direction:column;gap:18px}
+.formField{display:flex;flex-direction:column;gap:7px}
+.formField span{font:10px 'Jost',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--al-muted)}
+.formField input,.formField select,.formField textarea{border:0;border-bottom:1px solid rgba(28,21,18,.25);background:transparent;padding:9px 2px;font:14px 'Jost',sans-serif;color:var(--al-ink)}
+.formField textarea{border:1px solid rgba(28,21,18,.25);padding:12px;resize:vertical}
+.formField input:focus,.formField select:focus,.formField textarea:focus{outline:none;border-color:var(--al-gold)}
+.formSubmit{align-self:flex-start;padding:13px 26px;background:var(--al-ink);color:#fff;border:0;font:11px 'Jost',sans-serif;letter-spacing:.14em;text-transform:uppercase;cursor:pointer}
+.formSubmit:hover:not(:disabled){background:#000}
+.formSubmit:disabled{opacity:.6}
+
+.confirm{text-align:center;padding:40px 0}
+.confirm h1{font:500 clamp(28px,4vw,38px)/1.15 'Playfair Display',serif;margin:0 0 8px}
+.confirmActions{margin-top:24px;display:flex;gap:18px;justify-content:center}
+.confirmActions a{font:11px 'Jost',sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--al-ink);border-bottom:1px solid var(--al-gold);padding-bottom:2px}

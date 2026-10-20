@@ -2,6 +2,9 @@ import { useParams, Link } from 'react-router-dom';
 import { useHotelBySlug } from '../hooks/useHotelBySlug';
 import NotFoundPage from './NotFoundPage';
 import SiteFooter from '../components/layout/SiteFooter';
+import MarisolHeader from '../components/layout/Marisolheader';
+import MarisolSidebar from '../components/layout/MarisolSidebar';
+import AureliaFooter from '../components/layout/AureliaFooter';
 import styles from './LegalPage.module.css';
 
 const CONTENT = {
@@ -115,6 +118,7 @@ export default function LegalPage({ type }) {
 
   return (
     <div className={`${styles.page} ${hotel.id === 2 ? styles.marisol : styles.aurelia}`} style={themeVars}>
+      {hotel.id === 2 && <><MarisolSidebar /><MarisolHeader /></>}
       <header className={styles.hero}>
         <Link to={`/hotels/${hotel.slug}`} className={styles.back}>
           ← Return to {hotel.shortName}
@@ -139,7 +143,7 @@ export default function LegalPage({ type }) {
         </article>
       </div>
 
-      <SiteFooter hotel={hotel} />
+      {hotel.id === 2 ? <SiteFooter hotel={hotel} /> : <AureliaFooter hotel={hotel} />}
     </div>
   );
 }

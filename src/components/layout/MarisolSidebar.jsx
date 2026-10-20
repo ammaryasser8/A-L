@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Compass, Sparkles } from 'lucide-react';
+import { Compass, Sparkles, X } from 'lucide-react';
 import { useSectionLink } from '../../hooks/useSectionLink';
 import styles from './MarisolSidebar.module.css';
 
@@ -38,22 +38,20 @@ export default function MarisolSidebar() {
     return () => observer.disconnect();
   }, []);
 
+  useEffect(() => {
+    const toggle = () => setIsOpen((open) => !open);
+    window.addEventListener('marisol-menu-toggle', toggle);
+    return () => window.removeEventListener('marisol-menu-toggle', toggle);
+  }, []);
+
   return (
     <aside className={`${styles.rail} ${isOpen ? styles.open : ''}`} aria-label="Marisol chapters">
-      <button
-        className={styles.toggle}
-        type="button"
-        onClick={() => setIsOpen((open) => !open)}
-        aria-label={isOpen ? 'Close resort chapters' : 'Open resort chapters'}
-        aria-expanded={isOpen}
-        data-cursor={isOpen ? 'CLOSE' : 'MENU'}
-      >
-        <span className={styles.toggleWord}>{isOpen ? 'Close' : 'Atlas'}</span>
-        <span className={styles.toggleWaves} aria-hidden="true"><i /><i /><i /></span>
-      </button>
       {isOpen && <button className={styles.backdrop} type="button" aria-label="Close menu" onClick={() => setIsOpen(false)} />}
       <div className={styles.panel}>
-        <div className={styles.top}><span className={styles.orbit}><Sparkles size={13} /></span><span>Marisol chapters</span></div>
+        <div className={styles.top}>
+          <span className={styles.orbit}><Sparkles size={13} /></span><span>Marisol chapters</span>
+          <button className={styles.closeBtn} type="button" onClick={() => setIsOpen(false)} aria-label="Close resort chapters"><X size={17} strokeWidth={1.3} /></button>
+        </div>
         <nav>
         {CHAPTERS.map(([label, id], index) => (
           <button

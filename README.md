@@ -1,16 +1,27 @@
-# React + Vite
+# AL Hospitality
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+AL Hospitality is a Vite/React single-page app with an Express, Prisma, and PostgreSQL API. The API lives in `server/`; Vercel runs it through `api/[...path].js` as a Node.js function.
 
-Currently, two official plugins are available:
+## Local development
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```powershell
+npm install
+npm --workspace server run prisma:generate
+npm run dev:server
+```
 
-## React Compiler
+In a second terminal, run `npm run dev`.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Vercel
 
-## Expanding the ESLint configuration
+Import the repository with its root directory set to this folder. The included `vercel.json` builds the frontend, generates Prisma Client, exposes `/api/*`, and sends SPA routes to `index.html`.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Set these Vercel environment variables before deploying:
+
+- `DATABASE_URL` — production PostgreSQL connection string
+- `SESSION_SECRET` — a unique random value of at least 32 characters
+- `FRONTEND_ORIGIN` — the exact deployed site origin, for example `https://your-project.vercel.app`
+- `COOKIE_SECURE=true`
+- `COFOUNDER_EMAILS` — the two approved co-founder email addresses
+
+Optional SMTP variables are documented in `.env.example`. Run `npm run db:deploy` with the production `DATABASE_URL` before accepting real traffic; see `SETUP.md`.

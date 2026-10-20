@@ -415,7 +415,7 @@ export default function AureliaHero({ hotel }) {
       {/* BOOKING */}
 
       <div className={styles.bookingWrap}>
-        <BookingBar variant="light" />
+        <BookingBar variant="light" hotelSlug="aurelia-grand-hotel" />
       </div>
 
     </section>

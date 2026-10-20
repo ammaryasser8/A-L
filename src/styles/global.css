@@ -2,6 +2,7 @@ body {
   font-family: var(--font-body-portal);
   background: var(--al-bg);
   color: var(--al-ink);
+  overflow-x: hidden;
 }
 
 h1, h2, h3, .serif {
@@ -17,5 +18,58 @@ h1, h2, h3, .serif {
 @media (max-width: 900px) {
   .wrap {
     padding: 0 20px;
+  }
+}
+
+html { scroll-behavior: smooth; }
+
+/* The cinematic loader owns the screen completely.  Keeping every cursor
+   hidden here also covers the hotel-specific cursor while its route mounts
+   beneath the loader. */
+html[data-al-loading='true'],
+html[data-al-loading='true'] * {
+  cursor: none !important;
+}
+
+::selection { background: var(--al-gold); color: var(--al-ink-deep); }
+
+/* Accessibility: a consistent, visible focus ring for keyboard users on
+   every interactive element, without adding a ring for mouse/touch
+   interaction (that's what :focus-visible is for). */
+a, button, input, select, textarea, [tabindex] {
+  outline-offset: 3px;
+}
+a:focus-visible, button:focus-visible, input:focus-visible,
+select:focus-visible, textarea:focus-visible, [tabindex]:focus-visible {
+  outline: 2px solid var(--al-gold, #c9a24b);
+  outline-offset: 3px;
+}
+
+/* Skip link: hidden until focused, so it doesn't clutter the visual
+   design but is the very first stop for keyboard/screen-reader users. */
+.skipLink {
+  position: fixed;
+  z-index: 1000;
+  top: -100px;
+  left: 12px;
+  background: var(--al-ink, #1c1512);
+  color: #fff;
+  padding: 12px 20px;
+  font: 12px 'Jost', sans-serif;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  transition: top .2s ease;
+}
+.skipLink:focus {
+  top: 12px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
   }
 }

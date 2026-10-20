@@ -1,0 +1,10 @@
+.overlay{position:fixed;inset:0;z-index:500;background:rgba(8,6,5,.6);display:flex;align-items:flex-start;justify-content:center;padding-top:min(16vh,140px)}
+.palette{width:min(560px,90vw);background:var(--al-bg,#FBF8F2);border:1px solid rgba(28,21,18,.12);box-shadow:0 30px 80px rgba(0,0,0,.35);overflow:hidden}
+.input{width:100%;border:0;border-bottom:1px solid rgba(28,21,18,.15);background:transparent;padding:18px 20px;font:400 17px 'Jost',sans-serif;color:var(--al-ink)}
+.input:focus{outline:none}
+.list{max-height:52vh;overflow-y:auto}
+.item{display:flex;align-items:center;gap:12px;width:100%;padding:13px 20px;background:none;border:0;text-align:left;font:13px 'Jost',sans-serif;color:var(--al-ink);cursor:pointer}
+.item:hover{background:rgba(201,162,75,.08)}
+.itemKind{font:9px 'Jost',sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--al-gold-text);min-width:80px}
+.empty{padding:20px;font:12px 'Jost',sans-serif;color:var(--al-muted)}
+.hint{margin:0;padding:10px 20px;border-top:1px solid rgba(28,21,18,.1);font:10px 'Jost',sans-serif;color:var(--al-muted)}

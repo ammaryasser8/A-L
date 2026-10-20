@@ -1,0 +1,5 @@
+.wrap{min-height:60vh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;color:var(--al-muted,#6b5d52)}
+.mark{font:italic 500 28px 'Playfair Display',serif;color:var(--al-gold,#c9a24b);animation:al-loading-pulse 1.6s ease-in-out infinite}
+.label{font:10px 'Jost',sans-serif;letter-spacing:.14em;text-transform:uppercase}
+@keyframes al-loading-pulse{0%,100%{opacity:.4}50%{opacity:1}}
+@media(prefers-reduced-motion:reduce){.mark{animation:none;opacity:.8}}

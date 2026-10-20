@@ -1,0 +1,151 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum MembershipTier {
+  guest
+  member
+  privilege
+}
+enum MembershipStatus {
+  active
+  cancelled
+  expired
+}
+enum ApplicationStatus {
+  pending
+  approved
+  rejected
+  cancelled
+}
+enum Role {
+  co_founder_developer
+}
+enum UserStatus {
+  active
+  suspended
+}
+
+model User {
+  id                 String          @id @default(cuid())
+  email              String          @unique
+  passwordHash       String
+  firstName          String
+  lastName           String
+  phone              String?
+  avatarUrl          String?
+  status             UserStatus      @default(active)
+  createdAt          DateTime        @default(now())
+  updatedAt          DateTime        @updatedAt
+  profile            UserProfile?
+  membership         Membership?
+  roles              RoleAssignment[]
+  favorites          Favorite[]
+  applications       MembershipRequest[] @relation("Applicant")
+  reviewedRequests   MembershipRequest[] @relation("Reviewer")
+  auditActions       AuditLog[]      @relation("Actor")
+  securityEvents     SecurityEvent[]
+  passwordResetTokens PasswordResetToken[]
+}
+
+model PasswordResetToken {
+  id        String   @id @default(cuid())
+  userId    String
+  tokenHash String   @unique
+  expiresAt DateTime
+  usedAt    DateTime?
+  createdAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, expiresAt])
+}
+
+model UserProfile {
+  userId        String @id
+  country       String?
+  birthday      DateTime?
+  language      String?
+  preferences   Json   @default("{}")
+  user          User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model Membership {
+  id               String           @id @default(cuid())
+  userId           String           @unique
+  tier             MembershipTier   @default(guest)
+  status           MembershipStatus @default(active)
+  activationSource String           @default("registration")
+  activatedAt      DateTime         @default(now())
+  renewalAt        DateTime?
+  activatedById    String?
+  createdAt        DateTime         @default(now())
+  updatedAt        DateTime         @updatedAt
+  user             User             @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model MembershipRequest {
+  id            String            @id @default(cuid())
+  userId        String
+  tier          MembershipTier
+  message       String?
+  status        ApplicationStatus @default(pending)
+  response      String?
+  internalNote  String?
+  reviewedAt    DateTime?
+  reviewerId    String?
+  createdAt     DateTime          @default(now())
+  updatedAt     DateTime          @updatedAt
+  user          User              @relation("Applicant", fields: [userId], references: [id], onDelete: Cascade)
+  reviewer      User?             @relation("Reviewer", fields: [reviewerId], references: [id], onDelete: SetNull)
+  @@index([status, createdAt])
+}
+
+model RoleAssignment {
+  id        String   @id @default(cuid())
+  userId    String
+  role      Role
+  createdAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  @@unique([userId, role])
+}
+
+model Favorite {
+  id        String   @id @default(cuid())
+  userId    String
+  productId String
+  createdAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  @@unique([userId, productId])
+}
+
+model AuditLog {
+  id         String   @id @default(cuid())
+  actorId    String?
+  action     String
+  targetType String
+  targetId   String?
+  outcome    String
+  reason     String?
+  metadata   Json?
+  createdAt  DateTime @default(now())
+  actor      User?    @relation("Actor", fields: [actorId], references: [id], onDelete: SetNull)
+  @@index([createdAt])
+}
+
+model SecurityEvent {
+  id        String   @id @default(cuid())
+  userId    String?
+  kind      String
+  severity  String   @default("info")
+  ipHash    String?
+  detail    String?
+  createdAt DateTime @default(now())
+  user      User?    @relation(fields: [userId], references: [id], onDelete: SetNull)
+  @@index([createdAt])
+}

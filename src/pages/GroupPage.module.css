@@ -1,0 +1,50 @@
+.page{min-height:100vh;background:var(--al-bg);color:var(--al-ink)}
+.header{padding:22px clamp(20px,4vw,72px);border-bottom:1px solid rgba(28,21,18,.1)}
+.brand{font:500 12px 'Jost',sans-serif;letter-spacing:.12em;color:var(--al-ink)}
+.brand span{margin-left:8px;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--al-muted)}
+
+.content{max-width:760px;margin:0 auto;padding:clamp(56px,8vw,100px) clamp(20px,4vw,24px) 110px}
+.eyebrow{margin:0 0 14px;font:10px 'Jost',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--al-gold-text)}
+.content h1{margin:0 0 26px;font:500 clamp(38px,6vw,64px)/1.08 'Playfair Display',serif;letter-spacing:-.02em}
+.content h1 em{font-style:italic;color:#8e6046}
+.lead{max-width:560px;font:15px/1.8 'Jost',sans-serif;color:var(--al-ink)}
+
+.statRow{display:flex;gap:44px;margin:44px 0;padding:28px 0;border-top:1px solid rgba(28,21,18,.12);border-bottom:1px solid rgba(28,21,18,.12)}
+.statRow strong{display:block;font:500 32px 'Playfair Display',serif}
+.statRow span{font:10px 'Jost',sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--al-muted)}
+
+.section{margin:44px 0}
+.section h2{margin:0 0 14px;font:500 24px 'Playfair Display',serif}
+.section p{margin:0;font:14px/1.8 'Jost',sans-serif;color:var(--al-ink)}
+.section a{color:var(--al-ink);border-bottom:1px solid var(--al-gold)}
+.legalLayout{display:grid;grid-template-columns:145px minmax(0,1fr);gap:clamp(32px,6vw,74px);margin-top:54px}.legalToc{position:sticky;top:28px;align-self:start;display:flex;flex-direction:column;gap:12px;padding-top:5px}.legalToc>span{margin-bottom:5px;color:var(--al-gold-text);font:600 9px 'Jost',sans-serif;letter-spacing:.17em;text-transform:uppercase}.legalToc a{color:var(--al-muted);font:10px/1.4 'Jost',sans-serif;transition:color .2s ease}.legalToc a:hover{color:var(--al-ink)}.legalLayout .section{display:grid;grid-template-columns:28px minmax(0,1fr);gap:14px;margin:0;padding:30px 0;border-top:1px solid rgba(28,21,18,.12)}.legalLayout .section:first-child{padding-top:0;border-top:0}.sectionNumber{padding-top:5px;color:var(--al-gold-text);font:600 9px 'Jost',sans-serif;letter-spacing:.13em}
+
+.worlds{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:44px 0}
+.world{padding:26px;border:1px solid rgba(28,21,18,.12)}
+.world h3{margin:10px 0 12px;font:500 22px 'Playfair Display',serif}
+.world p{margin:0 0 18px;font:13px/1.7 'Jost',sans-serif;color:var(--al-muted)}
+.world a{font:11px 'Jost',sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--al-ink);border-bottom:1px solid var(--al-gold);padding-bottom:2px}
+
+.empty{padding:34px;border:1px dashed rgba(28,21,18,.25);text-align:center;margin:24px 0}
+.empty p{margin:0 0 6px;font:14px 'Jost',sans-serif}
+.emptySub{color:var(--al-muted)!important;font-size:13px!important}
+
+.categoryGrid{display:flex;flex-wrap:wrap;gap:12px;margin:30px 0}
+.categoryBtn{padding:10px 18px;border:1px solid rgba(28,21,18,.22);background:transparent;font:11px 'Jost',sans-serif;color:var(--al-ink);cursor:pointer;transition:border-color .25s ease,color .25s ease}
+.categoryActive{border-color:var(--al-gold);color:var(--al-gold-text)}
+
+.venueCard{display:grid;grid-template-columns:220px 1fr;gap:22px;margin-bottom:22px;border:1px solid rgba(28,21,18,.12)}
+.venueCard img{width:100%;height:100%;object-fit:cover;min-height:150px}
+.venueInfo{padding:20px 20px 20px 0}
+.venueInfo h3{margin:0 0 8px;font:500 22px 'Playfair Display',serif}
+.venueInfo p{margin:0 0 10px;font:13px/1.6 'Jost',sans-serif;color:var(--al-muted)}
+.venueMeta{font:11px 'Jost',sans-serif!important;color:var(--al-ink)!important}
+
+@media(max-width:700px){
+  .worlds{grid-template-columns:1fr}
+  .statRow{gap:24px;flex-wrap:wrap}
+  .venueCard{grid-template-columns:1fr}
+  .venueCard img{height:160px}
+  .venueInfo{padding:16px}
+  .legalLayout{display:block;margin-top:42px}.legalToc{position:static;flex-direction:row;overflow:auto;gap:18px;margin-bottom:34px;padding:0 0 13px;border-bottom:1px solid rgba(28,21,18,.12)}.legalToc>span{display:none}.legalToc a{flex:0 0 auto}.legalLayout .section{grid-template-columns:23px minmax(0,1fr);padding:25px 0}
+}

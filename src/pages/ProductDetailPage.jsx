@@ -1,5 +1,5 @@
-import { useRef, useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { useEffect, useRef, useState } from 'react';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 import {
   ArrowDown,
   ArrowLeft,
@@ -7,6 +7,7 @@ import {
   Bath,
   BedDouble,
   Check,
+  Heart,
   Maximize2,
   Sparkles,
   Users,
@@ -19,6 +20,10 @@ import {
 
 import products from '../data/products.json';
 import { useHotelBySlug } from '../hooks/useHotelBySlug';
+import { useAuth } from '../hooks/useAuth';
+import { useBooking } from '../hooks/useBooking';
+import { experienceService } from '../services/experienceService';
+import { favoritesService } from '../services/favoritesService';
 import { formatPrice } from '../utils/formatPrice';
 
 import StarRating from '../components/shared/StarRating';
@@ -647,6 +652,59 @@ function ReservationSection({
   reserved,
   setReserved,
 }) {
+  const navigate = useNavigate();
+  const { session, isAuthenticated } = useAuth();
+  const { updateDraft } = useBooking();
+  const isRoom = product.category === 'Rooms' || product.category === 'Suites';
+  const [date, setDate] = useState('');
+  const [time, setTime] = useState('19:00');
+  const [guests, setGuests] = useState(2);
+  const [submitting, setSubmitting] = useState(false);
+  const [favorited, setFavorited] = useState(false);
+
+  useEffect(() => {
+    if (!isAuthenticated) return undefined;
+    let cancelled = false;
+    favoritesService.isFavorite(session.id, product.id).then((value) => {
+      if (!cancelled) setFavorited(value);
+    });
+    return () => { cancelled = true; };
+  }, [isAuthenticated, session, product.id]);
+
+  async function handleToggleFavorite() {
+    if (!isAuthenticated) {
+      navigate('/login', { state: { from: { pathname: `/hotels/${hotel.slug}/product/${product.slug}` } } });
+      return;
+    }
+    const nowFavorited = await favoritesService.toggleFavorite(session.id, product.id);
+    setFavorited(nowFavorited);
+  }
+
+  function handleReserveRoom() {
+    updateDraft({ hotelSlug: hotel.slug });
+    navigate('/booking');
+  }
+
+  async function handleReserveExperience(event) {
+    event.preventDefault();
+    if (!isAuthenticated) {
+      navigate('/login', { state: { from: { pathname: `/hotels/${hotel.slug}/product/${product.slug}` } } });
+      return;
+    }
+    setSubmitting(true);
+    await experienceService.createBooking({
+      guestId: session.id,
+      productId: product.id,
+      productTitle: product.title,
+      hotelId: hotel.id,
+      date,
+      time,
+      guests,
+    });
+    setSubmitting(false);
+    setReserved(true);
+  }
+
   return (
     <section
       className={styles.reservation}
@@ -750,6 +808,16 @@ function ReservationSection({
               {product.title}
             </h3>
 
+            <button
+              type="button"
+              onClick={handleToggleFavorite}
+              aria-label={favorited ? 'Remove from your collection' : 'Save to your collection'}
+              aria-pressed={favorited}
+              style={{ background: 'none', border: 0, cursor: 'pointer', color: favorited ? '#c9a24b' : 'currentColor', padding: 4 }}
+            >
+              <Heart size={19} strokeWidth={1.4} fill={favorited ? 'currentColor' : 'none'} />
+            </button>
+
             <ArrowUpRight
               size={21}
               strokeWidth={1.2}
@@ -802,25 +870,34 @@ function ReservationSection({
 
               <div>
                 <strong>
-                  Request received
+                  {isRoom ? 'Request received' : 'Booking confirmed'}
                 </strong>
 
                 <p>
-                  Our team will confirm
-                  your stay by email
-                  shortly.
+                  {isRoom
+                    ? 'Our team will confirm your stay by email shortly.'
+                    : 'Find it any time in your AL Guest account.'}
                 </p>
               </div>
             </motion.div>
-          ) : (
+          ) : isRoom ? (
             <Button
               variant="primary"
-              onClick={() =>
-                setReserved(true)
-              }
+              onClick={handleReserveRoom}
             >
               Reserve your stay
             </Button>
+          ) : (
+            <form onSubmit={handleReserveExperience} style={{ display: 'flex', flexDirection: 'column', gap: 10, marginBottom: 4 }}>
+              <div style={{ display: 'flex', gap: 8 }}>
+                <input type="date" required value={date} onChange={(event) => setDate(event.target.value)} style={{ flex: 1, minWidth: 0, padding: '10px 8px', border: '1px solid rgba(0,0,0,.2)', background: 'transparent', font: '13px inherit' }} />
+                <input type="time" required value={time} onChange={(event) => setTime(event.target.value)} style={{ width: 90, padding: '10px 8px', border: '1px solid rgba(0,0,0,.2)', background: 'transparent', font: '13px inherit' }} />
+                <input type="number" min="1" max="10" required value={guests} onChange={(event) => setGuests(event.target.value)} style={{ width: 56, padding: '10px 8px', border: '1px solid rgba(0,0,0,.2)', background: 'transparent', font: '13px inherit' }} />
+              </div>
+              <Button variant="primary" type="submit" disabled={submitting}>
+                {submitting ? 'Booking…' : product.category === 'Restaurants' ? 'Reserve a table' : 'Reserve this experience'}
+              </Button>
+            </form>
           )}
 
           <small>

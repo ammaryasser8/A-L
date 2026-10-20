@@ -1,0 +1,6 @@
+.blueprint{position:relative;min-height:78vh;display:grid;place-items:center;background:#0b0c0d;overflow:hidden}
+.canvas{width:min(92vw,1200px);height:auto}
+.canvas path{fill:none;stroke:rgba(230,211,166,.55);stroke-width:1}
+.label{fill:rgba(230,211,166,.65);font:10px 'Jost',sans-serif;letter-spacing:.14em;text-transform:uppercase}
+.wordmark{stroke:#efd39c;stroke-width:2;opacity:.95}
+@media(max-width:800px){.blueprint{min-height:48vh;padding:36px 0}.canvas{width:100vw}.label{font-size:34px;letter-spacing:.1em}.canvas path{stroke-width:1.6}.wordmark{stroke-width:6}}

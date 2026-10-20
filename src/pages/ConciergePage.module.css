@@ -1,0 +1,28 @@
+.page{min-height:100vh;background:var(--al-bg);color:var(--al-ink)}
+.header{display:flex;align-items:center;justify-content:space-between;padding:22px clamp(20px,4vw,72px);border-bottom:1px solid rgba(28,21,18,.1)}
+.brand{font:500 12px 'Jost',sans-serif;letter-spacing:.12em;color:var(--al-ink)}
+.brand span{margin-left:8px;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--al-muted)}
+.history{font:10px 'Jost',sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--al-ink);border-bottom:1px solid var(--al-gold);padding-bottom:2px}
+
+.content{max-width:640px;margin:0 auto;padding:clamp(48px,7vw,80px) clamp(20px,4vw,24px) 100px}
+.eyebrow{margin:0 0 10px;font:10px 'Jost',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--al-gold-text)}
+.content h1{margin:0 0 34px;font:500 clamp(30px,4vw,42px)/1.15 'Playfair Display',serif}
+
+.categories{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:28px}
+.category{padding:10px 18px;border:1px solid rgba(28,21,18,.22);background:transparent;font:11px 'Jost',sans-serif;letter-spacing:.08em;color:var(--al-ink);cursor:pointer;transition:border-color .25s ease,color .25s ease}
+.categoryActive{border-color:var(--al-gold);color:var(--al-gold-text);background:rgba(201,162,75,.06)}
+
+.form{display:flex;flex-direction:column;gap:18px}
+.field{display:flex;flex-direction:column;gap:8px}
+.field span{font:10px 'Jost',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--al-muted)}
+.field input,.field textarea{border:1px solid rgba(28,21,18,.22);background:transparent;padding:14px;font:14px/1.6 'Jost',sans-serif;color:var(--al-ink);resize:vertical}
+.field input:focus,.field textarea:focus{outline:none;border-color:var(--al-gold)}
+
+.submit{align-self:flex-start;padding:14px 28px;background:var(--al-ink);color:#fff;border:0;font:11px 'Jost',sans-serif;letter-spacing:.16em;text-transform:uppercase;cursor:pointer}
+.submit:hover:not(:disabled){background:#000}
+.submit:disabled{opacity:.55}
+
+.confirmed{padding:40px;border:1px solid rgba(28,21,18,.15);text-align:center}
+.confirmedId{margin:14px 0 0;font:11px 'Jost',sans-serif;letter-spacing:.1em;color:var(--al-muted)}
+.confirmedActions{margin-top:26px;display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+.confirmedActions button{background:none;border:0;font:11px 'Jost',sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--al-ink);border-bottom:1px solid var(--al-gold);padding-bottom:2px;cursor:pointer}

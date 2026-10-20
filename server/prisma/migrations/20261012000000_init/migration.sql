@@ -1,0 +1,19 @@
+CREATE TYPE "MembershipTier" AS ENUM ('guest', 'member', 'privilege');
+CREATE TYPE "MembershipStatus" AS ENUM ('active', 'cancelled', 'expired');
+CREATE TYPE "ApplicationStatus" AS ENUM ('pending', 'approved', 'rejected', 'cancelled');
+CREATE TYPE "Role" AS ENUM ('co_founder_developer');
+CREATE TYPE "UserStatus" AS ENUM ('active', 'suspended');
+
+CREATE TABLE "User" ("id" TEXT PRIMARY KEY, "email" TEXT NOT NULL UNIQUE, "passwordHash" TEXT NOT NULL, "firstName" TEXT NOT NULL, "lastName" TEXT NOT NULL, "phone" TEXT, "avatarUrl" TEXT, "status" "UserStatus" NOT NULL DEFAULT 'active', "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP, "updatedAt" TIMESTAMP(3) NOT NULL);
+CREATE TABLE "UserProfile" ("userId" TEXT PRIMARY KEY, "country" TEXT, "birthday" TIMESTAMP(3), "language" TEXT, "preferences" JSONB NOT NULL DEFAULT '{}', CONSTRAINT "UserProfile_userId_fkey" FOREIGN KEY ("userId") REFERENCES "User"("id") ON DELETE CASCADE);
+CREATE TABLE "Membership" ("id" TEXT PRIMARY KEY, "userId" TEXT NOT NULL UNIQUE, "tier" "MembershipTier" NOT NULL DEFAULT 'guest', "status" "MembershipStatus" NOT NULL DEFAULT 'active', "activationSource" TEXT NOT NULL DEFAULT 'registration', "activatedAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP, "renewalAt" TIMESTAMP(3), "activatedById" TEXT, "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP, "updatedAt" TIMESTAMP(3) NOT NULL, CONSTRAINT "Membership_userId_fkey" FOREIGN KEY ("userId") REFERENCES "User"("id") ON DELETE CASCADE);
+CREATE TABLE "MembershipRequest" ("id" TEXT PRIMARY KEY, "userId" TEXT NOT NULL, "tier" "MembershipTier" NOT NULL, "message" TEXT, "status" "ApplicationStatus" NOT NULL DEFAULT 'pending', "response" TEXT, "internalNote" TEXT, "reviewedAt" TIMESTAMP(3), "reviewerId" TEXT, "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP, "updatedAt" TIMESTAMP(3) NOT NULL, CONSTRAINT "MembershipRequest_userId_fkey" FOREIGN KEY ("userId") REFERENCES "User"("id") ON DELETE CASCADE, CONSTRAINT "MembershipRequest_reviewerId_fkey" FOREIGN KEY ("reviewerId") REFERENCES "User"("id") ON DELETE SET NULL);
+CREATE TABLE "RoleAssignment" ("id" TEXT PRIMARY KEY, "userId" TEXT NOT NULL, "role" "Role" NOT NULL, "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP, CONSTRAINT "RoleAssignment_userId_fkey" FOREIGN KEY ("userId") REFERENCES "User"("id") ON DELETE CASCADE, CONSTRAINT "RoleAssignment_userId_role_key" UNIQUE ("userId", "role"));
+CREATE TABLE "Favorite" ("id" TEXT PRIMARY KEY, "userId" TEXT NOT NULL, "productId" TEXT NOT NULL, "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP, CONSTRAINT "Favorite_userId_fkey" FOREIGN KEY ("userId") REFERENCES "User"("id") ON DELETE CASCADE, CONSTRAINT "Favorite_userId_productId_key" UNIQUE ("userId", "productId"));
+CREATE TABLE "AuditLog" ("id" TEXT PRIMARY KEY, "actorId" TEXT, "action" TEXT NOT NULL, "targetType" TEXT NOT NULL, "targetId" TEXT, "outcome" TEXT NOT NULL, "reason" TEXT, "metadata" JSONB, "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP, CONSTRAINT "AuditLog_actorId_fkey" FOREIGN KEY ("actorId") REFERENCES "User"("id") ON DELETE SET NULL);
+CREATE TABLE "SecurityEvent" ("id" TEXT PRIMARY KEY, "userId" TEXT, "kind" TEXT NOT NULL, "severity" TEXT NOT NULL DEFAULT 'info', "ipHash" TEXT, "detail" TEXT, "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP, CONSTRAINT "SecurityEvent_userId_fkey" FOREIGN KEY ("userId") REFERENCES "User"("id") ON DELETE SET NULL);
+CREATE INDEX "MembershipRequest_status_createdAt_idx" ON "MembershipRequest"("status", "createdAt");
+CREATE INDEX "AuditLog_createdAt_idx" ON "AuditLog"("createdAt");
+CREATE INDEX "SecurityEvent_createdAt_idx" ON "SecurityEvent"("createdAt");
+CREATE TABLE "session" ("sid" varchar NOT NULL COLLATE "default", "sess" json NOT NULL, "expire" timestamp(6) NOT NULL, CONSTRAINT "session_pkey" PRIMARY KEY ("sid"));
+CREATE INDEX "IDX_session_expire" ON "session" ("expire");

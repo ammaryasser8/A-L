@@ -8,6 +8,8 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
+server/src/generated/
+server/uploads/
 dist
 dist-ssr
 *.local
@@ -22,3 +24,14 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Local environment secrets
+.env
+.env.*
+!.env.example
+server/.env
+server/.env.*
+!server/.env.example
+
+# Local mock user data
+src/data/mock/users.json

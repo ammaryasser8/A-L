@@ -22,6 +22,13 @@
     border-color 0.4s ease;
 }
 
+.cardLink { display:block; color:inherit; text-decoration:none; }
+.favorite { position:absolute; z-index:3; top:18px; right:18px; display:grid; place-items:center; width:38px; height:38px; border:1px solid rgba(255,255,255,.45); border-radius:50%; background:rgba(15,17,16,.34); color:#fff; cursor:pointer; backdrop-filter:blur(8px); transition:transform .25s ease,background .25s ease,color .25s ease; }
+.favorite:hover:not(:disabled),.favorite:focus-visible { transform:scale(1.07); background:rgba(26,20,15,.78); outline:2px solid #f1d58f; outline-offset:3px; }
+.favoriteActive { color:#f0cf78; background:rgba(26,20,15,.72); }
+.favorite:disabled { cursor:wait; opacity:.6; }
+.favoriteError { position:absolute; z-index:4; right:14px; top:64px; max-width:180px; padding:7px 9px; background:#34211e; color:#fff5e8; font:500 10px/1.35 var(--font-body); text-align:right; }
+
 /* =========================================
    AURELIA
    ========================================= */

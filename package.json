@@ -3,9 +3,19 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "workspaces": [
+    "server"
+  ],
   "scripts": {
     "dev": "vite",
+    "dev:server": "npm --prefix server run dev",
+    "server": "npm --prefix server start",
+    "server:test": "npm --prefix server test",
+    "db:migrate": "npm --prefix server run prisma:migrate",
+    "db:deploy": "npm --prefix server run prisma:deploy",
+    "provision:cofounders": "npm --prefix server run provision:cofounders",
     "build": "vite build",
+    "vercel-build": "npm --workspace server run prisma:generate && npm run build",
     "lint": "eslint .",
     "preview": "vite preview"
   },

@@ -2,10 +2,11 @@ import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { useHotelBySlug } from '../hooks/useHotelBySlug';
 import { useHotelProducts } from '../hooks/useHotelProducts';
+import { useDocumentTitle, useMetaDescription } from '../hooks/useDocumentTitle';
 
 import MarisolHeader from '../components/layout/Marisolheader';
 import MarisolSidebar from '../components/layout/MarisolSidebar';
-import SiteFooter from '../components/layout/Sitefooter';
+import SiteFooter from '../components/layout/SiteFooter';
 import MarisolHero from '../components/hotel/MarisolHero';
 import MarisolIntro from '../components/hotel/MarisolIntro';
 import MarisolHighlights from '../components/hotel/MarisolHighlights';
@@ -19,11 +20,12 @@ import MarisolGallery from '../components/hotel/MarisolGallery';
 import MarisolTestimonials from '../components/hotel/MarisolTestimonials';
 import MarisolFinalCTA from '../components/hotel/MarisolFinalCTA';
 import MarisolLocation from '../components/hotel/MarisolLocation';
-import MarisolCursor from '../components/ui/MarisolCursor';
 
 export default function MarisolHotelPage() {
   const hotel = useHotelBySlug('marisol-bay-resort');
   const products = useHotelProducts(hotel?.id);
+  useDocumentTitle(hotel?.name);
+  useMetaDescription(hotel ? `${hotel.tagline} — ${hotel.description}` : undefined);
   const location = useLocation();
 
   useEffect(() => {
@@ -54,9 +56,9 @@ export default function MarisolHotelPage() {
 
   return (
     <div style={themeVars}>
-      <MarisolCursor />
       <MarisolSidebar />
       <MarisolHeader />
+      <div id="main-content" />
       <MarisolHero hotel={hotel} />
       <MarisolIntro hotel={hotel} />
       <MarisolHighlights />

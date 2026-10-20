@@ -1,6 +1,9 @@
-import { Link } from 'react-router-dom';
-import { ArrowUpRight } from 'lucide-react';
+import { useEffect, useState } from 'react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { ArrowUpRight, Heart } from 'lucide-react';
 import { formatPrice } from '../../utils/formatPrice';
+import { useAuth } from '../../hooks/useAuth';
+import { favoritesService } from '../../services/favoritesService';
 import styles from './ProductCard.module.css';
 
 export default function ProductCard({
@@ -8,17 +11,51 @@ export default function ProductCard({
   hotelSlug,
   theme = 'aurelia',
 }) {
+  const { isAuthenticated, session } = useAuth();
+  const navigate = useNavigate();
+  const location = useLocation();
+  const [isFavorite, setIsFavorite] = useState(false);
+  const [isSaving, setIsSaving] = useState(false);
+  const [favoriteError, setFavoriteError] = useState('');
   const cardClass =
     theme === 'aurelia'
       ? `${styles.card} ${styles.aurelia}`
       : `${styles.card} ${styles.marisol}`;
 
+  useEffect(() => {
+    if (!isAuthenticated) return undefined;
+    let active = true;
+    favoritesService.isFavorite(session.id, product.id)
+      .then((value) => { if (active) setIsFavorite(value); })
+      .catch(() => { if (active) setFavoriteError(''); });
+    return () => { active = false; };
+  }, [isAuthenticated, product.id, session?.id]);
+
+  const displayedFavorite = isAuthenticated && isFavorite;
+
+  async function toggleFavorite(event) {
+    event.preventDefault();
+    event.stopPropagation();
+    if (!isAuthenticated) {
+      navigate('/login', { state: { from: location } });
+      return;
+    }
+    if (isSaving) return;
+    setIsSaving(true);
+    setFavoriteError('');
+    try {
+      const next = await favoritesService.toggleFavorite(session.id, product.id, displayedFavorite);
+      setIsFavorite(next);
+    } catch (error) {
+      setFavoriteError(error.message || 'We could not update your collection.');
+    } finally {
+      setIsSaving(false);
+    }
+  }
+
   return (
-    <Link
-      to={`/hotels/${hotelSlug}/product/${product.slug}`}
-      className={cardClass}
-      aria-label={`Explore ${product.title}`}
-    >
+    <article className={cardClass}>
+      <Link to={`/hotels/${hotelSlug}/product/${product.slug}`} className={styles.cardLink} aria-label={`Explore ${product.title}`}>
       <div className={styles.image}>
         <img
           src={`/${product.images?.[0]}`}
@@ -89,6 +126,16 @@ export default function ProductCard({
           </span>
         </div>
       </div>
-    </Link>
+      </Link>
+      <button
+        type="button"
+        className={`${styles.favorite} ${displayedFavorite ? styles.favoriteActive : ''}`}
+        onClick={toggleFavorite}
+        disabled={isSaving}
+        aria-label={displayedFavorite ? `Remove ${product.title} from your collection` : `Save ${product.title} to your collection`}
+        aria-pressed={displayedFavorite}
+      ><Heart size={16} strokeWidth={1.5} fill={displayedFavorite ? 'currentColor' : 'none'} /></button>
+      {favoriteError && <span className={styles.favoriteError} role="status">{favoriteError}</span>}
+    </article>
   );
 }
