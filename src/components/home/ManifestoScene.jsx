@@ -23,6 +23,8 @@ export default function ManifestoScene() {
 
   useLayoutEffect(() => {
     if (reducedMotion || !root.current || !window.matchMedia('(min-width: 800px)').matches || isLowPowerDevice()) return undefined;
+    const node = root.current;
+    node.classList.add(styles.pinned);
     const ctx = gsap.context(() => {
       const phrases = gsap.utils.toArray('[data-phrase]');
       const closing = root.current.querySelector('[data-closing]');
@@ -48,15 +50,26 @@ export default function ManifestoScene() {
 
       timeline.to(closing, { opacity: 1, y: 0, duration: 0.5, ease: 'power2.out' }, phrases.length * 0.9);
     }, root);
-    return () => ctx.revert();
+    return () => {
+      ctx.revert();
+      node.classList.remove(styles.pinned);
+    };
   }, [reducedMotion]);
 
   return (
     <section id="manifesto" ref={root} className={styles.manifesto} aria-label="The AL Hospitality Group philosophy">
+      <div className={styles.backdrop} aria-hidden="true">
+        <span className={`${styles.blob} ${styles.blobWine}`} />
+        <span className={`${styles.blob} ${styles.blobSea}`} />
+        <span className={`${styles.blob} ${styles.blobGold}`} />
+        <span className={styles.ring} />
+        <span className={`${styles.ring} ${styles.ringTwo}`} />
+        {Array.from({ length: 14 }, (_, i) => <i key={i} className={styles.spark} style={{ '--i': i }} />)}
+      </div>
       <div className={styles.sectionLabel}><span>01</span><i />The Group</div>
       <div className={styles.stage}>
-        <h2 data-phrase className={styles.phrase}>{firstPhrase}</h2>
-        <h2 data-phrase className={styles.phrase}>{secondPhrase}</h2>
+        <h2 data-phrase className={`${styles.phrase} ${styles.phraseWine}`}>{firstPhrase}</h2>
+        <h2 data-phrase className={`${styles.phrase} ${styles.phraseSea}`}>{secondPhrase}</h2>
         <div data-closing className={styles.closing}>
           <p>{homeConfig.group.description}</p>
           <a className={styles.lineLink} href="#dual-worlds">Meet the two worlds <Arrow /></a>

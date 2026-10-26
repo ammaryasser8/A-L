@@ -35,3 +35,4 @@ server/.env.*
 
 # Local mock user data
 src/data/mock/users.json
+.vercel

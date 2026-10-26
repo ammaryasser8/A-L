@@ -4,7 +4,6 @@ import { Routes, Route, useLocation } from 'react-router-dom';
 import HomePage from '../pages/HomePage';
 import LegalPage from '../pages/LegalPage';
 import NotFoundPage from '../pages/NotFoundPage';
-import CustomCursor from '../components/ui/CustomCursor';
 import GenesisPreloader from '../components/ui/GenesisPreloader';
 import CommandCenter from '../components/ui/CommandCenter';
 import LoadingState from '../components/ui/LoadingState';
@@ -70,8 +69,6 @@ function ScrollToTop() {
 }
 
 export default function AppRouter() {
-  const { pathname } = useLocation();
-  const cursorVariant = pathname.startsWith('/hotels/marisol') ? 'marisol' : pathname.startsWith('/hotels/aurelia') ? 'aurelia' : 'group';
 
   // The Genesis sequence plays on every real page load (AppRouter only
   // mounts once per load, not on internal client-side navigation), so it
@@ -100,7 +97,6 @@ export default function AppRouter() {
     <>
       <SkipLink />
       <ScrollToTop />
-      {genesisDone && <CustomCursor variant={cursorVariant} />}
       {!genesisDone && <GenesisPreloader onComplete={finishGenesis} />}
       <CommandCenter />
 

@@ -12,7 +12,7 @@ function Scene({ scene, name, number, total, previous }) {
   </div>;
 }
 
-export default function CinematicProjector({ name, theme, slides, delay = 0, interval = 3600, active, reducedMotion }) {
+export default function CinematicProjector({ name, theme, tagline, slides, delay = 0, interval = 3600, active, reducedMotion }) {
   const projectorRef = useRef(null);
   const timerRef = useRef(null);
   const currentRef = useRef(0);
@@ -92,7 +92,7 @@ export default function CinematicProjector({ name, theme, slides, delay = 0, int
 
   const titleParts = theme === 'Aurelia' ? ['Aurelia', 'Grand Hotel'] : ['Marisol', 'Bay Resort'];
   return <article ref={projectorRef} className={`${styles.projector} ${styles[`projector${theme}`]} ${active ? styles.projectorVisible : ''}`} aria-label={`${name}: ${slides[current].category}`}>
-    <div data-hotel-wordmark className={styles.wordmark} aria-hidden="true"><strong>{titleParts[0]}</strong><span>{titleParts[1]}</span></div>
+    <div data-hotel-wordmark className={styles.wordmark} aria-hidden="true"><strong>{titleParts[0]}</strong><span>{titleParts[1]}</span>{tagline && <p data-hotel-tagline className={styles.tagline}>{tagline}</p>}</div>
     <div data-projector-beam className={styles.projectorBeam} aria-hidden="true"><i /><b /><em /></div>
     <div className={styles.projectedFrame}><div data-scene-sweep className={styles.sceneSweep} aria-hidden="true" /><Scene scene={slides[current]} name={name} number={current + 1} total={slides.length} />{previous !== null && <Scene scene={slides[previous]} name={name} number={previous + 1} total={slides.length} previous />}</div>
   </article>;

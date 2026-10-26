@@ -14,7 +14,6 @@ import MarisolStayCollection from '../components/hotel/MarisolStayCollection';
 import MarisolDining from '../components/hotel/MarisolDining';
 import MarisolSpa from '../components/hotel/MarisolSpa';
 import MarisolExperiences from '../components/hotel/MarisolExperiences';
-import MarisolResortMap from '../components/hotel/MarisolResortMap';
 import MarisolStory from '../components/hotel/MarisolStory';
 import MarisolGallery from '../components/hotel/MarisolGallery';
 import MarisolTestimonials from '../components/hotel/MarisolTestimonials';
@@ -66,7 +65,6 @@ export default function MarisolHotelPage() {
       <MarisolDining hotel={hotel} />
       <MarisolSpa hotel={hotel} />
       <MarisolExperiences />
-      <MarisolResortMap />
       <MarisolStory hotel={hotel} />
       <MarisolGallery hotel={hotel} />
       <MarisolTestimonials products={products} />

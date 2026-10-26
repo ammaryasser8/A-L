@@ -6,7 +6,6 @@ import { useReducedMotion } from '../../hooks/Usereducedmotion';
 import { useVisualEngine } from '../../hooks/useVisualEngine';
 import { useDocumentTitle, useMetaDescription } from '../../hooks/useDocumentTitle';
 import { useGroupSceneAnimations } from '../../hooks/useGroupSceneAnimations';
-import { useConstellationProximity } from '../../hooks/useConstellationProximity';
 import { useGalleryDepth } from '../../hooks/useGalleryDepth';
 import { useBookingFocus } from '../../hooks/useBookingFocus';
 import { usePortalPhysics } from '../../hooks/usePortalPhysics';
@@ -14,8 +13,6 @@ import GroupHero from './GroupHero';
 import ManifestoScene from './ManifestoScene';
 import DualWorldsSection from './DualWorldsSection';
 import ConvergenceSection from './ConvergenceSection';
-import BlueprintScene from './BlueprintScene';
-import ConstellationSection from './ConstellationSection';
 import DestinationPortal from './DestinationPortal';
 import ExperiencesSection from './ExperiencesSection';
 import GallerySection from './GallerySection';
@@ -23,7 +20,6 @@ import StaysSection from './StaysSection';
 import ProofSection from './ProofSection';
 import VoicesSection from './VoicesSection';
 import BookingSection from './BookingSection';
-import GravityScene from './GravityScene';
 import JourneySection from './JourneySection';
 import GroupFooter from './GroupFooter';
 import styles from './GroupExperience.module.css';
@@ -39,9 +35,8 @@ function averageRating(items) {
  * (src/hooks/use*.js), and every scene's markup lives in its own
  * component (this same folder) — this file just assembles them in
  * order, in the sequence documented in the project's own scene map:
- * Hero → Manifesto → Dual Worlds → Convergence → Blueprint →
- * Constellation → Portals → Experiences → Gallery → Stays → Proof →
- * Voices → Booking → Gravity → Journey → Footer.
+ * Hero → Manifesto → Dual Worlds → Convergence → Portals → Experiences → Gallery → Stays → Proof →
+ * Voices → Booking → Journey → Footer.
  */
 export default function GroupExperience() {
   const root = useRef(null);
@@ -91,7 +86,6 @@ export default function GroupExperience() {
   }, [menuOpen]);
 
   useGroupSceneAnimations(root, experienceTrack, reducedMotion);
-  useConstellationProximity(root, reducedMotion);
   useGalleryDepth(root, reducedMotion);
   useBookingFocus(root, reducedMotion);
   usePortalPhysics(root, reducedMotion, engine);
@@ -103,8 +97,6 @@ export default function GroupExperience() {
         <ManifestoScene />
         <DualWorldsSection />
         <ConvergenceSection />
-        <BlueprintScene />
-        <ConstellationSection sharedCategories={model.sharedCategories} />
 
         <section data-portals className={styles.portals} aria-label="The two AL destinations">
           {model.destinations.map((destination, index) => <DestinationPortal key={destination.id} destination={destination} index={index} />)}
@@ -116,7 +108,6 @@ export default function GroupExperience() {
         <ProofSection productCount={model.productCount} avgRating={model.avgRating} totalReviews={model.totalReviews} />
         <VoicesSection guestVoices={model.guestVoices} />
         <BookingSection />
-        <GravityScene />
         <JourneySection destinations={model.destinations} />
       </main>
       <GroupFooter group={homeConfig.group} hotels={hotels} categories={model.sharedCategories} />
