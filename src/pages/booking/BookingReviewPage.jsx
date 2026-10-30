@@ -1,10 +1,10 @@
-import { Link, Navigate, useNavigate } from 'react-router-dom';
+import { Navigate, useNavigate } from 'react-router-dom';
 import hotels from '../../data/hotels.json';
 import products from '../../data/products.json';
 import extras from '../../data/mock/extras.json';
 import { useBooking } from '../../hooks/useBooking';
 import { nightsBetween, extrasTotal } from '../../utils/bookingMath';
-import BookingSteps from './BookingSteps';
+import BookingShell from './BookingShell';
 import styles from './Booking.module.css';
 
 export default function BookingReviewPage() {
@@ -24,14 +24,7 @@ export default function BookingReviewPage() {
   const grandTotal = Math.round((roomTotal + extrasSum) * 100) / 100;
 
   return (
-    <div className={styles.page}>
-      <header className={styles.header}>
-        <Link to="/" className={styles.brand}>AL<span>Hospitality Group</span></Link>
-      </header>
-      <BookingSteps current={4} />
-      <div className={styles.content}>
-        <p className={styles.eyebrow}>Review</p>
-        <h1>Confirm your stay.</h1>
+    <BookingShell step={4} hotelSlug={hotel.slug} eyebrow={<>Review</>} title={<>Confirm your stay.</>}>
         <dl className={styles.summary}>
           <div className={styles.summaryRow}><dt>Destination</dt><dd>{hotel.shortName}</dd></div>
           <div className={styles.summaryRow}><dt>Room</dt><dd>{room.title}</dd></div>
@@ -48,7 +41,6 @@ export default function BookingReviewPage() {
         <button type="button" className={styles.submit} onClick={() => navigate('/booking/payment')}>
           Proceed to payment
         </button>
-      </div>
-    </div>
+    </BookingShell>
   );
 }

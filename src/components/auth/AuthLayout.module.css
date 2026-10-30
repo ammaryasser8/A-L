@@ -1,24 +1,45 @@
-.layout{min-height:100svh;display:grid;grid-template-columns:1.1fr 1fr;background:var(--al-bg)}
+.layout{position:relative;isolation:isolate;overflow:hidden;min-height:100svh;display:grid;grid-template-columns:1.1fr 1fr;color:#f6efe3;background:linear-gradient(150deg,#1a0b14 0%,#0f0b09 45%,#07201f 100%)}
 
-.visual{position:relative;isolation:isolate;overflow:hidden;background:#0c0d0e;display:flex;align-items:flex-end;padding:clamp(28px,4vw,64px)}
-.visualImage{position:absolute;inset:-3%;background:linear-gradient(0deg,rgba(8,6,5,.86),rgba(8,6,5,.25) 55%),url('/images/products/7-1.jpg');background-size:cover;background-position:center}
-.visualShade{position:absolute;inset:0;background:radial-gradient(circle at 30% 20%,rgba(201,162,75,.16),transparent 45%)}
-.visualQuote{position:relative;z-index:1;margin:0;max-width:360px;font:italic 400 26px/1.35 'Playfair Display',serif;color:#f4ecdc}
+.aurora{position:absolute;inset:0;z-index:-1;pointer-events:none}
+.aurora i{position:absolute;border-radius:50%;filter:blur(90px);opacity:.5;will-change:transform}
+.aurora i:nth-child(1){width:42vw;height:42vw;left:-8vw;top:-10vw;background:#7a1f3d;animation:au1 18s ease-in-out infinite alternate}
+.aurora i:nth-child(2){width:26vw;height:26vw;left:34vw;top:30vh;background:#c9a24b;opacity:.26;animation:au2 22s ease-in-out infinite alternate}
+.aurora i:nth-child(3){width:40vw;height:40vw;right:-10vw;top:10vh;background:#0f766e;animation:au3 20s ease-in-out infinite alternate}
+.aurora i:nth-child(4){width:26vw;height:26vw;right:14vw;bottom:-8vw;background:#10b981;opacity:.28;animation:au1 25s ease-in-out infinite alternate-reverse}
+@keyframes au1{to{transform:translate(8vw,6vw) scale(1.15)}}
+@keyframes au2{to{transform:translate(-10vw,8vw) scale(.85)}}
+@keyframes au3{to{transform:translate(-8vw,-6vw) scale(1.2)}}
 
-.panel{display:flex;flex-direction:column;padding:clamp(28px,4vw,56px) clamp(24px,6vw,72px)}
-.brand{display:inline-flex;align-items:baseline;gap:8px;font:500 12px 'Jost',sans-serif;letter-spacing:.12em;color:var(--al-ink)}
-.brand span{font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--al-muted)}
+.visual{position:relative;isolation:isolate;overflow:hidden;display:flex;align-items:flex-end;padding:clamp(28px,4vw,64px);margin:clamp(14px,2vw,28px);border-radius:28px}
+.visualImage{position:absolute;inset:-3%;background:url('/images/products/7-1.jpg') center/cover;animation:kenburns 24s ease-in-out infinite alternate}
+@keyframes kenburns{to{transform:scale(1.1) translate(-1.5%,1%)}}
+.visualShade{position:absolute;inset:0;background:linear-gradient(0deg,rgba(26,8,20,.95),rgba(26,8,20,.2) 60%),linear-gradient(120deg,rgba(122,31,61,.55),transparent 55%,rgba(15,118,110,.5))}
+.visualContent{position:relative;z-index:1;display:flex;flex-direction:column;gap:26px}
+.visualQuote{margin:0;max-width:380px;font:italic 400 clamp(26px,2.6vw,34px)/1.3 'Playfair Display',serif;color:#fff}
+.perks{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:10px}
+.perks li{display:flex;align-items:center;gap:12px;width:fit-content;padding:9px 16px 9px 10px;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);backdrop-filter:blur(8px);font:13px 'Jost',sans-serif}
+.perks span{display:grid;place-items:center;width:26px;height:26px;border-radius:50%;background:linear-gradient(135deg,#e2c27a,#5eead4);color:#1a0b14;font-size:12px}
 
-.panelInner{flex:1;display:flex;flex-direction:column;justify-content:center;max-width:380px;margin:0 auto;width:100%;padding:48px 0}
-.eyebrow{margin:0 0 10px;font:10px 'Jost',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--al-gold-text)}
-.panelInner h1{margin:0 0 8px;font:500 clamp(34px,4vw,44px)/1.05 'Playfair Display',serif;color:var(--al-ink);letter-spacing:-.02em}
-.subtitle{margin:0 0 34px;color:var(--al-muted);font:14px/1.6 'Jost',sans-serif}
+.panel{display:flex;flex-direction:column;padding:clamp(22px,3vw,40px) clamp(20px,5vw,64px)}
+.brand{display:inline-flex;align-items:baseline;gap:8px;font:500 13px 'Jost',sans-serif;letter-spacing:.12em;color:#fff}
+.brand span{font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:#e2c27a}
 
-.footer{margin-top:26px;font:13px 'Jost',sans-serif;color:var(--al-muted)}
-.footer a{color:var(--al-ink);border-bottom:1px solid var(--al-gold);padding-bottom:1px}
+.panelInner{flex:1;display:flex;align-items:center;justify-content:center;padding:28px 0}
+.card{position:relative;width:100%;max-width:440px;padding:clamp(28px,4vw,44px);border-radius:26px;background:#FBF8F2;color:var(--al-ink);box-shadow:0 40px 80px -36px rgba(0,0,0,.8);overflow:hidden;animation:cardUp .7s cubic-bezier(.2,.7,.2,1) both}
+.card:before{content:'';position:absolute;left:0;right:0;top:0;height:6px;background:linear-gradient(90deg,#7a1f3d,#c9a24b,#2fa88b)}
+@keyframes cardUp{from{opacity:0;transform:translateY(26px)}}
+.eyebrow{margin:0 0 10px;font:600 10px 'Jost',sans-serif;letter-spacing:.2em;text-transform:uppercase;background:linear-gradient(90deg,#7a1f3d,#0f766e);-webkit-background-clip:text;background-clip:text;color:transparent;width:fit-content}
+.card h1{margin:0 0 8px;font:500 clamp(32px,4vw,42px)/1.05 'Playfair Display',serif;color:var(--al-ink);letter-spacing:-.02em}
+.subtitle{margin:0 0 28px;color:var(--al-muted);font:14px/1.6 'Jost',sans-serif}
+
+.footer{margin-top:24px;padding-top:18px;border-top:1px solid rgba(28,21,18,.1);font:13px 'Jost',sans-serif;color:var(--al-muted)}
+.footer p{margin:0}
+.footer a{color:#7a1f3d;font-weight:600;border-bottom:1.5px solid #c9a24b;padding-bottom:1px}
+.footer a:hover{color:#0f766e}
 
 @media(max-width:860px){
   .layout{grid-template-columns:1fr}
   .visual{display:none}
-  .panel{padding-top:32px}
+  .panel{padding-top:26px}
 }
+@media(prefers-reduced-motion:reduce){.aurora i,.visualImage,.card{animation:none}}

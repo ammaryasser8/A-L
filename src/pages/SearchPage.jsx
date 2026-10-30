@@ -7,6 +7,8 @@ import { useDocumentTitle } from '../hooks/useDocumentTitle';
 import styles from './SearchPage.module.css';
 
 const DISCOVERY_CATEGORIES = ['Rooms', 'Suites', 'Restaurants', 'Spa & Wellness', 'Beach & Leisure', 'Events & Meetings'];
+const PALETTE = ['#e2c27a'];
+const tone = (text = '') => PALETTE[[...text].reduce((sum, ch) => sum + ch.charCodeAt(0), 0) % PALETTE.length];
 const FEATURED_CATEGORIES = ['Rooms', 'Suites', 'Spa & Wellness'];
 
 export default function SearchPage() {
@@ -31,16 +33,22 @@ export default function SearchPage() {
       <header className={styles.header}>
         <Link to="/" className={styles.brand}>AL<span>Hospitality Group</span></Link>
       </header>
+      <div className={styles.aurora} aria-hidden="true"><i /><i /><i /></div>
       <div className={styles.content}>
         <p className={styles.eyebrow}>Search AL Hospitality Group</p>
-        <input
-          autoFocus
-          className={styles.input}
-          type="search"
-          placeholder="Rooms, dining, spa, a destination…"
-          value={query}
-          onChange={handleChange}
-        />
+        <div className={styles.searchBox}>
+          <svg aria-hidden="true" viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
+          <input
+            autoFocus
+            className={styles.input}
+            type="search"
+            aria-label="Search"
+            placeholder="Rooms, dining, spa, a destination…"
+            value={query}
+            onChange={handleChange}
+          />
+          {hasQuery && <button type="button" className={styles.clear} onClick={() => setSearch('')} aria-label="Clear search">✕</button>}
+        </div>
 
         {hasQuery && (
           <p className={styles.count}>{results.length} result{results.length === 1 ? '' : 's'}</p>
@@ -50,10 +58,11 @@ export default function SearchPage() {
           <>
             <div className={styles.results}>
               {results.map((result) => (
-                <Link key={result.id} to={result.path} className={styles.result}>
+                <Link key={result.id} to={result.path} className={styles.result} style={{ '--tone': tone(result.kind) }}>
                   <span className={styles.kind}>{result.kind}</span>
                   <span className={styles.title}>{result.title}</span>
                   {result.subtitle && <span className={styles.subtitle}>{result.subtitle}</span>}
+                  <span className={styles.go} aria-hidden="true">↗</span>
                 </Link>
               ))}
             </div>
@@ -63,7 +72,7 @@ export default function SearchPage() {
                 <h2>Try a different way in.</h2>
                 <p>Search a destination, a room, or one of the collections below.</p>
                 <div className={styles.categoryList}>
-                  {DISCOVERY_CATEGORIES.slice(0, 4).map((category) => <button type="button" key={category} onClick={() => setSearch(category)}>{category}</button>)}
+                  {DISCOVERY_CATEGORIES.slice(0, 4).map((category) => <button type="button" key={category} style={{ '--tone': tone(category) }} onClick={() => setSearch(category)}>{category}</button>)}
                 </div>
               </section>
             )}
@@ -75,7 +84,7 @@ export default function SearchPage() {
               <p>Browse verified stays and experiences already available across the two AL destinations.</p>
             </div>
             <div className={styles.categoryList} aria-label="Search by category">
-              {DISCOVERY_CATEGORIES.map((category) => <button type="button" key={category} onClick={() => setSearch(category)}>{category}</button>)}
+              {DISCOVERY_CATEGORIES.map((category) => <button type="button" key={category} style={{ '--tone': tone(category) }} onClick={() => setSearch(category)}>{category}</button>)}
             </div>
             <div className={styles.featureGrid}>
               {featured.map((product) => {

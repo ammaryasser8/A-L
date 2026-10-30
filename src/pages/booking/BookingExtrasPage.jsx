@@ -1,8 +1,8 @@
-import { Link, Navigate, useNavigate } from 'react-router-dom';
+import { Navigate, useNavigate } from 'react-router-dom';
 import hotels from '../../data/hotels.json';
 import extras from '../../data/mock/extras.json';
 import { useBooking } from '../../hooks/useBooking';
-import BookingSteps from './BookingSteps';
+import BookingShell from './BookingShell';
 import styles from './Booking.module.css';
 
 export default function BookingExtrasPage() {
@@ -22,14 +22,7 @@ export default function BookingExtrasPage() {
   }
 
   return (
-    <div className={styles.page}>
-      <header className={styles.header}>
-        <Link to="/" className={styles.brand}>AL<span>Hospitality Group</span></Link>
-      </header>
-      <BookingSteps current={3} />
-      <div className={styles.content}>
-        <p className={styles.eyebrow}>{hotel?.shortName}</p>
-        <h1>Enhance your stay.</h1>
+    <BookingShell step={3} hotelSlug={hotel?.slug} eyebrow={<>{hotel?.shortName}</>} title={<>Enhance your stay.</>}>
         <div className={styles.extrasList}>
           {extras.map((extra) => {
             const active = selected.includes(extra.id);
@@ -57,7 +50,6 @@ export default function BookingExtrasPage() {
         <button type="button" className={styles.submit} onClick={() => navigate('/booking/review')}>
           Continue to review
         </button>
-      </div>
-    </div>
+    </BookingShell>
   );
 }

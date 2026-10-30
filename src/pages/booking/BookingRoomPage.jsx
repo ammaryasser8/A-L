@@ -2,7 +2,7 @@ import { Link, Navigate, useNavigate } from 'react-router-dom';
 import hotels from '../../data/hotels.json';
 import products from '../../data/products.json';
 import { useBooking } from '../../hooks/useBooking';
-import BookingSteps from './BookingSteps';
+import BookingShell from './BookingShell';
 import styles from './Booking.module.css';
 
 export default function BookingRoomPage() {
@@ -26,14 +26,7 @@ export default function BookingRoomPage() {
   }
 
   return (
-    <div className={styles.page}>
-      <header className={styles.header}>
-        <Link to="/" className={styles.brand}>AL<span>Hospitality Group</span></Link>
-      </header>
-      <BookingSteps current={2} />
-      <div className={styles.content}>
-        <p className={styles.eyebrow}>{hotel?.shortName}</p>
-        <h1>Choose your room.</h1>
+    <BookingShell step={2} hotelSlug={hotel?.slug} eyebrow={<>{hotel?.shortName}</>} title={<>Choose your room.</>}>
         {rooms.length === 0 ? (
           <p>No rooms match {draft.guestCount} guests for these dates. <Link to="/booking">Adjust your search</Link>.</p>
         ) : (
@@ -55,7 +48,6 @@ export default function BookingRoomPage() {
             ))}
           </div>
         )}
-      </div>
-    </div>
+    </BookingShell>
   );
 }

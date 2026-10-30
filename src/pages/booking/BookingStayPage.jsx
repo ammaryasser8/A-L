@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import hotels from '../../data/hotels.json';
 import { useBooking } from '../../hooks/useBooking';
-import BookingSteps from './BookingSteps';
+import BookingShell from './BookingShell';
 import styles from './Booking.module.css';
 
 export default function BookingStayPage() {
@@ -30,14 +30,7 @@ export default function BookingStayPage() {
   }
 
   return (
-    <div className={styles.page}>
-      <header className={styles.header}>
-        <Link to="/" className={styles.brand}>AL<span>Hospitality Group</span></Link>
-      </header>
-      <BookingSteps current={1} />
-      <div className={styles.content}>
-        <p className={styles.eyebrow}>Booking</p>
-        <h1>Compose your stay.</h1>
+    <BookingShell step={1} hotelSlug={hotelSlug} eyebrow={<>Booking</>} title={<>Compose your stay.</>}>
         <form className={styles.form} onSubmit={handleSubmit} noValidate>
           <label className={styles.field}>
             <span>Destination</span>
@@ -62,7 +55,6 @@ export default function BookingStayPage() {
           {error && <p className={styles.error} role="alert">{error}</p>}
           <button type="submit" className={styles.submit}>Choose a room</button>
         </form>
-      </div>
-    </div>
+    </BookingShell>
   );
 }

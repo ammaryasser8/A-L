@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link, Navigate, useNavigate } from 'react-router-dom';
+import { Navigate, useNavigate } from 'react-router-dom';
 import hotels from '../../data/hotels.json';
 import products from '../../data/products.json';
 import extras from '../../data/mock/extras.json';
@@ -7,7 +7,7 @@ import { useBooking } from '../../hooks/useBooking';
 import { useAuth } from '../../hooks/useAuth';
 import { reservationService } from '../../services/reservationService';
 import { nightsBetween, extrasTotal } from '../../utils/bookingMath';
-import BookingSteps from './BookingSteps';
+import BookingShell from './BookingShell';
 import styles from './Booking.module.css';
 
 /**
@@ -77,14 +77,7 @@ export default function BookingPaymentPage() {
   }
 
   return (
-    <div className={styles.page}>
-      <header className={styles.header}>
-        <Link to="/" className={styles.brand}>AL<span>Hospitality Group</span></Link>
-      </header>
-      <BookingSteps current={5} />
-      <div className={styles.content}>
-        <p className={styles.eyebrow}>Payment · ${grandTotal.toFixed(0)}</p>
-        <h1>Complete your booking.</h1>
+    <BookingShell step={5} hotelSlug={hotel.slug} eyebrow={<>Payment · ${grandTotal.toFixed(0)}</>} title={<>Complete your booking.</>}>
 
         {status === 'processing' && (
           <div className={styles.payState}>
@@ -122,7 +115,6 @@ export default function BookingPaymentPage() {
             <p className={styles.roomAmenities}>This is a demo payment — no card is charged. Any number works except {DECLINE_TEST_NUMBER}.</p>
           </form>
         )}
-      </div>
-    </div>
+    </BookingShell>
   );
 }

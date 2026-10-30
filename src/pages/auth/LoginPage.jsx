@@ -7,7 +7,7 @@ import styles from '../../components/auth/AuthForm.module.css';
 
 export default function LoginPage() {
   useDocumentTitle('Sign In');
-  const { login, continueWithProvider } = useAuth();
+  const { login } = useAuth();
   const navigate = useNavigate();
   const location = useLocation();
   const [form, setForm] = useState({ email: '', password: '' });
@@ -27,19 +27,6 @@ export default function LoginPage() {
       navigate(redirectTo, { replace: true });
     } catch (err) {
       setError(err.message || 'Something went wrong. Please try again.');
-    } finally {
-      setSubmitting(false);
-    }
-  }
-
-  async function handleProvider(provider) {
-    setError('');
-    setSubmitting(true);
-    try {
-      await continueWithProvider(provider);
-      navigate(redirectTo, { replace: true });
-    } catch (err) {
-      setError(err.message || 'We could not continue with that provider.');
     } finally {
       setSubmitting(false);
     }
@@ -92,19 +79,7 @@ export default function LoginPage() {
         <button type="submit" className={styles.submit} disabled={submitting}>
           {submitting ? 'Signing in…' : 'Sign in'}
         </button>
-
-        <div className={styles.providerDivider}><span>or continue with</span></div>
-        <div className={styles.providers}>
-          <button type="button" className={styles.provider} disabled={submitting} onClick={() => handleProvider('google')}>
-            <span aria-hidden="true">G</span> Google
-          </button>
-          <button type="button" className={styles.provider} disabled={submitting} onClick={() => handleProvider('facebook')}>
-            <span aria-hidden="true">f</span> Facebook
-          </button>
-        </div>
       </form>
-
-      <p className={styles.demoHint}>Google and Facebook sign-in will be available when OAuth is configured. Use your AL account email and password.</p>
     </AuthLayout>
   );
 }
